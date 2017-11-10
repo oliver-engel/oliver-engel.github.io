@@ -402,7 +402,7 @@ Primary use:	Showcase Portfolio
 		border: 0 none;
 		max-width: 100%;
 		vertical-align: middle;
-		border-radius:50px !important;
+		
 	}
 		
 	h1, h2, h3, h4, h5, h6 {
@@ -799,7 +799,7 @@ Primary use:	Showcase Portfolio
 	
 	#logo img {
 		display: block;
-		height: 25px;
+		height: 35px;
 		width: auto;
 		-webkit-transition: opacity 0.2s ease-in-out;
 		-moz-transition: opacity 0.2s ease-in-out;
