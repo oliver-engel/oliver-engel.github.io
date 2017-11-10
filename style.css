@@ -402,6 +402,7 @@ Primary use:	Showcase Portfolio
 		border: 0 none;
 		max-width: 100%;
 		vertical-align: middle;
+		border-radius:50px !important;
 	}
 		
 	h1, h2, h3, h4, h5, h6 {
