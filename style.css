@@ -1562,12 +1562,12 @@ Primary use:	Showcase Portfolio
 		transition: all 0.2s ease-in-out 0.5s;
 	}
 	
-	.page-action-overlay.active {
+	/*.page-action-overlay.active {
 		opacity:1;
 		visibility:visible;
 		-webkit-transition: all 0.2s ease-in-out 0.1s;
 		transition: all 0.2s ease-in-out 0.1s;
-	}
+	}*/
 	
 	.close-page-action {
 		position:fixed;
@@ -1698,7 +1698,7 @@ Primary use:	Showcase Portfolio
 		height: 50px;
 		text-align: center;
 		line-height: 50px;
-		font-size: 14px;
+		font-size: 25px;
 		pointer-events: none;
 		-webkit-transition: all 0.4s ease-in-out 0s;
 		transition: all 0.4s ease-in-out 0s;

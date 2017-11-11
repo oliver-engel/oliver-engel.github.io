@@ -82,6 +82,7 @@
         
         
         <!-- Portfolio Filters -->
+        
         <div class="page-action-overlay">
             <div class="outer">
                 <div class="inner">                	
@@ -96,6 +97,7 @@
                 </div>
             </div>
         </div>
+        
         <!--/Portfolio Filters -->
         
         
@@ -250,16 +252,16 @@
         
         <!-- Footer -->
         <footer class="hidden">        	
-            
-	    	<div id="page-action-holder" data-tooltip="View Filters" data-placement="top">
+            <a href="javascript:" id="return-to-top">
+	    	<div id="page-action-holder" data-tooltip="Back to Top" data-placement="top">
                 <div id="open-filters">                                                    
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 80 80" xml:space="preserve">
                         <circle class="circle-action is-inner" cx="40" cy="40" r="36" />
                         <circle class="circle-action is-outer" cx="40" cy="40" r="36" />
                     </svg>
-                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
                 </div>                        	
-            </div>
+            </div></a>
         
             <ul class="socials-text has-animation" data-delay="10">
                 <li><a href="http://www.facebook.com/clapat" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -288,6 +290,17 @@
     <script src="js/plugins.js"></script>
     
     <script src="js/scripts.js"></script>
+
+  <!--SCROLL TO TOP -->
+
+    <script type="text/javascript">
+       
+        $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 1015);
+    });
+    </script>
 
 
 
