@@ -834,7 +834,7 @@ Function Lightbox
 
 	
 /*--------------------------------------------------
-Function AppearIteam
+Function Appear Item
 ---------------------------------------------------*/	
 		
 	function AppearIteam() {		
