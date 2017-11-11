@@ -18,16 +18,27 @@ $(document).ready(function() {
 	CollagePlus();
 	PlayVideo();
 	PageShare();
-	ContactMap();	
+	ContactMap();
+	scrollTop();	
 });
 
 $(window).on("load", function() {
 	LazyLoad();
 });
 
+/*--------------------------------------------------
+Function Scroll to Top
+---------------------------------------------------*/	
+function scrollTop(){
+	$('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 1015);
+    });
+}
 
 /*--------------------------------------------------
-Function Firs tLoad
+Function First Load
 ---------------------------------------------------*/	
 
 	function FirstLoad() {
