@@ -23,12 +23,14 @@ $(document).ready(function() {
 	PlayVideo();
 	PageShare();
 	ContactMap();
-	scrollTop();
+
 		
 });
 
 $(window).on("load", function() {
+	scrollTop();
 	LazyLoad();
+
 	
 	
 });
