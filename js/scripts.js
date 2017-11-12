@@ -7,7 +7,7 @@ $(document).ready(function() {
 	
 	FirstLoad();
 	HeroSection();
-	scrollTop();
+
 	AjaxLoad();
 
 	HideShowHeader();
@@ -28,6 +28,7 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
 	LazyLoad();
+	scrollTop();
 });
 
 /*--------------------------------------------------
