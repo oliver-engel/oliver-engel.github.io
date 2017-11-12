@@ -4,7 +4,7 @@ $(document).ready(function() {
 	"use strict";
 
 
-	scrollTop();
+	
 	FirstLoad();
 	HeroSection();
 
@@ -23,6 +23,7 @@ $(document).ready(function() {
 	PlayVideo();
 	PageShare();
 	ContactMap();
+	scrollTop();
 		
 });
 
