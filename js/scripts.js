@@ -28,13 +28,13 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
 	LazyLoad();
-	// scrollTop();
+	scrollTop();
+    console.log("working");
 	
 });
 
 $(document).on('load', function() {
-    scrollTop();
-    console.log("working");
+    
 });
 
 /*--------------------------------------------------
