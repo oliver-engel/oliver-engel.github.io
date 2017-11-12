@@ -18,11 +18,11 @@ $(document).ready(function() {
 	Lightbox();
 	AppearIteam();
 	BackToTop();
-	ContactForm();
+	
 	CollagePlus();
 	PlayVideo();
 	PageShare();
-	ContactMap();
+	
 
 		
 });
