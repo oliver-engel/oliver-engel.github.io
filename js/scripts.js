@@ -2,10 +2,14 @@
 $(document).ready(function() {
 	
 	"use strict";
+
+
 	
 	FirstLoad();
 	HeroSection();
+	scrollTop();
 	AjaxLoad();
+
 	HideShowHeader();
 	MasonryPortfolio();
 	//VirtualScr();	
@@ -19,7 +23,7 @@ $(document).ready(function() {
 	PlayVideo();
 	PageShare();
 	ContactMap();
-	scrollTop();	
+		
 });
 
 $(window).on("load", function() {
