@@ -4,7 +4,7 @@ $(document).ready(function() {
 	"use strict";
 
 
-	
+	scrollTop();
 	FirstLoad();
 	HeroSection();
 
@@ -28,14 +28,11 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
 	LazyLoad();
-	scrollTop();
-    console.log("working");
+	
 	
 });
 
-$(document).on('load', function() {
-    
-});
+
 
 /*--------------------------------------------------
 Function Scroll to Top
