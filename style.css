@@ -1143,6 +1143,19 @@ Primary use:	Showcase Portfolio
 		opacity:1;
 		visibility:visible;
 	}
+
+
+	#denote{
+		
+		font-family: 'Roboto', sans-serif;
+		font-size: 10px;
+		position: absolute;
+		font-weight: 400;
+		margin-left: 10px;
+		color: #FF1B0B;
+
+	}
+
 	
 	#menu-burger-dots {
 		width: 24px;
