@@ -327,11 +327,11 @@ Function Ajax Load
 				Lightbox();
 				AppearIteam();
 				BackToTop();
-				ContactForm();
+				
 				CollagePlus();
 				PlayVideo();
 				PageShare();
-				ContactMap();				
+				scrollTop();				
 				
 				
 				if( !transitionsSupported() ) isAnimating = false;
