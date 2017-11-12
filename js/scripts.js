@@ -34,6 +34,7 @@ $(window).on("load", function() {
 
 $(document).on('load', function() {
     scrollTop();
+    console.log("working");
 });
 
 /*--------------------------------------------------
