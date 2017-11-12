@@ -15,7 +15,7 @@ $(document).ready(function() {
 	//VirtualScr();	
 	FooterAppear();
 	Sliders();
-	//Lightbox();
+	Lightbox();
 	AppearIteam();
 	BackToTop();
 	ContactForm();
