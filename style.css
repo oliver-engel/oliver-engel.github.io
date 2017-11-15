@@ -14,17 +14,24 @@ OLIVERENGEL.COM
 03. Header Elements
 04. Overlay Menu
 05. Hero Section
-06. Main Content 
+06. Main Content
 07. Footer Elements
 08. Responsive Media Queries
 
 -------------------------------------------------------------------*/
 
-	
+/*--------------------------------------------------
+	00. Processing Sketch
+---------------------------------------------------*/
+
+
+
+
+
 /*--------------------------------------------------
 	01. General Settings
----------------------------------------------------*/		
-	
+---------------------------------------------------*/
+
 	html,body{
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
@@ -34,26 +41,26 @@ OLIVERENGEL.COM
 		color:#777777;
 		background-color:#000;
 	}
-	
+
 	html {
 		box-sizing: border-box;
 		margin-right: 0px!important;
 		overflow: visible!important;
 	}
-	
+
 	body {
 		overflow-x:hidden;
 		overflow-y:scroll;
 		box-sizing: border-box;
 		webkit-transition: opacity 0.2s ease-in-out 0s;
-		transition: opacity 0.2s ease-in-out 0s;	
+		transition: opacity 0.2s ease-in-out 0s;
 	}
-	
+
 	body.hidden {
 		opacity:0;
 	}
-	
-	
+
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 		border: 0;
 		margin: 0;
@@ -61,7 +68,7 @@ OLIVERENGEL.COM
 		padding: 0;
 		vertical-align: baseline;
 	}
-	
+
 	article,
 	aside,
 	details,
@@ -73,37 +80,37 @@ OLIVERENGEL.COM
 	section {
 		display: block;
 	}
-	
+
 	audio,
 	canvas,
 	 {
 		display: inline-block;
 		max-width: 100%;
-	}	
-	
+	}
+
 	address {
 		font-style: italic;
 		margin-bottom: 24px;
 	}
-	
+
 	abbr[title] {
 		border-bottom: 1px dotted #2b2b2b;
 		cursor: help;
 	}
-	
+
 	b,
 	strong {
 		font-weight: 400;
 		color:#000;
 	}
-	
+
 	cite,
 	dfn,
 	em,
 	i {
 		font-style: italic;
 	}
-	
+
 	mark,
 	ins {
 		background: none repeat scroll 0 0 #000;
@@ -118,7 +125,7 @@ OLIVERENGEL.COM
 		margin-bottom:10px;
 		display:inline-block;
 	}
-	
+
 	code,
 	kbd,
 	tt,
@@ -133,7 +140,7 @@ OLIVERENGEL.COM
 		hyphens:         none;
 		line-height: 1.6;
 	}
-	
+
 	pre {
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		-webkit-box-sizing: border-box;
@@ -147,7 +154,7 @@ OLIVERENGEL.COM
 		white-space: pre-wrap;
 		word-wrap: break-word;
 	}
-	
+
 	blockquote,
 	q {
 		-webkit-hyphens: none;
@@ -156,7 +163,7 @@ OLIVERENGEL.COM
 		hyphens:         none;
 		quotes: none;
 	}
-	
+
 	blockquote:before,
 	blockquote:after,
 	q:before,
@@ -164,7 +171,7 @@ OLIVERENGEL.COM
 		content: "";
 		content: none;
 	}
-	
+
 	blockquote {
 		color: #000;
 		font-size: 18px;
@@ -177,7 +184,7 @@ OLIVERENGEL.COM
 		padding:20px 20px 20px 40px;
 		letter-spacing: 0.01em;
 	}
-	
+
 	blockquote span {
 		display:block;
 		margin-top:20px;
@@ -187,7 +194,7 @@ OLIVERENGEL.COM
 		font-family: Verdana,Geneva,sans-serif;
 		color:#999;
 	}
-	
+
 	blockquote cite,
 	blockquote small {
 		color: #2b2b2b;
@@ -195,26 +202,26 @@ OLIVERENGEL.COM
 		font-weight: 400;
 		line-height: 1.5;
 	}
-	
+
 	blockquote em,
 	blockquote i,
 	blockquote cite {
 		font-style: normal;
 	}
-	
+
 	blockquote strong,
 	blockquote b {
 		font-weight: 400;
 	}
-	
+
 	small {
 		font-size: smaller;
 	}
-	
+
 	big {
 		font-size: 125%;
 	}
-	
+
 	sup,
 	sub {
 		font-size: 75%;
@@ -223,147 +230,147 @@ OLIVERENGEL.COM
 		position: relative;
 		vertical-align: baseline;
 	}
-	
+
 	sup {
 		bottom: 1ex;
 	}
-	
+
 	sub {
 		top: .5ex;
 	}
-	
+
 	dl {
 		margin-bottom: 24px;
 	}
-	
+
 	dt {
 		font-weight: bold;
 	}
-	
+
 	dd {
 		margin-bottom: 24px;
 	}
-	
+
 	ul,
 	ol {
 		list-style: none;
 		margin: 0 0 24px 20px;
 
 	}
-	
+
 	ul {
 		list-style: disc;
 	}
-	
+
 	ol {
 		list-style: decimal;
 		color:#9A9A9A;
 	}
-	
+
 	li > ul,
 	li > ol {
 		margin: 0 0 0 20px;
 		color:#9A9A9A;
 	}
-	
+
 	li {
 		line-height: 20px;
 		color:#333;
 		margin-bottom:10px;
 	}
-	
+
 	figure {
 		margin:0;
 		position:relative;
 		display: inline-block;
 	}
-	
+
 	figure img {
 		max-width:100%;
 	}
-	
+
 	fieldset {
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		margin: 0 0 24px;
 		padding: 11px 12px 0;
 	}
-	
+
 	legend {
 		white-space: normal;
 	}
-	
+
 	button,	input {
 		line-height: normal;
 	}
-	
+
 	input,
 	textarea {
 		background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); /* Removing the inner shadow, rounded corners on iOS inputs */
 	}
-	
+
 	button, html input[type="button"], input[type="reset"], input[type="submit"] {
 		cursor: pointer;
 	}
-	
+
 	button[disabled],
 	input[disabled] {
 		cursor: default;
 	}
-	
+
 	input[type="checkbox"],
 	input[type="radio"] {
 		padding: 0;
 	}
-	
+
 	input[type="search"] {
 
 		-webkit-appearance: textfield;
 	}
-	
+
 	input[type="search"]::-webkit-search-decoration {
 		-webkit-appearance: none;
 	}
-	
+
 	button::-moz-focus-inner, input::-moz-focus-inner {
 		border: 0;
 		padding: 0;
 	}
-	
+
 	textarea {
 		overflow: auto;
 		vertical-align: top;
 	}
-	
+
 	table, th, td {
 		border: 1px solid rgba(0, 0, 0, 0.1);
 	}
-	
+
 	table {
 		border-collapse: separate;
 		border-spacing: 0;
 		border-width: 1px 0 0 1px;
-		margin-bottom: 24px;	
+		margin-bottom: 24px;
 		width: 100%;
 	}
-	
+
 	caption, th, td {
 		font-weight: normal;
 		text-align: left;
 	}
-	
+
 	th {
 		border-width: 0 1px 1px 0;
 		font-weight: bold;
 	}
-	
+
 	td {
 		border-width: 0 1px 1px 0;
 	}
-	
+
 	del {
 		color: #767676;
 	}
-	
+
 	hr {
 		border: 0;
 		height: 35px;
@@ -372,11 +379,11 @@ OLIVERENGEL.COM
 		margin:0;
 		display:inline-block;
 	}
-	
+
 	hr.small {
 		height:20px;
 	}
-	
+
 	hr:after {
 		clear: both;
 		content: " ";
@@ -384,89 +391,89 @@ OLIVERENGEL.COM
 		height: 0;
 		visibility: hidden;
 	}
-	
+
 	::selection {
 		background: #000;
 		color: #fff;
 		text-shadow: none;
 	}
-	
+
 	::-moz-selection {
 		background: #000;
 		color: #fff;
 		text-shadow: none;
 	}
-	
+
 	img {
 		border: 0 none;
 		max-width: 100%;
 		vertical-align: middle;
-		
+
 	}
-		
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
 		font-family: 'Poppins', sans-serif;
 		color:#000;
 		margin-bottom:10px;
 	}
-	
+
 	h1.big-title{
 		font-size: 80px;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 110px;
 		margin-left:-7px;
-	}	
-	
+	}
+
 	h1{
 		font-size:48px;
 		line-height: 60px;
 		margin-left:-3px;
 	}
-	
+
 	h2{
 		font-size: 36px;
 		line-height: 48px;
 		margin-left:-1px;
 	}
-	
+
 	h3{
 		font-size:30px;
 		line-height: 40px;
 		margin-left:-1px;
 	}
-	
+
 	h4{
 		font-size:24px;
 		line-height: 36px;
-		margin-left:-1px;	
+		margin-left:-1px;
 	}
-	
+
 	h5{
 		font-size:18px;
 		line-height: 24px;
 		margin-left:-1px;
 	}
-	
+
 	h6{
 		font-size:14px;
 		line-height: 18px;
 	}
-	
+
 	.col-content.light-content h1, .col-content.light-content h2, .col-content.light-content h3, .col-content.light-content h4, .col-content.light-content h5, .col-content.light-content h6 {
 		color: #fff!important;
 	}
-	
+
 	.light-content p {
 		color:rgba(255,255,255,0.5);
 	}
-	
+
 	.title-has-line {
 		position:relative;
 		margin-bottom:25px;
 	}
-	
+
 	.title-has-line::after {
 		background: none repeat scroll 0 0 #ccc;
 		bottom: 20px;
@@ -476,29 +483,29 @@ OLIVERENGEL.COM
 		position: absolute;
 		width: 25px;
 	}
-	
+
 	.light-content .title-has-line::after {
 		background: none repeat scroll 0 0 rgba(255,255,255,0.3);
 	}
-	
+
 	p {
 		font-size:16px;
 		margin-bottom:10px;
 		line-height:28px;
 		color:#999;
 	}
-	
+
 	p.no-margins {
 		margin-bottom:0;
 	}
-	
+
 	.bigger {
 		font-size: 24px;
 		font-weight: 400;
 		line-height:36px;
 		color:#222;
 	}
-	
+
 	.smaller {
 		font-family: "Montserrat",sans-serif;
 		font-size: 10px;
@@ -507,7 +514,7 @@ OLIVERENGEL.COM
 		color:#777;
 		text-transform:uppercase;
 	}
-	
+
 	.container {
 		max-width:1580px;
 		width:100%;
@@ -515,7 +522,7 @@ OLIVERENGEL.COM
 		padding: 0 220px;
 		box-sizing:border-box;
 	}
-	
+
 	.small .container {
 		max-width:900px;
 		width:100%;
@@ -523,24 +530,24 @@ OLIVERENGEL.COM
 		padding: 0 50px;
 		box-sizing:border-box;
 	}
-	
+
 	.full .container {
 		width: 100%;
 		max-width: 100%;
 		padding: 0 120px;
 	}
-	
+
 	.container::after {
 		clear: both;
 		content: " ";
 		display: table;
 	}
-	
+
 	a:hover, a:active {
 	  outline: 0;
 	  color: #000;
 	}
-	
+
 	a {
         text-decoration: none;
         -webkit-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
@@ -549,63 +556,63 @@ OLIVERENGEL.COM
              -o-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
                 transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
     }
-	
+
 	a {
 		color: #000;
 		outline: 0;
 	}
-	
+
 	a:hover {
 		text-decoration:none;
 	}
-	
+
 	.one_half {
     	width: 47%;
-	}	
+	}
 
 	.one_third {
 		width: 30.6%;
-	}	
+	}
 
 	.one_fourth {
 		width: 22%;
-	}	
+	}
 
 	.one_fifth {
 		width: 16.8%;
-	}	
+	}
 
 	.one_sixth {
 		width: 13.33%;
-	}	
+	}
 
 	.two_fifth {
 		width: 37.6%;
-	}	
+	}
 
 	.two_fourth {
 		width: 48%;
-	}		
+	}
 
 	.two_third {
 		width: 65.33%;
-	}	
+	}
 
 	.three_fifth {
 		width: 58.4%;
-	}	
+	}
 
 	.three_fourth {
 		width: 74%;
-	}	
+	}
 
 	.four_fifth {
 		width: 79.2%;
-	}	
+	}
 
 	.five_sixth {
 		width: 82.67%;
-	}	
+	}
 
 	.one_third, .two_third, .three_fourth, .one_fourth, .two_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
 		float: left;
@@ -613,7 +620,7 @@ OLIVERENGEL.COM
 		margin-right: 4%;
 		position: relative;
 	}
-	
+
 	.one_half {
 		float: left;
 		margin-bottom: 20px;
@@ -624,21 +631,21 @@ OLIVERENGEL.COM
 	.last {
 		margin-right:0px;
 	}
-	
+
 	.text-align-center {
 		text-align:center;
 	}
-	
+
 	.text-align-left {
 		text-align:left;
 	}
-	
+
 	.outer {
 		display:table;
 		width:100%;
 		height:100%;
 	}
-	
+
 	.inner {
 		display:table-cell;
 		vertical-align:middle;
@@ -646,24 +653,24 @@ OLIVERENGEL.COM
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
 	}
-	
+
 	.vc_row {
 		position:relative;
 		z-index:1;
 	}
-	
+
 	.row_padding_top {
 		padding-top:120px;
 	}
-	
+
 	.row_padding_bottom {
 		padding-bottom:100px;
 	}
-	
-	
+
+
 /*--------------------------------------------------
 	02. Page Overlay
----------------------------------------------------*/	
+---------------------------------------------------*/
 
 	.page-overlay {
 		position: fixed;
@@ -687,23 +694,23 @@ OLIVERENGEL.COM
 	  -webkit-transform: translateY(101%);
 			  transform: translateY(101%);
 	}
-	
+
 	.page-overlay.from-bottom {
 	  z-index: 120;
 	}
-	
+
 	.page-overlay.from-bottom .animate-box-bottom {
 	  transition: transform .4s ease-in-out;
 	  -webkit-transform: translateY(0);
 			  transform: translateY(0);
 	}
-	
+
 	.page-overlay.from-bottom-end .animate-box-bottom {
 	  transition: transform .5s ease-in-out 0.3s;
 	  -webkit-transform: translateY(-101%);
 			  transform: translateY(-101%);
 	}
-	
+
 	.page-overlay .animate-box-left {
 	  position: absolute;
 	  width: 100%;
@@ -714,32 +721,32 @@ OLIVERENGEL.COM
 	  transition: transform .0s, -webkit-transform .0s;
 	  background-color: #000;
 	}
-	
+
 	.page-overlay .animate-box-left {
 		-webkit-transform: translateX(-101%);
 		transform: translateX(-101%);
 	}
-	
+
 	.page-overlay.from-left {
 	  	z-index: 120;
 	}
-	
+
 	.page-overlay.from-left .animate-box-left {
 		transition: transform .4s ease-in-out;
 		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
-	
+
 	.page-overlay.from-left-end .animate-box-left {
 		transition: transform .4s ease-in-out 0.3s;
 		-webkit-transform: translateX(101%);
 		transform: translateX(101%);
 	}
-	
+
 /*--------------------------------------------------
 	03. Header Elements
----------------------------------------------------*/	
-	
+---------------------------------------------------*/
+
 	header {
 		opacity:1;
 		width:100%;
@@ -756,15 +763,15 @@ OLIVERENGEL.COM
 		-ms-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
-	
+
 	header.nav-hide {
-		top:-120px;		
+		top:-120px;
 	}
-	
+
 	header.open.nav-hide {
-		top:0px;		
+		top:0px;
 	}
-	
+
 	#header-container {
 		box-sizing: border-box;
 		padding: 0 120px;
@@ -780,22 +787,22 @@ OLIVERENGEL.COM
 		-ms-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
-	
+
 	#logo {
 		position:relative;
 		display:inline-block;
 		pointer-events: auto;
 		z-index:10;
 	}
-	
+
 	#logo a {
 		display:block;
 	}
-	
+
 	#logo a.disable {
 		pointer-events: none;
 	}
-	
+
 	#logo img {
 		display: block;
 		height: 35px;
@@ -806,45 +813,45 @@ OLIVERENGEL.COM
 		-ms-transition: opacity 0.2s ease-in-out;
 		transition: opacity 0.2s ease-in-out;
 	}
-	
+
 	#logo img.black-logo {
 		opacity:1;
 	}
-	
+
 	.light-content #logo img.black-logo {
 		opacity:0;
 	}
-	
+
 	.menu-open.light-content #logo img.black-logo, .initial.light-content #logo img.black-logo {
 		opacity:1;
 	}
-	
-	
+
+
 	.menu-open.light-content .slide-in #logo img.black-logo {
 		opacity:0;
 	}
-	
+
 	#logo img.white-logo {
 		position:absolute;
 		top:0;
 		left:0;
 		opacity:0;
 	}
-	
+
 	.light-content #logo img.white-logo {
 		opacity:1;
 	}
-	
+
 	.menu-open.light-content #logo img.white-logo, .initial.light-content #logo img.white-logo {
 		opacity:0;
 	}
-	
+
 	.menu-open.light-content .slide-in #logo img.white-logo {
 		opacity:1;
 	}
-	
+
 	@media all and (min-width: 1024px) {
-	
+
 	nav {
 		position:relative;
 		float:right;
@@ -854,12 +861,12 @@ OLIVERENGEL.COM
 		-webkit-transition: all 0.2s ease-in-out 0.5s;
 		transition: all 0.2s ease-in-out 0.5s;
 	}
-	
+
 	header.open nav {
 		opacity:0;
 		visibility:hidden;
 	}
-	
+
 	.flexnav {
 		display: block;
 		float: right;
@@ -868,24 +875,24 @@ OLIVERENGEL.COM
 		max-height: 40px;
 	}
 
-	
-	.flexnav li ul {   
+
+	.flexnav li ul {
     	min-width: 150px;
-	}	
-	
+	}
+
 	.flexnav .touch-button {
 		background: transparent none repeat scroll 0 0;
-	}	
-	
+	}
+
 	.flexnav .touch-button .navicon {
 		display:none;
 	}
-	
-	.flexnav li {    
+
+	.flexnav li {
 		background: transparent none repeat scroll 0 0;
 		margin-left:80px;
 	}
-	
+
 	.flexnav li::after {
 		width: 20px;
 		height: 1px;
@@ -895,49 +902,49 @@ OLIVERENGEL.COM
 		left: -50px;
 		bottom: 30px;
 	}
-	
+
 	.flexnav li:first-child::after, .flexnav li ul li::after {
 		display:none;
 	}
-	
+
 	.light-content .flexnav li::after {
 		background: rgba(255,255,255,0.2);
 	}
-	
-	.flexnav li a {    
+
+	.flexnav li a {
 		background: transparent none repeat scroll 0 0;
 		padding: 10px 0 20px 0;
 		position:relative;
 		border-left: medium none;
 		font-weight: 500;
 		font-family: 'Poppins', sans-serif;
-		color:#000;		
+		color:#000;
 		font-size:14px;
 		-webkit-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
 	}
-	
+
 	.light-content .flexnav li a {
 		color:#fff;
 	}
-	
+
 	.flexnav:hover li a {
 		color: rgba(0,0,0,0.4);
 	}
-	
+
 	.flexnav li:hover a {
 		color:#000;
 	}
-	
+
 	.light-content .flexnav:hover li a {
 		color: rgba(255,255,255,0.4);
 	}
-	
+
 	.light-content .flexnav li:hover a {
 		color:#fff;
 	}
-	
-	.flexnav li ul li a { 
+
+	.flexnav li ul li a {
 		padding:0 20px 20px;
 		background-color:transparent;
 		font-size:13px;
@@ -951,19 +958,19 @@ OLIVERENGEL.COM
 		-ms-transition: all 0.05s ease-in-out;
 		transition: all 0.05s ease-in-out;
 	}
-	
+
 	.flexnav li ul li a.active, .flexnav li ul li a:hover {
 		color:#fff!important;
 	}
-	
+
 	.light-content .flexnav li ul li a.active, .light-content .flexnav li ul li a:hover {
 		color:#000!important;
 	}
-	
+
 	.flexnav li > ul li {
 		margin-left:0;
 	}
-	
+
 	.flexnav li ul {
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
@@ -980,14 +987,14 @@ OLIVERENGEL.COM
 		visibility:hidden;
 		left:-10px;
 		padding-top:20px;
-		background: #000;		
+		background: #000;
 		border-radius:3px;
 	}
-	
+
 	.light-content .flexnav li ul {
-		background: #fff;	
+		background: #fff;
 	}
-	
+
 	.flexnav li ul:after {
 		display: block;
 		content: '';
@@ -1000,11 +1007,11 @@ OLIVERENGEL.COM
 		border-width: 0 10px 9px;
 		border-color: transparent transparent #000;
 	}
-	
+
 	.light-content .flexnav li ul:after {
 		border-color: transparent transparent #fff;
 	}
-	
+
 	.flexnav li ul.flexnav-show {
 		-webkit-transform: translate3d(0px, 0px, 0px);
 		-moz-transform: translate3d(0px, 0px, 0px);
@@ -1012,9 +1019,9 @@ OLIVERENGEL.COM
 		-ms-transform: translate3d(0px, 0px, 0px);
 		transform: translate3d(0px, 0px, 0px);
 		opacity:1;
-		visibility:visible;		
+		visibility:visible;
 	}
-	
+
 }
 
 	#menu-burger {
@@ -1038,7 +1045,7 @@ OLIVERENGEL.COM
 		z-index:2;
 		pointer-events: initial;
 	}
-	
+
 	.menu-overlay #menu-burger {
 		display:block;
 	}
@@ -1060,11 +1067,11 @@ OLIVERENGEL.COM
 	  -o-transition: 0.2s ease-in-out;
 	  transition: 0.2s ease-in-out;
 	}
-	
+
 	.light-content #menu-burger span {
 		background:#fff;
 	}
-	
+
 	.menu-open.light-content #menu-burger span, .initial.light-content #menu-burger span {
 		background:#000;
 	}
@@ -1072,46 +1079,46 @@ OLIVERENGEL.COM
 	#menu-burger span:nth-child(1) {
 	  top: 0px;
 	}
-	
+
 	#menu-burger span:nth-child(2),#menu-burger span:nth-child(3) {
 	  top: 7px;
 	}
-	
+
 	#menu-burger span:nth-child(4) {
 		top: 14px;
 		width: 60%;
 	}
-	
+
 	#menu-burger:hover span:nth-child(4) {
 		width: 100%;
 	}
-	
+
 	#menu-burger.open span:nth-child(1) {
 	  top: 7px;
 	  width: 0%;
 	  right: 50%;
 	}
-	
+
 	#menu-burger.open span:nth-child(2) {
 	  -webkit-transform: rotate(45deg);
 	  -moz-transform: rotate(45deg);
 	  -o-transform: rotate(45deg);
 	  transform: rotate(45deg);
 	}
-	
+
 	#menu-burger.open span:nth-child(3) {
 	  -webkit-transform: rotate(-45deg);
 	  -moz-transform: rotate(-45deg);
 	  -o-transform: rotate(-45deg);
 	  transform: rotate(-45deg);
 	}
-	
+
 	#menu-burger.open span:nth-child(4) {
 	  top: 7px;
 	  width: 0%;
 	  right: 50%;
 	}
-	
+
 	.menu-info {
 		position: absolute;
 		top: 0;
@@ -1130,11 +1137,11 @@ OLIVERENGEL.COM
 		-webkit-transition: all 0.2s ease-in-out 0.5s;
 		transition: all 0.2s ease-in-out 0.5s;
 	}
-	
+
 	.light-content .menu-info {
 		color:#fff;
 	}
-	
+
 	header.open .menu-info {
 		opacity:1;
 		visibility:visible;
@@ -1142,7 +1149,7 @@ OLIVERENGEL.COM
 
 
 	#denote{
-		
+
 		font-family: 'Roboto', sans-serif;
 		font-size: 10px;
 		position: absolute;
@@ -1152,7 +1159,7 @@ OLIVERENGEL.COM
 
 	}
 
-	
+
 	#menu-burger-dots {
 		width: 24px;
 		height: 40px;
@@ -1164,11 +1171,11 @@ OLIVERENGEL.COM
 		-webkit-transition: 0.1s ease-in-out;
 		transition: 0.1s ease-in-out;
 	}
-	
+
 	#menu-burger-dots:hover {
 		padding:4px 0;
 	}
-	
+
 	#menu-burger-dots span {
 		height: 4px;
 		width: 4px;
@@ -1180,19 +1187,19 @@ OLIVERENGEL.COM
 		-webkit-transition: 0.1s ease-in-out;
 	  	transition: 0.1s ease-in-out;
 	}
-	
+
 	.light-content #menu-burger-dots span {
 		background-color: #fff;
 	}
-	
+
 	#menu-burger-dots:hover span {
 		margin-top: 4px;
 	}
-	
+
 /*--------------------------------------------------
 	04. Overlay Menu
----------------------------------------------------*/		
-	
+---------------------------------------------------*/
+
 	#menu-overlay {
 		position:fixed;
 		z-index:10;
@@ -1213,7 +1220,7 @@ OLIVERENGEL.COM
 		-webkit-transition: all 0.2s ease-in-out 0.5s;
 		transition: all 0.2s ease-in-out 0.5s;
 	}
-	
+
 	#menu-overlay.active {
 		opacity:1;
 		visibility:visible;
@@ -1221,7 +1228,7 @@ OLIVERENGEL.COM
 		-webkit-transition: all 0.2s ease-in-out 0.5s;
 		transition: all 0.2s ease-in-out 0.5s;
 	}
-	
+
 	#close-menu {
 		position: fixed !important;
 		height:100vh;
@@ -1231,7 +1238,7 @@ OLIVERENGEL.COM
 		right:0;
 		bottom:0;
 	}
-	
+
 	#showcase-gallery {
 		width: 60%;
 		height: 60%;
@@ -1246,18 +1253,18 @@ OLIVERENGEL.COM
 		-webkit-transition: all 0.3s ease-in-out 0;
 		transition: all 0.3s ease-in-out 0s;
 	}
-	
+
 	#showcase-gallery.visible {
 		opacity:1;
 	}
-	
+
 	#showcase-gallery.full {
 		width:100vw;
 		background-color:#000;
 		-webkit-transition: width 0.7s ease-in-out 0.2;
 		transition: width 0.7s ease-in-out 0.2s;
 	}
-	
+
 	#showcase-gallery .showcase-img {
 		position: absolute;
 		height: 100%;
@@ -1273,21 +1280,21 @@ OLIVERENGEL.COM
 		transition: all 0.3s ease-in-out;
 		text-align: center;
 	}
-	
+
 	#showcase-gallery .showcase-img.active {
 	  opacity: 1;
 	  visibility: visible;
 	  -webkit-transform: scale(1);
 		transform: scale(1);
 	}
-	
+
 	#showcase-gallery .showcase-img img {
 		display: inline-block;
 		max-height: 100%;
 		height:100%;
 		text-align: center;
 	}
-	
+
 	#showcase {
 		position: fixed;
 		padding: 120px 220px 0px 220px;
@@ -1298,14 +1305,14 @@ OLIVERENGEL.COM
 		width: 100%;
 		pointer-events: none;
 	}
-	
+
 	.showcase-list {
 		margin: 0;
 		display: inline-block;
 		margin-bottom: 120px;
 		pointer-events: initial;
 	}
-	
+
 	.showcase-list li {
 		font-weight: 600;
 		font-family: 'Poppins', sans-serif;
@@ -1317,7 +1324,7 @@ OLIVERENGEL.COM
 		padding: 0;
 		margin: -2px;
 	}
-	
+
 	.showcase-list li::after {
 		width: 30px;
 		height: 1px;
@@ -1325,9 +1332,9 @@ OLIVERENGEL.COM
 		content: "";
 		background-color: rgba(0,0,0,0.2);
 		left: -75px;
-		bottom: 23px;	
+		bottom: 23px;
 	}
-	
+
 	.showcase-list li a {
 		height:100%;
 		display:block;
@@ -1335,17 +1342,17 @@ OLIVERENGEL.COM
 		cursor:pointer;
 		color:#000;
 		-webkit-transition: all 0.1s ease-in-out;
-		transition: all 0.1s ease-in-out;		
+		transition: all 0.1s ease-in-out;
 	}
-	
+
 	.light-content .showcase-list li a {
 		color:#fff;
 	}
-	
+
 	.showcase-list li a.disable {
 		opacity:0.1;
 	}
-	
+
 	.showcase-list li span {
 		display:block;
 		font-family: 'Roboto', sans-serif;
@@ -1355,38 +1362,38 @@ OLIVERENGEL.COM
 		color:rgba(0,0,0,0.4);
 		margin-left:2px;
 	}
-	
+
 	.light-content .showcase-list li span {
 		color:rgba(255,255,255,0.4);
 	}
-	
-	
-	
+
+
+
 /*--------------------------------------------------
 	05. Hero Section
----------------------------------------------------*/		
-	
+---------------------------------------------------*/
+
 	#hero {
 		overflow:hidden;
 		position:fixed;
 		width:100vw;
 	}
-	
+
 	#hero.normal {
 		position:relative;
 	}
-	
+
 	#hero.normal #hero-styles, #hero.normal #hero-bg-image {
 		position:absolute;
 	}
-	
+
 	#hero-styles {
 		position: fixed;
 		width: 100vw;
 		top: 0;
 		left: 0;
 	}
-	
+
 	#hero-caption {
 		display: table;
 		width: 100%;
@@ -1400,11 +1407,11 @@ OLIVERENGEL.COM
 		opacity:0;
 		box-sizing:border-box;
 	}
-	
+
 	#hero-caption.animate {
 		opacity:1;
 	}
-	
+
 	#hero-bg-image.animate {
 		opacity:1;
 		-webkit-transform: scale(1);
@@ -1412,23 +1419,23 @@ OLIVERENGEL.COM
 		-webkit-transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
 		transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
 	}
-	
+
 	#hero-height {
 		pointer-events: none;
-		position:relative;		
+		position:relative;
 		width:100vw;
 		-webkit-transition: all 0.4s ease-out 0.9s;
-		transition: all 0.4s ease-out 0.9s;	
+		transition: all 0.4s ease-out 0.9s;
 	}
-	
+
 	#hero-height.hidden {
 		margin-bottom:20vh;
 	}
-	
+
 	#hero, #hero-height, #hero-styles {
 		height:80vh;
 	}
-	
+
 	.hero-title {
 		font-size: 40px;
 		font-weight: 600;
@@ -1442,15 +1449,15 @@ OLIVERENGEL.COM
 		-webkit-transition: color 0.2s ease-in-out 0s!important;
 		transition: color 0.2s ease-in-out 0s!important;
 	}
-	
+
 	.text-align-center .hero-title {
 		margin:0 auto;
 	}
-	
+
 	.light-content .hero-title {
 		color:#fff;
 	}
-	
+
 	.hero-title span {
 		display: inline-block;
 		margin: 0 4px;
@@ -1460,13 +1467,13 @@ OLIVERENGEL.COM
 		padding-top: 50px;
 		box-sizing: border-box;
 	}
-	
+
 	.animate .hero-title span {
 		padding-top:0;
 		-webkit-transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
 		transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
 	}
-	
+
 	.hero-subtitle {
 		font-size: 16px;
 		color: #999;
@@ -1478,12 +1485,12 @@ OLIVERENGEL.COM
 		transition: color 0.2s ease-in-out 0s !important;
 	}
 
-	
+
 	.light-content .hero-subtitle {
 		color:#fff;
 		opacity:0.5;
 	}
-	
+
 	.hero-subtitle span {
 		display: inline-block;
 		margin:0 3px;
@@ -1493,28 +1500,28 @@ OLIVERENGEL.COM
 		padding-top: 30px;
 		box-sizing: border-box;
 	}
-	
+
 	.animate .hero-subtitle span {
 		padding-top:0;
 		-webkit-transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
 		transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
 	}
-	
+
 	#hero-image {
 		background-size:cover;
 		position:relative;
 		width:100%;
 		height:100vh;
-		opacity:1;		
+		opacity:1;
 		background: center center no-repeat fixed;
 		background-size:cover;
 	}
-	
+
 	#hero-image.bgrelative {
 		background: center center no-repeat scroll;
 		background-size:cover;
 	}
-	
+
 	#image-border-left, #image-border-right {
 		height: 100%;
 		width: 220px;
@@ -1527,34 +1534,34 @@ OLIVERENGEL.COM
 		transform: translateX(0);
 		background: #fff;
 	}
-	
+
 	#image-border-left {
 		left:0;
 	}
-	
+
 	#image-border-right {
 		right:0;
 	}
-	
+
 /*--------------------------------------------------
 	06. Main Content
----------------------------------------------------*/		
-	
+---------------------------------------------------*/
+
 	#main {
 		position:relative;
 	}
-	
+
 	#main.hidden {
 		-webkit-transition: all 0s ease-in-out 0.4s;
 		transition: all 0s ease-in-out 0.4s;
 		opacity:0;
 	}
-	
+
 	#main-content {
 		opacity:1;
 		position:relative;
-	}	
-	
+	}
+
 	.page-action-overlay {
 		position:fixed;
 		z-index:1000;
@@ -1570,14 +1577,14 @@ OLIVERENGEL.COM
 		-webkit-transition: all 0.2s ease-in-out 0.5s;
 		transition: all 0.2s ease-in-out 0.5s;
 	}
-	
+
 	/*.page-action-overlay.active {
 		opacity:1;
 		visibility:visible;
 		-webkit-transition: all 0.2s ease-in-out 0.1s;
 		transition: all 0.2s ease-in-out 0.1s;
 	}*/
-	
+
 	.close-page-action {
 		position:fixed;
 		height:100vh;
@@ -1588,11 +1595,11 @@ OLIVERENGEL.COM
 		bottom:0;
 		cursor: url("images/close.png"), e-resize;
 	}
-	
+
 /*--------------------------------------------------
 	07. Footer Elements
----------------------------------------------------*/		
-	
+---------------------------------------------------*/
+
 	footer {
 		position:relative;
 		padding:70px 120px 110px 120px;
@@ -1601,7 +1608,7 @@ OLIVERENGEL.COM
 		z-index:5;
 		box-sizing:border-box;
 	}
-	
+
 	.socials-text {
 		height: auto;
 		line-height: 25px;
@@ -1613,7 +1620,7 @@ OLIVERENGEL.COM
 		bottom: 0;
 		display: table;
 	}
-	
+
 	.socials-text li {
 		margin-right: 20px;
 		margin-left: 0px;
@@ -1625,13 +1632,13 @@ OLIVERENGEL.COM
 		line-height:30px;
 		position:relative;
 	}
-		
+
 	.socials-text li:last-child {
 		margin-right: 0px;
 	}
-	
+
 	.socials-text li a {
-		color: #000;		
+		color: #000;
 		font-size:14px;
 		font-weight: 500;
 		font-family: 'Poppins', sans-serif;
@@ -1639,39 +1646,39 @@ OLIVERENGEL.COM
 		-webkit-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
 	}
-	
+
 	.socials-text:hover li  a {
 		color: #ccc;
 	}
-	
+
 	.light-content .socials-text:hover li  a {
 		color: rgba(255,255,255,0.3);
 	}
-	
+
 	.socials-text li a:hover {
 		color: #000;
 	}
-	
+
 	.light-content .socials-text li a {
 		color: #fff;
 	}
-	
+
 	.light-content .socials-text li a:hover {
 		color: #fff;
 	}
-	
 
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	#page-action-holder {
 		position: fixed;
 		right: 120px;
 		bottom: 130px;
 		height: 50px;
-		width: 50px;	
+		width: 50px;
 		opacity:0;
 		z-index:10;
 		-webkit-transform: scale(0.8);
@@ -1679,7 +1686,7 @@ OLIVERENGEL.COM
 		webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
-	
+
 	#page-action-holder.is-active.is-visible {
 		opacity:1;
 		-webkit-transform: scale(1);
@@ -1687,9 +1694,9 @@ OLIVERENGEL.COM
 		-o-transform: scale(1);
 		-ms-transform: scale(1);
 		transform: scale(1);
-		
+
 	}
-	
+
 	#open-filters, #shareproject, #backtoworks {
 		position:relative;
 		height:50px;
@@ -1697,7 +1704,7 @@ OLIVERENGEL.COM
 		margin-top:0px;
 		cursor:pointer;
 	}
-	
+
 	#open-filters i, #shareproject i, #backtoworks i {
 		color: #000;
 		position: absolute;
@@ -1712,25 +1719,25 @@ OLIVERENGEL.COM
 		-webkit-transition: all 0.4s ease-in-out 0s;
 		transition: all 0.4s ease-in-out 0s;
 	}
-	
+
 	.light-content #open-filters i, .light-content #shareproject i, .light-content #backtoworks i {
 		color: #FFF;
 	}
-	
+
 	.circle-action {
 	  	fill: transparent;
 	  	stroke: #000;
 	}
-	
+
 	.light-content .circle-action, .light-content.color-content .circle-action {
 		stroke: #fff;
 	}
-	
+
 	.is-inner{
 		stroke-width: 2;
 		opacity:0.2;
 	}
-  
+
 	.is-outer{
 		stroke-width: 2;
 		stroke-dasharray: 227;
@@ -1739,98 +1746,98 @@ OLIVERENGEL.COM
 		transform: rotate(-90deg);
 		transition: stroke-dashoffset 400ms linear;
 	}
-	
+
 	#open-filters:hover .is-outer, #backtoworks:hover .is-outer, #shareproject:hover .is-outer {
 		stroke-dashoffset: 0;
 	}
-	
+
 	.copyright {
 		font-size:12px;
 		width: 100%;
 		margin-top:15px;
-	}	
-		
+	}
+
 /*--------------------------------------------------
 	08. Responsive
----------------------------------------------------*/			
-			
+---------------------------------------------------*/
+
 @media only screen and (max-width: 1466px) {
-	
+
 	#header-container {
 		padding: 0 100px;
 	}
-	
+
 	.menu-overlay.slide-in nav {
 		width:40vw;
     	-webkit-transform: translateX(40vw);
     	transform: translateX(40vw);
 	}
-	
+
 	.menu-overlay nav.open {
 		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
-	
+
 	#hero-caption {
 		padding-left: 100px;
 		padding-right: 100px;
 	}
-	
+
 	#image-border-left, #image-border-right {
 		width: 100px;
 	}
-	
+
 	#page-action-holder {
     	right: 25px;
 	}
-	
+
 	footer {
     	padding: 70px 100px 110px 100px;
 	}
-	
+
 	.full .container {
 		padding: 0 100px;
 	}
-	
+
 	.container {
 		max-width:1580px;
 		width:100%;
 		padding: 0 100px;
 	}
-	
+
 }
 
 
 @media only screen and (max-width: 1024px) {
-	
+
 	header {
 		position:relative;
 		top: 0!important;
 	}
-	
+
 	#header-container {
 		padding: 20px 0;
 		margin: 0px auto;
 	}
-	
+
 	.menu-info {
 		padding-top: 20px;
 	}
-	
+
 	#logo {
 		margin-left:50px;
 		margin-bottom:20px;
 	}
-	
+
 	nav {
 		background: #fff;
 		padding: 0 50px;
 	}
-	
+
 	.flexnav li a {
     	color: #222 !important;
 	}
-	
+
 	#menu-burger-dots {
 		float: none;
 		margin-left: 0;
@@ -1838,18 +1845,18 @@ OLIVERENGEL.COM
 		position: absolute;
 		top: 20px;
 	}
-	
+
 	#menu-burger {
 		display: block;
 		position: absolute;
 		right: 50px;
 		top: 32px;
 	}
-	
+
 	#menu-burger span.touch-button {
 		display:none;
 	}
-	
+
 	#page-action-holder {
 		right:50px;
 		position:absolute;
@@ -1857,11 +1864,11 @@ OLIVERENGEL.COM
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
-	
+
 	footer {
     	padding: 70px 50px 110px 50px;
 	}
-		
+
 	.progress-page {
 		right: 50px;
 		position:absolute;
@@ -1869,104 +1876,104 @@ OLIVERENGEL.COM
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
-	
+
 	.showcase-list li {
     	display: block;
 	}
-	
+
 	#hero {
 		margin-top:-120px;
 	}
-	
+
 	#hero, #hero-styles {
 		position:relative;
 		height: 100vh;
 	}
-	
+
 	#hero-height {
 		display:none;
 	}
-	
-	#hero-caption { 
+
+	#hero-caption {
 		position:fixed;
 		max-width:100%;
 		top:0;
 		padding: 0 50px;
 	}
-	
+
 	#hero-image {
 		background: center center no-repeat scroll;
 		background-size:cover!important;
 	}
-	
+
 	#image-border-left, #image-border-right {
 		width: 50px;
 	}
-	
+
 	.full .container, .container {
 		padding: 0 50px;
 	}
-	
+
 	#showcase {
     	position: relative;
 		padding: 100px 20px 0px 20px;
 	}
-	
+
 	.showcase-list li a {
     	padding: 15px 25px;
 	}
-	
+
 	#menu-overlay .copyright {
     	position: relative;
 	}
-	
+
 	.destroy {
 		display:none;
 	}
-	
-	
+
+
 }
 
 
 @media only screen and (max-width: 767px) {
-	
+
 	#logo {
 		margin-left:40px;
 	}
-	
+
 	nav {
 		background: #fff;
 		padding: 0 40px;
 	}
-	
+
 	#menu-burger {
 		display: block;
 		position: absolute;
 		right: 40px;
 		top: 32px;
 	}
-	
+
 	.hero-title {
 		font-size: 36px;
 		line-height:30px;
 	}
-	
+
 	.hero-title span {
 		margin: 0 4px;
 		line-height: 40px;
 		height: 40px;
 		padding-top: 40px;
 	}
-	
+
 	#image-border-left, #image-border-right {
 		width: 40px;
 	}
-	
+
 	.showcase-list li {
 		font-size: 24px;
 		line-height: 36px;
 	}
-	
+
 	#showcase-gallery {
 		width: 70%;
 		height: 70%;
@@ -1975,11 +1982,11 @@ OLIVERENGEL.COM
 		bottom: 15%;
 		left: 15%;
 	}
-	
+
 	footer {
 		padding: 50px 40px;
 	}
-	
+
 	#page-action-holder {
 		top:50px;
 		right:40px;
@@ -1988,105 +1995,105 @@ OLIVERENGEL.COM
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
-	
-	#hero-caption { 
+
+	#hero-caption {
 		padding: 0 40px;
 	}
-	
+
 	.container, .small .container {
     	padding: 0 40px;
 	}
-	
+
 	.full .container {
 		padding: 0 40px;
 	}
-	
+
 	.one_half {
     	width: 100%;
-	}	
+	}
 
 	.one_third {
 		width: 100%;
-	}	
+	}
 
 	.one_fourth {
 		width: 100%;
-	}	
+	}
 
 	.one_fifth {
 		width: 100%;
-	}	
+	}
 
 	.one_sixth {
 		width: 100%;
-	}	
+	}
 
 	.two_fifth {
 		width: 100%;
-	}	
+	}
 
 	.two_fourth {
 		width: 100%;
-	}		
+	}
 
 	.two_third {
 		width: 100%;
-	}	
+	}
 
 	.three_fifth {
 		width: 100%;
-	}	
+	}
 
 	.three_fourth {
 		width: 100%;
-	}	
+	}
 
 	.four_fifth {
 		width: 100%;
-	}	
+	}
 
 	.five_sixth {
 		width: 100%;
-	}	
+	}
 
 	.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .two_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
 		margin-bottom: 20px;
 		margin-right: 0%;
 	}
-	
+
 }
 
 
-@media only screen and (max-width: 479px) {	
-	
+@media only screen and (max-width: 479px) {
+
 	#logo {
 		margin-left:30px;
 	}
-	
+
 	nav {
 		background: #fff;
 		padding: 0 30px;
 	}
-	
+
 	#menu-burger-dots {
     	right: 70px;
 	}
-	
+
 	#menu-burger {
 		display: block;
 		position: absolute;
 		right: 30px;
 		top: 32px;
 	}
-	
+
 	#menu-overlay {
 		width:100%;
 	}
-	
+
 	#showcase-gallery {
 		display:none;
 	}
-	
+
 	#page-action-holder {
 		left: 0;
 		position: relative;
@@ -2097,7 +2104,7 @@ OLIVERENGEL.COM
 		top: auto;
 		margin-bottom: 30px;
 	}
-		
+
 	.progress-page {
 		right: 30px;
 		position:absolute;
@@ -2105,48 +2112,48 @@ OLIVERENGEL.COM
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
-	
+
 	.hero-title {
 		font-size: 24px;
 		line-height:20px;
 	}
-	
+
 	.hero-title span {
 		margin: 0 3px;
 		line-height: 30px;
 		height: 30px;
 		padding-top: 30px;
 	}
-	
-	#hero-caption { 
+
+	#hero-caption {
 		padding: 0 30px;
 		padding-top:0px;
 	}
-	
+
 	#image-border-left, #image-border-right {
 		width: 30px;
 	}
-	
+
 	h1.big-title {
     	font-size: 30px;
 		line-height:20px;
 	}
-	
+
 	.container, .small .container {
     	padding: 0 30px;
 	}
-	
+
 	.full .container {
 		padding: 0 30px;
 	}
-	
+
 	.row_padding_bottom {
 		padding-bottom: 50px;
 	}
-	
+
 	.row_padding_top {
     	padding-top: 60px;
 	}
 }
-		
-}			
+
+}
