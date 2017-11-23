@@ -21,14 +21,6 @@ OLIVERENGEL.COM
 -------------------------------------------------------------------*/
 
 /*--------------------------------------------------
-	00. Processing Sketch
----------------------------------------------------*/
-
-
-
-
-
-/*--------------------------------------------------
 	01. General Settings
 ---------------------------------------------------*/
 
@@ -59,7 +51,6 @@ OLIVERENGEL.COM
 	body.hidden {
 		opacity:0;
 	}
-
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 		border: 0;
@@ -1076,6 +1067,10 @@ OLIVERENGEL.COM
 		background:#000;
 	}
 
+	#about-sub {
+		
+	}
+
 	#menu-burger span:nth-child(1) {
 	  top: 0px;
 	}
@@ -1147,18 +1142,14 @@ OLIVERENGEL.COM
 		visibility:visible;
 	}
 
-
 	#denote{
-
 		font-family: 'Roboto', sans-serif;
 		font-size: 10px;
 		position: absolute;
 		font-weight: 400;
 		margin-left: 10px;
 		color: #FF1B0B;
-
 	}
-
 
 	#menu-burger-dots {
 		width: 24px;
