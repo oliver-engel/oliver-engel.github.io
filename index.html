@@ -21,13 +21,9 @@
     <link rel="manifest" href="favicons/manifest.json">
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
+    <script src="js/baffle.min.js"></script>
 
 </head>
-
-
-
-
-
 
 
 <body class="hidden">
@@ -47,43 +43,42 @@
 
         <!-- Header -->
         <header class="scroll-hide">
+
             <div id="header-container">
 
-            <!-- Logo -->
-            <div id="logo">
-                <a class="ajax-link" data-type="page-transition" href="https://oliverengel.com/">
-                    <img class="black-logo" src="images/logo.gif" alt="Logo Black">
+              <!-- Logo -->
+              <div id="logo">
+                  <a class="ajax-link" data-type="page-transition" href="https://oliverengel.com/">
+                      <img class="black-logo" src="images/logo.gif" alt="Logo Black">
+                  </a>
+              </div>
+              <!--/Logo -->
 
-                </a>
-            </div>
-            <!--/Logo -->
+              <!-- Navigation -->
+              <nav>
+                  <ul data-breakpoint="1024" class="flexnav">
+                      <li><a class="active" href="https://oliverengel.com/">Portfolio</a>
 
-            <!-- Navigation -->
-            <nav>
-                <ul data-breakpoint="1024" class="flexnav">
-                    <li><a class="active" href="https://oliverengel.com/">Portfolio</a>
+                      </li>
+                      <li><a class="ajax-link" href="about" data-type="page-transition">About</a></li>
+                      <li><a class="ajax-link" href="contact" data-type="page-transition">Contact</a></li>
 
-                    </li>
-                    <li><a class="ajax-link" href="about" data-type="page-transition">About</a></li>
-                    <li><a class="ajax-link" href="contact" data-type="page-transition">Contact</a></li>
+                  </ul>
+              </nav>
+              <!--/Navigation -->
 
-                </ul>
-            </nav>
-            <!--/Navigation -->
-
-            <!-- Menu Burger -->
-            <div id="menu-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <!--/Menu Burger -->
+              <!-- Menu Burger -->
+              <div id="menu-burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <!--/Menu Burger -->
 
             </div>
         </header>
         <!--/Header -->
-
 
         <!-- Portfolio Filters -->
 
@@ -105,6 +100,7 @@
         <!--/Portfolio Filters -->
 
 
+
         <!-- Main -->
         <div id="main">
 
@@ -115,7 +111,9 @@
                     <div id="hero-caption">
                         <div class="inner">
 
-                            <div class="hero-title">I'm Oliver—a designer, artist, and coder.</div>
+                            <div class="hero-title">I'm Oliver—a designer, artist, & coder.</div>
+
+
                             <div style="line-height: 15px !important;" class="hero-subtitle">(and photographer, creative writer, illustrator &amp; Spotify junkie)</div>
 
                         </div>
@@ -136,6 +134,21 @@
                     <!-- Portfolio Columns -->
                     <div id="portfolio" data-col="2">
 
+                      <div class="item photography">
+                          <div class="item-content">
+                              <a href="construction" class="project-link" data-type="page-transition">
+                                  <div class="item-image" data-src="images/emergent.jpg"></div>
+                              </a>
+                              <div class="item-caption">
+                                  <div class="item-title">Emergent</div>
+                                  <div class="item-sub-mask">
+                                      <div class="item-cat">UX/UI</div>
+                                      <div class="item-case">View Project</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
                   	<div class="item photography">
                         <div class="item-content">
                             <a href="computing-paths" class="project-link" data-type="page-transition">
@@ -145,6 +158,36 @@
                                 <div class="item-title">Computing Paths</div>
                                 <div class="item-sub-mask">
                                     <div class="item-cat">Content Direction</div>
+                                    <div class="item-case">View Project</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item photography">
+                        <div class="item-content">
+                            <a href="construction" class="project-link" data-type="page-transition">
+                                <div class="item-image" data-src="images/foundry.jpg"></div>
+                            </a>
+                            <div class="item-caption">
+                                <div class="item-title">Foundry</div>
+                                <div class="item-sub-mask">
+                                    <div class="item-cat">UX/UI, Python Programming</div>
+                                    <div class="item-case">View Project</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item photography">
+                        <div class="item-content">
+                            <a href="construction" class="project-link" data-type="page-transition">
+                                <div class="item-image" data-src="images/codeart.jpg"></div>
+                            </a>
+                            <div class="item-caption">
+                                <div class="item-title">Code & Art</div>
+                                <div class="item-sub-mask">
+                                    <div class="item-cat">Python & Java Programming</div>
                                     <div class="item-case">View Project</div>
                                 </div>
                             </div>
@@ -166,7 +209,7 @@
                         </div>
                     </div>
 
-                    <div class="item photography">
+                    <!-- <div class="item photography">
                         <div class="item-content">
                             <a href="about" class="project-link" data-type="page-transition">
                                 <div class="item-image" data-src="images/branding.jpg"></div>
@@ -179,11 +222,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="item photography">
                         <div class="item-content">
-                            <a href="tidbits" class="project-link" data-type="page-transition">
+                            <a href="construction" class="project-link" data-type="page-transition">
                                 <div class="item-image" data-src="images/tidbits.jpg"></div>
                             </a>
                             <div class="item-caption">
@@ -266,6 +309,8 @@
     <script src="js/plugins.js"></script>
 
     <script src="js/scripts.js"></script>
+
+
 
 
 

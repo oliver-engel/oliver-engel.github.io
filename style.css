@@ -479,6 +479,8 @@ OLIVERENGEL.COM
 		background: none repeat scroll 0 0 rgba(255,255,255,0.3);
 	}
 
+	/* PARAGRAPH SETTINGS*/
+
 	p {
 		font-size:16px;
 		margin-bottom:10px;
@@ -1067,9 +1069,7 @@ OLIVERENGEL.COM
 		background:#000;
 	}
 
-	#about-sub {
-		
-	}
+
 
 	#menu-burger span:nth-child(1) {
 	  top: 0px;
