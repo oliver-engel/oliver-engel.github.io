@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
 	"use strict";
-  scrollTop();
+  
 	FirstLoad();
 	HeroSection();
 	AjaxLoad();
@@ -22,9 +22,9 @@ $(document).ready(function() {
 });
 
 $(window).on("load", function() {
-
+  scrollTop();
 	LazyLoad();
-	scrollTop();
+
 });
 
 
