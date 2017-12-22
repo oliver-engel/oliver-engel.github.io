@@ -251,6 +251,7 @@ OLIVERENGEL.COM
 
 	ul {
 		list-style: disc;
+
 	}
 
 	ol {
@@ -265,8 +266,8 @@ OLIVERENGEL.COM
 	}
 
 	li {
-		line-height: 20px;
-		color:#333;
+		line-height: 30px;
+		color:#a2a2a2;
 		margin-bottom:10px;
 	}
 
@@ -1660,7 +1661,28 @@ OLIVERENGEL.COM
 
 
 
+.accordion{
+	background-color: #eee;
+    color: #444;
+    cursor: pointer;
+		font-size:25px;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
 
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
 
 
 
