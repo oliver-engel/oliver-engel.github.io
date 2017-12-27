@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 
 	FirstLoad();
+	LazyLoad();
 	HeroSection();
 	AjaxLoad();
 	HideShowHeader();
@@ -27,8 +28,12 @@ $(document).ready(function() {
 });
 
 $(window).on("load", function() {
-  scrollTop();
-	LazyLoad();
+	$('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 1015);
+    });
+
 
 });
 
@@ -359,6 +364,7 @@ Function Ajax Load
 				FirstLoad();
 				HeroSection();
 				LazyLoad();
+				scrollTop();
 				MasonryPortfolio();
 				HideShowHeader();
 				FooterAppear();
