@@ -32,7 +32,7 @@ $(window).on("load", function() {
 
 
 });
-
+}
 
 /*--------------------------------------------------
 Function Scroll to Top
