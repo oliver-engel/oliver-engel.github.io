@@ -21,6 +21,15 @@ OLIVERENGEL.COM
 -------------------------------------------------------------------*/
 
 /*--------------------------------------------------
+	QUICK TRANSFORMS
+---------------------------------------------------*/
+
+.padtop25px{
+
+	padding-bottom:25px;
+}
+
+/*--------------------------------------------------
 	01. General Settings
 ---------------------------------------------------*/
 
@@ -1188,6 +1197,56 @@ OLIVERENGEL.COM
 		margin-top: 4px;
 	}
 
+
+	/*--------------------------------------------------
+		03b. Button Toggle
+	---------------------------------------------------*/
+
+	.buttonToggle{
+
+
+		font-size: 20px;
+		line-height: 36px;
+
+		font-weight: 400;
+		font-family: 'Poppins', sans-serif;
+
+		/*padding: 5px 15px;*/
+		padding-left:3px;
+		/*background-color: #5B86F8;*/
+		color: #5B86F8;
+		border:4px;
+		border-color:#5B86F8;
+		border-radius: 5px;
+		outline:none;
+		overflow:hidden;
+    transition: .3s;
+
+
+
+
+	}
+
+	.buttonToggle:hover{
+
+		opacity:.5;
+
+    transition: .3s;
+
+	}
+
+	.rotate{
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+}
+
+.rotate.down{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
 /*--------------------------------------------------
 	04. Overlay Menu
 ---------------------------------------------------*/
@@ -1661,28 +1720,6 @@ OLIVERENGEL.COM
 
 
 
-.accordion{
-	background-color: #eee;
-    color: #444;
-    cursor: pointer;
-		font-size:25px;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color: #ccc;
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-}
 
 
 
