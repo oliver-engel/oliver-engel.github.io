@@ -3,8 +3,7 @@ $(document).ready(function() {
 
 	"use strict";
 
-  toggler();
-	rotater();
+
 	FirstLoad();
 	HeroSection();
 	AjaxLoad();
@@ -20,6 +19,9 @@ $(document).ready(function() {
 	CollagePlus();
 	PlayVideo();
 	PageShare();
+
+	toggler();
+	rotater();
 
 
 });
@@ -40,6 +42,44 @@ function scrollTop(){
             scrollTop : 0                       // Scroll to top of body
         }, 1015);
     });
+}
+
+/*--------------------------------------------------
+Function toggler
+---------------------------------------------------*/
+
+function toggler(){
+	$("#toggler-challenge").click(function(){
+		$("#div-challenge").slideToggle();
+	});
+
+
+	$("#toggler-research").click(function(){
+		$("#div-research").slideToggle();
+	});
+
+	$("#toggler-ideation").click(function(){
+		$("#div-ideation").slideToggle();
+	});
+
+	$("#toggler-testing").click(function(){
+		$("#div-testing").slideToggle();
+	});
+
+	$("#toggler-final").click(function(){
+		$("#div-final").slideToggle();
+	});
+}
+
+/*--------------------------------------------------
+Function toggler
+---------------------------------------------------*/
+
+function rotater(){
+	$(".rotate").click(function(){
+		$(this).toggleClass("down")  ;
+	})
+
 }
 
 
