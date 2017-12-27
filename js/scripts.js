@@ -38,7 +38,9 @@ $('body').on('pageinit', function() {
 Function Scroll to Top
 ---------------------------------------------------*/
 function scrollTop(){
-	$('#return-to-top').click(function() {      // When arrow is clicked
+	$('#return-to-top').click(function() {
+		    console.log("working!");
+				// When arrow is clicked
         $('body,html').animate({
             scrollTop : 0                       // Scroll to top of body
         }, 1015);
