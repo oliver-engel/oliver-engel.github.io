@@ -29,6 +29,10 @@ OLIVERENGEL.COM
 	padding-bottom:25px;
 }
 
+.subtext{
+
+}
+
 .popup_style{
 		text-align: center;
 	  min-height: 20px;
@@ -40,7 +44,7 @@ OLIVERENGEL.COM
     margin-bottom: 20px;
     background-color: #f5f5f5;
 
-		
+
 
 
 		border-left: 5px solid #F59740;
@@ -1190,7 +1194,14 @@ OLIVERENGEL.COM
 		position: absolute;
 		font-weight: 400;
 		margin-left: 10px;
-		color: #FF1B0B;
+		color: #d3d3d3;
+	}
+
+	#workplace{
+
+
+		color:#999999;
+
 	}
 
 	#menu-burger-dots {
