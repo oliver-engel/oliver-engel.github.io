@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 	"use strict";
 
-	LazyLoad();
+
 
   toggler();
 	rotater();
@@ -28,6 +28,7 @@ $(document).ready(function() {
 
 $(window).on("load", function() {
   scrollTop();
+	LazyLoad();
 
 
 });
