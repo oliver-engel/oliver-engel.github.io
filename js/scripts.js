@@ -36,6 +36,12 @@ $(window).on('load', function() {
         }, 1015);
     });
 
+
+		$('#fadeandscale').popup({
+				pagecontainer: '.container',
+				transition: 'all 0.3s'
+		});
+
 });
 
 
