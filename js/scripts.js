@@ -43,43 +43,7 @@ function scrollTop(){
 }
 
 
-/*--------------------------------------------------
-Function toggler
----------------------------------------------------*/
 
-function toggler(){
-	$("#toggler-challenge").click(function(){
-		$("#div-challenge").slideToggle();
-	});
-
-
-	$("#toggler-research").click(function(){
-		$("#div-research").slideToggle();
-	});
-
-	$("#toggler-ideation").click(function(){
-		$("#div-ideation").slideToggle();
-	});
-
-	$("#toggler-testing").click(function(){
-		$("#div-testing").slideToggle();
-	});
-
-	$("#toggler-final").click(function(){
-		$("#div-final").slideToggle();
-	});
-}
-
-/*--------------------------------------------------
-Function rotater
----------------------------------------------------*/
-
-function rotater(){
-	$(".rotate").click(function(){
-		$(this).toggleClass("down");
-	})
-
-}
 
 
 
