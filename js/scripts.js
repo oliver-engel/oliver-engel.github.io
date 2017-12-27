@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 });
 
-$('body').on('pageinit', function() {
+$('window').on("load", function() {
   scrollTop();
 	LazyLoad();
 
@@ -38,10 +38,9 @@ $('body').on('pageinit', function() {
 Function Scroll to Top
 ---------------------------------------------------*/
 function scrollTop(){
-	$('#return-to-top').click(function() {
-		    console.log("working!");
-				// When arrow is clicked
-        $('body,html').animate({
+	$('#return-to-top').click(function() {      // When arrow is clicked
+				console.log("working!");
+				$('body,html').animate({
             scrollTop : 0                       // Scroll to top of body
         }, 1015);
     });
