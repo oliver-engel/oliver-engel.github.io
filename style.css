@@ -1197,6 +1197,16 @@ OLIVERENGEL.COM
 		color: #d3d3d3;
 	}
 
+	#denote2{
+		font-family: 'Roboto', sans-serif;
+		font-size: 10px;
+		position: absolute;
+		font-weight: 400;
+		margin-left: 10px;
+		color: #5b86f8;
+		text-transform: uppercase;
+	}
+
 	#workplace{
 
 
