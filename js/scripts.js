@@ -3,8 +3,6 @@ $(document).ready(function() {
 
 	"use strict";
 
-
-
   toggler();
 	rotater();
 	FirstLoad();
@@ -30,9 +28,8 @@ $(window).on("load", function() {
   scrollTop();
 	LazyLoad();
 
-
 });
-}
+
 
 /*--------------------------------------------------
 Function Scroll to Top
