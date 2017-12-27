@@ -23,6 +23,8 @@
     <meta name="theme-color" content="#ffffff">
 
 
+
+
     <!-- JQUERY -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -33,16 +35,18 @@
     <script src="https://use.fontawesome.com/6c96244923.js"></script>
 
 
+    <!--MAPBOX TEST -->
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.js'></script>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.2/mapbox-gl.css' rel='stylesheet' />
+
+
 </head>
 
 <body class="hidden">
 
-
-
 	<main>
-
-
-
 
 	<div class="cd-index cd-main-content">
 
@@ -127,40 +131,12 @@
             </div>
 
 
-            <div id="fadeandscale" class="popup_style" style="text-align:center;">
-
-                <h4 style="text-align:center !important; padding-top:10px;">Contact</h4>
-
-                <p style=padding-bottom:4px;>oliverengel6@gmail.com </p>
-                <center><ul class="socials-text has-animation" data-delay="10" >
-                    <li><a href="https://dribbble.com/oliverengel" target="_blank"><i class="fa fa-dribbble" style="font-size:17px"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/oliver-engel-5b5abb132/" target="_blank"><i class="fa fa-linkedin" style="font-size:17px"></i></a></li>
-
-                    <li><a href="https://www.instagram.com/oliverengel/" target="_blank"><i class="fa fa-instagram" style="font-size:17px"></i></a></li>
-
-                </ul></center>
-
-
-            </div>
 
 
         	<!-- Main Content -->
             <div id="main-content">
 
-              <style>
-                    #fadeandscale {
-                        -webkit-transform: scale(0.8);
-                           -moz-transform: scale(0.8);
-                            -ms-transform: scale(0.8);
-                                transform: scale(0.8);
-                    }
-                    .popup_visible #fadeandscale {
-                        -webkit-transform: scale(1);
-                           -moz-transform: scale(1);
-                            -ms-transform: scale(1);
-                                transform: scale(1);
-                    }
-              </style>
+
 
                 <!-- Row -->
                 <div class="vc_row full row_padding_top row_padding_bottom">
@@ -217,14 +193,7 @@
         </div>
         <!--/Main -->
 
-        <script>
-              $(document).ready(function () {
-                  $('#fadeandscale').popup({
-                      pagecontainer: '.container',
-                      transition: 'all 0.3s'
-                  });
-              });
-              </script>
+
 
 
 
@@ -260,36 +229,58 @@
 </main>
 
 
-    <div class="cd-cover-layer invisible"></div>
-
-    <!-- SCRIPTS -->
-	  <script src="js/jquery.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/scripts.js"></script>
-    <!--/SCRIPTS-->
-
-    <div class="cd-cover-layer invisible"></div>
+<div class="cd-cover-layer invisible"></div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/plugins.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/plugins.js"></script>
 
-    <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 
-    <!-- Include jQuery Popup Overlay -->
-    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+<!-- Include jQuery Popup Overlay -->
+<script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
 
-    <script>
-      $(document).ready(function() {
+<div id="fadeandscale" class="popup_style" style="text-align:center;">
 
-        // Initialize the plugin
-        $('#my_popup').popup();
+    <h4 style="text-align:center !important; padding-top:10px;">Contact</h4>
+
+    <p style=padding-bottom:4px;>oliverengel6@gmail.com </p>
+    <center><ul class="socials-text has-animation" data-delay="10" >
+        <li><a href="https://dribbble.com/oliverengel" target="_blank"><i class="fa fa-dribbble" style="font-size:17px"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/oliver-engel-5b5abb132/" target="_blank"><i class="fa fa-linkedin" style="font-size:17px"></i></a></li>
+
+        <li><a href="https://www.instagram.com/oliverengel/" target="_blank"><i class="fa fa-instagram" style="font-size:17px"></i></a></li>
+
+    </ul></center>
 
 
-      });
-    </script>
+</div>
+
+      <script>
+        $(document).ready(function() {
+
+          // Initialize the plugin
+          $('#my_popup').popup();
 
 
+        });
+      </script>
+
+
+      <style>
+      #fadeandscale {
+          -webkit-transform: scale(0.8);
+             -moz-transform: scale(0.8);
+              -ms-transform: scale(0.8);
+                  transform: scale(0.8);
+      }
+      .popup_visible #fadeandscale {
+          -webkit-transform: scale(1);
+             -moz-transform: scale(1);
+              -ms-transform: scale(1);
+                  transform: scale(1);
+      }
+      </style>
 
 </body>
 
