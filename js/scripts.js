@@ -27,9 +27,13 @@ $(document).ready(function() {
 
 });
 
-$('window').on("load", function() {
-  scrollTop();
-	LazyLoad();
+$(window).on('load', function() {
+	$('#return-to-top').click(function() {      // When arrow is clicked
+				console.log("working!");
+				$('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 1015);
+    });
 
 });
 
