@@ -78,7 +78,7 @@ Function toggler
 function rotater(){
 	$(".rotate").click(function(){
 		$(this).toggleClass("down")  ;
-	})
+	});
 
 }
 
@@ -129,11 +129,11 @@ Function FirstLoad
 		});
 
 		$("header.solid, #image-border-left, #image-border-right, #menu-overlay").css('background', function () {
-			return $("#page-content").data('bgcolor')
+			return $("#page-content").data('bgcolor');
 		});
 
 		$("h1, h2, h3, h4, h5, h6, .hero-title, #open-filters, #open-share, #backtoworks, [data-tooltip], .light-content a.link, .post-title, .blog-numbers").css('color', function () {
-			return $("#page-content").data('textcolor')
+			return $("#page-content").data('textcolor');
 		});
 
 		if( jQuery('.tooltip-hover').length > 0 ){
@@ -213,7 +213,7 @@ Function Hero Section
 			for (index = 0; index < total; index ++){
 				$(this).append($("<span /> ").text(words[index]));
 			}
-		})
+		});
 	}//End Hero Section
 
 
@@ -366,11 +366,11 @@ Function Ajax Load
 				Lightbox();
 				AppearIteam();
 				BackToTop();
-				ContactForm();
+
 				CollagePlus();
 				PlayVideo();
 				PageShare();
-				ContactMap();
+
 
 
 				if( !transitionsSupported() ) isAnimating = false;
@@ -400,7 +400,7 @@ Function Hide Show Header
 			var lastScrollTop = 0;
 			var delta = 50;
 			var navbarHeight = 250;
-			var navbarHideAfter = navbarHeight
+			var navbarHideAfter = navbarHeight;
 
 			$(window).scroll(function(event){
 				didScroll = true;
@@ -527,8 +527,8 @@ Function Masonry Portfolio
 						columnNumb = $('#portfolio').attr('data-col');
 					} else columnNumb = 2;
 
-					postHeight = window.innerHeight
-					postWidth = Math.floor(portfolioWidth / columnNumb)
+					postHeight = window.innerHeight;
+					postWidth = Math.floor(portfolioWidth / columnNumb);
 					$container.find('.item').each(function () {
 
 						if ( $('#portfolio').attr('data-col') === '2' ) {
@@ -552,10 +552,10 @@ Function Masonry Portfolio
 				} else if (winWidth > 1024) {
 
 					$('#portfolio-wrap').css( {width : $('#portfolio-wrap').parent().width() - 200 + 'px'});
-					var portfolioWidth = $('#portfolio-wrap').width();
+					/*var*/portfolioWidth = $('#portfolio-wrap').width();
 
 					columnNumb = 2;
-					postWidth = Math.floor(portfolioWidth / columnNumb)
+					postWidth = Math.floor(portfolioWidth / columnNumb);
 					$container.find('.item').each(function () {
 
 						$('.item').css( {
@@ -579,7 +579,7 @@ Function Masonry Portfolio
 					var portfolioWidth = $('#portfolio-wrap').width();
 
 					columnNumb = 2;
-					postWidth = Math.floor(portfolioWidth / columnNumb)
+					postWidth = Math.floor(portfolioWidth / columnNumb);
 					$container.find('.item').each(function () {
 
 						$('.item').css( {
@@ -919,37 +919,7 @@ Function Sliders
 
 
 
-/*--------------------------------------------------
-Function Contact Formular
----------------------------------------------------*/
 
-	function ContactForm() {
-
-		if( jQuery('#contact-formular').length > 0 ){
-			$('#contactform').submit(function(){
-				var action = $(this).attr('action');
-				$("#message").slideUp(750,function() {
-					$('#message').hide();
-					$('#submit').attr('disabled','disabled');
-					$.post(action, {
-						name: $('#name').val(),
-						email: $('#email').val(),
-						comments: $('#comments').val()
-					},
-					function(data){
-						document.getElementById('message').innerHTML = data;
-						$('#message').slideDown('slow');
-						$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
-						$('#submit').removeAttr('disabled');
-						if(data.match('success') != null) $('#contactform').slideUp('slow');
-					}
-				);
-				});
-				return false;
-			});
-		}
-
-	}//End ContactForm
 
 
 
@@ -1196,199 +1166,3 @@ Function Page Share
         });
 
 	}//End PageShare
-
-
-/*--------------------------------------------------
-Function Contact Map
----------------------------------------------------*/
-
-	function ContactMap() {
-
-	if( jQuery('#map_canvas').length > 0 ){
-		var latlng = new google.maps.LatLng(43.270441,6.640888);
-		var settings = {
-			zoom: 14,
-			center: new google.maps.LatLng(43.270441,6.640888),
-			mapTypeControl: false,
-			scrollwheel: false,
-			draggable: true,
-			panControl:false,
-			scaleControl: false,
-			zoomControl: false,
-			streetViewControl:false,
-			navigationControl: false};
-			var newstyle = [{
-							featureType: "all",
-							elementType: "labels.text.fill",
-							stylers: [{
-								saturation: 36
-							}, {
-								color: "#333333"
-							}, {
-								lightness: 40
-							}]
-						}, {
-							featureType: "all",
-							elementType: "labels.text.stroke",
-							stylers: [{
-								visibility: "on"
-							}, {
-								color: "#ffffff"
-							}, {
-								lightness: 16
-							}]
-						}, {
-							featureType: "all",
-							elementType: "labels.icon",
-							stylers: [{
-								visibility: "off"
-							}]
-						}, {
-							featureType: "administrative",
-							elementType: "geometry.fill",
-							stylers: [{
-								color: "#fefefe"
-							}, {
-								lightness: 20
-							}]
-						}, {
-							featureType: "administrative",
-							elementType: "geometry.stroke",
-							stylers: [{
-								color: "#fefefe"
-							}, {
-								lightness: 17
-							}, {
-								weight: 1.2
-							}]
-						}, {
-							featureType: "administrative.locality",
-							elementType: "labels.text",
-							stylers: [{
-								color: "#8d8d8d"
-							}, {
-								weight: "0.35"
-							}]
-						}, {
-							featureType: "landscape",
-							elementType: "geometry",
-							stylers: [{
-								color: "#f5f5f5"
-							}, {
-								lightness: 20
-							}]
-						}, {
-							featureType: "poi",
-							elementType: "geometry",
-							stylers: [{
-								color: "#f5f5f5"
-							}, {
-								lightness: 21
-							}]
-						}, {
-							featureType: "poi.park",
-							elementType: "geometry",
-							stylers: [{
-								color: "#dedede"
-							}, {
-								lightness: 21
-							}]
-						}, {
-							featureType: "road.highway",
-							elementType: "geometry.fill",
-							stylers: [{
-								color: "#ffffff"
-							}, {
-								lightness: 17
-							}]
-						}, {
-							featureType: "road.highway",
-							elementType: "geometry.stroke",
-							stylers: [{
-								color: "#ffffff"
-							}, {
-								lightness: 29
-							}, {
-								weight: .2
-							}]
-						}, {
-							featureType: "road.arterial",
-							elementType: "geometry",
-							stylers: [{
-								color: "#ffffff"
-							}, {
-								lightness: 18
-							}]
-						}, {
-							featureType: "road.local",
-							elementType: "geometry",
-							stylers: [{
-								color: "#ffffff"
-							}, {
-								lightness: 16
-							}]
-						}, {
-							featureType: "transit",
-							elementType: "geometry",
-							stylers: [{
-								color: "#f2f2f2"
-							}, {
-								lightness: 19
-							}]
-						}, {
-							featureType: "water",
-							elementType: "geometry",
-							stylers: [{
-								color: "#e9e9e9"
-							}, {
-								lightness: 17
-							}]
-						}];
-		var mapOptions = {
-			styles: newstyle,
-			mapTypeControlOptions: {
-				 mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'holver']
-			}
-		};
-		var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
-		var mapType = new google.maps.StyledMapType(newstyle, { name:"Grayscale" });
-			map.mapTypes.set('holver', mapType);
-			map.setMapTypeId('holver');
-
-
-		google.maps.event.addDomListener(window, "resize", function() {
-			var center = map.getCenter();
-			google.maps.event.trigger(map, "resize");
-			map.setCenter(center);
-		});
-		var contentString = '<div id="content-map-marker" style="text-align:left; padding-top:10px; padding-left:10px">'+
-			'<div id="siteNotice">'+
-			'</div>'+
-			'<h4 id="firstHeading" class="firstHeading" style="color:#000; margin-bottom:0px;"><strong>Hello Friend!</strong></h4>'+
-			'<div id="bodyContent">'+
-			'<p style="font-family:Verdana; color:#999; font-size:12px; margin-bottom:10px">Here we are. Come to drink a coffee!</p>'+
-			'</div>'+
-			'</div>';
-		var infowindow = new google.maps.InfoWindow({
-			content: contentString
-		});
-		var companyImage = new google.maps.MarkerImage('images/marker.png',
-			new google.maps.Size(58,63),<!-- Width and height of the marker -->
-			new google.maps.Point(0,0),
-			new google.maps.Point(35,20)<!-- Position of the marker -->
-		);
-		var companyPos = new google.maps.LatLng(43.270441,6.640888);
-		var companyMarker = new google.maps.Marker({
-			position: companyPos,
-			map: map,
-			icon: companyImage,
-			title:"Our Office",
-			zIndex: 3});
-		google.maps.event.addListener(companyMarker, 'click', function() {
-			infowindow.open(map,companyMarker);
-		});
-	}
-
-	return false
-
-	}//End ContactMap
