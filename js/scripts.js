@@ -26,6 +26,9 @@ $(document).ready(function() {
 
 
 
+
+
+
 });
 
 $(window).on('load', function() {
@@ -838,6 +841,7 @@ Function Sliders
 			loop:true,
 			margin:20,
 			autoHeight:false,
+			nav: true,
 			navSpeed: 600,
 			responsive:{
 				0:{
