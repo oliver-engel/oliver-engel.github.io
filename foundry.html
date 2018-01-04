@@ -141,28 +141,207 @@
 
 
                 <!-- Row -->
-                <div class="vc_row small row_padding_top">
+                <div class="vc_row small row_padding_top row_padding_bottom">
 
                     <div class="container">
 
-                        <h4 class="title-has-line has-animation" data-delay="10">Global warming has made natural disasters more frequent and more severe.</h4>
+                        <h4 class="title-has-line has-animation" data-delay="10">Foundry is a tool that lets artists, designers, and programmers generate novel fonts in seconds. </h4>
 
-                        <p class="has-animation" data-delay="40">In 2017, I watched helplessly as major hurricanes, wildfires, and other extreme weather events ravaged the United States and virtually every other area of the world. But I also witnessed a new development in the response to these disasters: people are taking to social media more than ever before in times of need. Residents would <a href="http://time.com/4921961/hurricane-harvey-twitter-facebook-social-media/" target="_blank">tweet out their locations</a>, and others would organize rescue teams on Facebook and Slack, creating a new kind of emergent effort to save human lives and provide resources to victims.
+                        <p class="has-animation" data-delay="40"> Last year, I wrote a Python program that utilizes the <a href="https://fontforge.github.io/en-US/">FontForge API</a> to distort, warp, and otherwise alter font files, from the visual aesthetic to the copyright information. I was amazed at how easily I could generate a completely novel font–which, through traditional means, is difficult and time-intensive. Foundry is a proposal for a desktop app that lets a user upload any (correctly licensed) font and generate a new one, ready to use for any project.
 
-                        <br><br>These informal support systems are here to stay. People have always formed <a href="http://journals.sagepub.com/doi/full/10.1177/0956247817721413#articleShareContainer" target="_blank">emergent groups</a>, and social media is beginning to transform the way they're organized. I began with the premise of creating a scaffolding for these groups–to connect people in need to people who want to help, in a centralized platform that more efficiently saves human lives during disasters.</p>
-
-
-
-                        <br><br>
-
-                        <h4 style="font-size:15px" class="title-has-line has-animation" data-delay="10">Choose a section to see more.</h4>
 
 
                     </div>
                 </div>
 
+                <div class="vc_row small" style="background-color:#FB6985; padding-top:75px; padding-bottom:90px">
+
+                    <div class="container">
+
+
+
+                        <p style="font-size:15px" class="subhead has-animation" data-delay="10">Foundry is built on a filter system.</p>
+
+                        <div class="video-responsive">
+                          <iframe src="https://player.vimeo.com/video/249615054?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="427" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="vc_row small" style="padding-top:75px">
+
+                    <div class="container">
+
+                         <div class="one_half">
+                           <h5><i class="fa fa-sliders" aria-hidden="true"></i> The Filter UI</h5>
+
+                            <p class="has-animation" data-delay="30" style="padding-top: 0px;">I designed the filter screen as a grid of font effect options to provide a visual approximation of what the output will be. Live preview of the specific font would take too long to load<sup>*</sup>, so these images stay static.<br><br>
+                            After the user selects a filter, a secondary menu becomes available on the right side. This allows the user to input some initial arguments for the transformation, which can always be changed later.<br><br>
+                            When the user submits their filter choice, they're met with a loading bar–transformations to font files are decently CPU-intensive, since they script iterates through three nested structures of data to transform the points of a glyph. A loading bar lets the user know that the app is working hard!</p>
+
+                        </div>
+
+                        <div class="one_half last">
+
+                          <h5><i class="fa fa-pie-chart" aria-hidden="true"></i> Reasoning</h5>
+                           <p class="has-animation" data-delay="30" style="padding-top: 0px;">I used a large filter option menu with colorful visuals for a few reasons: first, since transformations often take considerably longer than functions in most other art programs, I want the user to take more time before applying an effect.
+                             <br><br>Pairing the options with a large visual also helps the user visualize what the result will be. And finally, it creates a more welcoming and clean UI that encourages users with little to no experience with digital art programs. For power users, the same functions (as with all other tools in the program) can be accessed via the OS menu bar.</p>
+                       </div>
+
+                    </div>
+                </div>
+
+                <div class="vc_row small" style="padding-top:35px; padding-bottom:75px;">
+
+                    <div class="container">
+
+                         <div class="one_half">
+                            <a href="images/projects/foundry/filter-ui-zoom.jpg" class="image-link"><img class="has-animation" data-delay="40" src="images/projects/foundry/filter-ui-zoom.jpg" alt="Image Title"></a>
+                        </div>
+
+                        <div class="one_half last">
+
+                          <h5><i class="fa fa-cog" aria-hidden="true"></i> Initial Settings</h5>
+                           <p class="has-animation" data-delay="30" style="padding-top: 0px;">Each filter has a set of global variables that are passed into the code to programatically manipulate the font. These are controlled mainly by sliders, but vary based on the type of filter chosen.
+                       </div>
+
+                    </div>
+                </div>
+
+
+
 
                 <!--/Row -->
+
+
+
+
+                <div class="vc_row small" style="background-color:#FED43F; padding-top:75px; padding-bottom:90px">
+
+                    <div class="container">
+
+
+
+                        <p style="font-size:15px" class="subhead has-animation" data-delay="10">Foundry is powerful and ready for customization.</p>
+
+                        <div class="video-responsive">
+                        <iframe src="https://player.vimeo.com/video/249621662?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="427" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="vc_row small" style="padding-top:75px">
+
+                    <div class="container">
+
+                         <div class="one_half">
+                           <h5><i class="fa fa-code" aria-hidden="true"></i> Code Injection</h5>
+
+                            <p class="has-animation" data-delay="30" style="padding-top: 0px;">I realized that there would be no way to build in every cool effect to the vanilla app–so I provided an interface for coders to create their own filters. All it requires is a working knowledge of Python programming and a skim through the docs for the FontForge API, which is the only dependency.
+                        </div>
+
+                        <div class="one_half last">
+
+                          <h5><i class="fa fa-cube" aria-hidden="true"></i> Features</h5>
+                           <p class="has-animation" data-delay="30" style="padding-top: 0px;">The code injection UI is a fairly simple text editor with syntax highlighting and a compiler to check for errors. I also had the idea of including a menu of "code blocks" that generate a predetermined segment of code starting at the user's typehead. These perform the most common functions, like choosing certain letters to distort, creating global variables, or starting a method for an effect.</p>
+
+                       </div>
+
+                    </div>
+                </div>
+
+                <div class="vc_row small" style="padding-top:35px; padding-bottom:75px;">
+
+                    <div class="container">
+
+                         <div class="">
+                            <a href="images/projects/foundry/code-inject-menu.png" class="image-link"><img class="has-animation" data-delay="40" src="images/projects/foundry/code-inject-menu.png" alt="Image Title"></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="vc_row small" style="background-color:#FB6985; padding-top:75px; padding-bottom:90px">
+
+                    <div class="container">
+
+
+
+                        <p style="font-size:15px" class="subhead has-animation" data-delay="10">Let's get into some detail.</p>
+
+                        <div class="">
+                           <a href="images/projects/foundry/detail-subhero.png" class="image-link"><img class="has-animation" data-delay="40" src="images/projects/foundry/detail-subhero.png" alt="Image Title"></a>
+                       </div>
+
+                    </div>
+                </div>
+
+                <div class="vc_row small" style="padding-top:75px; padding-bottom:25px;">
+
+                    <div class="container">
+
+                         <div class="">
+
+                           <p style="font-size:15px; color:#000" class="subhead has-animation" data-delay="10">THE TOP MENU BAR</p>
+
+                            <a href="images/projects/foundry/top-menu.png" class="image-link"><img class="has-animation" data-delay="40" src="images/projects/foundry/top-menu.png" alt="Image Title"></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="vc_row small" style="padding-top:75px">
+
+                    <div class="container">
+
+                         <div class="one_half">
+                           <h5><i class="fa fa-sliders" aria-hidden="true"></i> The Top Menu Bar</h5>
+
+                            <p class="has-animation" data-delay="30" style="padding-top: 0px;">The top menu bar contains the functions most essentially to the app. From left to right:</p>
+
+                        </div>
+
+                        <div class="one_half last">
+
+                          <h5><i class="fa fa-pie-chart" aria-hidden="true"></i> Reasoning</h5>
+                           <p class="has-animation" data-delay="30" style="padding-top: 0px;">I used a large filter option menu with colorful visuals for a few reasons: first, since transformations often take considerably longer than functions in most other art programs, I want the user to take more time before applying an effect.
+                             <br><br>Pairing the options with a large visual also helps the user visualize what the result will be. And finally, it creates a more welcoming and clean UI that encourages users with little to no experience with digital art programs. For power users, the same functions (as with all other tools in the program) can be accessed via the OS menu bar.</p>
+                       </div>
+
+                    </div>
+                </div>
+
+                <div class="vc_row small" style="padding-top:35px; padding-bottom:75px;">
+
+                    <div class="container">
+
+                         <div class="one_half">
+                            <a href="images/projects/foundry/filter-ui-zoom.jpg" class="image-link"><img class="has-animation" data-delay="40" src="images/projects/foundry/filter-ui-zoom.jpg" alt="Image Title"></a>
+                        </div>
+
+                        <div class="one_half last">
+
+                          <h5><i class="fa fa-cog" aria-hidden="true"></i> Initial Settings</h5>
+                           <p class="has-animation" data-delay="30" style="padding-top: 0px;">Each filter has a set of global variables that are passed into the code to programatically manipulate the font. These are controlled mainly by sliders, but vary based on the type of filter chosen.
+                       </div>
+
+                    </div>
+                </div>
+
+
+
+
+
 
 
                 <!-- ////////////

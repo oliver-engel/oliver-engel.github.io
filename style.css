@@ -24,6 +24,22 @@ OLIVERENGEL.COM
 	QUICK TRANSFORMS
 ---------------------------------------------------*/
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+
 .whitetext{
 	color:#fff !important;
 }
@@ -33,7 +49,16 @@ OLIVERENGEL.COM
 	padding-bottom:25px;
 }
 
-.subtext{
+.subhead{
+	text-align:center;
+	padding-bottom:15px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size:16px;
+
+	color:#fff;
+	letter-spacing: .05em;
+
 
 }
 
