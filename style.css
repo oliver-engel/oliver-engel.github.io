@@ -24,6 +24,19 @@ OLIVERENGEL.COM
 	QUICK TRANSFORMS
 ---------------------------------------------------*/
 
+
+.subtle{
+
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(255, 191, 8, 0.75),
+      rgba(255, 191, 8, 0.75)
+    ),
+
+    url("images/projects/emergent/sq.png");
+}
+
 .floating {
     animation-name: floating;
     animation-duration: 3s;
