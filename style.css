@@ -22,6 +22,44 @@ OLIVERENGEL.COM
 	QUICK TRANSFORMS
 ---------------------------------------------------*/
 
+.tag{
+  background-color:#000;
+  border-radius: 25px;
+  padding:3px 12px 5px 12px;
+  font-size: 12px;
+  color:white;
+}
+
+.ideation{
+  background-color:#2c4072;
+}
+
+.interaction{
+  background-color:#438cf2;
+}
+
+.animation{
+  background-color:#8370f8;
+}
+
+.wireframe{
+  background-color:#f59740;
+}
+
+.visual{
+  background-color:#ed4747;
+}
+
+.program{
+  background-color:#f96b86;
+}
+
+.tools{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+
+}
+
 .blue {
   color: #438CF2;
 }
