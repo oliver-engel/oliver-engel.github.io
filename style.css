@@ -688,7 +688,10 @@ a:hover {
 
 a {
   text-decoration: none;
+  color: #000;
+  outline: 0;
 }
+
 
 
 #blacklink a {
