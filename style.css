@@ -686,6 +686,10 @@ a:hover {
   text-decoration: none;
 } */
 
+a {
+  text-decoration: none;
+}
+
 
 #blacklink a {
   display: inline-block;
