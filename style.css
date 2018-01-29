@@ -663,28 +663,28 @@ p.no-margins {
   display: table;
 }
 
-a:hover, a:active {
+/* a:hover, a:active {
   outline: 0;
   color: #000;
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   -webkit-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
   -moz-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
   -ms-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
   -o-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
   transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
-}
+} */
 
-a {
+/* a {
   color: #000;
   outline: 0;
 }
 
 a:hover {
   text-decoration: none;
-}
+} */
 
 .one_half {
   width: 47%;
