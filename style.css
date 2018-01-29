@@ -687,7 +687,7 @@ a:hover {
 } */
 
 
-a {
+p > a {
   display: inline-block;
   position: relative;
   color: #333333;
@@ -696,11 +696,11 @@ a {
   border-bottom: 2px solid #333333;
 }
 
-a:hover {
+p > a:hover {
   color: #efefef;
 }
 
-a:after {
+p > a:after {
   content: '';
   display: block;
   position: absolute;
@@ -713,7 +713,7 @@ a:after {
   transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
 }
 
-a:hover:after {
+p > a:hover:after {
   content: '';
   display: block;
   position: absolute;
