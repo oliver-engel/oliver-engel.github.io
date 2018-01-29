@@ -687,7 +687,7 @@ a:hover {
 } */
 
 
-p > a {
+#blacklink a {
   display: inline-block;
   position: relative;
   color: #333333;
@@ -696,11 +696,11 @@ p > a {
   border-bottom: 2px solid #333333;
 }
 
-p > a:hover {
+#blacklink a:hover {
   color: #efefef;
 }
 
-p > a:after {
+#blacklink a:after {
   content: '';
   display: block;
   position: absolute;
@@ -713,7 +713,7 @@ p > a:after {
   transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
 }
 
-p > a:hover:after {
+#blacklink a:hover:after {
   content: '';
   display: block;
   position: absolute;
