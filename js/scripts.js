@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
 
+	$(function() { $('body').hide().show(); });
+
 	"use strict";
 
 
