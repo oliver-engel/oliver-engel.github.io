@@ -80,7 +80,7 @@
 
                 <h4 class="baffled" style="font-size:28px; line-height:42px; text-align:center; color:#3C5A96">Red Share is an augmented social media experience for today's political climate.</h4>
 
-                <br><p class="baffled2">The viewer logs into their Facebook account–on the official Facebook website–and finds that the content and structure of their newsfeed has become warped. Names of friends and family are swapped out or translated to Russian, external links lead to fake news stories and propaganda, and elements on the page are jumbled and visually intrusive. Some of the content is left intact, as they would normally see it. The comfort that they expect in the social media environment is absent, replaced with violent distortions of truth and form.</p>
+                <br><p class="baffled2" style="">The viewer logs into their Facebook account–on the official Facebook website–and finds that the content and structure of their newsfeed has become warped. Names of friends and family are swapped out or translated to Russian, external links lead to fake news stories and propaganda, and elements on the page are jumbled and visually intrusive. Some of the content is left intact, as they would normally see it. The comfort that they expect in the social media environment is absent, replaced with violent distortions of truth and form.</p>
 
 
 
@@ -185,13 +185,16 @@
   <script src="js/scripts.js"></script>
 
   <script type="text/javascript">
+
+  function doSomething() {
+
     let b = baffle('.baffled');
     b.set({
     speed: 75,
     characters: 'вфдзаяшеруйикольюжщэ́'
     });
 
-    b.reveal(4000);
+    b.reveal(1000);
 
 
 
@@ -201,7 +204,13 @@
     characters: 'вфдзаяшеруйикольюжщэ́'
     });
 
-    c.reveal(7000);
+    c.reveal(1000);
+
+  }
+
+  (function loop() {
+    var rand = Math.round(Math.random() * (8000 - 500)) + 500; setTimeout(function() { doSomething(); loop(); }, rand); }());
+
 
   </script>
 
