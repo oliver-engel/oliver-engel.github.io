@@ -25,6 +25,7 @@ $(document).ready(function() {
 
 	toggler();
 	rotater();
+	
 
 
 
@@ -49,7 +50,6 @@ $(window).on('load', function() {
 		});
 
 });
-
 
 
 
