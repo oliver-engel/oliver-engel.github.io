@@ -2005,6 +2005,10 @@ footer {
   }
   .flexnav li a {
     color: #222 !important;
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
   }
   #menu-burger-dots {
     float: none;
