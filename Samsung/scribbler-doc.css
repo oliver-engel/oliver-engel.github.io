@@ -1,0 +1,171 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white !important;
+
+}
+
+li{
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: 300;
+  color: #8e8e8e;
+  font-size:14px;
+  line-height: 20px;
+}
+
+.wrapper{
+  width: 70% !important;
+}
+/* layout */
+.header {
+  padding-top:15px;
+
+  border-bottom: 1px solid var(--code-bg-color);
+  grid-template-columns: 1fr 150px 60% 1fr;
+  /* background-color: var(--dark-gray-color);
+} */}
+
+.highlighter{
+  border-bottom: 2px solid #01E177;
+
+}
+
+img{
+  margin-top:25px;
+  margin-bottom:25px;
+  max-width:100%;
+  border-radius:.75rem;
+}
+
+.half{
+  max-width:50% !important;
+}
+
+.last{
+   max-width:40% !important;
+}
+
+.caption{
+  font-family: "Georgia", serif;
+  font-weight: 300;
+  color: #8e8e8e;
+  font-size:14px;
+  line-height: 20px;
+  margin-bottom:25px;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+  text-align: left !important;
+}
+
+/* logo */
+.logo {
+  font-weight: 900;
+  color: var(--primary-color);
+  font-size: 1.4em;
+  grid-column: 2;
+}
+
+.logo__thin {
+  font-weight: 300;
+}
+
+/* menu */
+.menu {
+  grid-template-columns: 1fr 180px 60% 1fr;
+}
+
+.menu__item {
+  padding: 1.5rem 1rem;
+}
+
+/* doc */
+.doc__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 28%;
+  background-color: var(--bg-color);
+  z-index: -1;
+}
+
+.doc__nav {
+  flex-basis: 20%;
+  font-weight: 200;
+}
+
+.doc__nav ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+.doc__nav ul.fixed {
+  position: fixed;
+  top: 2rem;
+}
+
+.link--doc {
+  
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.link--dark--doc:hover {
+  color: #3F8EF4;
+}
+
+.link--dark--doc {
+  color: #51707E;
+  font-size: 13px;
+}
+
+.doc__nav .selected {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.doc__nav .selected:after {
+  /* position: absolute;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--accent-color);
+  left: -1.5rem;
+  top: 0.3rem; */
+}
+
+.doc__content {
+  flex-basis: 80%;
+  padding: 0 0 5rem 1rem;
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .doc__content {
+    padding-left: 0;
+  }
+  .doc__nav ul {
+    border-bottom: 1px solid var(--code-bg-color);
+    padding-bottom: 0.5rem;
+  }
+  .doc__nav ul.fixed {
+    /* nutralized the fixed menu for mobile*/
+    position: relative;
+    top: 0;
+  }
+  .doc__nav li {
+    display: inline-block;
+    padding-right: 1rem;
+  }
+  .doc__nav .selected:after {
+    display: none;
+  }
+}
