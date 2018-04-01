@@ -11,10 +11,10 @@
   <meta charset="UTF-8" />
 
 
-  <link href="style.css" rel="stylesheet" />
+  <!-- <link href="style.css" rel="stylesheet" /> -->
+  <link href="css/blog.css" rel="stylesheet" />
   <!-- <link href="css/fontawesome-all.min.css" rel="stylesheet" /> -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:500,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700" rel="stylesheet">
 
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -44,99 +44,26 @@
   <main>
 
 
-
-
-    <div class="cd-index cd-main-content">
-
-      <!-- Page Content -->
-      <div id="page-content" class="" data-bgcolor="#fff" data-textcolor="#000">
-
-        <div class="page-overlay from-bottom">
-          <div class="animate-box-bottom"></div>
-          <div class="animate-box-left"></div>
-        </div>
-
         <!-- Header -->
-        <header class="scroll-hide">
+        <header class="scroll-hide" >
 
-          <div id="header-container">
+          <div id="header-container" >
 
             <!-- Logo -->
-            <div id="logo">
-              <a class="ajax-link" data-type="page-transition" href="https://oliverengel.com/">
-                      <img class="black-logo" src="images/logo.gif" alt="Logo Black">
-                  </a>
-            </div>
-            <!--/Logo -->
-
-            <!-- Navigation -->
-            <nav>
-              <ul data-breakpoint="1024" class="flexnav">
-                <li><a class="active" href="https://oliverengel.com/">📓&nbsp;Portfolio</a>
-
-                </li>
-                <li><a class="ajax-link" href="about" data-type="page-transition">📝&nbsp;About</a></li>
-                <li style="cursor: pointer;"><a class="fadeandscale_open">📬&nbsp;Contact</a></li>
-
-              </ul>
-            </nav>
-            <!--/Navigation -->
-
-            <!-- Menu Burger -->
-            <div id="menu-burger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <!--/Menu Burger -->
+            <center>
+              <div class="headerTitle">JOURNAL.TXT</div>
+            </center>
 
           </div>
         </header>
-        <!--/Header -->
-
-        <!-- Portfolio Filters -->
-
-        <div class="page-action-overlay">
-          <div class="outer">
-            <div class="inner">
-              <div class="close-page-action"></div>
-              <p class="filter-text">Show Projects from:</p>
-              <ul id="filters">
-                <li><a id="all" href="#" data-filter="*" class="active">All</a><span>07</span></li>
-                <li><a href="#" data-filter=".branding">Branding</a><span>03</span></li>
-                <li><a href="#" data-filter=".design">Design</a><span>03</span></li>
-                <li><a href="#" data-filter=".web">Web</a><span>01</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!--/Portfolio Filters -->
-
-
-
+    
 
 
         <!-- Main -->
         <div id="main">
 
           <!-- Hero Section -->
-          <div id="hero">
-            <div id="hero-styles" class="parallax-onscroll opacity-onscroll">
-              <div id="hero-caption">
-                <div class="inner">
 
-                  <div class="hero-title" style="color:#333333 !important">I'm Oliver—a designer, artist, &amp; coder.</div>
-
-
-                  <div style="line-height: 12px !important;" class="hero-subtitle">(and photographer, creative writer, illustrator &amp; Spotify junkie)</div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="hero-height" class="hidden"></div>
           <!--/Hero Section -->
 
 
@@ -144,173 +71,23 @@
           <div id="main-content">
 
 
-            <!-- Portfolio Wrap -->
-            <div id="portfolio-wrap" class="visible-text">
+              <div style="padding-top:160px"></div>
+            <div class="subCard">
 
-              <!-- Portfolio Columns -->
-              <div id="portfolio" data-col="2">
-
-                <div class="item photography">
-                  <div class="item-content">
-                    <a href="foundry" class="project-link" data-type="page-transition">
-                      <div class="item-image" data-src="images/foundry.jpg"></div>
-                    </a>
-                    <div class="item-caption">
-                      <div class="item-title">Foundry</div>
-                      <div class="item-sub-mask">
-                        <div class="item-cat">UX/UI, Python Programming</div>
-                        <div class="item-case">View Project</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item photography">
-                  <div class="item-content">
-                    <a href="emergent" class="project-link" data-type="page-transition">
-                      <div class="item-image" data-src="images/emergent.jpg"></div>
-                    </a>
-                    <div class="item-caption">
-                      <div class="item-title">Emergent</div>
-                      <div class="item-sub-mask">
-                        <div class="item-cat">UX/UI</div>
-                        <div class="item-case">View Project</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item photography">
-                  <div class="item-content">
-                    <a href="computing-paths" class="project-link" data-type="page-transition">
-                      <div class="item-image" data-src="images/computing_paths.jpg"></div>
-                    </a>
-                    <div class="item-caption">
-                      <div class="item-title">Computing Paths</div>
-                      <div class="item-sub-mask">
-                        <div class="item-cat">Content Direction</div>
-                        <div class="item-case">View Project</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-
-                <div class="item photography">
-                  <div class="item-content">
-                    <a href="code-art" class="project-link" data-type="page-transition">
-                      <div class="item-image" data-src="images/codeart.jpg"></div>
-                    </a>
-                    <div class="item-caption">
-                      <div class="item-title">Code &amp; Art</div>
-                      <div class="item-sub-mask">
-                        <div class="item-cat">Python &amp; Java Programming</div>
-                        <div class="item-case">View Project</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item photography">
-                  <div class="item-content">
-                    <a href="print-shop" class="project-link" data-type="page-transition">
-                      <div class="item-image" data-src="images/coupon_book.jpg"></div>
-                    </a>
-                    <div class="item-caption">
-                      <div class="item-title">Print Shop</div>
-                      <div class="item-sub-mask">
-                        <div class="item-cat">Graphic Design, Illustration</div>
-                        <div class="item-case">View Project</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="item photography">
-                        <div class="item-content">
-                            <a href="about" class="project-link" data-type="page-transition">
-                                <div class="item-image" data-src="images/branding.jpg"></div>
-                            </a>
-                            <div class="item-caption">
-                                <div class="item-title">Identity</div>
-                                <div class="item-sub-mask">
-                                    <div class="item-cat">Branding</div>
-                                    <div class="item-case">View Project</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                <div class="item photography">
-                  <div class="item-content">
-                    <a href="tidbits" class="project-link" data-type="page-transition">
-                      <div class="item-image" data-src="images/tidbits3.jpg"></div>
-                    </a>
-                    <div class="item-caption">
-                      <div class="item-title">Tidbits</div>
-                      <div class="item-sub-mask">
-                        <div class="item-cat">Graphic Design, Illustration</div>
-                        <div class="item-case">View Project</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item photography">
-                  <div class="item-content">
-                    <a href="light-form" class="project-link" data-type="page-transition">
-                      <div class="item-image" data-src="images/photography.jpg"></div>
-                    </a>
-                    <div class="item-caption">
-                      <div class="item-title">Light &amp; Form</div>
-                      <div class="item-sub-mask">
-                        <div class="item-cat">Photography</div>
-                        <div class="item-case">View Project</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-              </div>
-              <!--/Portfolio -->
+              <img class="cardTop" src="samsung/images/home/bannerone.png">
+              <h4>Friends and family first</h4>
+              <p style="font-size:14px;">We know you rely on Facebook to connect with the people you care most about. That's why we're removing the fluff, and are focused on helping you build healthy relationships.
+                <br><br><a href="">Learn More</a></p>
 
             </div>
-            <!--/Portfolio Wrap -->
 
 
           </div>
         </div>
+        </div>
         <!--/Main -->
 
 
-        <!-- Footer -->
-        <footer class="hidden">
-          <a href="javascript:" id="return-to-top">
-            <div id="page-action-holder" data-tooltip="Back to Top" data-placement="top">
-              <div id="open-filters">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 80 80" xml:space="preserve">
-                        <circle class="circle-action is-inner" cx="40" cy="40" r="36" />
-                        <circle class="circle-action is-outer" cx="40" cy="40" r="36" />
-                    </svg>
-                <i class="fa fa-angle-up" aria-hidden="true"></i>
-              </div>
-            </div>
-          </a>
-
-          <ul class="socials-text has-animation" data-delay="10">
-            <li><a href="https://dribbble.com/oliverengel" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/oliver-engel-5b5abb132/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/oliverengel/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-          </ul>
-
-          <p class="copyright has-animation" data-delay="50">Copyright © 2017</p>
-
-        </footer>
-        <!--/Footer -->
 
 
       </div>

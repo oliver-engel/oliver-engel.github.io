@@ -1,7 +1,7 @@
 p > a {
   display: inline-block;
   position: relative;
-  color: #333333;
+  color: #393b49;
   text-decoration: none;
   padding: 0em 0.05em;
   border-bottom: 2px solid #333333;
@@ -19,7 +19,7 @@ p > a:after {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #333333;
+  background: #393b49;
   z-index: -1;
   transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
 }
@@ -32,6 +32,6 @@ p > a:hover:after {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #333333;
+  background: #393b49;
   z-index: -1;
 }

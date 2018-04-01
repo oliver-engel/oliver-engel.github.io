@@ -295,7 +295,7 @@
 		font-weight: 400;
 		font-family: 'Nocturno Display Pro', sans-serif;
 		font-size:24px;
-		color:#000;
+		color:#393b49;
 		margin-left:-1px;
 	}
 
@@ -507,7 +507,7 @@
 
 	.project-links a {
 		display:inline-block;
-		color:#000;
+		color:#393b49;
 		position:relative;
 		padding-left:5px;
 		padding-right:5px;
@@ -515,7 +515,7 @@
 
 	.project-links .next-project-title {
 		font-weight:500;
-		color:#000;
+		color:#393b49;
 		padding:0;
 		line-height:20px;
 		margin-top:0px;
@@ -606,7 +606,7 @@
 	}
 
 	.project-links .prev-project a:hover span {
-		color:#000;
+		color:#393b49;
 	}
 
 	.project-links .prev-project a:before {
@@ -616,7 +616,7 @@
 		left: 0;
         width: 100%;
         height:2px;
-		background: #000;
+		background: #393b49;
         -webkit-transform: scaleX(0);
 		transform: scaleX(0);
         -webkit-transform-origin: right;

@@ -2,6 +2,8 @@
 OLIVERENGEL.COM
 -------------------------------------------------------------------*/
 
+
+
 @import url("css/portfolio.css");
 @import url("css/shortcodes.css");
 @import url("css/assets.css");
@@ -32,6 +34,11 @@ OLIVERENGEL.COM
 
 
 /* TOP */
+
+.root{
+  --font-main: 'Nocturno Display Pro';
+  --font-sub:  'IBM Plex Sans';
+}
 
 .bg-gradient-brand-horizontal {
     background-image: linear-gradient(90deg,#e2e2e2,#e2e2e2);
@@ -67,7 +74,7 @@ OLIVERENGEL.COM
 
 .stat{
   font-size:30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
   margin-top:-25px;
 
@@ -75,9 +82,9 @@ OLIVERENGEL.COM
 }
 
 .tag{
-  background-color:#000;
+  background-color:#393b49;
   border-radius: 25px;
-  padding:3px 12px 5px 12px;
+  padding:5px 12px 5px 12px;
   font-size: 12px;
   color:white;
 }
@@ -180,7 +187,7 @@ OLIVERENGEL.COM
 .subhead {
   text-align: center;
   padding-bottom: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-sub);
   font-weight: 300;
   font-size: 16px;
   color: #fff;
@@ -218,13 +225,13 @@ OLIVERENGEL.COM
 ---------------------------------------------------*/
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
   height: 100%;
   width: 100%;
   color: #777777;
-  background-color: #000;
+  background-color: #393b49;
 }
 
 html {
@@ -274,7 +281,7 @@ abbr[title] {
 
 b, strong {
   font-weight: 400;
-  color: #000;
+  color: #393b49;
 }
 
 cite, dfn, em, i {
@@ -282,7 +289,7 @@ cite, dfn, em, i {
 }
 
 mark, ins {
-  background: none repeat scroll 0 0 #000;
+  background: none repeat scroll 0 0 #393b49;
   text-decoration: none;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -564,8 +571,8 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  color: #333333 !important;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #393b49 !important;
   margin-bottom: 10px;
 }
 
@@ -584,7 +591,7 @@ h1 {
   line-height: 60px;
   margin-left: -3px;
 
-  color: #333333 !important;
+
 }
 
 h2 {
@@ -592,7 +599,7 @@ h2 {
   line-height: 48px;
   margin-left: -1px;
 
-  color: #333333 !important;
+
 }
 
 h3 {
@@ -600,7 +607,7 @@ h3 {
   line-height: 40px;
   margin-left: -1px;
 
-  color: #333333 !important;
+
 }
 
 h4 {
@@ -608,7 +615,7 @@ h4 {
   line-height: 36px;
   margin-left: -1px;
 
-  color: #333333 !important;
+
 }
 
 h5 {
@@ -616,7 +623,7 @@ h5 {
   line-height: 24px;
   margin-left: -1px;
 
-  color: #333333 !important;
+
 }
 
 h6 {
@@ -733,7 +740,7 @@ a:hover {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #393b49;
   outline: 0;
 }
 
@@ -898,7 +905,7 @@ p > a:hover:after {
   transition: -webkit-transform .0s;
   transition: transform .0s;
   transition: transform .0s, -webkit-transform .0s;
-  background-color: #000;
+  background-color: #393b49;
 }
 
 .page-overlay .animate-box-bottom {
@@ -930,7 +937,7 @@ p > a:hover:after {
   transition: -webkit-transform .0s;
   transition: transform .0s;
   transition: transform .0s, -webkit-transform .0s;
-  background-color: #000;
+  background-color: #393b49;
 }
 
 .page-overlay .animate-box-left {
@@ -1115,9 +1122,9 @@ header.open.nav-hide {
     padding: 10px 0 20px 0;
     position: relative;
     border-left: medium none;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
-    color: #000;
+    font-weight: 300;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #393b49;
     font-size: 14px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -1129,7 +1136,7 @@ header.open.nav-hide {
     color: rgba(0, 0, 0, 0.4);
   }
   .flexnav li:hover a {
-    color: #000;
+    color: #393b49;
   }
   .light-content .flexnav:hover li a {
     color: rgba(255, 255, 255, 0.4);
@@ -1155,7 +1162,7 @@ header.open.nav-hide {
     color: #fff !important;
   }
   .light-content .flexnav li ul li a.active, .light-content .flexnav li ul li a:hover {
-    color: #000 !important;
+    color: #393b49 !important;
   }
   .flexnav li>ul li {
     margin-left: 0;
@@ -1176,7 +1183,7 @@ header.open.nav-hide {
     visibility: hidden;
     left: -10px;
     padding-top: 20px;
-    background: #000;
+    background: #393b49;
     border-radius: 3px;
   }
   .light-content .flexnav li ul {
@@ -1192,7 +1199,7 @@ header.open.nav-hide {
     height: 0;
     border-style: solid;
     border-width: 0 10px 9px;
-    border-color: transparent transparent #000;
+    border-color: transparent transparent #393b49;
   }
   .light-content .flexnav li ul:after {
     border-color: transparent transparent #fff;
@@ -1239,7 +1246,7 @@ header.open.nav-hide {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #000;
+  background: #393b49;
   opacity: 1;
   right: 0;
   -webkit-transform: rotate(0deg);
@@ -1257,7 +1264,7 @@ header.open.nav-hide {
 }
 
 .menu-open.light-content #menu-burger span, .initial.light-content #menu-burger span {
-  background: #000;
+  background: #393b49;
 }
 
 #menu-burger span:nth-child(1) {
@@ -1314,8 +1321,8 @@ header.open.nav-hide {
   pointer-events: none;
   font-size: 14px;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-  color: #000;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #393b49;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.2s ease-in-out 0.5s;
@@ -1332,7 +1339,7 @@ header.open .menu-info {
 }
 
 #denote {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 10px;
   position: absolute;
   font-weight: 400;
@@ -1341,7 +1348,7 @@ header.open .menu-info {
 }
 
 #denote2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 10px;
   position: absolute;
   font-weight: 400;
@@ -1372,7 +1379,7 @@ header.open .menu-info {
 #menu-burger-dots span {
   height: 4px;
   width: 4px;
-  background-color: #000;
+  background-color: #393b49;
   border-radius: 4px;
   display: block;
   float: left;
@@ -1397,7 +1404,7 @@ header.open .menu-info {
   font-size: 20px;
   line-height: 36px;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   /*padding: 5px 15px;*/
   margin-left: 0px !important;
   padding-left: 0px !important;
@@ -1494,7 +1501,7 @@ header.open .menu-info {
 
 #showcase-gallery.full {
   width: 100vw;
-  background-color: #000;
+  background-color: #393b49;
   -webkit-transition: width 0.7s ease-in-out 0.2;
   transition: width 0.7s ease-in-out 0.2s;
 }
@@ -1549,7 +1556,7 @@ header.open .menu-info {
 
 .showcase-list li {
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 36px;
   line-height: 48px;
   list-style: none;
@@ -1574,7 +1581,7 @@ header.open .menu-info {
   display: block;
   padding: 20px 25px;
   cursor: pointer;
-  color: #000;
+  color: #393b49;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -1672,8 +1679,8 @@ header.open .menu-info {
   font-size: 3em;
   font-weight: 400;
   font-style: ;
-  font-family: 'Nocturno Display Pro', sans-serif;
-  color: #333333;
+  font-family: "Nocturno Display Pro", serif;
+  color: #393b49;
   position: relative;
   z-index: 10;
   line-height: 40px;
@@ -1681,6 +1688,10 @@ header.open .menu-info {
   margin-top: 5px;
   -webkit-transition: color 0.2s ease-in-out .2s !important;
   transition: color 0.2s ease-in-out 0s !important;
+}
+
+.contacter{
+
 }
 
 
@@ -1875,10 +1886,10 @@ footer {
 }
 
 .socials-text li a {
-  color: #000;
+  color: #393b49;
   font-size: 14px;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   display: block;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -1893,7 +1904,7 @@ footer {
 }
 
 .socials-text li a:hover {
-  color: #000;
+  color: #393b49;
 }
 
 .light-content .socials-text li a {
@@ -1936,7 +1947,7 @@ footer {
 }
 
 #open-filters i, #shareproject i, #backtoworks i {
-  color: #000;
+  color: #393b49;
   position: absolute;
   left: 0;
   top: 0;
@@ -1956,7 +1967,7 @@ footer {
 
 .circle-action {
   fill: transparent;
-  stroke: #000;
+  stroke: #393b49;
 }
 
 .light-content .circle-action, .light-content.color-content .circle-action {
