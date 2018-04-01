@@ -22,10 +22,10 @@ OLIVERENGEL.COM
 
 @font-face {
     font-family: 'Nocturno Display Pro';
-    src: url('fonts/NocturnoDisplayPro-Regular.eot');
-    src: url('fonts/NocturnoDisplayPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/NocturnoDisplayPro-Regular.woff') format('woff'),
-        url('fonts/NocturnoDisplayPro-Regular.svg#NocturnoDisplayPro-Regular') format('svg');
+    src: url('/fonts/NocturnoDisplayPro-Regular.eot');
+    src: url('/fonts/NocturnoDisplayPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/NocturnoDisplayPro-Regular.woff') format('woff'),
+        url('/fonts/NocturnoDisplayPro-Regular.svg#NocturnoDisplayPro-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
