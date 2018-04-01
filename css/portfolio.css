@@ -1,7 +1,7 @@
 /*--------------------------------------------------
 	01. Portfolio Layout
----------------------------------------------------*/	
-	
+---------------------------------------------------*/
+
 	.filter-text {
 		position:absolute;
 		left:120px;
@@ -12,15 +12,15 @@
 		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
-	
+
 	.active .filter-text {
 		opacity:1;
 		-webkit-transform: translateX(0px);
 		transform: translateX(0px);
 		-webkit-transition: all 0.2s ease-in-out 0.2s;
-		transition: all 0.2s ease-in-out 0.2s;		
+		transition: all 0.2s ease-in-out 0.2s;
 	}
-	
+
 	#filters {
 		margin: 0 auto;
 		text-align: right;
@@ -33,8 +33,8 @@
 		bottom: 130px;
 		left: 120px;
 		display: inline-block;
-	}	
-	
+	}
+
 	#filters li {
 		display: inline-block;
 		height: 45px;
@@ -48,38 +48,38 @@
 		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
-	
+
 	#filters li:first-child {
 		margin-left:0;
 	}
-	
+
 	#filters li:last-child {
 		margin-right:0;
 	}
-	
+
 	.active #filters li {
 		opacity:1;
 		-webkit-transform: translateX(0px);
 		transform: translateX(0px);
 		-webkit-transition: all 0.2s ease-in-out 0.3s;
-		transition: all 0.2s ease-in-out 0.3s;		
+		transition: all 0.2s ease-in-out 0.3s;
 	}
-	
+
 	.active #filters li:nth-child(2) {
 		-webkit-transition: all 0.2s ease-in-out 0.35s;
-		transition: all 0.2s ease-in-out 0.35s;		
+		transition: all 0.2s ease-in-out 0.35s;
 	}
-	
+
 	.active #filters li:nth-child(3) {
 		-webkit-transition: all 0.2s ease-in-out 0.4s;
-		transition: all 0.2s ease-in-out 0.4s;		
+		transition: all 0.2s ease-in-out 0.4s;
 	}
-	
+
 	.active #filters li:nth-child(4) {
 		-webkit-transition: all 0.2s ease-in-out 0.45s;
-		transition: all 0.2s ease-in-out 0.45s;		
+		transition: all 0.2s ease-in-out 0.45s;
 	}
-	
+
 	#filters li::after {
 		width: 0px;
 		height: 1px;
@@ -89,18 +89,18 @@
 		left: -73px;
 		bottom: 23px;
 		-webkit-transition: width 0.2s ease-in-out 0.4s, left 0.2s ease-in-out 0.5s;
-		transition: width 0.2s ease-in-out 0.4s, left 0.2s ease-in-out 0.5s;	
+		transition: width 0.2s ease-in-out 0.4s, left 0.2s ease-in-out 0.5s;
 	}
-	
+
 	.active #filters li::after {
 		width: 30px;
-			
+
 	}
-	
+
 	#filters li:first-child::after {
 		display:none;
 	}
-	
+
 	#filters.is-active li {
 		opacity:1;
 		-webkit-transition: all 0.3s ease-in-out 0.6s;
@@ -108,7 +108,7 @@
 		-ms-transition: all 0.3s ease-in-out 0.6s;
 		transition: all 0.3s ease-in-out 0.6s;
 	}
-	
+
 	#filters li a {
 		display:inline-block;
 		color:#fff;
@@ -123,16 +123,16 @@
 		-ms-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
 	}
-	
+
 	#filters:hover li a {
 		opacity:0.3;
 	}
-	
+
 	#filters li a:hover {
 		color:#fff;
 		opacity:1;
 	}
-	
+
 	#filters li span {
 		font-size: 12px;
 		font-weight:400;
@@ -142,37 +142,37 @@
 		color:#fff;
 		opacity:0.5;
 	}
-	
+
 	.light-content #filters li span {
 		opacity:1;
 	}
-		
+
 	#portfolio-wrap {
 		position:relative;
 		margin:0 auto;
 		max-width:1000px;
 		padding-bottom:140px;
 	}
-	
+
 	#portfolio {
 		position:relative;
 		margin:0 auto;
 		-webkit-transition: height 0.3s ease-in-out;
 		transition: height 0.3s ease-in-out;
 	}
-	
+
 	.portfolio:after {
-		content:""; 
-		display:table; 
+		content:"";
+		display:table;
 		clear:both;
 	}
-  
+
 	.item {
 		display: block;
 		position: relative;
 		box-sizing: border-box;
 	}
-	
+
 	#portfolio.hidden .item-content {
 		-webkit-transform: scale(0.95);
 		transform: scale(0.95);
@@ -180,8 +180,9 @@
 		-webkit-transition: all 0.3s ease;
 		transition: all 0.3s ease;
 	}
-	
+
 	.item-content {
+
 		width: 45%;
 		height: 100%;
 		position:relative;
@@ -193,12 +194,12 @@
 		-webkit-transition: all 0s ease;
 		transition: all 0s ease;
 	}
-	
-	
+
+
 	.item:nth-child(2n+1) .item-content {
 		margin-left:55%;
 	}
-	
+
 	.item.in-view .item-content {
 		opacity:1;
 		-webkit-transform: translateY(0);
@@ -206,41 +207,45 @@
 		-webkit-transition: all 0.7s ease 0.1s;
 		transition: all 0.7s ease 0.1s;
 	}
-	
+
 	.item.out-view .item-content{
 		-webkit-transform: translateY(-200px);
 		transform: translateY(-200px);
 		-webkit-transition: all 0 ease;
 		transition: all 0s ease;
 	}
-	
+
 	.item.in-view.out-view .item-content{
 		-webkit-transform: translateY(0px);
 		transform: translateY(0px);
 		-webkit-transition: all 0.7s ease;
 		transition: all 0.7s ease;
 	}
-	
-	
-	
-	
+
+
+
+
 	.item-content a {
+		border-radius: 1px;
 		position: relative;
 		height: 100%;
 		width: 100%;
 		display: block;
 		box-sizing: border-box;
 		overflow:hidden;
-		-webkit-transition: opacity 0.2s ease-in-out 0.1s, transform 0.3s ease-in-out;
-		transition: opacity 0.2s ease-in-out 0.1s, transform 0.3s ease-in-out;
+		-webkit-transition: opacity 0.1s ease-in-out 0.1s, transform 0.3s ease-in-out;
+		transition: opacity 0.1s ease-in-out 0.1s, transform 0.3s ease-in-out;
 	}
-	
+
 	.item-content:hover a {
-		-webkit-transform: scale(0.97);
-		transform: scale(0.97);
+		cursor:url("/images/svg/arrowright.svg");
+		/* -webkit-transform: scale(0.90);
+		transform: scale(0.90); */
+		/* opacity:.3; */
 	}
-	
+
 	.item-image {
+
 		background-size:cover;
 		background-position:center center;
 		width:100%;
@@ -251,27 +256,28 @@
 		-webkit-transition: opacity 0.2s ease-in-out 0.1s, transform 0.3s ease-in-out;
 		transition: opacity 0.2s ease-in-out 0.1s, transform 0.3s ease-in-out;
 	}
-	
+
 	.item.in-view .item-content .item-image {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
-	
+
 	.item.out-view .item-content .item-image {
 		-webkit-transform: scale(1.2);
 		transform: scale(1.2);
 	}
-	
+
 	.item.in-view.out-view .item-content .item-image {
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
-	
+
 	.item-content:hover .item-image, .item.in-view.out-view .item-content:hover .item-image, .item.in-view .item-content:hover .item-image {
 		-webkit-transform: scale(1.1);
 		transform: scale(1.1);
+
 	}
-	
+
 	.item-caption {
 		width: 100%;
 		padding-top: 25px;
@@ -280,19 +286,19 @@
 		box-sizing: border-box;
 		text-align:center;
 	}
-	
+
 	.item:nth-child(2n+1) .item-caption {
 		text-align:center;
 	}
-	
+
 	.item-title {
-		font-weight: 600;
-		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		font-family: 'Nocturno Display Pro', sans-serif;
 		font-size:24px;
 		color:#000;
 		margin-left:-1px;
 	}
-	
+
 	.item:first-child .item-title::after {
 		content: "New";
 		font-family: 'Roboto', sans-serif;
@@ -302,43 +308,44 @@
 		margin-left: 10px;
 		color: #FF1B0B;
 	}
-	
+
 	.item-sub-mask {
 		height:20px;
 		width:auto;
 		margin-bottom:5px;
 		overflow:hidden;
 		box-sizing:border-box;
+		color:#b8bec5 !important;
 	}
-	
+
 	.item-cat {
 		font-size: 12px;
 		font-weight:400;
 		line-height:20px;
-		color:rgba(0,0,0,0.5);
+		color:#a3a9af;
 		-webkit-transition: all 0.25s ease-in-out;
 		transition: all 0.25s ease-in-out;
 	}
-	
+
 	.item-content.light-content .item-cat {
 		color:rgba(255,255,255,1);
 	}
-	
+
 	.item-content:hover .item-cat {
-		margin-top:-20px;		
+		margin-top:-20px;
 	}
-	
+
 	.item-case {
 		font-size: 13px;
 		font-weight:400;
 		line-height:20px;
-		color:rgba(0,0,0,0.5);
+		color:#a3a9af;
 	}
-	
+
 	.item-content.light-content .item-case {
 		color:rgba(255,255,255,1);
 	}
-	
+
 	.overlay-hover .item-caption {
 		position: absolute;
 		width: 100%;
@@ -351,38 +358,38 @@
 		-webkit-transition: all 0.4s ease;
 		transition: all 0.4s ease;
 	}
-	
+
 	.overlay-hover .item-caption:hover {
 		opacity:1;
 	}
-	
+
 	.overlay-hover .outer-caption {
 		display: table;
 		text-align: center;
 		height: 100%;
 		width: 100%;
 	}
-	
+
 	.overlay-hover .inner-caption {
 		display:table-cell;
 		vertical-align:middle;
 	}
-	
+
 	.overlay-hover .item-cat {
 		font-size: 12px;
 		line-height:20px;
 		color:rgba(255,255,255,0.5);
-		margin-bottom:5px;			
+		margin-bottom:5px;
 	}
-	
+
 	.overlay-hover .item-content:hover .item-cat {
-		margin-top:0px;		
+		margin-top:0px;
 	}
-	
+
 	.overlay-hover .item-case {
 		display:none;
 	}
-	
+
 	.overlay-hover .item-cat span {
 		display: inline-block;
 		margin:0 3px;
@@ -394,22 +401,22 @@
 		-webkit-transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 		transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 	}
-	
+
 	.overlay-hover .item-content:hover .item-cat span {
 		padding-top:0;
 		-webkit-transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
-		transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;		
+		transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
 	}
-	
+
 	.overlay-hover .item-title {
 		line-height:30px;
-		color:#fff;			
+		color:#fff;
 	}
-	
+
 	.overlay-hover .item:first-child .item-title::after {
 		display:none;
 	}
-	
+
 	.overlay-hover .item-title span {
 		display: inline-block;
 		margin:0 3px;
@@ -421,11 +428,11 @@
 		-webkit-transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 		transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 	}
-	
+
 	.overlay-hover .item-content:hover .item-title span {
 		padding-top:0;
 		-webkit-transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
-		transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;		
+		transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
 	}
 
 /*--------------------------------------------------
@@ -439,7 +446,7 @@
 		-o-transition-duration: 0.8s;
 		transition-duration: 0.8s;
 	}
-	
+
 	.isotope {
 		-webkit-transition-property: height, width;
 		-moz-transition-property: height, width;
@@ -447,7 +454,7 @@
 		-o-transition-property: height, width;
 		transition-property: height, width;
 	}
-	
+
 	.isotope .isotope-item {
 		-webkit-transition-property: -webkit-transform, opacity;
 		-moz-transition-property: -moz-transform, opacity;
@@ -455,7 +462,7 @@
 		-o-transition-property: -o-transform, opacity;
 		transition-property: transform, opacity;
 	}
-	
+
 	.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
 		-webkit-transition-duration: 0s;
 		-moz-transition-duration: 0s;
@@ -466,9 +473,9 @@
 
 /*--------------------------------------------------
 	03. Project Page Navigation
----------------------------------------------------*/	
-	
-	
+---------------------------------------------------*/
+
+
 	#page-nav {
 		box-sizing: border-box;
 		margin: 0 auto;
@@ -477,27 +484,27 @@
 		width: 100%;
 		font-family: 'Poppins', sans-serif;
 	}
-	
+
 	.project-links {
 		margin: 0;
 		padding: 0;
 		display:inline-block;
 	}
-	
+
 	.project-links li {
 		list-style:none;
 		margin-top:10px;
 		line-height:20px;
 		font-size: 14px;
 	}
-	
+
 	.project-links li.next-project a {
 		font-weight: 600;
 		font-family: 'Poppins', sans-serif;
-		line-height:60px;		
-		font-size:36px;	
+		line-height:60px;
+		font-size:36px;
 	}
-	
+
 	.project-links a {
 		display:inline-block;
 		color:#000;
@@ -505,7 +512,7 @@
 		padding-left:5px;
 		padding-right:5px;
 	}
-	
+
 	.project-links .next-project-title {
 		font-weight:500;
 		color:#000;
@@ -527,7 +534,7 @@
 		-ms-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 	}
-	
+
 	.project-links.hover .next-project-title {
 		opacity:1;
 		-webkit-transform: translateY(40px);
@@ -541,7 +548,7 @@
 		-ms-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 	}
-		
+
 	.project-links .next-project a span {
 		background: #fff none repeat scroll 0 0;
 		height: 100%;
@@ -556,7 +563,7 @@
         -webkit-transition: transform 0.3s ease-in;
 		transition: transform 0.3s ease-in;
 	}
-	
+
 	.project-links .next-project a:hover span {
 		-webkit-transform: scaleX(1);
 		transform: scaleX(1);
@@ -565,7 +572,7 @@
         -webkit-transition: transform 0.3s ease-out;
 		transition: transform 0.3s ease-out;
 	}
-	
+
 	.project-links .prev-project a {
 		font-weight:500;
 		color:#999;
@@ -577,7 +584,7 @@
 		-ms-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 	}
-	
+
 	.project-links.hover .prev-project a {
 		opacity:0;
 		-webkit-transform: translateY(40px);
@@ -591,24 +598,24 @@
 		-ms-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 	}
-	
+
 	.project-links .prev-project a span {
 		position:relative;
 		-webkit-transition: all 0.2s ease-in;
 		transition: all 0.2s ease-in;
-	}	
-	
+	}
+
 	.project-links .prev-project a:hover span {
 		color:#000;
 	}
-	
+
 	.project-links .prev-project a:before {
         content: '';
-        position: absolute; 
-		bottom: -2px; 
+        position: absolute;
+		bottom: -2px;
 		left: 0;
         width: 100%;
-        height:2px;         
+        height:2px;
 		background: #000;
         -webkit-transform: scaleX(0);
 		transform: scaleX(0);
@@ -617,7 +624,7 @@
         -webkit-transition: transform 0.3s ease-in;
 		transition: transform 0.3s ease-in;
     }
-	
+
 	.project-links .prev-project a:hover:before {
 		-webkit-transform: scaleX(1);
 		transform: scaleX(1);
@@ -626,11 +633,11 @@
         -webkit-transition: transform 0.3s ease-out;
 		transition: transform 0.3s ease-out;
 	}
-	
+
 /*--------------------------------------------------
 	04. Project Share
----------------------------------------------------*/		
-	
+---------------------------------------------------*/
+
 	.share-text {
 		position:absolute;
 		left:120px;
@@ -641,39 +648,39 @@
 		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
-	
+
 	.active .share-text {
 		opacity:1;
 		-webkit-transform: translateX(0px);
 		transform: translateX(0px);
 		-webkit-transition: all 0.2s ease-in-out 0.2s;
-		transition: all 0.2s ease-in-out 0.2s;		
+		transition: all 0.2s ease-in-out 0.2s;
 	}
-	
+
 	#share {
     	position: absolute;
 		bottom: 120px;
 		left: 105px;
 	}
-	
+
 	.jssocials-shares {
 		display: table;
 		margin: 0 auto!important;
 	}
-	
+
 	.jssocials-share {
     	margin:0 40px !important;
 		position:relative;
 	}
-	
+
 	.jssocials-shares div:first-child {
 		margin-left:0px!important;
 	}
-	
+
 	.jssocials-shares div:last-child {
 		margin-right:0px!important;
 	}
-	
+
 	.jssocials-shares div {
 		opacity:0;
 		-webkit-transform: translateX(-20px);
@@ -681,39 +688,39 @@
 		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 	}
-	
+
 	.active .jssocials-shares div {
 		opacity:1;
 		-webkit-transform: translateX(0px);
 		transform: translateX(0px);
 		-webkit-transition: all 0.2s ease-in-out 0.3s;
-		transition: all 0.2s ease-in-out 0.3s;		
+		transition: all 0.2s ease-in-out 0.3s;
 	}
-	
+
 	.active .jssocials-shares div:nth-child(2) {
 		-webkit-transition: all 0.2s ease-in-out 0.35s;
-		transition: all 0.2s ease-in-out 0.35s;		
+		transition: all 0.2s ease-in-out 0.35s;
 	}
-	
+
 	.active .jssocials-shares div:nth-child(3) {
 		-webkit-transition: all 0.2s ease-in-out 0.4s;
-		transition: all 0.2s ease-in-out 0.4s;		
+		transition: all 0.2s ease-in-out 0.4s;
 	}
-	
+
 	.active .jssocials-shares div:nth-child(4) {
 		-webkit-transition: all 0.2s ease-in-out 0.45s;
-		transition: all 0.2s ease-in-out 0.45s;		
+		transition: all 0.2s ease-in-out 0.45s;
 	}
-	
+
 	.jssocials-shares:hover .jssocials-share-link {
 		opacity:0.3;
 	}
-	
+
 	.jssocials-shares .jssocials-share-link:hover {
 		color:#fff!important;
 		opacity:1;
 	}
-	
+
 	.jssocials-share-link {
 		font-size: 24px;
 		color: #fff;
@@ -723,7 +730,7 @@
 		text-align: center!important;
 		line-height: 46px!important;
 	}
-	
+
 	.jssocials-share::after {
 		width: 0px;
 		height: 1px;
@@ -733,41 +740,41 @@
 		left: -56px;
 		bottom: 23px;
 		-webkit-transition: width 0.2s ease-in-out 0s, left 0.2s ease-in-out 0s;
-		transition: width 0.2s ease-in-out 0s, left 0.2s ease-in-out 0s;	
+		transition: width 0.2s ease-in-out 0s, left 0.2s ease-in-out 0s;
 	}
-	
+
 	.active .jssocials-share::after {
 		width: 30px;
 		-webkit-transition: width 0.2s ease-in-out 0.4s, left 0.2s ease-in-out 0.7s;
-		transition: width 0.2s ease-in-out 0.4s, left 0.2s ease-in-out 0.7s;	
-			
+		transition: width 0.2s ease-in-out 0.4s, left 0.2s ease-in-out 0.7s;
+
 	}
-	
+
 	.jssocials-share.jssocials-share-facebook::after {
 		display:none;
 	}
 /*--------------------------------------------------
 	05. Responsive
----------------------------------------------------*/	
+---------------------------------------------------*/
 
-@media only screen and (max-width: 1466px) {	
+@media only screen and (max-width: 1466px) {
 
 	.filter-text, .share-text {
     	left: 100px;
 	}
-	
+
 	#filters {
 		left:100px;
 	}
-	
+
 	#share {
 		left:85px;
 	}
 
 }
 
-@media only screen and (max-width: 1024px) {	
-	
+@media only screen and (max-width: 1024px) {
+
 	.filter-text, .share-text {
 		position: relative;
 		left: auto;
@@ -780,7 +787,7 @@
 		text-align: center;
 		margin-bottom: 30px;
 	}
-	
+
 	#filters {
 		max-width: 160px;
 		width: auto;
@@ -791,62 +798,62 @@
 		bottom: auto;
 		left: 0;
 	}
-	
+
 	#filters li {
 		display: table;
 		margin:20px auto!important;
 		-webkit-transform: translateX(-20px);
 		transform: translateX(-20px);
 	}
-	
+
 	#filters li::after {
 		display:none;
 	}
-	
+
 	#share {
 		position: relative;
 		bottom: auto;
 		left: auto;
 	}
-	
+
 }
 
 
 @media only screen and (max-width: 767px) {
-	
+
 	.item-title {
     	font-size: 18px;
 	}
-	
+
 	.project-links li.next-project a {
     	font-size: 24px;
 	}
-	
+
 	.jssocials-share::after {
 		display:none;
 	}
-	
+
 	.jssocials-share {
     	margin: 0 20px !important;
 	}
-	
+
 }
 
 
 @media only screen and (max-width: 479px) {
-	
+
 	#portfolio-wrap {
 		padding-bottom: 0;
 	}
-	
+
 	.item {
 		margin-bottom:120px!important;
 	}
-	
+
 	.overlay-hover .item {
 		margin-bottom:60px!important;
 	}
-	
+
 	.item-content {
 		width: 100%;
 		height: 100%;
@@ -859,29 +866,28 @@
 		-webkit-transition: all 0s ease;
 		transition: all 0s ease;
 	}
-	
-	
+
+
 	.item:nth-child(2n+1) .item-content {
 		margin-left:0;
 	}
-	
-	.item-title {    
+
+	.item-title {
     	font-size: 20px;
 	}
-	
+
 	.overlay-hover .item-title {
     	line-height: 24px;
 	}
-	
+
 	.overlay-hover .item-title span {
 		line-height: 24px;
 		height: 24px;
 		padding-top: 24px;
 	}
-	
+
 	.jssocials-share {
     	margin: 0 5px !important;
 	}
-		
-}			
-	
+
+}
