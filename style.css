@@ -646,7 +646,7 @@ h6 {
 
 .title-has-line::after {
   background: none repeat scroll 0 0 #ccc;
-  bottom: 20px;
+  bottom: 15px;
   content: "";
   height: 1px;
   left: -40px;
