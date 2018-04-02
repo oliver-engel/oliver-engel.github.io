@@ -1351,7 +1351,7 @@ header.open .menu-info {
   position: absolute;
   font-weight: 400;
   margin-left: 10px;
-  color: #d3d3d3;
+  color: #999999;
 }
 
 #denote2 {
@@ -1891,7 +1891,7 @@ footer {
 }
 
 .socials-text li a {
-  color: #393b49;
+  color: #000;
   font-size: 14px;
   font-weight: 500;
   font-family: 'IBM Plex Sans', sans-serif;

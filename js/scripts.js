@@ -25,7 +25,8 @@ $(document).ready(function() {
 
 	toggler();
 	rotater();
-	
+	changeDate();
+
 
 
 
@@ -50,6 +51,15 @@ $(window).on('load', function() {
 		});
 
 });
+
+function changeDate(){
+
+
+	x=document.getElementsByClassName("copyright");  // Find the elements
+    for(var i = 0; i < x.length; i++){
+    x[i].innerText="Updated April 2018";    // Change the content
+    }
+}
 
 
 
