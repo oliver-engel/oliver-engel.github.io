@@ -187,7 +187,7 @@ OLIVERENGEL.COM
 .subhead {
   text-align: center;
   padding-bottom: 15px;
-  font-family: var(--font-sub);
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #fff;
@@ -631,6 +631,10 @@ h6 {
   line-height: 18px;
 }
 
+i {
+  color:#9A9A9A;
+}
+
 .col-content.light-content h1, .col-content.light-content h2, .col-content.light-content h3, .col-content.light-content h4, .col-content.light-content h5, .col-content.light-content h6 {
   color: #fff !important;
 }
@@ -642,6 +646,9 @@ h6 {
 .title-has-line {
   position: relative;
   margin-bottom: 25px;
+
+  max-width:550px;
+    word-wrap:break-word;
 }
 
 .title-has-line::after {
