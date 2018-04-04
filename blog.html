@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>OE | Portfolio </title>
+  <title>Visual&mdash;Archive </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content=" Art & Design Portfolio " />
   <meta name="keywords" content="oliver engel portfolio, portfolio design, portfolio oliverengel, minimal portfolio, photography, graphic design " />
@@ -56,23 +56,16 @@
         </div>
 
         <!-- Header -->
-        <header class="scroll-hide">
-
-          <div id="header-container">
-
-            <div class="a">
-              <div class="avatar">
 
 
-
-
-              </div>
-            </div>
 
             <!-- Logo -->
-            <div id="logo">
-              <div  class="journalLogo">Visual Journal*</div>
+            <center>
+            <div  id="logoblog">
+              <!-- <div  class="journalLogo">Visual <span style="letter-spacing:-2px">&mdash;&mdash;</span> Archive</div> -->
+              <img class="noDrag" style="width:150px; " src="images/svg/logo.svg"></img>
             </div>
+          </center>
             <!--/Logo -->
 
 
@@ -81,17 +74,17 @@
 
 
             <!-- Navigation -->
-            <nav>
+            <!-- <nav>
               <div class="backButton"><i style="color:#5D89F5" class="fa fa-angle-left"></i>&nbsp;&nbsp;<a style="color:#5D89F5" href="https://oliverengel.com/">Back to main site</a></div>
-            </nav>
+            </nav> -->
             <!--/Navigation -->
 
             <!-- Menu Burger -->
 
             <!--/Menu Burger -->
 
-          </div>
-        </header>
+
+
         <!--/Header -->
 
         <!-- Portfolio Filters -->
@@ -118,13 +111,13 @@
 
 
         <!-- Main -->
-        <div id="main" style="padding-top:50px">
+        <div id="main" style="padding-top:0px">
 
 
 
 
           <!-- Main Content -->
-          <div id="main-content">
+          <div id="main-content" style="">
 
             <div class="vc_row   has-animation " style="padding-top:35px; ">
 
@@ -146,12 +139,14 @@
 
 
                 <div class="filters" style="padding:25px 0 0px 0">
-                  <h5 style="text-align:center;">The visual journal is a collection of all things design.</h5><br>
+                  <h5 style="padding-bottom:18px; text-align:center;">Bookmark is a collection of my favorite resources, tools, and inspiration.</h5><br>
                   <center>
 
-                    <button id="development" href="javascript:showonlyone('devSection');" style="color:#cccccc" class="textButton ">Development</button>
+
+
+                    <button id="development" href="javascript:showonlyone('devSection');" style="color:#cccccc" class="textButton ">Code</button>
                     <button id="freebies"  style="color:#cccccc" class="textButton ">Freebies</button>
-                    <button id="graphics" style="color:#cccccc" class="textButton">Graphics</button>
+                    <button id="graphics" style="color:#cccccc" class="textButton">Graphic Design</button>
                     <button id="stock" style="color:#cccccc" class="textButton">Stock</button>
                     <button id="tools" style="color:#cccccc" class="textButton">Tools</button>
                     <button id="typography" style="color:#cccccc" class="textButton">Typography</button>
@@ -166,31 +161,25 @@
 
         <div class="vc_row   has-animation row_padding_bottom" style="padding-top:35px; ">
 
-          <div class="container" style="background-color:#f4f4f4;">
+          <div class="container" style="background-color:#fff;">
 
 
-        <div class="row-full">
+        <!-- <div class="row-full">
         <div  class="shape-separator-small"></div>
-        </div>
+        </div> -->
 
 
-
-        <section style="margin-top:-150px" class="cards" id="devSection" >
+        <section  class="cards" id="devSection" >
 
 
 
           <!-- <div class="circle"></div> -->
 
 
-          <article class="firstTile">
-            <span class="spanner">
-            <h3>Development</h3>
-            <p>Javascript libraries, web design tips, and code inspiration</p>
-          </span>
-          </article>
+
 
           <article>
-            <a class="cardHover" href="https://atomiks.github.io/tippyjs/" target="_blank"><img class="article-img" src="images/coupon_book.jpg" alt=" " /></a>
+            <a class="cardHover" href="https://atomiks.github.io/tippyjs/" target="_blank"><img class="article-img" src="images/journal/tippy.jpg" alt=" " /></a>
             <h5 class="article-title">
               Tippy.js
             </h5>
@@ -198,25 +187,82 @@
           </article>
 
           <article>
-            <img class="article-img" src="images/photography.jpg" alt=" " />
+            <a class="cardHover" href="https://blotter.js.org/" target="_blank"><img class="article-img" src="images/journal/blotter.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Blotter.js
             </h5>
+            <p class="article-description">GLSL text effect library</p>
           </article>
 
-          <article>
-            <img class="article-img" src="images/tidbits3.jpg" alt=" " />
-            <h5 class="article-title">
-              Title of article
-            </h5>
-          </article>
 
           <article>
-            <img class="article-img" src="images/tidbits.jpg" alt=" " />
+            <a class="cardHover" href="http://animejs.com/" target="_blank"><img class="article-img" src="images/journal/anime.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Anime.js
             </h5>
+            <p class="article-description">JS animation library</p>
           </article>
+
+
+          <article>
+            <a class="cardHover" href="https://atomiks.github.io/30-seconds-of-css/" target="_blank"><img class="article-img" src="images/journal/30sec.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              30 Seconds of CSS
+            </h5>
+            <p class="article-description">Quick CSS tips</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="https://webkul.github.io/micron/" target="_blank"><img class="article-img" src="images/journal/micron.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Micron.js
+            </h5>
+            <p class="article-description">JS microinteraction library</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="https://bento.io/tracks" target="_blank"><img class="article-img" src="images/journal/bento.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Bento
+            </h5>
+            <p class="article-description">Free coding lessons</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="https://www.grabient.com/" target="_blank"><img class="article-img" src="images/journal/grabient.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Grabient
+            </h5>
+            <p class="article-description">CSS gradient generator</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="https://riccardoscalco.github.io/textures/" target="_blank"><img class="article-img" src="images/journal/textures.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Textures.js
+            </h5>
+            <p class="article-description">JS texture library</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="https://dixonandmoe.com/rellax/" target="_blank"><img class="article-img" src="images/journal/rellax.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Rellax.js
+            </h5>
+            <p class="article-description">JS parallax library</p>
+          </article>
+
+
+
+
+
+
+
 
         </section>
 
@@ -227,33 +273,15 @@
         <!-- FREEBIES SECTION -->
 
         <section class="cards" id="freebieSection">
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              FREEBIE
-            </h5>
-          </article>
 
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="https://graphicburger.com/" target="_blank"><img class="article-img" src="images/journal/graphicburger.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Graphic Burger
             </h5>
+            <p class="article-description">Free graphic design resources</p>
           </article>
 
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              Title of article
-            </h5>
-          </article>
-
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              Title of article
-            </h5>
-          </article>
 
         </section>
 
@@ -264,67 +292,63 @@
 
         <section class="cards" id="graphicsSection">
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="http://www.recentlyrejected.com/" target="_blank"><img class="article-img" src="images/journal/reject.jpg" alt=" " /></a>
             <h5 class="article-title">
-              GRAPHICS
+              Recently Rejected
             </h5>
+            <p class="article-description">Graphic art inspiration</p>
           </article>
 
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              Title of article
-            </h5>
-          </article>
 
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="http://100-beste-plakate.de/archiv-plakate/" target="_blank"><img class="article-img" src="images/journal/poster.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              100 Beste Plakate
             </h5>
+            <p class="article-description">Graphic art inspiration</p>
           </article>
 
+
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="https://almanac.readymag.com/" target="_blank"><img class="article-img" src="images/journal/rmdesign.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              R/M Design School
             </h5>
+            <p class="article-description">Graphic design principles</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="http://blankposter.com/" target="_blank"><img class="article-img" src="images/journal/blankposter.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Blank Poster
+            </h5>
+            <p class="article-description">Graphic art inspiration</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="https://folioart.co.uk/" target="_blank"><img class="article-img" src="images/journal/folio.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Folio Illustration Agency
+            </h5>
+            <p class="article-description">Illustration inspiration</p>
           </article>
 
         </section>
+
+
+
+
+
+
 
         <!-- END GRAPHICS SECTION -->
 
         <!-- STOCK SECTION -->
 
         <section class="cards" id="stockSection">
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              STOCK
-            </h5>
-          </article>
 
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              Title of article
-            </h5>
-          </article>
-
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              Title of article
-            </h5>
-          </article>
-
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              Title of article
-            </h5>
-          </article>
 
         </section>
 
@@ -333,33 +357,55 @@
         <!-- TOOLS SECTION -->
 
         <section class="cards" id="toolsSection">
+
+
+
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="https://airbnb.design/lottie/" target="_blank"><img class="article-img" src="images/journal/lottie.jpg" alt=" " /></a>
             <h5 class="article-title">
-              TOOLS
+              Lottie
             </h5>
+            <p class="article-description">SVG web animation tool</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="https://google.github.io/sketch2ae/" target="_blank"><img class="article-img" src="images/journal/sketchae.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Sketch2AE
+            </h5>
+            <p class="article-description">Sketch-to-AfterEffects plugin</p>
+          </article>
+
+
+
+          <article>
+            <a class="cardHover" href="https://websiddu.github.io/sketch-material/" target="_blank"><img class="article-img" src="images/journal/sketchmaterial.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Sketch Material
+            </h5>
+            <p class="article-description">Sketch generator plugin</p>
           </article>
 
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="http://copychar.cc/" target="_blank"><img class="article-img" src="images/journal/copychar.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Copychar.cc
             </h5>
+            <p class="article-description">Special character tool</p>
           </article>
 
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              Title of article
-            </h5>
-          </article>
 
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="http://colorhunt.co/" target="_blank"><img class="article-img" src="images/journal/colorhunt.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Color Hunt
             </h5>
+            <p class="article-description">Color palettes</p>
           </article>
+
+
+
 
         </section>
 
@@ -368,32 +414,78 @@
         <!-- TYPOGRAPHY SECTION -->
 
         <section class="cards" id="typographySection">
+
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="https://fonts.google.com/" target="_blank"><img class="article-img" src="images/journal/googlefonts.jpg" alt=" " /></a>
             <h5 class="article-title">
-              TYPOG
+              Google Fonts
             </h5>
+            <p class="article-description">Free webfonts</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="http://fonts.greatsimple.io/" target="_blank"><img class="article-img" src="images/journal/googlecombo.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Trendy Google Font Pairing
+            </h5>
+            <p class="article-description">Web type inspiration</p>
           </article>
 
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="https://wordmark.it/" target="_blank"><img class="article-img" src="images/journal/wordmarkit.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Wordmark.it
             </h5>
+            <p class="article-description">Font preview tool</p>
           </article>
 
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="https://wordmark.it/" target="_blank"><img class="article-img" src="images/journal/fontsinuse.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Fonts in Use
             </h5>
+            <p class="article-description">Typography inspiration</p>
           </article>
 
+
+
+
+
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="http://type-scale.com/" target="_blank"><img class="article-img" src="images/journal/typescale.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Type-scale
             </h5>
+            <p class="article-description">Typography sizing tool</p>
+          </article>
+
+
+
+          <article>
+            <a class="cardHover" href="https://www.typewolf.com/" target="_blank"><img class="article-img" src="images/journal/typewolf.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Typewolf
+            </h5>
+            <p class="article-description">Typography on the web</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="http://www.thetypefight.com/" target="_blank"><img class="article-img" src="images/journal/typefight.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Typefight
+            </h5>
+            <p class="article-description">Typography inspiration</p>
+          </article>
+
+
+          <article>
+            <a class="cardHover" href="https://www.supremo.tv/typeterms/" target="_blank"><img class="article-img" src="images/journal/typeterms.jpg" alt=" " /></a>
+            <h5 class="article-title">
+              Type Terms
+            </h5>
+            <p class="article-description">Typography terminology</p>
           </article>
 
         </section>
@@ -404,45 +496,42 @@
         <!-- UX/UI SECTION -->
 
         <section class="cards" id="uxuiSection">
+
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="https://www.uxpin.com/studio/ebooks/?_ga=1.258092483.858328616.1465236383" target="_blank"><img class="article-img" src="images/journal/uxpin.jpg" alt=" " /></a>
             <h5 class="article-title">
-              UXUI
+              UXPin Ebooks
             </h5>
+            <p class="article-description">Free ebook series</p>
           </article>
 
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="https://lawsofux.com/" target="_blank"><img class="article-img" src="images/journal/uxlaws.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Laws of UX
             </h5>
+            <p class="article-description">UX principles</p>
           </article>
 
-          <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
-            <h5 class="article-title">
-              Title of article
-            </h5>
-          </article>
 
           <article>
-            <img class="article-img" src="images/coupon_book.jpg" alt=" " />
+            <a class="cardHover" href="https://ebooks.webflow.com/" target="_blank"><img class="article-img" src="images/journal/webflow.jpg" alt=" " /></a>
             <h5 class="article-title">
-              Title of article
+              Webflow Ebooks
             </h5>
+            <p class="article-description">Web design ebooks</p>
           </article>
+
 
         </section>
 
         <!-- END UX/UI SECTION -->
 
-        <div class="row-full"><hr></div<
+        <!-- <div class="row-full"><hr></div> -->
 
 
 
-                <div class="one_third last" style="padding-top:25px">
 
-                </div>
               </div>
 
 
@@ -456,6 +545,7 @@
 
           <!-- Footer -->
           <footer class="hidden">
+
             <a href="javascript:" id="return-to-top">
               <div id="page-action-holder" data-tooltip="Back to Top" data-placement="top">
                 <div id="open-filters">

@@ -1,6 +1,15 @@
 
 $(document).ready(function(){
 
+  $("#development").addClass('activeButton');
+
+  $('#devSection').css("display", "grid");
+  $('#freebieSection').css("display", "none");
+  $('#graphicsSection').css("display", "none");
+  $('#stockSection').css("display", "none");
+  $('#toolsSection').css("display", "none");
+  $('#typographySection').css("display", "none");
+  $('#uxuiSection').css("display", "none");
 
 
 
