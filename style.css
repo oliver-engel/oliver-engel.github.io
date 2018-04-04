@@ -55,6 +55,19 @@ OLIVERENGEL.COM
 
 
 }
+
+.shape-separator-small {
+  top:25px;
+  position: relative;
+  height: 1px;
+  background-color:#c9c7c7;
+  opacity:.2;
+
+
+}
+
+
+
 .shape-separator::after {
   content: '';
   position: absolute;
