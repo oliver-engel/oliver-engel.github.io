@@ -123,6 +123,10 @@ OLIVERENGEL.COM
   font-weight: 700;
 }
 
+.journalLogo :hover{
+  background: url("images/logoanimation.gif") no-repeat;
+}
+
 .backButton{
   color: #5D89F5;
   font-family: "IBM Plex Sans", sans-serif;
@@ -199,7 +203,14 @@ OLIVERENGEL.COM
   cursor:pointer;
 } */
 
-.img
+
+
+.favorite{
+  font-size:14px !important;
+
+  color: #fc2121;
+
+}
 
 .cardHidden{
   opacity:0;
@@ -1242,6 +1253,13 @@ header.open.nav-hide {
   display: inline-block;
   pointer-events: auto;
   z-index: 10;
+}
+
+#logoblog :hover{
+  /* background:url("images/logoanimation.gif") no-repeat;
+
+  width:54px !important;
+  padding-left: 45px; padding-right: 45px; */
 }
 
 #logo a {

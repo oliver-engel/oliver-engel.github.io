@@ -13,6 +13,11 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
   // if($(".textButton").is(":visible")){
   //   $(".textButton").addClass("activeButton");
   // }
