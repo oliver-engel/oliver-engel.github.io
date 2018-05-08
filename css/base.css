@@ -6,7 +6,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	box-sizing: border-box;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Nocturno Display Pro';
     src: url('../fonts/NocturnoDisplayPro-Regular.eot');
     src: url('../fonts/NocturnoDisplayPro-Regular.eot?#iefix') format('embedded-opentype'),
@@ -14,9 +14,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
         url('../fonts/NocturnoDisplayPro-Regular.svg#NocturnoDisplayPro-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'GT Super Display Trial';
     src: url('GTSuperDisplayTrial-Bold.eot');
     src: url('GTSuperDisplayTrial-Bold.eot?#iefix') format('embedded-opentype'),
@@ -26,7 +26,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
         url('GTSuperDisplayTrial-Bold.svg#GTSuperDisplayTrial-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
-}
+} */
 
 
 
@@ -89,6 +89,23 @@ body {
 
 
 
+.shape-separator {
+  position: relative;
+  height: 22px;
+  background: #333;
+}
+.shape-separator::after {
+  content: '';
+	background-color: #DFDBE5;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='%23845fbd' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  bottom: 0;
+}
+
+
+
 
 
 .top {
@@ -105,8 +122,9 @@ body {
 }
 
 .top-link{
-	color:#fd7923;
+	color:#3f8ef4;
 }
+
 
 .top-text {
 
@@ -177,10 +195,10 @@ main {
 	display: flex;
 	align-items: stretch;
 	/* width: 100vw; */
-	background-size:cover;
+	/* background-size:cover;
 	background-repeat: no-repeat;
 
-	background-color: #30C478;
+	background-color: #30C478; */
 
 }
 
@@ -190,7 +208,7 @@ main {
 
 .grid__item::after {
   content: "";
-  background-image: url('../img/Img22.jpg');
+  /* background-image: url('../img/Img22.jpg'); */
   opacity: 0.1;
   top: 0;
   left: 0;
@@ -303,7 +321,7 @@ main {
 }
 
 .grid__item-title {
-	font-family: 'GT Super Display Trial', serif;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: bold;
 
 	font-size: 1.5rem;
@@ -314,13 +332,23 @@ main {
 }
 
 .grid__item-title--small {
-	font-family: 'GT Super Display Trial', serif;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 1.5rem;
 	margin-top:0px;
 
 	/* line-height: 1.25; */
 	/* margin-bottom: 1rem; */
 }
+
+.grid__item-title--small-article {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.5rem;
+	margin-top:0px;
+	margin-bottom: .5rem;
+}
+
+
+
 
 .grid__item-meta {
 	/* text-transform: uppercase; */
@@ -341,6 +369,8 @@ main {
 	color: var(--item-subtitle);
 }
 
+
+
 .grid__item-subtitle span {
 	display: block;
 }
@@ -360,14 +390,22 @@ main {
 	position: relative;
 	padding: 0 0 0.2rem;
 	pointer-events: auto;
-	color: var(--item-link);
+	color: #4490F1;
 }
 
-
+.noDrag{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-drag: none; /* Safari */
+	 -khtml-user-drag: none; /* Konqueror HTML */
+		 -moz-user-drag: none; /* Firefox */
+			-ms-user-drag: none; /* Internet Explorer/Edge */
+					user-drag: none; /* Non-prefixed version, currently
+																supported by Chrome and Opera */
+}
 
 .grid__item-link:focus,
 .grid__item-link:hover {
-	color: var(--item-link-hover);
+color:#3f8ef4;
 }
 
 .grid__item-link::before {
@@ -512,7 +550,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox=
 
 .theme-11 {
 	--item-bg: rgba(0,0,0,0);
-    --item-link: #000;
+    --item-link: #3f8ef4;
     --item-link-hover: #3f8ef4;
     --item-meta: #000;
     --item-title: #000;
@@ -653,6 +691,15 @@ background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox=
 		justify-content: center;
 
 	}
+
+	.grid__article{
+
+		display: grid;
+		grid-template-columns: repeat(1, 1fr 3fr 1fr);
+		grid-auto-rows:minmax(100px, auto);
+
+	}
+
 	.grid__item {
 		/* height: 30vmax; */
 		/* width: 100%; */
