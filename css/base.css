@@ -41,7 +41,7 @@ body {
 	--color-link: #000;
 	--color-link-hover: #000;
 	--color-info: #000;
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: 'Libre Baskerville', sans-serif;
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
@@ -321,10 +321,11 @@ main {
 }
 
 .grid__item-title {
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: 'BenchNine', sans-serif;
+	text-transform: UPPERCASE;
 	font-weight: bold;
 
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	line-height: 1;
 
 	margin: 2rem 0 0 0;
@@ -332,8 +333,9 @@ main {
 }
 
 .grid__item-title--small {
-	font-family: 'IBM Plex Sans', sans-serif;
-	font-size: 1.5rem;
+	font-family: 'BenchNine', sans-serif;
+	text-transform: UPPERCASE;
+	font-size: 2.5rem;
 	margin-top:0px;
 
 	/* line-height: 1.25; */
@@ -677,8 +679,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox=
 @media screen and (min-width: 50em) {
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(1, 3fr 2fr);
+		grid-template-columns: repeat(1, 1fr 1fr);
 		grid-auto-rows:minmax(100px, auto);
+		text-align: center;
 
 
 		/* grid-template-columns: repeat(4,30vmax); */
@@ -686,7 +689,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox=
 
 	.grid-small{
 		display: grid;
-		grid-template-columns: repeat(1, 2fr 3fr);
+		grid-template-columns: repeat(1, 1fr 1fr);
 		grid-auto-rows:minmax(100px, auto);
 		justify-content: center;
 
