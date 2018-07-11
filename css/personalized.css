@@ -1,3 +1,7 @@
+/* LAST updated */
+.last-updated::after {
+    content: "July 2018"
+}
 
 
 .docs-container{
@@ -71,7 +75,7 @@ margin-top:75px;
 
 
 #sidebar{
-  
+
 }
 
 #logo-gif{
@@ -150,8 +154,14 @@ margin-top:75px;
   display: inline-block;
 
 }
+
 .half{
   width:49%;
+  display: inline-block;
+}
+
+.half-text{
+  width:55%;
   display: inline-block;
 }
 
@@ -223,7 +233,7 @@ margin-top:75px;
 
 
 @media only screen and (max-width: 700px) {
-  .half, .three-fourth, .fourth {
+  .half, .three-fourth, .fourth, .half-text {
     width:100%;
   }
 
