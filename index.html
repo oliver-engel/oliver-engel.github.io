@@ -56,10 +56,10 @@
             <!-- PROJECT MENU -->
             <div class="accordion ">
               <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
-              <label class="accordion-header">Projects</label>
+              <label class="accordion-header baffled2">Projects</label>
               <div class="accordion-body ">
                 <ul class="menu menu-nav" id = "dynamic-menu">
-                  <li class="menu-item"><a id="menu-link" class="menu-1" href=""></a></li>
+                  <li class="menu-item "><a id="menu-link" class="menu-1" href=""></a></li>
                   <li class="menu-item"><a id="menu-link" class="menu-2" href=""></a></li>
                   <li class="menu-item"><a id="menu-link" class="menu-3" href=""></a></li>
                   <li class="menu-item"><a id="menu-link" class="menu-4" href=""></a></li>
@@ -130,6 +130,29 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
+    <script src="js/baffle.min.js"></script>
+
+    <script type="text/javascript">
+      function doSomething() {
+
+        let b = baffle('.baffled');
+        b.set({
+          speed: 75,
+          characters: 'вфдзаяшеруйикольюжщэ́'
+        });
+
+        b.reveal(1000);
+        let c = baffle('.baffled2');
+        c.set({
+          speed: 75,
+          characters: 'вфдзаяшеруйикольюжщэ́'
+        });
+        c.reveal(1000);
+      }
+
+
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src= "js/oliver.js"></script>
