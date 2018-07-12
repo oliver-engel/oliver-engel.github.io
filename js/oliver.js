@@ -1,157 +1,74 @@
+$( document ).ready(function() {
+
+
+  //MENU ITEM 1
+  $(".menu-1").attr("href", "http://www.oliverengel.com/")
+  $(".menu-1").html("Foundry");
+
+  $(".menu-1-content h3").text("Foundry");
+  $(".menu-1-content h5").text("Product Design");
+  $(".menu-1-content img").attr("src", "img/foundry-hero.jpg");
+  $(".menu-1-content a").attr("href", "http://www.oliverengel.com/");
+
+  //MENU ITEM 2
+  $(".menu-2").attr("href", "http://www.oliverengel.com/")
+  $(".menu-2").html("Computing Paths");
+
+  $(".menu-2-content h3").text("Computing Paths");
+  $(".menu-2-content h5").text("Content Direction");
+  $(".menu-2-content img").attr("src", "img/collage.jpg");
+  $(".menu-2-content a").attr("href", "http://www.oliverengel.com/");
 
 
 
-$(document).ready(function() {
+  //MENU ITEM 3
+  $(".menu-3").attr("href", "http://www.oliverengel.com/")
+  $(".menu-3").html("Emergent");
 
-  
+  $(".menu-3-content h3").text("Emergent");
+  $(".menu-3-content h5").text("Product Design");
+  $(".menu-3-content img").attr("src", "img/emergent-hero.jpg");
+  $(".menu-3-content a").attr("href", "http://www.oliverengel.com/");
 
 
-  $(".animsition-overlay").animsition({
-    inClass: 'overlay-slide-in-bottom',
-    outClass: 'overlay-slide-out-bottom',
-    inDuration: 800,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : true,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
+  //MENU ITEM 4
+  $(".menu-4").attr("href", "http://www.oliverengel.com/")
+  $(".menu-4").html("Code &amp; Art");
+
+  $(".menu-4-content h3").text("Foundry");
+  $(".menu-4-content h5").text("Product Design, Python Programming");
+  $(".menu-4-content img").attr("src", "img/foundry-hero.jpg");
+  $(".menu-4-content a").attr("href", "http://www.oliverengel.com/");
+
+  //MENU ITEM 5
+  $(".menu-5").attr("href", "http://www.oliverengel.com/")
+  $(".menu-5").html("UW Capstone");
+
+  $(".menu-5-content h3").text("Foundry");
+  $(".menu-5-content h5").text("Product Design, Python Programming");
+  $(".menu-5-content img").attr("src", "img/foundry-hero.jpg");
+  $(".menu-5-content a").attr("href", "http://www.oliverengel.com/");
+
+  //MENU ITEM 6
+  $(".menu-6").attr("href", "http://www.oliverengel.com/")
+  $(".menu-6").html("Light &amp; Form");
+
+  $(".menu-6-content h3").text("Foundry");
+  $(".menu-6-content h5").text("Product Design, Python Programming");
+  $(".menu-6-content img").attr("src", "img/foundry-hero.jpg");
+  $(".menu-6-content a").attr("href", "http://www.oliverengel.com/");
+
+  //MENU ITEM 7
+  $(".menu-7").attr("href", "http://www.oliverengel.com/")
+  $(".menu-7").html("Light &amp; Form");
+
+  $(".menu-7-content h3").text("Foundry");
+  $(".menu-7-content h5").text("Product Design, Python Programming");
+  $(".menu-7-content img").attr("src", "img/foundry-hero.jpg");
+  $(".menu-7-content a").attr("href", "http://www.oliverengel.com/");
+
+
+
+
+
 });
-
-
-/////////////////
-// FADE IN AND UP
-/////////////////
-$(document).ready(function() {
-  $(".fadeInUp").animsition({
-    inClass: 'fade-in-up-sm',
-    outClass: 'fade-out-up-sm',
-    inDuration: 800,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: false,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-});
-
-
-$(document).ready(function() {
-  $(".fadeInDown").animsition({
-    inClass: 'fade-in-down-sm',
-    outClass: 'fade-out-down-sm',
-    inDuration: 800,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: false,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-});
-
-
-
-/////////////////
-// FADE IN ONLY
-/////////////////
-
-$(document).ready(function() {
-  $(".fadeOnly").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-in',
-    inDuration: 800,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: false,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-});
-
-
-
-
-
-  var MORNING = 3.5;
-  var AFTERNOON = 12;
-  var EVENING = 6;
-
-  function areWeOpen( ) {
-    var change = document.getElementById("changeText");
-    // var day = new Date().getDay();
-    var hour = new Date().getHours();
-    var mins = new Date().getMinutes();
-    hour = hour + mins/60;
-
-    if ( hour >=MORNING && hour <=AFTERNOON )  {
-    change.innerHTML = "Good morning 🌞";
-    change.className = "MORNING";
-    }
-
-    else if ( hour >=AFTERNOON && hour <=EVENING )  {
-    change.innerHTML = "Good afternoon ☁";
-    change.className = "AFTERNOON";
-    }
-
-    else{
-      change.innerHTML = "Good evening 🌚";
-      change.className = "AFTERNOON";
-
-    }
-  }
-
-  // $(document).load(function() {
-  //
-  //   document.getElementsByTagName("html")[0].style.visibility = "visible";
-  // });
-
-
-  // document.getElementById("changeText").innerHTML = textArray[randomNumber];

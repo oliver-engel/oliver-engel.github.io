@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>OE</title>
 
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="author" content="Oliver Engel">
-    <link rel="shortcut icon" href="https://picturepan2.github.io/spectre/img/favicons/favicon.ico">
-    <link rel="icon" href="https://picturepan2.github.io/spectre/img/favicons/favicon.png">
-    <link rel="stylesheet" href="css/spectre.css">
-    <link rel="stylesheet" href="css/spectre-icons.min.css">
-    <link rel="stylesheet" href="css/spectre-exp.min.css">
-    <link rel="stylesheet" href="css/docs.css">
-    <link rel="stylesheet" href="css/personalized.css">
+  <title>Oliver Engel</title>
 
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>window.sr = ScrollReveal();</script>
-    <style>.sr .revealer { visibility: hidden; }</style>
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content=" Design portfolio of Oliver Engel | HCI & Design graduate student at the University of Washington, Seattle " />
+  <meta name="keywords" content="oliver engel portfolio, portfolio design, portfolio oliverengel, minimal portfolio, photography, graphic design " />
+  <meta name="author" content="Oliver Engel">
+  <meta name="robots" content="NOODP">
+
+  <link rel="stylesheet" href="css/spectre.css">
+  <link rel="stylesheet" href="css/spectre-icons.min.css">
+  <link rel="stylesheet" href="css/spectre-exp.min.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <link rel="stylesheet" href="css/personalized.css">
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>window.sr = ScrollReveal();</script>
+  <style>.sr .revealer { visibility: hidden; }</style>
 
   </head>
   <body cz-shortcut-listen="true">
@@ -40,19 +51,19 @@
                 </ul>
               </div>
             </div>
+
+            <!-- PROJECT MENU -->
             <div class="accordion">
               <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
               <label class="accordion-header">Projects</label>
               <div class="accordion-body">
-                <ul class="menu menu-nav">
-                  <li class="menu-item"><a id="menu-link" href="index.html">UW Capstone</a></li>
-                  <li class="menu-item"><a id="menu-link" href="index.html">Collective Health</a></li>
-                  <li class="menu-item"><a id="menu-link" href="foundry.html">Foundry</a></li>
-                  <li class="menu-item"><a id="menu-link" href="index.html">Emergent</a></li>
-                  <li class="menu-item"><a id="menu-link" href="index.html">Light &amp; Form</a></li>
-                  <li class="menu-item"><a id="menu-link" href="index.html">Print Shop</a></li>
-                  <li class="menu-item"><a id="menu-link" href="index.html">Code &amp; Art</a></li>
-
+                <ul class="menu menu-nav" id = "dynamic-menu">
+                  <li class="menu-item"><a id="menu-link" class="menu-1" href="">Menu 1 Placeholder</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Menu 2 Placeholder</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Menu 3 Placeholder</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Menu 4 Placeholder</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-5" href="">Menu 5 Placeholder</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-6" href="">Menu 6 Placeholder</a></li>
                 </ul>
               </div>
             </div>
@@ -111,7 +122,7 @@
 
                       <p class="text-upper">About</p>
                       <p>I'm really interested in design systems, Democratic Socialism, and my dog Sally. I'm so lucky to have discovered design while I was an undergrad at UC San Diego, and now I want to use my new passion to make cool shit and play all day instead of working. </p>
-                      <p>Catch me thrifting old Hawaiian shirts, listening to Cocteau Twins, or drinking good beer straight from the bottle like an animal.</p>
+                      <p>Usually found thrifting old Hawaiian shirts, listening to Cocteau Twins, or drinking Belgian beer.</p>
 
 
                     </div>
@@ -124,7 +135,7 @@
 
           <div class="text-right docs-footer container grid-lg" id="copyright">
             <img id="logo-gif" src="img/logo.gif">
-            <p><a href="https://picturepan2.github.io/spectre/getting-started.html" target="_blank">LinkedIn</a> · <a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> · <a href="https://twitter.com/spectrecss" target="_blank">Bookmark</a> · Updated <span class="last-updated"></span></p>
+            <p><a href="https://www.linkedin.com/in/oliver-engel-5b5abb132/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
           </div>
 
         </div>
@@ -137,6 +148,7 @@
     crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src= "js/oliver.js"></script>
 
     <script>sr.reveal('.revealer');</script>
 
