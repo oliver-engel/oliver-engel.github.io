@@ -56,7 +56,7 @@
 }
 
 .docs-sidebar .accordion input:checked~.accordion-header {
-    color: #667189
+    color: #5b657a;
 }
 
 .docs-sidebar .accordion .menu .menu-item {
