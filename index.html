@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-
-<!-- BUILT THIS SHIT MYSELF -->
-<!-- (USING SPECTRE CSS) -->
 <html lang="en">
   <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -36,23 +33,106 @@
 
   </head>
   <body cz-shortcut-listen="true">
+    <div class="shape-separator"></div>
 
-<center>
-    <div  style="height:25vh">
+    <div class="docs-container off-canvas off-canvas-sidebar-show">
+      <div class="docs-navbar" ><a class="off-canvas-toggle btn btn-link btn-action" href="index.html#sidebar"><i class="icon icon-menu"></i></a></div>
+      <div class="docs-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
+        <div class="docs-nav">
+          <div class="accordion-container">
+            <div class="accordion">
+              <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked">
+              <label class="accordion-header"><span class="text-gray-optical">WAYFINDER</span></label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a id="menu-link" class="home active-link"  href="index.html"><span></span>&nbsp; Home</a></li>
+                  <li class="menu-item"><a id="menu-link" class="about" href="about.html">&nbsp; About</a></li>
+                  <li class="menu-item"><a id="menu-link" class="resume" href="explore.html">&nbsp; Explore</a></li>
+
+
+                </ul>
+              </div>
+            </div>
+
+            <!-- PROJECT MENU -->
+            <div class="accordion">
+              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
+              <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav" id = "dynamic-menu">
+                  <li class="menu-item"><a id="menu-link" class="menu-1" href="">Foundry</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Collective Health</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Emergent</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Code &amp; Art</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-5" href="">UW Capstone</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-6" href="">Light &amp; Form</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-        <div class="placeholder-text revealer">
-        <h2>I'm Oliver, a product designer based in San Francisco 🌧</h2>
-        <p>Future Human-Computer Interaction + Design Master's Candidate @ <a class="tooltip tooltip-bottom" data-tooltip="mhcid.washington.edu" href="https://mhcid.washington.edu/" target="_blank">UWash</a>, Currently @ <a class="tooltip tooltip-bottom" data-tooltip="collectivehealth.com" href="https://collectivehealth.com/" target="_blank">Collective Health</a></p>
-      </div>
-
-
-  </center>
+      <a class="off-canvas-overlay" href="index.html#close"></a>
+      <div class="off-canvas-content">
+        <div class="docs-content" id="content">
+          <div class="container" id="introduction">
 
 
+            <section id="siteHeader">
+
+              <h2>I'm Oliver, a product designer based in Seattle, WA ⛈</h2>
+              <p>Incoming Human-Computer Interaction + Design Master's Candidate @ <a class="tooltip tooltip-bottom" data-tooltip="mhcid.washington.edu" href="https://mhcid.washington.edu/" target="_blank">UWash</a>, Currently @ <a class="tooltip tooltip-bottom" data-tooltip="collectivehealth.com" href="https://collectivehealth.com/" target="_blank">Collective Health</a></p>
+
+              <!-- <div class="toast toast-success">
+                My website is being worked on... there's probs a ton of glitches so come back later (looking at you Noah)
+                </div> -->
+            </section>
+            <!-- <hr class="light-hr"> -->
+            <div class="spacer"></div>
+
+            <div class="portfolio revealer">
+
+              <div class="menu-1-content portfolio-item half first ">
+                  <a class="sibling-hover" href="index.html"><img id="hoverChange" class="image-crop hvr-shrink" src=""  alt="..."></a>
+                  <h3 class="sibling-highlight" id="projectTitle">Project Title Placeholder</h3>
+
+                  <h5>Project description placeholder</h5>
+
+              </div>
+
+              <div class="menu-2-content portfolio-item half second">
+                  <a class="sibling-hover" href="index.html"><img id="hoverChange" class="image-crop hvr-shrink" src=""  alt="..."></a>
+                  <h3 class="sibling-highlight" id="projectTitle">Project Title Placeholder</h3>
+                  <h5>Project description placeholder</h5>
+              </div>
 
 
+              <!-- <div class="menu-3-content portfolio-item ">
+                  <a class="sibling-hover" href="index.html"><img id="hoverChange" class="image-crop hvr-shrink" src=""  alt="..."></a>
+                  <h3 class="sibling-highlight" id="projectTitle">Project Title Placeholder</h3>
+                  <h5>Project description placeholder</h5>
+              </div> -->
 
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+          <div class="grid-reverse revealer">
+            <div class="info-chunk">
+              <h4 class="h4-multiline"><span class="grayText">My site's being worked on – hold tight!</span></h4>
+
+            </div>
+
+          </div>
+          </div>
+
+          <div class="text-right docs-footer container grid-lg" id="copyright">
+            <img id="logo-gif" src="img/logo.gif">
+            <p><a href="https://www.linkedin.com/in/oliver-engel-5b5abb132/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
+          </div>
+
+        </div>
       </div>
     </div>
 
@@ -61,30 +141,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
-    <script src="js/baffle.min.js"></script>
 
-    <script type="text/javascript">
-      function doSomething() {
-
-        let b = baffle('.baffled');
-        b.set({
-          speed: 75,
-          characters: 'вфдзаяшеруйикольюжщэ́'
-        });
-
-        b.reveal(1000);
-        let c = baffle('.baffled2');
-        c.set({
-          speed: 75,
-          characters: 'вфдзаяшеруйикольюжщэ́'
-        });
-        c.reveal(1000);
-      }
-
-
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src= "js/oliver.js"></script>
 
     <script>sr.reveal('.revealer');</script>

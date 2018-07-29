@@ -36,20 +36,21 @@
   <body cz-shortcut-listen="true">
     <div class="shape-separator"></div>
 
-    <div class="docs-container off-canvas off-canvas-sidebar-show">
-      <div class="docs-navbar" ><a class="off-canvas-toggle btn btn-link btn-action" href="index.html#sidebar"><i class="icon icon-menu"></i></a></div>
+    <div class="docs-container off-canvas off-canvas-sidebar-show ">
+      <div class="docs-navbar" ><a class="off-canvas-toggle btn btn-link btn-action" href="collective.html#sidebar"><i class="icon icon-menu"></i></a>
+      </div>
+
       <div class="docs-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
-        <!-- <div class="docs-brand"><a class="docs-logo" href="https://picturepan2.github.io/spectre/index.html">
-            <h2>Oliver</h2></a></div> -->
         <div class="docs-nav">
           <div class="accordion-container">
             <div class="accordion">
               <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked">
-              <label class="accordion-header">WAYFINDER</label>
+              <label class="accordion-header"><span class="text-gray-optical">WAYFINDER</span></label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
-                  <li class="menu-item"><a id="menu-link"  href="index.html">🏠 Home</a></li>
-                  <li class="menu-item"><a id="menu-link" href="about.html">👤 About</a></li>
+                  <li class="menu-item"><a id="menu-link" class="home"  href="index.html"><span></span>&nbsp; Home</a></li>
+                  <li class="menu-item"><a id="menu-link" class="about" href="about.html">&nbsp; About</a></li>
+                  <li class="menu-item"><a id="menu-link" class="resume" href="explore.html">&nbsp; Explore</a></li>
 
 
                 </ul>
@@ -59,23 +60,23 @@
             <!-- PROJECT MENU -->
             <div class="accordion">
               <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
-              <label class="accordion-header">Projects</label>
+              <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
               <div class="accordion-body">
                 <ul class="menu menu-nav" id = "dynamic-menu">
-                  <li class="menu-item"><a id="menu-link" class="menu-1" href="">Menu 1 Placeholder</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Menu 2 Placeholder</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Menu 3 Placeholder</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Menu 4 Placeholder</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-5" href="">Menu 5 Placeholder</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-6" href="">Menu 6 Placeholder</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-1 active-link" href="">Foundry</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Collective Health</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Emergent</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Code &amp; Art</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-5" href="">UW Capstone</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-6" href="">Light &amp; Form</a></li>
                 </ul>
               </div>
             </div>
-
-
           </div>
         </div>
-      </div><a class="off-canvas-overlay" href="index.html#close"></a>
+      </div>
+
+      <a class="off-canvas-overlay" href="collective.html#close"></a>
       <div class="off-canvas-content">
         <div class="docs-content" id="content">
           <div class="container" id="introduction">
@@ -83,103 +84,74 @@
 
             <section id="siteHeader">
 
-              <h2>Digital type foundry</h2>
-              <p>Challenging traditional typeface creation through generative distortions</p>
+              <h2>Foundry <span class="grayText">Digital Type Distortion</span></h2>
+              <p>My proposal for a generative font manipulation product</p>
+
             </section>
             <!-- <hr class="light-hr"> -->
             <div class="spacer"></div>
 
             <div class="portfolio revealer">
 
-                <img style="padding-bottom:50px;"id="hoverChange" class="image-crop  " src="img/foundry-hero.jpg"  alt="...">
+                <img style="padding-bottom:50px;"id="hoverChange" class="image-crop revealer " src="img/foundry-hero.jpg"  alt="...">
 
-                  <section class="fourth first">
+                <div class="grid-reverse revealer">
+                  <div class="info-chunk">
+                    <h4 class="h4-multiline"><span class="grayText">My Goal</span><br>Create a thorough and original product proposal for a font generation app, based off of my own Python program. </h4>
+                  </div>
+                </div>
+
+
+                  <div class="grid revealer">
                     <div class="info-chunk">
 
                       <p class="text-upper">Role</p>
-                      <h5>Product designer &amp; programmer</h5>
+                      <!-- <p><kbd>Product Design Intern</kbd></p> -->
+                      <span class="chip active">Designer & Programmer</span>
                       <div class="chip-list">
-                        <span class="chip">After Effects</span>
-                        <span class="chip">Sketch</span>
+                        <span class="chip">Sketch App</span>
                         <span class="chip">Python</span>
+                        <span class="chip">After Effects</span>
                       </div>
 
                     </div>
 
-                  </section>
-
-
-                  <section class="three-fourth second clearfix">
                     <div class="info-chunk">
 
                       <p class="text-upper">About</p>
-                      <p>I <mark>wrote a Python program</mark> that takes font files and generatively manipulates them at the point level, the smallest building block of each letter. I then <mark>designed a UI</mark> through which designers and artists could use the program.</p>
+                      <p>For a school project, I had previously written a Python command-line tool that let me manipulate fonts by altering the arrangement and parameters of their bezier curves and control points.</p>
+                      <p>To take the project a step further, I later designed a full UI based off of that code, focusing on a mix of interaction design and visual design. I pursued the project to practice building a product from the ground up, and within the technical constraints set by my own program.</p>
+                    </div>
+                  </div>
+
+
+                  <div class="divider"></div>
+
+                  <div class="grid-reverse revealer">
+                    <div class="info-chunk">
+                      <h4 class="h4-multiline"><span class="grayText">Project in progress – will be uploaded soon</span></h4>
 
                     </div>
-                  </section>
 
+                  </div>
+                  <!-- <img id="hoverChange" class="image-crop  " src="img/collective/hero.jpg"  alt="..."> -->
 
-
+                  </div>
 
             </div>
 
-            <div class="spacer"></div>
-
-            <iframe style="border-radius: 3px; background: #f4f4f4; padding:1.5rem; margin-top:200px;" class="video-responsive revealer" src="https://player.vimeo.com/video/249615054?autoplay=1&loop=1&muted=1&autopause=0"  width="1600" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-            <div class="spacer"></div>
-
-
-            <div>
-              <center>
-
-            <section class="half text-left revealer">
-
-              <h4>Concept</h4>
-              <p>Inspired by Joel Swanson's article, <a class="tooltip" data-tooltip="i.liketightpants.net/" href="http://i.liketightpants.net/and/no-one-starts-from-scratch-type-design-and-the-logic-of-the-fork" target="_blank">"No-one Starts From Scratch: Type Design and the Logic of the Fork"</a>, I set out to create a program that would help me fork existing fonts into distorted versions of their former selves.  </p>
-              <p>Enter <a class = "tooltip" data-tooltip="fontforge.github.io" href="https://fontforge.github.io/en-US/" target="_blank">FontForge</a>, an open-source font editor that embeds Python.  </p>
-
-
-            </section>
-
-            <img class="image-block revealer" style="max-width:400px"src="img/foundry/warp.png">
-            <code class="description d-inline">Program development in IDLE</code>
-
-            <div class="spacer"></div>
-
-            <section class="half text-left revealer">
-
-              <h4>Flow</h4>
-              <p>Users should be able to quickly and easily fork fonts into novel forms to use with their next project. The flow prioritizes easy uploading and effect stacking, much like the way that Instagram handles image manipulation. </p>
-
-            </section>
-
-            <div class="spacer"></div>
-
-            <center><img class=" revealer" style="max-width:400px"src="img/foundry/flow.svg"></center>
-
-
-            <div class="next-project">
-              <a class="btn btn-primary" href="foundry.html">Next project</a>
+            <div class=" docs-footer" id="copyright">
+              <img id="logo-gif" src="img/logo.gif">
+              <p><a href="https://www.linkedin.com/in/oliver-engel-5b5abb132/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
             </div>
 
 
-          </center>
-
-
-
-          <!-- <section class="half text-left revealer">
-
-            <img style="width:50px"src="img/foundry/ff.png">
-          </section> -->
           </div>
+
 
           </div>
 
-          <div class="text-right docs-footer container grid-lg" id="copyright">
-            <img id="logo-gif" src="img/logo.gif">
-            <p><a href="https://www.linkedin.com/in/oliver-engel-5b5abb132/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
-          </div>
+
 
         </div>
       </div>

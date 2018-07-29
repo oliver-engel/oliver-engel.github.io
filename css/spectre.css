@@ -317,7 +317,8 @@ a.active {
 }
 
 a:visited {
-  color: #807fe2;
+  color: #302ecd;
+  /* old: #807fe2; */
 }
 
 h1,

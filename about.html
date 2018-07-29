@@ -26,6 +26,10 @@
   <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script>window.sr = ScrollReveal();</script>
   <style>.sr .revealer { visibility: hidden; }</style>
@@ -37,17 +41,18 @@
     <div class="docs-container off-canvas off-canvas-sidebar-show">
       <div class="docs-navbar" ><a class="off-canvas-toggle btn btn-link btn-action" href="index.html#sidebar"><i class="icon icon-menu"></i></a></div>
       <div class="docs-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
-        <!-- <div class="docs-brand"><a class="docs-logo" href="https://picturepan2.github.io/spectre/index.html">
-            <h2>Oliver</h2></a></div> -->
         <div class="docs-nav">
           <div class="accordion-container">
             <div class="accordion">
               <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked">
-              <label class="accordion-header">WAYFINDER</label>
+              <label class="accordion-header"><span class="text-gray-optical">WAYFINDER</span></label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
-                  <li class="menu-item"><a id="menu-link" href="http://www.oliverengel.com/">🏠 Home</a></li>
-                  <li class="menu-item"><a id="menu-link" class="active-link" href="http://www.oliverengel.com/about">👤 About</a></li>
+                  <li class="menu-item"><a id="menu-link" class="home"  href="index.html"><span></span>&nbsp; Home</a></li>
+                  <li class="menu-item"><a id="menu-link" class="about active-link" href="about.html">&nbsp; About</a></li>
+                  <li class="menu-item"><a id="menu-link" class="resume" href="explore.html">&nbsp; Explore</a></li>
+
+
                 </ul>
               </div>
             </div>
@@ -55,11 +60,11 @@
             <!-- PROJECT MENU -->
             <div class="accordion">
               <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
-              <label class="accordion-header">Projects</label>
+              <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
               <div class="accordion-body">
                 <ul class="menu menu-nav" id = "dynamic-menu">
                   <li class="menu-item"><a id="menu-link" class="menu-1" href="">Foundry</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Computing Paths</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Collective Health</a></li>
                   <li class="menu-item"><a id="menu-link" class="menu-3" href="">Emergent</a></li>
                   <li class="menu-item"><a id="menu-link" class="menu-4" href="">Code &amp; Art</a></li>
                   <li class="menu-item"><a id="menu-link" class="menu-5" href="">UW Capstone</a></li>
@@ -67,69 +72,90 @@
                 </ul>
               </div>
             </div>
-
-
           </div>
         </div>
-      </div><a class="off-canvas-overlay" href="index.html#close"></a>
+      </div>
+      <a class="off-canvas-overlay" href="index.html#close"></a>
       <div class="off-canvas-content">
         <div class="docs-content" id="content">
-          <div class="container" id="introduction">
+          <div class="container portfolio" id="introduction">
 
 
             <section id="siteHeader">
 
               <h2>Passionate about interactive systems 🛠</h2>
-              <p>I friggin' <mark>love</mark> design, tech, and difficult problems. And Björk.</p>
+              <p>I friggin' <mark>love</mark> design, tech, and tough problems. And Björk.</p>
             </section>
             <!-- <hr class="light-hr"> -->
             <div class="spacer"></div>
-
-            <div class="portfolio revealer">
-
-                <img style="padding-bottom:50px;"id="hoverChange" class="image-crop  " src="img/strawb.jpg"  alt="...">
-
-                  <section class="fourth first">
-                    <div class="info-chunk">
-
-                      <p class="text-upper">CURRENTLY</p>
-                      <h5>HCI + Design Master's Candidate</h5>
-                      <mark>University of Washington, Seattle</mark>
-
-                    </div>
+            <img style="padding-bottom:50px;"id="hoverChange" class="image-crop revealer " src="img/strawb.jpg"  alt="...">
 
 
+            <div class="grid revealer">
 
-                    <div class="">
+              <div class="info-chunk">
 
-                      <p class="text-upper">PREVIOUSLY</p>
-                      <h5>Product Design Intern</h5>
-                      <mark>Collective Health</mark>
-
-                      <div class="small-spacer"></div>
-
-
-                     </div>
+                <p class="text-upper">CURRENTLY</p>
+                <h5><span class="text-dark">HCI + Design Master's Candidate</span></h5>
+                <h5>University of Washington, Seattle</h5>
+                <!-- <mark>University of Washington, Seattle</mark> -->
+                <div class="small-spacer"></div>
 
 
-                  <a class="info-chunk" href="https://www.linkedin.com/in/oliver-engel-5b5abb132/" target="_blank">See all my experience</a>
-
-                  </section>
-
-
-                  <section class="three-fourth second">
-                    <div class="info-chunk">
-
-                      <p class="text-upper">About</p>
-                      <p>I'm really interested in design systems, Democratic Socialism, and my dog Sally. I'm so lucky to have discovered design while I was an undergrad at UC San Diego, and now I want to use my new passion to make cool shit and play all day instead of working. </p>
-                      <p>Usually found thrifting old Hawaiian shirts, listening to Cocteau Twins, or drinking Belgian beer.</p>
+                <p class="text-upper">PREVIOUSLY</p>
+                <h5><span class="text-dark">Product Design Intern</span></h5>
+                <h5>Collective Health</h5>
 
 
-                    </div>
-                  </section>
+                <div class="small-spacer"></div>
+
+
+              </div>
+
+              <div class="info-chunk">
+
+                <p class="text-upper">About</p>
+                <p>I'm really interested in Design Systems &amp; Democratic Socialism. I'm so lucky to have discovered design while I was an undergrad at UC San Diego, and now I want to use my new passion to make cool shit and play all day instead of working. </p>
+                <p>Usually found thrifting old Hawaiian shirts, listening to Cocteau Twins, or drinking Belgian beer. </p>
+              </div>
+
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="grid-four revealer">
+
+              <div class="info-chunk">
+
+                <audio id="player" src="bh.mp3"></audio>
+                <p class="text-upper">Current Jam</p>
+                <button class="btn btn-link" style="margin-left:-9px" id="playerID" onclick="document.getElementById('player').play(); "><i class="far fa-play-circle"></i> &nbsp; Drunk in LA – Beach House</button>
+
+              </div>
+
+
+
+              <div class="info-chunk">
+
+                <p class="text-upper">Reading Rn</p>
+                <button style="color:#e85600; margin-left:-9px" class="btn-noclick btn-link"><i class="fas fa-glasses"></i> &nbsp; The Design of Everyday Things</button>
+
+              </div>
+
+              <div class="info-chunk">
+
+                <p class="text-upper">HEX MOOD</p>
+                <button style="color:#689C0B; margin-left:-9px" class="btn-noclick btn-link"><i class="fas fa-square"></i> &nbsp; #689C0B – Lime Dream</button>
+
+              </div>
 
 
             </div>
+
+
+
+
+
 
           </div>
 
@@ -147,10 +173,42 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
     <script src= "js/oliver.js"></script>
 
     <script>sr.reveal('.revealer');</script>
+
+    <!-- <script>
+      function changeText()
+      {
+       document.getElementById('playerID').innerHTML = 'Pause';
+
+      }
+    </script> -->
+
+    <script type="text/javascript">
+    	$(function(){
+    		$('#playerID').click(function(){
+    			var iteration=$(this).data('iteration')||1
+    			switch ( iteration) {
+    				case 1:
+
+              document.getElementById('playerID').innerHTML = '<i class="far fa-pause-circle fa-spin"></i> &nbsp; Drunk in LA – Beach House';
+              document.getElementById('player').play()
+    					break;
+
+    				case 2:
+
+              document.getElementById('playerID').innerHTML = '<i class="far fa-play-circle"></i> &nbsp; Drunk in LA – Beach House';
+              document.getElementById('player').pause()
+    					break;
+    			}
+    			iteration++;
+    			if (iteration>2) iteration=1
+    			$(this).data('iteration',iteration)
+    		})
+    	})
+	</script>
 
 
 </body></html>
