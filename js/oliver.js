@@ -15,7 +15,7 @@ $( document ).ready(function() {
   $(".menu-1-content h3").text("Foundry");
   $(".menu-1-content h5").text("Product Design & Programming");
   $(".menu-1-content img").attr("src", "img/foundry-hero.jpg");
-  $(".menu-1-content a").attr("href", "foundry.html");
+  $(".menu-1-content a").attr("href", "foundry");
 
   //MENU ITEM 2
   $(".menu-2").attr("href", "collective.html");
@@ -24,7 +24,7 @@ $( document ).ready(function() {
   $(".menu-2-content h3").text("Collective Health");
   $(".menu-2-content h5").text("Product Design");
   $(".menu-2-content img").attr("src", "img/collective/hero-smaller.jpg");
-  $(".menu-2-content a").attr("href", "collective.html");
+  $(".menu-2-content a").attr("href", "collective");
 
 
 
