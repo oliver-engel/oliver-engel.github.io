@@ -9,7 +9,7 @@ $( document ).ready(function() {
 
 
   //MENU ITEM 1
-  $(".menu-1").attr("href", "foundry.html")
+  $(".menu-1").attr("href", "foundry")
   $(".menu-1").html("Foundry");
 
   $(".menu-1-content h3").text("Foundry");
@@ -18,7 +18,7 @@ $( document ).ready(function() {
   $(".menu-1-content a").attr("href", "foundry");
 
   //MENU ITEM 2
-  $(".menu-2").attr("href", "collective.html");
+  $(".menu-2").attr("href", "collective");
   $(".menu-2").html("Collective Health");
 
   $(".menu-2-content h3").text("Collective Health");
