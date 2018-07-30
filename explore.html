@@ -96,29 +96,29 @@
             <div class="spacer"></div>
 
             <div class="masonry ">
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/phone.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/pool.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/comp.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/light.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/congrats.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/phone.jpg" data-echo="img/explore/phone.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/pool.jpg" data-echo="img/explore/pool.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/comp.jpg" data-echo="img/explore/comp.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/light.jpg" data-echo="img/explore/light.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/congrats.jpg" data-echo="img/explore/congrats.jpg"></div>
 
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/dark.gif"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/dark.gif" data-echo="img/explore/dark.gif"></div>
 
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/hulla.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/window.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/blur2.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/tapeorchid.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/hulla.jpg" data-echo="img/explore/hulla.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/window.jpg" data-echo="img/explore/window.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/blur2.jpg" data-echo="img/explore/blur2.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/tapeorchid.jpg" data-echo="img/explore/tapeorchid.jpg"></div>
 
 
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/fb.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/insta.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/home-dark.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/fb.jpg" data-echo="img/explore/fb.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/insta.jpg" data-echo="img/explore/insta.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/home-dark.jpg" data-echo="img/explore/home-dark.jpg"></div>
 
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/ProcessingYellow.gif"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/ProcessingYellow.gif" data-echo="img/explore/ProcessingYellow.gif"></div>
 
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/search.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/smile.jpg"></div>
-               <div class="item revealer"><img class="image-crop-mason" src="img/explore/phone-invert.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/search.jpg" data-echo="img/explore/search.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/smile.jpg" data-echo="img/explore/smile.jpg"></div>
+               <div class="item revealer"><img class="image-crop-mason" src="img/explore/phone-invert.jpg" data-echo="img/explore/phone-invert.jpg"></div>
 
 
 
@@ -167,6 +167,20 @@
       itemSelector: '.grid-item',
       columnWidth: 100
       });
+    </script>
+
+    <script src="js/echo.min.js"></script>
+    <script>
+      echo.init({
+        offset: 100,
+        throttle: 250,
+        unload: false,
+        callback: function (element, op) {
+          console.log(element, 'has been', op + 'ed')
+        }
+      });
+
+      // echo.render(); is also available for non-scroll callbacks
     </script>
 
 
