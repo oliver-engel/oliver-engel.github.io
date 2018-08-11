@@ -8,6 +8,16 @@
   padding-top:50px;
 }
 
+.grid-two {
+  max-width:985px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-auto-rows: 2em; */
+  grid-gap: 1.5em;
+  margin-bottom:18px;
+  padding-top:50px;
+}
+
 .grid-reverse {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -391,7 +401,7 @@ margin-top:75px;
 }
 
 @media (max-width: 600px) {
-  .grid, .grid-reverse{
+  .grid, .grid-reverse, .grid-two{
   grid-template-columns: 1fr;
 }
 
