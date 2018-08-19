@@ -80,8 +80,16 @@
 margin-top:75px;
 }
 
+.h5-about{
+margin-bottom:.2em;
+}
+
 .spacer{
   height:75px;
+}
+
+.spacer-50{
+  height:50px;
 }
 
 .small-spacer{
@@ -305,7 +313,9 @@ margin-top:75px;
   display:block;
 }
 
-
+.sibling-highlight{
+  margin-bottom:.2em;
+}
 
 .sibling-hover, #parent {
     cursor: pointer;
