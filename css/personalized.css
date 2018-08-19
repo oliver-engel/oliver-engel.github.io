@@ -257,9 +257,12 @@ margin-bottom:.2em;
 
 }
 
+/* MIGHT NEED TO CHANGE */
 .portfolio a:focus {
-  box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, .2);
+  box-shadow: none;
 }
+
+
 
 .portfolio h5 {
   color:#95a0b2;
