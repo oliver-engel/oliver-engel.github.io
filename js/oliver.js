@@ -14,7 +14,7 @@ $( document ).ready(function() {
 
   $(".menu-1-content h3").text("Foundry");
   $(".menu-1-content h5").text("Product Design & Programming");
-  $(".menu-1-content img").attr("src", "img/foundry-hero.jpg");
+  $(".menu-1-content img").attr("src", "img/foundry-thumb.jpg");
   $(".menu-1-content a").attr("href", "foundry.html");
 
   //MENU ITEM 2
