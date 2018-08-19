@@ -1,3 +1,6 @@
+.divider{
+  max-width: 985px
+}
 .grid {
   max-width:985px;
   display: grid;
