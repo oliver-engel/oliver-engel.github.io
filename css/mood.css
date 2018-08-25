@@ -1,3 +1,7 @@
+.html{
+  font-size:100%;
+}
+
 .mood{
   width: 800px;
   margin: 0 auto;
@@ -7,10 +11,24 @@
   color:white;
 }
 
+ a:focus {
+  box-shadow: none;
+}
+
+#eye{
+  transition:.2s;
+  color:#3c4e1b;
+}
+#eye:hover{
+  cursor: pointer;
+  color:white;
+  transition: 0.2s;
+}
+
 .grid-centering {
   color:#3c4e1b;
-  font-size: 32px;
-  margin-top:40vw;
+  font-size: 2rem;
+  margin-top:250px;
   letter-spacing: 2px;
   font-weight: 700;
   display: grid;
@@ -25,3 +43,9 @@
   font-weight: bold;
   color: white;
 } */
+
+@media (max-width:720px){
+  .grid-centering{
+    font-size:1rem;
+  }
+}
