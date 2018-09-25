@@ -338,6 +338,11 @@ margin-bottom:.2em;
 
 .html { visibility:hidden; }
 
+.invScroll ::-webkit-scrollbar {
+    background: transparent;
+}
+
+
 .shape-separator {
   position: relative;
   height: 12px;
