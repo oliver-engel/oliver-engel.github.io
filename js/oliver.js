@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
   //CHOOSE LINKS TO DISABLE
-  $('.menu-3, .menu-4, .menu-5, .menu-6').click(function(e) {
+  $('.menu-4, .menu-5, .menu-6').click(function(e) {
     e.preventDefault();
     $(this).css("color", "fff");
     //do other stuff when a click happens
