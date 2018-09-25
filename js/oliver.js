@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
   $(".menu-3-content h3").text("Red Share");
   $(".menu-3-content h5").text("Experimental art, programming");
-  $(".menu-3-content img").attr("src", "img/red.jpg");
+  $(".menu-3-content img").attr("src", "img/sp/hammer.jpg");
   $(".menu-3-content a").attr("href", "redshare.html");
 
 
