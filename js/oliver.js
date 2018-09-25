@@ -29,7 +29,7 @@ $( document ).ready(function() {
 
 
   //MENU ITEM 3
-  $(".menu-3").attr("href", "http://www.oliverengel.com/")
+  $(".menu-3").attr("href", "redshare.html")
   $(".menu-3").html("Red Share");
 
   $(".menu-3-content h3").text("Red Share");
