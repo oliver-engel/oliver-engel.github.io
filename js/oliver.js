@@ -13,8 +13,8 @@ $( document ).ready(function() {
   $(".menu-1").html("Foundry");
 
   $(".menu-1-content h3").text("Foundry");
-  $(".menu-1-content h5").text("Product Design & Programming");
-  $(".menu-1-content img").attr("src", "img/foundry-thumb.jpg");
+  $(".menu-1-content h5").text("Product design, programming");
+  $(".menu-1-content img").attr("src", "img/foundry.jpg");
   $(".menu-1-content a").attr("href", "foundry.html");
 
   //MENU ITEM 2
@@ -22,20 +22,20 @@ $( document ).ready(function() {
   $(".menu-2").html("Collective Health");
 
   $(".menu-2-content h3").text("Collective Health");
-  $(".menu-2-content h5").text("Product Design");
-  $(".menu-2-content img").attr("src", "img/collective/hero-smaller.jpg");
+  $(".menu-2-content h5").text("Design systems");
+  $(".menu-2-content img").attr("src", "img/train.jpg");
   $(".menu-2-content a").attr("href", "collective.html");
 
 
 
   //MENU ITEM 3
   $(".menu-3").attr("href", "http://www.oliverengel.com/")
-  $(".menu-3").html("<del>Emergent</del>");
+  $(".menu-3").html("Red Share");
 
-  $(".menu-3-content h3").text("Emergent");
-  $(".menu-3-content h5").text("Product Design");
-  $(".menu-3-content img").attr("src", "img/emergent-hero.jpg");
-  $(".menu-3-content a").attr("href", "http://www.oliverengel.com/");
+  $(".menu-3-content h3").text("Red Share");
+  $(".menu-3-content h5").text("Experimental art, programming");
+  $(".menu-3-content img").attr("src", "img/red.jpg");
+  $(".menu-3-content a").attr("href", "redshare.html");
 
 
   //MENU ITEM 4
