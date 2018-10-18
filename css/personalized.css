@@ -13,6 +13,9 @@
   padding-top:50px;
 }
 
+h2, h3{
+  color:#2d2f32;
+}
 .grid-two {
   max-width:985px;
   display: grid;
