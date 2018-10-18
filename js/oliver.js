@@ -23,7 +23,7 @@ $( document ).ready(function() {
 
   $(".menu-2-content h3").text("Collective Health");
   $(".menu-2-content h5").text("Design systems");
-  $(".menu-2-content img").attr("src", "img/train.jpg");
+  $(".menu-2-content img").attr("src", "img/ch.jpg");
   $(".menu-2-content a").attr("href", "collective.html");
 
 
