@@ -13,7 +13,7 @@ $( document ).ready(function() {
   $(".menu-1").html("Foundry");
 
   $(".menu-1-content h3").text("Foundry");
-  $(".menu-1-content h5").text("Product design, programming");
+  $(".menu-1-content h5").text("Product design");
   $(".menu-1-content img").attr("src", "img/foundry.jpg");
   $(".menu-1-content a").attr("href", "foundry.html");
 
@@ -33,7 +33,7 @@ $( document ).ready(function() {
   $(".menu-3").html("Red Share");
 
   $(".menu-3-content h3").text("Red Share");
-  $(".menu-3-content h5").text("Installation art, programming");
+  $(".menu-3-content h5").text("Installation");
   $(".menu-3-content img").attr("src", "img/sp/hammer.jpg");
   $(".menu-3-content a").attr("href", "redshare.html");
 
