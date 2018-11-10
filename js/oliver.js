@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 
+  console.log("Hey, get outta here.");
+  console.log("You're not supposed to see this.");
+  console.log("Oops, I haiku'd");
   //CHOOSE LINKS TO DISABLE
   $('.menu-4, .menu-5, .menu-6').click(function(e) {
     e.preventDefault();
@@ -39,14 +42,14 @@ $( document ).ready(function() {
 
 
   //MENU ITEM 4
-  $(".menu-4").attr("href", "http://www.oliverengel.com/")
+  $(".menu-4").attr("href", "index.html")
   $(".menu-4").html("<del>Code &amp; Art</del>");
 
 
-  $(".menu-4-content h3").text("Foundry");
-  $(".menu-4-content h5").text("Product Design, Python Programming");
-  $(".menu-4-content img").attr("src", "img/foundry-hero.jpg");
-  $(".menu-4-content a").attr("href", "http://www.oliverengel.com/");
+  $(".menu-4-content h3").text("Code & Art");
+  $(".menu-4-content h5").text("Programming");
+  $(".menu-4-content img").attr("src", "img/code-art-hero.jpg");
+  $(".menu-4-content a").attr("href", "index.html");
 
   //MENU ITEM 5
   $(".menu-5").attr("href", "http://www.oliverengel.com/")
