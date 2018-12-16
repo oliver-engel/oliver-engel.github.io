@@ -21,11 +21,13 @@ html {
 
 @font-face {
     font-family: 'Circular Std';
-    src: url('CircularStd-Medium.woff2') format('woff2'),
-        url('CircularStd-Medium.woff') format('woff');
+    src: url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('../fonts/CircularStd-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
+
+
 
 
 /* Sections ========================================================================== */
@@ -314,7 +316,7 @@ body {
   font-family: "Circular Std Book", sans-serif;
   -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
-  font-size: .8rem;
+  font-size: 18px;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }

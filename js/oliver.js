@@ -43,12 +43,12 @@ $( document ).ready(function() {
 
   //MENU ITEM 4
   $(".menu-4").attr("href", "index.html")
-  $(".menu-4").html("<del>Code &amp; Art</del>");
+  $(".menu-4").html("Osler");
 
 
-  $(".menu-4-content h3").text("Code & Art");
-  $(".menu-4-content h5").text("Programming");
-  $(".menu-4-content img").attr("src", "img/code-art-hero.jpg");
+  $(".menu-4-content h3").text("Osler");
+  $(".menu-4-content h5").text("Product Design");
+  $(".menu-4-content img").attr("src", "img/osler.jpg");
   $(".menu-4-content a").attr("href", "index.html");
 
   //MENU ITEM 5
