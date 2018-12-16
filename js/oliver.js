@@ -12,13 +12,15 @@ $( document ).ready(function() {
 
 
   //MENU ITEM 1
-  $(".menu-1").attr("href", "foundry.html")
-  $(".menu-1").html("Foundry");
+  $(".menu-1").attr("href", "index.html")
+  $(".menu-1").html("Osler");
 
-  $(".menu-1-content h3").text("Foundry");
+
+  $(".menu-1-content h3").text("Osler");
   $(".menu-1-content h5").text("Product design");
-  $(".menu-1-content img").attr("src", "img/foundry.jpg");
-  $(".menu-1-content a").attr("href", "foundry.html");
+  $(".menu-1-content img").attr("src", "img/osler.jpg");
+  $(".menu-1-content a").attr("href", "index.html");
+
 
   //MENU ITEM 2
   $(".menu-2").attr("href", "collective.html");
@@ -36,20 +38,20 @@ $( document ).ready(function() {
   $(".menu-3").html("Red Share");
 
   $(".menu-3-content h3").text("Red Share");
-  $(".menu-3-content h5").text("Installation");
-  $(".menu-3-content img").attr("src", "img/sp/hammer.jpg");
+  $(".menu-3-content h5").text("Interactive art");
+  $(".menu-3-content img").attr("src", "img/sp/close.jpg");
   $(".menu-3-content a").attr("href", "redshare.html");
 
 
   //MENU ITEM 4
-  $(".menu-4").attr("href", "index.html")
-  $(".menu-4").html("Osler");
+  $(".menu-4").attr("href", "foundry.html")
+  $(".menu-4").html("Foundry");
 
+  $(".menu-4-content h3").text("Foundry");
+  $(".menu-4-content h5").text("Product design");
+  $(".menu-4-content img").attr("src", "img/foundry.jpg");
+  $(".menu-4-content a").attr("href", "foundry.html");
 
-  $(".menu-4-content h3").text("Osler");
-  $(".menu-4-content h5").text("Product Design");
-  $(".menu-4-content img").attr("src", "img/osler.jpg");
-  $(".menu-4-content a").attr("href", "index.html");
 
   //MENU ITEM 5
   $(".menu-5").attr("href", "http://www.oliverengel.com/")
