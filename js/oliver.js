@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
   console.log("Hey, get outta here.");
   console.log("You're not supposed to see this.");
-  console.log("Oops, I haiku'd");
+  console.log("Oops, I just haiku'd");
   //CHOOSE LINKS TO DISABLE
   $('.menu-5, .menu-6').click(function(e) {
     e.preventDefault();
