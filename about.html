@@ -47,12 +47,10 @@
 
 
 
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script>window.sr = ScrollReveal();</script>
-  <style>.sr .revealer { visibility: hidden; }</style>
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   </head>
-  <body cz-shortcut-listen="true">
+  <body cz-shortcut-listen="true" >
     <div class="shape-separator"></div>
 
     <div class="docs-container off-canvas off-canvas-sidebar-show">
@@ -96,15 +94,15 @@
           <div class="container portfolio" id="introduction">
 
 
-            <section id="siteHeader">
+            <section id="siteHeader" >
               <h2>Passionate about interactive systems 🛠</h2>
               <p>I love digital design, emerging tech, and complex challenges. And Björk.</p>
             </section>
 
             <div class="spacer-50"></div>
-            <img style="max-height: 450px;" id="hoverChange" class="image-crop revealer " src="img/strawb.jpg"  alt="...">
+            <img style="max-height: 450px;" id="hoverChange" class="image-crop fader " src="img/strawb.jpg"  alt="...">
 
-            <div class="grid revealer">
+            <div class="grid fader">
               <div class="info-chunk">
                 <p class="text-upper">CURRENTLY</p>
                 <h5 class="h5-about"><span class="text-dark">HCI + Design Master's Candidate</span></h5>
@@ -162,7 +160,9 @@
 
     <script src= "js/oliver.js"></script>
 
-    <script>sr.reveal('.revealer');</script>
+    <script>
+    ScrollReveal().reveal('.fader', { distance: '5px', origin: 'bottom'});
+	  </script>
 
     <script type="text/javascript">
     	$(function(){

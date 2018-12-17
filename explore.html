@@ -46,12 +46,7 @@
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>window.sr = ScrollReveal();</script>
-
-
-
-    <style>.sr .revealer { visibility: hidden; }</style>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
   </head>
   <body cz-shortcut-listen="true">
@@ -106,14 +101,14 @@
 
             <div class="spacer-50"></div>
 
-            <div class="portfolio revealer">
+            <div class="portfolio fader">
 
                 <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop revealer " src="img/explore/printshop.jpg"  alt="...">
             </div>
 
 
 
-            <div class="masonry ">
+            <div class="masonry fader ">
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/phone.jpg" data-echo="img/explore/phone.jpg"></div>
                <!-- <div class="item revealer"><img class="image-crop-mason" src="img/explore/pool.jpg" data-echo="img/explore/pool.jpg"></div> -->
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/comp.jpg" data-echo="img/explore/comp.jpg"></div>
@@ -177,7 +172,9 @@
 
     <script src= "js/oliver.js"></script>
 
-    <script>sr.reveal('.revealer');</script>
+    <script>
+    ScrollReveal().reveal('.fader', { distance: '5px', origin: 'bottom'});
+	  </script>
 
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 

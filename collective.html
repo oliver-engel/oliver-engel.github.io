@@ -45,9 +45,8 @@
   <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script>window.sr = ScrollReveal();</script>
-  <style>.sr .revealer { visibility: hidden; }</style>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
 
   </head>
   <body cz-shortcut-listen="true">
@@ -105,18 +104,18 @@
             </section>
             <div class="spacer-50"></div>
 
-            <div class="portfolio revealer">
+            <div class="portfolio fader">
 
                 <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop revealer " src="img/collective/hero.jpg"  alt="...">
 
-                <div class="grid-reverse revealer">
+                <div class="grid-reverse fader">
                   <div class="info-chunk">
                     <h4 class="h4-multiline"><span class="grayText">Project premise</span><br>Help retool Collective Health's iOS and Android apps with a beautiful and functional design system that scales elegantly with the company.</h4>
                   </div>
                 </div>
 
 
-                  <div class="grid revealer">
+                  <div class="grid fader">
                     <div class="info-chunk">
 
                       <p class="text-upper">Role</p>
@@ -141,7 +140,7 @@
 
                   <div class="divider"></div>
 
-                  <div class="grid-reverse revealer">
+                  <div class="grid-reverse fader">
                     <div class="info-chunk">
                       <h4 class="h4-multiline"><span class="grayText">Project in progress – will be uploaded soon</span></h4>
 
@@ -171,15 +170,18 @@
       </div>
     </div>
 
+    <script>
+    ScrollReveal().reveal('.fader', { distance: '5px', origin: 'bottom'});
+	  </script>
+
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src= "js/oliver.js"></script>
 
-    <script>sr.reveal('.revealer');</script>
+
 
 
 </body></html>

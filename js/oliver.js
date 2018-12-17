@@ -4,7 +4,7 @@ $( document ).ready(function() {
   console.log("You're not supposed to see this.");
   console.log("Oops, I haiku'd");
   //CHOOSE LINKS TO DISABLE
-  $('.menu-4, .menu-5, .menu-6').click(function(e) {
+  $('.menu-5, .menu-6').click(function(e) {
     e.preventDefault();
     $(this).css("color", "fff");
     //do other stuff when a click happens
