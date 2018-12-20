@@ -23,7 +23,7 @@
 
 .sidebar-animate {
   /* This section calls the slideInFromLeft animation we defined above */
-  animation: 1s ease-in 0s 1 slideInFromLeft;
+  animation: 1s ease 0s 1 slideInFromLeft;
 
   background: #333;
 
