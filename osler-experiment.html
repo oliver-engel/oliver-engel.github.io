@@ -45,11 +45,13 @@
   <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
-
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>window.sr = ScrollReveal();</script>
+  <style>.sr .revealer { visibility: hidden; }</style>
 
   </head>
 
-  <body cz-shortcut-listen="true" class="hidden" >
+  <body cz-shortcut-listen="true">
     <div  class="shape-separator"></div>
 
     <div class="docs-container off-canvas off-canvas-sidebar-show ">
@@ -77,10 +79,10 @@
               <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
               <div class="accordion-body">
                 <ul class="menu menu-nav" id = "dynamic-menu">
-                  <li class="menu-item"><a id="menu-link" class="menu-1 active-link" href="">Osler</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Collective Health</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Red Share</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Foundry</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-1 active-link" href="">The Challenge</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Solution</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Research</a></li>
+                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Code &amp; Art</a></li>
                   <li class="menu-item"><a id="menu-link" class="menu-5" href="">UW Capstone</a></li>
                   <li class="menu-item"><a id="menu-link" class="menu-6" href="">Light &amp; Form</a></li>
                 </ul>
@@ -95,24 +97,22 @@
         <div class="docs-content" id="content">
           <div class="container" id="introduction">
 
-
-
             <section id="siteHeader">
-              <h2 class="has-animation" >Osler <span class="grayText">Asthma Care Management</span></h2>
-              <p class="has-animation">Transforming a paper design artifact into a digital product</p>
+              <h2>Osler <span class="grayText">Asthma Care Management</span></h2>
+              <p>TO DO</p>
             </section>
 
             <div class="spacer-50"></div>
 
-            <div class="portfolio has-animation" data-delay="150" >
-                <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop fader " src="img/foundry.jpg"  alt="...">
-                <div class="grid-reverse fader">
+            <div class="portfolio revealer">
+                <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop revealer " src="img/foundry.jpg"  alt="...">
+                <div class="grid-reverse revealer">
                   <div class="info-chunk">
-                    <h4 class="h4-multiline"><span class="grayText">Context</span><br>While partnered with <a href="https://www.premera.com/wa/visitor/" class="tooltip tooltip-top" data-tooltip="premera.com" target="blank">Premera Blue Cross</a>, I helped reimagine an outdated design artifact to help parents better manage their child's asthma over the long-term. </h4>
+                    <h4 class="h4-multiline"><span class="grayText">Context</span><br>While partnered with Premera Health, I worked with a team of designers to create a digital care management app for parents of asthmatic children. </h4>
                   </div>
                 </div>
 
-                  <div class="grid fader">
+                  <div class="grid revealer">
                     <div class="info-chunk">
                       <p class="text-upper">Role</p>
                       <span class="chip active">Designer</span>
@@ -122,15 +122,12 @@
                         <span class="chip">UI Design</span>
                         <span class="chip">Visual Design</span>
                         <span class="chip">Prototyping</span>
-                        <div class="spacer-50"></div>
-                        <p class="text-upper">Team</p>
-                        <p><a href="https://jenniferwangdesign.com/" target="blank" class="tooltip tooltip-bottom" data-tooltip="Jennifer Wang Portfolio">Jennifer Wang</a> &nbsp; &nbsp; <a href="https://www.linkedin.com/in/chavanrohan/" target="_blank" class="tooltip tooltip-bottom" data-tooltip="linkedin.com">Rohan Chavan</a></p>
                       </div>
                     </div>
 
                     <div class="info-chunk">
                       <p class="text-upper">About</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Ligula ullamcorper malesuada proin libero nunc. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Ut placerat orci nulla pellentesque dignissim enim sit amet. Varius morbi enim nunc faucibus. Sodales ut eu sem integer vitae justo eget magna.</p>
+                      <p></p>
 
                     </div>
                   </div>
@@ -138,7 +135,7 @@
 
                   <div class="divider"></div>
 
-                  <div class="grid-reverse fader">
+                  <div class="grid-reverse revealer">
                     <div class="info-chunk">
                       <h4 class="h4-multiline"><span class="grayText">Project in progress – will be uploaded soon</span></h4>
                     </div>
@@ -156,33 +153,13 @@
       </div>
     </div>
 
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src= "js/oliver.js"></script>
-
-    <!-- <script src="js/baffle.min.js"></script>
-
-    <script type="text/javascript">
-
-      function doSomething() {
-
-        let b = baffle('.baffled');
-        b.set({
-          speed: 10,
-          characters: '✱✳✴✶✼'
-        });
-
-        b.reveal(1000);}
-
-    </script> -->
-
-
-
+    <script>sr.reveal('.revealer');</script>
 
 </body></html>
