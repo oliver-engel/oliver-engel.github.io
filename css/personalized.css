@@ -12,6 +12,23 @@
   transform: translateY(0px);
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.sidebar-animate {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-in 0s 1 slideInFromLeft;
+
+  background: #333;
+
+}
+
 .clear{
   clear:both;
 }
