@@ -105,7 +105,9 @@
             <div class="spacer-50"></div>
 
             <div class="portfolio has-animation" data-delay="500" >
-                <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop fader " src="img/foundry.jpg"  alt="...">
+              <div style="height: 450px;" id="lottie"></div>
+
+                <!-- <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop fader " src="img/foundry.jpg"  alt="..."> -->
                 <div class="grid-reverse fader">
                   <div class="info-chunk">
                     <h4 class="h4-multiline"><span class="grayText">Context</span><br>While partnered with <a href="https://www.premera.com/wa/visitor/" class="tooltip tooltip-top" data-tooltip="premera.com" target="blank">Premera Blue Cross</a>, I helped reimagine an outdated design artifact to help parents better manage their child's asthma over the long-term. </h4>
@@ -165,22 +167,24 @@
     crossorigin="anonymous"></script>
 
     <script src= "js/oliver.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.2/lottie.js" type="text/javascript"></script>
 
-    <!-- <script src="js/baffle.min.js"></script>
+
 
     <script type="text/javascript">
 
-      function doSomething() {
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('lottie'), // Required
+      path: 'files/data.json', // Required
+      renderer: 'svg', // Required
+      loop: true, // Optional
+      autoplay: true, // Optional
+      name: "Hello World", // Name for future reference. Optional.
+    });
+    console.log("whats going on here");
 
-        let b = baffle('.baffled');
-        b.set({
-          speed: 10,
-          characters: '✱✳✴✶✼'
-        });
 
-        b.reveal(1000);}
-
-    </script> -->
+    </script>
 
 
 

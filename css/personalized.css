@@ -1,3 +1,16 @@
+.nostyle{
+  color:#5755d9 !important;
+  text-decoration: none;
+}
+.nostyle:visited{
+  color:#5755d9 !important;
+  text-decoration: none;
+}
+.nostyle:hover{
+  text-decoration: none;
+}
+
+
 .has-animation {
   opacity: 0!important;
   -webkit-transition:  transform .8s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
@@ -225,7 +238,7 @@ margin-bottom:.2em;
 }
 
 .active-link{
-  color:#6564d0 !important;
+  color:#302ecd !important;
 }
 
 .light-hr{
