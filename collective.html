@@ -32,10 +32,10 @@
   <meta name="robots" content="NOODP">
 
   <link rel="stylesheet" href="css/spectre.css">
-  <link rel="stylesheet" href="css/spectre-icons.min.css">
-  <link rel="stylesheet" href="css/spectre-exp.min.css">
-  <link rel="stylesheet" href="css/docs.css">
   <link rel="stylesheet" href="css/personalized.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 
   <!-- FAVICONS -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -50,49 +50,27 @@
 
   </head>
   <body cz-shortcut-listen="true">
-    <div class="shape-separator"></div>
 
-    <div class="docs-container off-canvas off-canvas-sidebar-show ">
-      <div class="docs-navbar" ><a class="off-canvas-toggle btn btn-link btn-action" href="collective.html#sidebar"><i class="icon icon-menu"></i></a>
-      </div>
 
-      <div class="docs-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
-        <div class="docs-nav">
-          <div class="accordion-container">
-            <div class="accordion">
-              <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked">
-              <label class="accordion-header"><span class="text-gray-optical">WAYFINDER</span></label>
-              <div class="accordion-body">
-                <ul class="menu menu-nav">
-                  <li class="menu-item"><a id="menu-link" class="home"  href="index.html"><span></span>&nbsp; Home</a></li>
-                  <li class="menu-item"><a id="menu-link" class="about" href="about.html">&nbsp; About</a></li>
-                  <li class="menu-item"><a id="menu-link" class="resume" href="explore.html">&nbsp; Explore</a></li>
-                </ul>
+
+    <div class="main-container">
+
+      <nav class="nav">
+          <div class="nav-container">
+
+              <div class="ani" class="name-logo">
+                  <a href="index.html" class="logo" href=""><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-square"></i></a>
               </div>
-            </div>
 
-            <!-- PROJECT MENU -->
-            <div class="accordion">
-              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
-              <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
-              <div class="accordion-body">
-                <ul class="menu menu-nav" id = "dynamic-menu">
-                  <li class="menu-item"><a id="menu-link" class="menu-1" href="">Osler</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-2 active-link" href="">Collective Health</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Red Share</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Foundry</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-5" href="">UW Capstone</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-6" href="">Light &amp; Form</a></li>
-                </ul>
+              <div class="links">
+                  <a class="newHover" href="index.html">Projects</a>
+                  <a class="newHover"  href="about.html">About</a>
+
               </div>
-            </div>
           </div>
-        </div>
-      </div>
+      </nav>
 
-      <a class="off-canvas-overlay" href="collective.html#close"></a>
-      <div class="off-canvas-content">
-        <div class="docs-content" id="content">
+        <div class="page-content" id="content">
           <div class="container" id="introduction">
 
 
@@ -104,21 +82,21 @@
             </section>
             <div class="spacer-50"></div>
 
-            <div class="portfolio fader has-animation" data-delay="500">
+            <div class="portfolio  has-animation" data-delay="500">
 
-                <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop revealer " src="img/collective/hero.jpg"  alt="...">
+                <img style="max-height: 450px; padding-bottom:0px;"  class="image-crop revealer " src="img/collective/hero.jpg"  alt="...">
 
-                <div class="grid-reverse fader">
+                <div class="grid-3-2 ">
                   <div class="info-chunk">
                     <h4 class="h4-multiline"><span class="grayText">Project premise</span><br>Help retool Collective Health's iOS and Android apps with a beautiful and functional design system that scales elegantly with the company.</h4>
                   </div>
                 </div>
 
 
-                  <div class="grid fader">
+                  <div class="grid ">
                     <div class="info-chunk">
 
-                      <p class="text-upper">Role</p>
+                      <p class="text-uppercase">Role</p>
                       <span class="chip active">Product Design Intern</span>
                       <div class="chip-list">
                         <span class="chip">Sketch App</span>
@@ -130,7 +108,7 @@
 
                     <div class="info-chunk">
 
-                      <p class="text-upper">About</p>
+                      <p class="text-uppercase">About</p>
                       <p>In May 2018, I joined <a class="tooltip tooltip-top" data-tooltip="collectivehealth.com" href="https://collectivehealth.com/" target="_blank">Collective Health</a> as a product design intern on the newly formed Design Language System (DLS) team.</p>
                       <p>My longest-term project was to help develop a design system for the iOS and mobile apps, which previously had no system in place. I learned a ton about what makes a beautiful UI, and the exciting crossovers between visual and UX design.</p>
                       <p>Huge thanks to <a class="tooltip tooltip-top" data-tooltip="linkedin.com" href="https://www.linkedin.com/in/talbenisty" target="_blank">Tal Benisty</a>, the senior mobile designer, and <a class="tooltip tooltip-top" data-tooltip="linkedin.com" target="_blank" href="https://www.linkedin.com/in/designkavita">Kavita Mistry</a>, my DLS mentor. </p>
@@ -140,38 +118,31 @@
 
                   <div class="divider"></div>
 
-                  <div class="grid-reverse fader">
+                  <div class="grid-3-2 ">
                     <div class="info-chunk">
                       <h4 class="h4-multiline"><span class="grayText">Project in progress – will be uploaded soon</span></h4>
 
                     </div>
 
                   </div>
-                  <!-- <img id="hoverChange" class="image-crop  " src="img/collective/hero.jpg"  alt="..."> -->
+                  <!-- <img   class="image-crop  " src="img/collective/hero.jpg"  alt="..."> -->
 
                   </div>
 
+                  <div class=" global-footer" id="copyright">
+                    <img id="logo-gif" src="img/logo.gif">
+                    <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
+                  </div>
+
+              </div>
             </div>
-
-            <div class=" docs-footer" id="copyright">
-              <img id="logo-gif" src="img/logo.gif">
-              <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
-            </div>
-
-
           </div>
-
-
-          </div>
-
-
-
         </div>
       </div>
     </div>
 
     <script>
-    ScrollReveal().reveal('.fader');
+    ScrollReveal().reveal('.');
 	  </script>
 
     <script

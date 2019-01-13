@@ -32,7 +32,7 @@
   <meta name="robots" content="NOODP">
 
   <link rel="stylesheet" href="css/spectre.css">
-  <link rel="stylesheet" href="css/spectre-icons.min.css">
+  <link rel="stylesheet" href="css/spectre-helpers.min.css">
   <link rel="stylesheet" href="css/spectre-exp.min.css">
   <link rel="stylesheet" href="css/docs.css">
   <link rel="stylesheet" href="css/personalized.css">
@@ -49,74 +49,75 @@
 
   </head>
 
-  <body cz-shortcut-listen="true" class="hidden" >
+  <body>
     <div  class="shape-separator"></div>
 
     <div class="docs-container off-canvas off-canvas-sidebar-show ">
-      <div class="docs-navbar" ><a class="off-canvas-toggle btn btn-link btn-action" href="foundry.html#sidebar"><i class="icon icon-menu"></i></a>
+      <div class="sidebar-nav" ><a class="off-canvas-toggle btn btn-link btn-action" href="foundry.html#sidebar"><i class="icon icon-menu"></i></a>
       </div>
 
-      <div class="docs-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
+      <!-- SIDEBAR -->
+
+      <div class="global-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
         <div class="docs-nav">
           <div class="accordion-container">
             <div class="accordion">
-              <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked">
-              <label class="accordion-header"><span class="text-gray-optical">WAYFINDER</span></label>
               <div class="accordion-body">
-                <ul class="menu menu-nav">
-                  <li class="menu-item"><a id="menu-link" class="home"  href="index.html"><span></span>&nbsp; Home</a></li>
-                  <li class="menu-item"><a id="menu-link" class="about" href="about.html">&nbsp; About</a></li>
-                  <li class="menu-item"><a id="menu-link" class="resume" href="explore.html">&nbsp; Explore</a></li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- PROJECT MENU -->
-            <div class="accordion ">
-              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
-              <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
-              <div class="accordion-body">
-                <ul class="menu menu-nav" id = "dynamic-menu">
-                  <li class="menu-item"><a id="menu-link" class="menu-1 active-link" href="">Osler</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Collective Health</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Red Share</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Foundry</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-5" href="">UW Capstone</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-6" href="">Light &amp; Form</a></li>
+                <label class="accordion-header">WAYFINDER</label>
+
+                <ul class="menu menu-nav first-nav-section">
+                  <li class="menu-item"><a class="home active-page"  href="index.html"><span></span>Home</a></li>
+                  <li class="menu-item"><a class="about" href="about.html">About</a></li>
+                  <li class="menu-item"><a class="explore" href="explore.html">Explore</a></li>
                 </ul>
+
+                <label class="accordion-header">PROJECTS</label>
+
+                <ul class="menu menu-nav">
+                  <li class="menu-item"><a class="active-page" href="osler.html">Osler</a></li>
+                  <li class="menu-item"><a href="collective.html">Collective Health</a></li>
+                  <li class="menu-item"><a href="redshare.html">Red Share</a></li>
+                  <li class="menu-item"><a href="foundry.html">Foundry</a></li>
+                </ul>
+
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- SIDEBAR END -->
+
       <a class="off-canvas-overlay" href="foundry.html#close"></a>
       <div class="off-canvas-content">
-        <div class="docs-content" id="content">
+        <div class="page-content" id="content">
           <div class="container" id="introduction">
 
 
-
-            <section id="siteHeader">
-              <h2 class="has-animation" >Osler <span class="grayText">Asthma Care Management</span></h2>
+            <section>
+              <h2 class="has-animation">Osler <span class="grayText">Asthma Care Management</span></h2>
               <p class="has-animation">Transforming a paper design artifact into a digital product</p>
             </section>
 
             <div class="spacer-50"></div>
 
             <div class="portfolio has-animation" data-delay="500" >
-              <div style="height: 450px;" id="lottie"></div>
+              <!-- <div id="lottie"></div> -->
 
-                <!-- <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop fader " src="img/foundry.jpg"  alt="..."> -->
-                <div class="grid-reverse fader">
+
+                <img style="max-height: 450px; padding-bottom:0px;"  class="image-crop  " src="img/foundry.jpg"  alt="...">
+                <div class="grid-3-2 ">
                   <div class="info-chunk">
                     <h4 class="h4-multiline"><span class="grayText">Context</span><br>While partnered with <a href="https://www.premera.com/wa/visitor/" class="tooltip tooltip-top" data-tooltip="premera.com" target="blank">Premera Blue Cross</a>, I helped reimagine an outdated design artifact to help parents better manage their child's asthma over the long-term. </h4>
                   </div>
                 </div>
 
-                  <div class="grid fader">
+
+
+                  <div class="grid ">
                     <div class="info-chunk">
-                      <p class="text-upper">Role</p>
+                      <p class="text-uppercase">Role</p>
                       <span class="chip active">Designer</span>
 
                       <div class="chip-list">
@@ -125,30 +126,38 @@
                         <span class="chip">Visual Design</span>
                         <span class="chip">Prototyping</span>
                         <div class="spacer-50"></div>
-                        <p class="text-upper">Team</p>
+                        <p class="text-uppercase">Team</p>
                         <p><a href="https://jenniferwangdesign.com/" target="blank" class="tooltip tooltip-bottom" data-tooltip="Jennifer Wang Portfolio">Jennifer Wang</a> &nbsp; &nbsp; <a href="https://www.linkedin.com/in/chavanrohan/" target="_blank" class="tooltip tooltip-bottom" data-tooltip="linkedin.com">Rohan Chavan</a></p>
                       </div>
                     </div>
 
                     <div class="info-chunk">
-                      <p class="text-upper">About</p>
+                      <p class="text-uppercase">About</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Ligula ullamcorper malesuada proin libero nunc. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Ut placerat orci nulla pellentesque dignissim enim sit amet. Varius morbi enim nunc faucibus. Sodales ut eu sem integer vitae justo eget magna.</p>
 
+                    </div>
+
+
+                  </div>
+
+                  <div class="grid-3-2 ">
+                    <div class="info-chunk">
+                      <p>Cultural probes are a technique best used for inspiration when designing for unfamiliar groups. They often take the form of kits containing objects and tasks that participants engage with and complete over time, returning the kits at some point to be analyzed by designers. It is a very loose technique meant to be inspirational at the early stages of the design process.</p>
                     </div>
                   </div>
 
 
-                  <div class="divider"></div>
+                  <!-- <div class="divider"></div>
 
-                  <div class="grid-reverse fader">
+                  <div class="grid-3-2 ">
                     <div class="info-chunk">
                       <h4 class="h4-multiline"><span class="grayText">Project in progress – will be uploaded soon</span></h4>
                     </div>
-                 </div>
+                 </div> -->
                </div>
              </div>
 
-            <div class=" docs-footer" id="copyright">
+            <div class=" global-footer" id="copyright">
               <img id="logo-gif" src="img/logo.gif">
               <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
             </div>

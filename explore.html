@@ -31,11 +31,10 @@
     <meta name="robots" content="NOODP">
 
     <link rel="stylesheet" href="css/spectre.css">
-    <link rel="stylesheet" href="css/spectre-icons.min.css">
-    <link rel="stylesheet" href="css/spectre-exp.min.css">
+    <link rel="stylesheet" href="css/spectre-helpers.min.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/personalized.css">
-    <link rel="stylesheet" href="css/explore.css">
+
 
 
     <!-- FAVICONS -->
@@ -49,75 +48,46 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
   </head>
-  <body cz-shortcut-listen="true">
-    <div class="shape-separator"></div>
+  <body>
 
-    <div class="docs-container off-canvas off-canvas-sidebar-show">
-      <div class="docs-navbar" ><a class="off-canvas-toggle btn btn-link btn-action" href="explore.html#sidebar"><i class="icon icon-menu"></i></a></div>
-      <div class="docs-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
-        <div class="docs-nav">
-          <div class="accordion-container">
-            <div class="accordion">
-              <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked">
-              <label class="accordion-header"><span class="text-gray-optical">WAYFINDER</span></label>
-              <div class="accordion-body">
-                <ul class="menu menu-nav">
-                  <li class="menu-item"><a id="menu-link" class="home"  href="index.html"><span></span>&nbsp; Home</a></li>
-                  <li class="menu-item"><a id="menu-link" class="about" href="about.html">&nbsp; About</a></li>
-                  <li class="menu-item"><a id="menu-link" class="resume active-link" href="explore">&nbsp; Explore</a></li>
-                </ul>
-              </div>
+    <div class="main-container">
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="links">
+                <a href="https://www.oliverengel.com/">Oliver Engel</a>
             </div>
-
-            <!-- PROJECT MENU -->
-            <div class="accordion">
-              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
-              <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
-              <div class="accordion-body">
-                <ul class="menu menu-nav" id = "dynamic-menu">
-                  <li class="menu-item"><a id="menu-link" class="menu-1" href="">Osler</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Collective Health</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Red Share</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Foundry</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-5" href="">UW Capstone</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-6" href="">Light &amp; Form</a></li>
-                </ul>
-              </div>
+            <div class="links">
+                <a href="about.html">About me</a>
+                <a href="index.html">Projects</a>
             </div>
           </div>
-        </div>
-      </div>
-      <a class="off-canvas-overlay" href="explore.html#close"></a>
-      <div class="off-canvas-content">
-        <div class="docs-content" id="content">
-          <div class="container" id="introduction">
+      </nav>
 
-            <section id="siteHeader" class="has-animation">
+      <div class="page-content" id="content">
+        <div class="container" id="introduction">
 
-              <h2>Explore some odds and ends 🚲</h2>
-              <p>A collection of random things I’ve made, organized without rhyme or reason</p>
+          <section id="siteHeader" class="has-animation">
+            <h2>Explore some odds and ends 🚲</h2>
+            <p>A collection of random things I’ve made, organized without rhyme or reason</p>
 
-            </section>
+          </section>
 
-            <div class="spacer-50"></div>
+          <div class="spacer-50"></div>
 
-            <div class="portfolio fader has-animation" data-delay="500">
-
-                <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop revealer " src="img/explore/printshop.jpg"  alt="...">
-            </div>
+          <div class="portfolio has-animation" data-delay="500">
+            <img class="image-crop revealer" src="img/explore/printshop.jpg"  alt="...">
+          </div>
 
 
 
-            <div class="masonry fader has-animation " data-delay="500">
+            <div class="masonry  has-animation " data-delay="500">
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/phone.jpg" data-echo="img/explore/phone.jpg"></div>
-               <!-- <div class="item revealer"><img class="image-crop-mason" src="img/explore/pool.jpg" data-echo="img/explore/pool.jpg"></div> -->
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/comp.jpg" data-echo="img/explore/comp.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/light.jpg" data-echo="img/explore/light.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/congrats.jpg" data-echo="img/explore/congrats.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/antelope.jpg" data-echo="img/explore/antelope.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/selfie.jpg" data-echo="img/explore/selfie.jpg"></div>
-
-
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/dark.gif" data-echo="img/explore/dark.gif"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/hulla.jpg" data-echo="img/explore/hulla.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/window.jpg" data-echo="img/explore/window.jpg"></div>
@@ -125,12 +95,10 @@
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/tapeorchid.jpg" data-echo="img/explore/tapeorchid.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/fb.jpg" data-echo="img/explore/fb.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/beach.jpg" data-echo="img/explore/beach.jpg"></div>
-
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/jackpack1.gif" data-echo="img/explore/jackpack1.gif"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/lyft.jpg" data-echo="img/explore/lyft.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/studyjam.jpg" data-echo="img/explore/studyjam.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/moto.jpg" data-echo="img/explore/moto.jpg"></div>
-               <!-- <div class="item revealer"><img class="image-crop-mason" src="img/explore/ethics.jpg" data-echo="img/explore/ethics.jpg"></div> -->
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/brad.png" data-echo="img/explore/brad.png"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/coupon.jpg" data-echo="img/explore/coupon.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/rhps.jpg" data-echo="img/explore/rhps.jpg"></div>
@@ -140,27 +108,22 @@
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/bird.jpg" data-echo="img/explore/bird.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/dark.jpg" data-echo="img/explore/dark.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/saturn.jpg" data-echo="img/explore/saturn.jpg"></div>
-
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/ttv.gif" data-echo="img/explore/ttv.gif"></div>
-
-               <!-- <div class="item revealer"><img class="image-crop-mason" src="img/explore/insta.jpg" data-echo="img/explore/insta.jpg"></div> -->
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/home-dark.jpg" data-echo="img/explore/home-dark.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/ProcessingYellow.gif" data-echo="img/explore/ProcessingYellow.gif"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/search.jpg" data-echo="img/explore/search.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/smile.jpg" data-echo="img/explore/smile.jpg"></div>
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/jackpack2.gif" data-echo="img/explore/jackpack2.gif"></div>
-
                <div class="item revealer"><img class="image-crop-mason" src="img/explore/phone-invert.jpg" data-echo="img/explore/phone-invert.jpg"></div>
             </div>
           </div>
 
-          <div class="text-right docs-footer container grid-lg" id="copyright">
+          <div class="global-footer" id="copyright">
             <img id="logo-gif" src="img/logo.gif">
             <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
           </div>
 
         </div>
-      </div>
     </div>
 
     <script
@@ -168,12 +131,10 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
-
-
     <script src= "js/oliver.js"></script>
 
     <script>
-    ScrollReveal().reveal('.fader');
+    ScrollReveal().reveal('.');
 	  </script>
 
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

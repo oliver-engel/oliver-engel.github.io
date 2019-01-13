@@ -32,7 +32,7 @@
   <meta name="robots" content="NOODP">
 
   <link rel="stylesheet" href="css/spectre.css">
-  <link rel="stylesheet" href="css/spectre-icons.min.css">
+  <link rel="stylesheet" href="css/spectre-helpers.min.css">
   <link rel="stylesheet" href="css/spectre-exp.min.css">
   <link rel="stylesheet" href="css/docs.css">
   <link rel="stylesheet" href="css/personalized.css">
@@ -55,10 +55,10 @@
     <div  class="shape-separator"></div>
 
     <div class="docs-container off-canvas off-canvas-sidebar-show ">
-      <div class="docs-navbar" ><a class="off-canvas-toggle btn btn-link btn-action" href="foundry.html#sidebar"><i class="icon icon-menu"></i></a>
+      <div class="sidebar-nav" ><a class="off-canvas-toggle btn btn-link btn-action" href="foundry.html#sidebar"><i class="icon icon-menu"></i></a>
       </div>
 
-      <div class="docs-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
+      <div class="global-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
         <div class="docs-nav">
           <div class="accordion-container">
             <div class="accordion">
@@ -66,9 +66,9 @@
               <label class="accordion-header"><span class="text-gray-optical">WAYFINDER</span></label>
               <div class="accordion-body">
                 <ul class="menu menu-nav">
-                  <li class="menu-item"><a id="menu-link" class="home"  href="index.html"><span></span>&nbsp; Home</a></li>
-                  <li class="menu-item"><a id="menu-link" class="about" href="about.html">&nbsp; About</a></li>
-                  <li class="menu-item"><a id="menu-link" class="resume" href="explore.html">&nbsp; Explore</a></li>
+                  <li class="menu-item"><a id="" class="home"  href="index.html"><span></span>&nbsp; Home</a></li>
+                  <li class="menu-item"><a id="" class="about" href="about.html">&nbsp; About</a></li>
+                  <li class="menu-item"><a id="" class="resume" href="explore.html">&nbsp; Explore</a></li>
                 </ul>
               </div>
             </div>
@@ -79,12 +79,12 @@
               <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
               <div class="accordion-body">
                 <ul class="menu menu-nav" id = "dynamic-menu">
-                  <li class="menu-item"><a id="menu-link" class="menu-1 active-link" href="">The Challenge</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Solution</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Research</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-4" href="">Code &amp; Art</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-5" href="">UW Capstone</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-6" href="">Light &amp; Form</a></li>
+                  <li class="menu-item"><a id="" class="menu-1 active-page" href="">The Challenge</a></li>
+                  <li class="menu-item"><a id="" class="menu-2" href="">Solution</a></li>
+                  <li class="menu-item"><a id="" class="menu-3" href="">Research</a></li>
+                  <li class="menu-item"><a id="" class="menu-4" href="">Code &amp; Art</a></li>
+                  <li class="menu-item"><a id="" class="menu-5" href="">UW Capstone</a></li>
+                  <li class="menu-item"><a id="" class="menu-6" href="">Light &amp; Form</a></li>
                 </ul>
               </div>
             </div>
@@ -94,7 +94,7 @@
 
       <a class="off-canvas-overlay" href="foundry.html#close"></a>
       <div class="off-canvas-content">
-        <div class="docs-content" id="content">
+        <div class="page-content" id="content">
           <div class="container" id="introduction">
 
             <section id="siteHeader">
@@ -105,8 +105,8 @@
             <div class="spacer-50"></div>
 
             <div class="portfolio revealer">
-                <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop revealer " src="img/foundry.jpg"  alt="...">
-                <div class="grid-reverse revealer">
+                <img style="max-height: 450px; padding-bottom:0px;"  class="image-crop revealer " src="img/foundry.jpg"  alt="...">
+                <div class="grid-3-2 revealer">
                   <div class="info-chunk">
                     <h4 class="h4-multiline"><span class="grayText">Context</span><br>While partnered with Premera Health, I worked with a team of designers to create a digital care management app for parents of asthmatic children. </h4>
                   </div>
@@ -114,7 +114,7 @@
 
                   <div class="grid revealer">
                     <div class="info-chunk">
-                      <p class="text-upper">Role</p>
+                      <p class="text-uppercase">Role</p>
                       <span class="chip active">Designer</span>
 
                       <div class="chip-list">
@@ -126,7 +126,7 @@
                     </div>
 
                     <div class="info-chunk">
-                      <p class="text-upper">About</p>
+                      <p class="text-uppercase">About</p>
                       <p></p>
 
                     </div>
@@ -135,7 +135,7 @@
 
                   <div class="divider"></div>
 
-                  <div class="grid-reverse revealer">
+                  <div class="grid-3-2 revealer">
                     <div class="info-chunk">
                       <h4 class="h4-multiline"><span class="grayText">Project in progress – will be uploaded soon</span></h4>
                     </div>
@@ -143,7 +143,7 @@
                </div>
              </div>
 
-            <div class=" docs-footer" id="copyright">
+            <div class=" global-footer" id="copyright">
               <img id="logo-gif" src="img/logo.gif">
               <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
             </div>

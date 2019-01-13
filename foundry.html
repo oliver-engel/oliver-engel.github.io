@@ -32,10 +32,11 @@
   <meta name="robots" content="NOODP">
 
   <link rel="stylesheet" href="css/spectre.css">
-  <link rel="stylesheet" href="css/spectre-icons.min.css">
-  <link rel="stylesheet" href="css/spectre-exp.min.css">
-  <link rel="stylesheet" href="css/docs.css">
   <link rel="stylesheet" href="css/personalized.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
 
   <!-- FAVICONS -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -46,74 +47,52 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://unpkg.com/scrollreveal"></script>
-
   </head>
-  <body cz-shortcut-listen="true">
-    <div  class="shape-separator"></div>
 
-    <div class="docs-container off-canvas off-canvas-sidebar-show ">
-      <div class="docs-navbar" ><a class="off-canvas-toggle btn btn-link btn-action" href="foundry.html#sidebar"><i class="icon icon-menu"></i></a>
-      </div>
+  <body>
 
-      <div class="docs-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
-        <div class="docs-nav">
-          <div class="accordion-container">
-            <div class="accordion">
-              <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked">
-              <label class="accordion-header"><span class="text-gray-optical">WAYFINDER</span></label>
-              <div class="accordion-body">
-                <ul class="menu menu-nav">
-                  <li class="menu-item"><a id="menu-link" class="home"  href="index.html"><span></span>&nbsp; Home</a></li>
-                  <li class="menu-item"><a id="menu-link" class="about" href="about.html">&nbsp; About</a></li>
-                  <li class="menu-item"><a id="menu-link" class="resume" href="explore.html">&nbsp; Explore</a></li>
-                </ul>
+    <div class="main-container">
+
+      <nav class="nav">
+          <div class="nav-container">
+
+              <div class="ani" class="name-logo">
+                  <a class="logo" href="index.html"><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-square"></i></a>
               </div>
-            </div>
 
-            <!-- PROJECT MENU -->
-            <div class="accordion">
-              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
-              <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
-              <div class="accordion-body">
-                <ul class="menu menu-nav" id = "dynamic-menu">
-                  <li class="menu-item"><a id="menu-link" class="menu-1" href="">Osler</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-2" href="">Collective Health</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-3" href="">Red Share</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-4 active-link" href="">Foundry</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-5" href="">UW Capstone</a></li>
-                  <li class="menu-item"><a id="menu-link" class="menu-6" href="">Light &amp; Form</a></li>
-                </ul>
+              <div class="links">
+                  <a class="sibling-fade" href="index.html">Projects</a>
+                  <a class="sibling-fade"  href="about.html">About</a>
+
               </div>
-            </div>
           </div>
-        </div>
-      </div>
+      </nav>
 
-      <a class="off-canvas-overlay" href="foundry.html#close"></a>
-      <div class="off-canvas-content">
-        <div class="docs-content" id="content">
+        <div class="page-content" id="content">
+
           <div class="container" id="introduction">
 
             <section id="siteHeader" class="has-animation">
-              <h2>Foundry <span class="grayText">Digital Type Distortion</span></h2>
+              <h2>Foundry <span class="grayText">Experimental Type</span></h2>
               <p>My proposal for a generative font manipulation product</p>
             </section>
 
             <div class="spacer-50"></div>
 
-            <div class="portfolio fader has-animation" data-delay="500">
-                <img style="max-height: 450px; padding-bottom:0px;"id="hoverChange" class="image-crop revealer " src="img/foundry.jpg"  alt="...">
-                <div class="grid-reverse fader">
+            <div class="portfolio has-animation" data-delay="500">
+                <img class="image-crop" src="img/foundry.jpg"  alt="...">
+                <div class="grid-3-2 ">
                   <div class="info-chunk">
-                    <h4 class="h4-multiline"><span class="grayText">My goal</span><br>Create a thorough and original product proposal for a font generation app, based off of my own Python program. </h4>
+                    <h4 class="h4-multiline"><br>I set out to create a thorough and original product proposal for a font generation app, based off of my own Python program. </h4>
                   </div>
                 </div>
 
-                  <div class="grid fader">
+                  <div class="grid">
                     <div class="info-chunk">
-                      <p class="text-upper">Role</p>
+                      <p class="text-uppercase">Role</p>
                       <span class="chip active">Designer & Programmer</span>
 
+                      <p class="text-uppercase">Tools</p>
                       <div class="chip-list">
                         <span class="chip">Sketch App</span>
                         <span class="chip">Python</span>
@@ -122,7 +101,7 @@
                     </div>
 
                     <div class="info-chunk">
-                      <p class="text-upper">About</p>
+                      <p class="text-uppercase">About</p>
                       <p>For a school project, I had previously written a Python command-line tool that let me manipulate fonts by altering the arrangement and parameters of their bezier curves and control points.</p>
                       <p>To take the project a step further, I later designed a full UI based off of that code, focusing on a mix of interaction design and visual design. I pursued the project to practice building a product from the ground up, and within the technical constraints set by my own program.</p>
                     </div>
@@ -131,26 +110,25 @@
 
                   <div class="divider"></div>
 
-                  <div class="grid-reverse fader">
+                  <div class="grid-3-2 ">
                     <div class="info-chunk">
                       <h4 class="h4-multiline"><span class="grayText">Project in progress – will be uploaded soon</span></h4>
-
                     </div>
-
                   </div>
 
-            <div class=" docs-footer" id="copyright">
-              <img id="logo-gif" src="img/logo.gif">
-              <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
-            </div>
+                  <div class="global-footer" id="copyright">
+                    <img id="logo-gif" src="img/logo.gif">
+                    <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
+                  </div>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
+
 
     <script>
-    ScrollReveal().reveal('.fader');
+    ScrollReveal().reveal('.');
 	  </script>
 
     <script
