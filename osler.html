@@ -49,45 +49,46 @@
 
   </head>
 
-  <body>
+  <body cz-shortcut-listen="true" class="hidden" >
     <div  class="shape-separator"></div>
 
     <div class="docs-container off-canvas off-canvas-sidebar-show ">
       <div class="sidebar-nav" ><a class="off-canvas-toggle btn btn-link btn-action" href="foundry.html#sidebar"><i class="icon icon-menu"></i></a>
       </div>
 
-      <!-- SIDEBAR -->
-
       <div class="global-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
         <div class="docs-nav">
           <div class="accordion-container">
             <div class="accordion">
+              <input id="accordion-getting-started" type="checkbox" name="docs-accordion-checkbox" hidden="" checked="checked">
+              <label class="accordion-header"><span class="text-gray-optical">WAYFINDER</span></label>
               <div class="accordion-body">
-
-                <label class="accordion-header">WAYFINDER</label>
-
-                <ul class="menu menu-nav first-nav-section">
-                  <li class="menu-item"><a class="home active-page"  href="index.html"><span></span>Home</a></li>
-                  <li class="menu-item"><a class="about" href="about.html">About</a></li>
-                  <li class="menu-item"><a class="explore" href="explore.html">Explore</a></li>
-                </ul>
-
-                <label class="accordion-header">PROJECTS</label>
-
                 <ul class="menu menu-nav">
-                  <li class="menu-item"><a class="active-page" href="osler.html">Osler</a></li>
-                  <li class="menu-item"><a href="collective.html">Collective Health</a></li>
-                  <li class="menu-item"><a href="redshare.html">Red Share</a></li>
-                  <li class="menu-item"><a href="foundry.html">Foundry</a></li>
+                  <li class="menu-item"><a id="" class="home"  href="index.html"><span></span>&nbsp; Home</a></li>
+                  <li class="menu-item"><a id="" class="about" href="about.html">&nbsp; About</a></li>
+                  <li class="menu-item"><a id="" class="resume" href="explore.html">&nbsp; Explore</a></li>
                 </ul>
+              </div>
+            </div>
 
+            <!-- PROJECT MENU -->
+            <div class="accordion ">
+              <input id="accordion-elements" type="checkbox" name="docs-accordion-checkbox" hidden="">
+              <label class="accordion-header"><span class="text-gray-optical">PROJECTS</span></label>
+              <div class="accordion-body">
+                <ul class="menu menu-nav" id = "dynamic-menu">
+                  <li class="menu-item"><a id="" class="menu-1 active-page" href="">Osler</a></li>
+                  <li class="menu-item"><a id="" class="menu-2" href="">Collective Health</a></li>
+                  <li class="menu-item"><a id="" class="menu-3" href="">Red Share</a></li>
+                  <li class="menu-item"><a id="" class="menu-4" href="">Foundry</a></li>
+                  <li class="menu-item"><a id="" class="menu-5" href="">UW Capstone</a></li>
+                  <li class="menu-item"><a id="" class="menu-6" href="">Light &amp; Form</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- SIDEBAR END -->
 
       <a class="off-canvas-overlay" href="foundry.html#close"></a>
       <div class="off-canvas-content">
@@ -95,7 +96,7 @@
           <div class="container" id="introduction">
 
 
-            <section>
+            <section id="siteHeader">
               <h2 class="has-animation">Osler <span class="grayText">Asthma Care Management</span></h2>
               <p class="has-animation">Transforming a paper design artifact into a digital product</p>
             </section>

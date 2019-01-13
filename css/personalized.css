@@ -1,5 +1,11 @@
 
 
+
+#lottie {
+  width      : 100%;
+  object-fit : cover;
+}
+
 .has-animation {
   opacity            : 0!important;
   transform          : translateY(60px);
@@ -20,6 +26,9 @@
 .clear {
   clear : both;
 }
+
+
+
 
 
 .grid {
@@ -64,7 +73,7 @@
 
 .grid-3-2 {
   display               : grid;
-  padding-top           : 10px;
+  padding-top           : 50px;
   grid-gap              : 1em;
   grid-template-columns : 3fr 2fr;
 }
@@ -88,10 +97,10 @@
 /* LAST updated */
 
 .last-updated::after {
-  content : "Jan 2019";
+  content : "Dec 2018";
 }
 
-.main-container {
+.docs-container {
   margin-top : 75px;
 }
 
@@ -110,6 +119,12 @@
 .spacer-25 {
   height : 25px;
 }
+
+.large-spacer {
+  height : 40px;
+}
+
+
 
 .description {
   margin-top : 25px;
@@ -143,6 +158,33 @@
   /* Safari */
 }
 
+.home:before {
+  content     : "⛺";
+  position    : relative;
+  top         : 1px;
+  font-size   : 19px;
+  line-height : 0px;
+  padding-right: 10px;
+}
+
+.about:before {
+  content     : "🦖";
+  position    : relative;
+  top         : 2px;
+  font-size   : 19px;
+  line-height : 0px;
+  padding-right: 10px;
+}
+
+.explore:before {
+  content     : "🚲";
+  position    : relative;
+  top         : 0px;
+  font-size   : 19px;
+  line-height : 0px;
+  padding-right: 10px;
+}
+
 .text-gray-optical {
   color : #707880;
 }
@@ -159,7 +201,7 @@
 
 
 .text-uppercase {
-  margin-bottom  : .8em;
+  margin-bottom  : 1rem;
   color          : #5b657a;
   text-transform : uppercase;
   font-size      : .65rem;
@@ -170,9 +212,11 @@
   line-height : 16px;
 }
 
+#sidebar {}
+
 #logo-gif {
   width          : 75px;
-  padding-bottom : 5px;
+  padding-bottom : 25px;
 }
 
 #updatedMonth {
@@ -187,7 +231,6 @@
 
 .image-crop {
   width         : 100%;
-  max-height    : 450px;
   min-height    : 350px;
   margin-bottom : 25px;
   border-radius : 3px;
@@ -201,6 +244,7 @@
   object-fit    : cover;
 }
 
+.image-crop.smaller {}
 
 .portfolio {
   text-align : left;
@@ -214,7 +258,7 @@
 
 .portfolio h5 {
   color       : #95a0b2;
-  /* font-weight : 300; */
+  font-weight : 300;
 }
 
 .portfolio img {
@@ -232,6 +276,9 @@
   margin-bottom : 25px;
 }
 
+
+
+
 .portfolio-section {
   display : block;
 }
@@ -247,7 +294,7 @@
 }
 
 .sibling-hover:hover ~ .sibling-highlight {
-  color      : var(--purple);
+  color      : tomato;
   transition : .2s;
 }
 
@@ -369,13 +416,6 @@ li {
 @media only screen and (min-width: 1024px) {
   .masonry {
     column-count: 2;
-  }
-}
-
-/* Masonry on large screens */
-@media only screen and (min-width: 1068px) {
-  .nav {
-   padding-left:15px;
   }
 }
 
