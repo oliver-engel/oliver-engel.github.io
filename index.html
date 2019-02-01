@@ -33,9 +33,10 @@
     <meta name="robots" content="NOODP">
 
     <link rel="stylesheet" href="css/spectre.css">
-    <link rel="stylesheet" href="css/spectre-helpers.min.css">
-    <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/personalized.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500" rel="stylesheet">
 
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -53,48 +54,24 @@
 
   <body>
 
-    <div class="shape-separator"></div>
 
-    <div class="docs-container off-canvas off-canvas-sidebar-show">
-      <div class="sidebar-nav">
-        <a class="off-canvas-toggle btn btn-link btn-action" href="index.html#sidebar"><i class="icon icon-menu"></i></a>
-      </div>
+    <div class="main-container">
 
-      <!-- SIDEBAR -->
+      <nav class="nav">
+          <div class="nav-container">
 
-      <div class="global-sidebar off-canvas-sidebar" id="sidebar" style="background-color: white">
-        <div class="docs-nav">
-          <div class="accordion-container">
-            <div class="accordion">
-              <div class="accordion-body">
+              <div class="ani" class="name-logo">
+                  <a href="index.html" class="logo" href=""><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-square"></i></a>
+              </div>
 
-                <label class="accordion-header">WAYFINDER</label>
-
-                <ul class="menu menu-nav first-nav-section">
-                  <li class="menu-item"><a class="home active-page"  href="index.html"><span></span>Home</a></li>
-                  <li class="menu-item"><a class="about" href="about.html">About</a></li>
-                  <li class="menu-item"><a class="explore" href="explore.html">Explore</a></li>
-                </ul>
-
-                <label class="accordion-header">PROJECTS</label>
-
-                <ul class="menu menu-nav">
-                  <li class="menu-item"><a href="osler.html">Osler</a></li>
-                  <li class="menu-item"><a href="collective.html">Collective Health</a></li>
-                  <li class="menu-item"><a href="redshare.html">Red Share</a></li>
-                  <li class="menu-item"><a href="foundry.html">Foundry</a></li>
-                </ul>
+              <div class="links">
+                  <a class="sibling-fade" href="index.html">Projects</a>
+                  <a class="sibling-fade"  href="about.html">About</a>
 
               </div>
-            </div>
           </div>
-        </div>
-      </div>
+      </nav>
 
-      <!-- SIDEBAR END -->
-
-      <a class="off-canvas-overlay" href="index.html#close"></a>
-      <div class="off-canvas-content">
         <div class="page-content" >
           <div class="container">
 
@@ -106,53 +83,51 @@
             <div class="portfolio  has-animation" data-delay="500">
               <div class="grid-2">
 
-                <div class="info-chunk">
+                <div class="info-chunk-home">
                   <a class="sibling-hover" href="index.html">
                     <img class="image-crop hvr-shrink" src="img/osler.jpg"></a>
                   <h3 class="sibling-highlight">Osler</h3>
-                  <h5>Product Design</h5>
+                  <h5>Designing a digital healthcare experience</h5>
                 </div>
 
-                <div class="info-chunk">
+                <div class="info-chunk-home">
                   <a class="sibling-hover" href="collective.html">
                     <img class="image-crop hvr-shrink" src="img/ch.jpg"></a>
                   <h3 class="sibling-highlight">Collective Health</h3>
-                  <h5>Design Systems</h5>
+                  <h5>Developing mobile design systems</h5>
                 </div>
 
-                <div class="info-chunk">
+                <div class="info-chunk-home">
                   <a class="sibling-hover" href="redshare.html">
                     <img class="image-crop hvr-shrink" src="img/sp/close.jpg"></a>
                   <h3 class="sibling-highlight">Red Share</h3>
-                  <h5>Interactive Art</h5>
+                  <h5>Interrogating social media paranoia</h5>
                 </div>
 
-                <div class="info-chunk">
-                  <a class="sibling-hover" href="index.html">
+                <div class="info-chunk-home">
+                  <a class="sibling-hover" href="foundry.html">
                     <img class="image-crop hvr-shrink" src="img/foundry.jpg"></a>
                   <h3 class="sibling-highlight">Foundry</h3>
-                  <h5>Product Design</h5>
+                  <h5>Designing for digital distortion</h5>
                 </div>
 
               </div>
             </div>
-          </div>
 
-          <div class="divider"></div>
+            <div class="divider"></div>
 
-          <div class="grid-3-2 ">
-            <div class="info-chunk">
-              <h4 class="h4-multiline"><span class="grayText">My portfolio's being worked on – hold tight!</span></h4>
+            <div class="grid-3-2 ">
+              <div class="info-chunk">
+                <h4 class="h4-multiline"><span class="grayText">My portfolio's being worked on–hold tight!</span></h4>
+              </div>
+            </div>
 
+            <div class="global-footer" id="copyright">
+              <img id="logo-gif" src="img/logo.gif">
+              <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
             </div>
 
           </div>
-
-          <div class="text-right global-footer container  " id="copyright">
-            <img id="logo-gif" src="img/logo.gif">
-            <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
-          </div>
-        </div>
         </div>
       </div>
     </div>
