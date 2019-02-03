@@ -450,7 +450,8 @@ li {
 
   .grid,
   .grid-3-2,
-  .grid-2 {
+  .grid-2,
+  .grid-padded {
     grid-template-columns : 1fr;
   }
 
