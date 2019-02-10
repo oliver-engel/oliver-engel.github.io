@@ -1,6 +1,30 @@
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 .jump{
   padding-top:25px;
 }
+
+  .second-chip{
+    padding-top:25px;
+  }
+
+  .image-full{
+    width: 20vw;
+    margin-left: calc(-50vw + 50%);
+    height:100%;
+   }
 
 
   .animated:hover {
@@ -184,7 +208,7 @@
 .grid-3-2 {
   display               : grid;
   margin-bottom         : 50px;
-  padding-top           : 50px;
+  padding-top           : 35px;
   grid-gap              : 1em;
   grid-template-columns : 3fr 2fr;
 }
@@ -318,6 +342,16 @@
 }
 
 .image-crop-headers {
+  width         : 100%;
+  max-height    : 450px;
+  height:450px;
+  min-height    : 350px;
+  margin-bottom : 25px;
+  border-radius : 3px;
+  object-fit    : cover;
+}
+
+.image-crop-full {
   width         : 100%;
   max-height    : 450px;
   height:450px;
