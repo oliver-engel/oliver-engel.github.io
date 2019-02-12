@@ -528,6 +528,7 @@ li {
 /* The Masonry Container */
 .masonry {
   /* margin: 1.5em auto; */
+  padding-top:.9em;
   max-width: 100%;
 
   /* column-gap: 1.5em; */
@@ -538,7 +539,7 @@ li {
   background: #fff;
 
   /* padding: 1em; */
-  /* margin: 0 0 1.5em; */
+  margin: 0 0 -.5em;
 }
 
 /* Masonry on large screens */
