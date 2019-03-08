@@ -4,10 +4,10 @@
 
 
 :root {
-  --header-font        : "IBM Plex Sans";
+  --header-font        : "Inter UI";
   --header-font-weight : 500;
   --header-color       : #000;
-  --body-font          : "IBM Plex Sans";
+  --body-font          : "Inter UI";
   --body-font-weight   : 400;
   --body-color         : #000;
   --purple             : #302ecd;
@@ -25,6 +25,23 @@
 }
 
 /* FONTS */
+
+@font-face {
+    font-family: 'Inter UI';
+    src: url('/fonts/InterUI-Medium.woff2') format('woff2'),
+        url('/fonts/InterUI-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter UI';
+    src: url('/fonts/InterUI-Regular.woff2') format('woff2'),
+        url('/fonts/InterUI-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 html {
   box-sizing                  : border-box;
@@ -104,6 +121,7 @@ h6 {
 h1 {
   margin-top : 0;
   font-size  : 3.052em;
+  line-height:1.4;
 }
 
 h2 {
@@ -137,7 +155,6 @@ p {
 li {
   padding-bottom:15px;
 }
-
 
 .btn {
   padding-left        : 15px;
@@ -311,6 +328,32 @@ li {
   width   : 100%;
 }
 
+.padding-after{margin-bottom:25px;}
+
+.single-post {
+    clear: both;
+    position: relative;
+    color: #292929;
+    font-size: 16px;
+    line-height: 1.9em;
+    overflow: hidden;
+}
+
+.single-post-head {
+    text-align: center;
+    /* color: white; */
+    padding: 21vh 20px 5vh;
+    position: relative
+}
+
+.single-post-head p {
+  font-size: 16px;
+}
+
+/* .header-image{
+  margin-top:-200px;
+} */
+
 .navbar {
   display         : flex;
   display         : -ms-flexbox;
@@ -344,6 +387,7 @@ li {
 .chip.active {
   color      : #fff;
   background : var(--green);
+  margin-bottom: 2em
 }
 
 .logo{
@@ -395,9 +439,11 @@ li {
 
   transition: 0.3s;
   padding     : 15px;
-  font-weight : bold;
+  font-weight : 500;
+  font-size: 14px;
+  text-transform: uppercase;
   color: var(--nav-links);
-  letter-spacing: .03em
+  /* letter-spacing: .03em */
 }
 
 .links a:hover {
@@ -433,7 +479,7 @@ text-decoration: none !important;
 }
 
 .page-content > .container {
-  max-width : 985px;
+  max-width : 1000px;
   margin    : 0 auto;
 }
 

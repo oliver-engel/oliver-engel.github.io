@@ -1,3 +1,20 @@
+.project-info{
+  display:grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
+/* .project-info p{
+  color:#5b657a;
+} */
+
+.smaller-margin{
+  margin-bottom: 7px;
+}
+
+.margin-correct{
+  margin-bottom: -7px;
+}
+
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -176,7 +193,7 @@
 
 .grid-1 {
   display               : grid;
-  max-width             : 600px;
+  max-width             : 625px;
   margin-bottom         : 18px;
   margin: 0 auto;
   padding-top           : 50px;
@@ -217,6 +234,7 @@
 
 .h4-multiline {
   line-height : 1.5em;
+  margin-bottom:50px;
 }
 
 .grayText {
@@ -308,7 +326,15 @@
   color          : #5b657a;
   text-transform : uppercase;
   font-size      : .65rem;
-  font-weight    : 600;
+  font-weight    : 500;
+}
+
+.text-uppercase-projects {
+  margin-bottom  : 0em;
+  color          : #5b657a;
+  text-transform : uppercase;
+  font-size      : .65rem;
+  font-weight    : 500;
 }
 
 .portfolio-item > h3 {
@@ -405,6 +431,7 @@
 
 .info-chunk-home{
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .portfolio-section {
@@ -414,16 +441,20 @@
 .sibling-highlight {
   margin-bottom : .2em;
   transition    : .5s;
+  transition: all 0.3s;
 }
 
 #parent,
 .sibling-hover {
   cursor : pointer;
+  transition: all 0.3s;
 }
 
 .sibling-hover:hover ~ .sibling-highlight {
+  transition: all 0.3s;
   color      : var(--green);
   transition : .2s;
+  content:" View Project";
 }
 
 .portfolio-item {
@@ -441,6 +472,34 @@
   padding-bottom:35px;
 }
 
+.hvr-twist{
+  max-height                  : 450px;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+
+.hvr-shrink:hover .gridItemButton {
+    transform: scaleY(1) translateZ(0);
+    transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.gridItemButton {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 17px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    transform-origin: 0 0;
+    will-change: transform, opacity;
+    transform: scaleY(0) translateZ(0);
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    font-family: Inter UI,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+}
+.hvr-twist:hover{
+    transform: scale(1.1) rotate(3deg);
+}
 
 .hvr-shrink {
   max-height                  : 450px;
@@ -474,6 +533,10 @@ li {
   (max-width : 800px) {
   .grid-3 {
     grid-template-columns : 1fr 1fr;
+  }
+
+  .mobile-remove{
+    display:none;
   }
 
   .floatImage {
