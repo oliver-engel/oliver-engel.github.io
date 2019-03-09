@@ -42,6 +42,7 @@
     font-weight: normal;
     font-style: normal;
     unicode-range: U+0020-007A;
+    font-display: swap;
 }
 
 @font-face {
@@ -51,6 +52,7 @@
     font-weight: 500;
     font-style: normal;
     unicode-range: U+0020-007A;
+    font-display: swap;
 }
 
 
