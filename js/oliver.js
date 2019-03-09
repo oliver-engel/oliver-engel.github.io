@@ -61,8 +61,8 @@ Function AppearItem
 
 $( document ).ready(function() {
 
-	setTimeout(AppearItem, 500);
-  // AppearItem();
+	// setTimeout(AppearItem, 500);
+  AppearItem();
 
 
 
