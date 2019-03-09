@@ -4,7 +4,7 @@
 
 
 :root {
-  --header-font        : "Inter UI";
+  --header-font        : "Sharp Grotesk Medium 20";
   --header-font-weight : 500;
   --header-color       : #000;
   --body-font          : "Inter UI";
@@ -41,6 +41,16 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Sharp Grotesk Medium 20';
+    src: url('/fonts/SharpGrotesk-Medium20.woff2') format('woff2'),
+        url('/fonts/SharpGrotesk-Medium20.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
 
 
 html {
@@ -337,6 +347,10 @@ li {
     font-size: 16px;
     line-height: 1.9em;
     overflow: hidden;
+}
+
+.post-header{
+  font-size:40px;
 }
 
 .single-post-head {

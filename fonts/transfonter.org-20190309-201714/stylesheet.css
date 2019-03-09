@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Sharp Grotesk Medium 20';
+    src: url('SharpGrotesk-Medium20.woff2') format('woff2'),
+        url('SharpGrotesk-Medium20.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
