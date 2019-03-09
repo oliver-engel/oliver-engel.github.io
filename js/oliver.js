@@ -46,7 +46,6 @@ Function AppearItem
 ---------------------------------------------------*/
 
 	function AppearItem() {
-    console.log('hey 2');
 		$('.has-animation').each(function() {
 			$(this).appear(function() {
 				$(this).delay($(this).attr('data-delay')).queue(function(next){
@@ -67,9 +66,12 @@ $( document ).ready(function() {
 
 
 
-  console.log("Hey, get outta here.");
-  console.log("You're not supposed to see this.");
-  console.log("Oops, I just haiku'd");
+  // console.log("Hey, get outta here.");
+  // console.log("You're not supposed to see this.");
+  // console.log("Oops, I just haiku'd");
+
+	console.log("Sneaky sneaky. Watcha doin back here?");
+
   //CHOOSE LINKS TO DISABLE
   $('.menu-5, .menu-6').click(function(e) {
     e.preventDefault();
