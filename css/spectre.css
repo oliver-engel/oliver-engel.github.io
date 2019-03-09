@@ -32,6 +32,7 @@
         url('/fonts/InterUI-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    unicode-range: U+0020-007A;
 }
 
 @font-face {
@@ -40,6 +41,7 @@
         url('/fonts/InterUI-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    unicode-range: U+0020-007A;
 }
 
 @font-face {
