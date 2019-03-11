@@ -439,7 +439,7 @@
 }
 
 .sibling-highlight {
-  margin-bottom : .2em;
+  margin-bottom : 0px;
   transition    : .5s;
   transition: all 0.3s;
 }
