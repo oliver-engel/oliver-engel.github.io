@@ -188,6 +188,13 @@ b {
   font-weight: 500;
 }
 
+ol li{
+  font-size:24px;
+  /* font-weight: 500; */
+  letter-spacing: -.5px;
+  padding-top:50px;
+}
+
 ol{
   padding-left: 0px;
 }
