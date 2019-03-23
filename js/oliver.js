@@ -21,6 +21,8 @@ function() {
 );
 
 
+
+
 /*--------------------------------------------------
 Function FadeHover
 ---------------------------------------------------*/
@@ -63,6 +65,10 @@ $( document ).ready(function() {
 
 	// setTimeout(AppearItem, 500);
   AppearItem();
+
+
+
+
 
 
 
