@@ -451,7 +451,8 @@ li {
 }
 
 .logo{
-  color:#10c172 !important;
+  /* color:#10c172 !important; */
+  color: var(--green-text);
 }
 
 .logo:focus{
