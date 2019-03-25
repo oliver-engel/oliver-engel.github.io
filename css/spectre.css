@@ -16,6 +16,7 @@
   --sidebar-text       : #61606b;
   --nav-links          : #9CA6B6;
   --green              : #03884d;
+  --green-light        : #ECF4EE;
   --green-text         : #009854;
   --logo-color         : #10c172;
   --hover-text         : #302ecd;
@@ -80,6 +81,23 @@ body {
   font-weight             : var(--body-font-weight);
   -webkit-font-smoothing  : antialiased;
   -moz-osx-font-smoothing : grayscale;
+}
+
+blockquote{
+  font-size: inherit;
+  line-height: 1.6em;
+  /* border-left: 3px solid black; */
+  /* border: 1px solid #e7e9ed; */
+  background-color: var(--green-light);
+  border-left: 5px solid var(--green-text);
+  padding:35px;
+  border-radius: 3px;
+  margin:0px;
+  margin-top:25px;
+}
+
+blockquote i {
+  color:var(--green-text);
 }
 
 h4{
@@ -188,11 +206,13 @@ b {
   font-weight: 500;
 }
 
-ol li{
+.big-list li{
+  list-style-type: none;
   font-size:24px;
   /* font-weight: 500; */
   letter-spacing: -.5px;
-  padding-top:50px;
+  /* padding-top:50px; */
+  font-weight: 500 !important;
 }
 
 ol{
@@ -201,6 +221,10 @@ ol{
 
 li {
   padding-bottom:15px;
+}
+
+.opacityOff{
+  opacity: 1;
 }
 
 .btn {

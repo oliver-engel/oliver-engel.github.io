@@ -417,6 +417,7 @@
 }
 
 .image-crop-thumb:hover {
+  cursor: pointer;
   opacity:1;
 }
 

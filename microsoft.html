@@ -153,54 +153,151 @@
                   </div>
 
 
-                    <div class="w3-content" style="">
 
                       <div class="gallery-thumbs">
                         <div class="thumb">
-                          <img class="image-crop-thumb demo w3-opacity w3-hover-opacity-off" src="img/microsoft/ideation.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-
+                          <img class="image-crop-thumb" src="img/microsoft/ideation.jpg" onclick="currentDiv(1, 'firstSlides')">
                         </div>
                         <div class="thumb">
-                          <img class="image-crop-thumb demo w3-opacity w3-hover-opacity-off" src="img/microsoft/kidsteam_1.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                          <img class="image-crop-thumb" src="img/microsoft/kidsteam_1.jpg" onclick="currentDiv(2, 'firstSlides')">
                         </div>
                         <div class="thumb">
-                          <img class="image-crop-thumb demo w3-opacity w3-hover-opacity-off" src="img/microsoft/kids-ideas.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                          <img class="image-crop-thumb" src="img/microsoft/kids-ideas.jpg" onclick="currentDiv(3, 'firstSlides')">
                         </div>
                       </div>
 
-                      <div class="mySlides">
-                        <img class=" image-crop-expanded" src="img/microsoft/ideation.jpg" style="width:100%;">
+                      <div class="firstSlides">
+                        <img class=" image-crop-expanded" src="img/microsoft/ideation.jpg" >
                         <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Discussing feedback from an ideation share-out</p>
                       </div>
-                      <div class="mySlides">
-                        <img class=" image-crop-expanded" src="img/microsoft/kidsteam_1.png" style="width:100%;">
+                      <div class="firstSlides" style="display:none;">
+                        <img class="image-crop-expanded" src="img/microsoft/kidsteam_1.png" >
                         <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Testing the first trebuchet iteration</p>
                       </div>
-                      <div class="mySlides">
-                        <img class="image-crop-expanded" src="img/microsoft/kids-ideas.jpg" style="width:100%;">
+                      <div class="firstSlides" style="display:none;">
+                        <img class="image-crop-expanded" src="img/microsoft/kids-ideas.jpg">
                         <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Using co-design to gather design ideas from kids</p>
                       </div>
-                    </div>
+
 
                     <div class="grid-1 ">
                         <div class="info-chunk">
                           <h4 class="large-h4">The trebuchet was a hit with kids. But our Microsoft contact had reservations–would a classroom full of trebuchets cause chaos?</h4>
                           <p>We decided to move forward with the trebuchet, but to frame our design around stakeholder buy-in. We knew that the concept was engaging and educational–and also that teachers may not want to take on the risk of flying projectiles in the classroom. We needed to find a balance between the needs of teachers, students, and Microsoft Education.</p>
-                          <p>We also needed to start fleshing out the digital interface–our first step was conducting a Wizard of Oz test to simulate the relationship between the trebuchet, sensor, and the computer.</p>
+                          <p>We also needed to start fleshing out the digital interface–our first step was conducting a Wizard of Oz (WOZ) test to simulate the relationship between the trebuchet, sensor, and the computer.</p>
 
                         </div>
                     </div>
 
-                    <div class="portfolio">
-                        <img id="large-image" src="img/microsoft/behavioral.jpg">
-                        <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Still from a Wizard of Oz test.</p>
+                    <div class="spacer"></div>
+
+                    <div class="gallery-thumbs">
+                      <div class="thumb">
+                        <img class="image-crop-thumb" src="img/microsoft/behavioral.jpg" onclick="currentDiv(1, 'secondSlides')">
+                      </div>
+                      <div class="thumb">
+                        <img class="image-crop-thumb" src="img/microsoft/WOZ-screen.png" onclick="currentDiv(2, 'secondSlides')">
+                      </div>
+                      <div class="thumb">
+                        <img class="image-crop-thumb" src="img/microsoft/kids-ideas.jpg" onclick="currentDiv(3, 'secondSlides')">
+                      </div>
+                    </div>
+
+                    <div class="secondSlides">
+                      <img class="image-crop-expanded" src="img/microsoft/behavioral.jpg" >
+                      <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Still from a WOZ session.</p>
+                    </div>
+                    <div class="secondSlides" style="display:none;">
+                      <img class="image-crop-expanded" src="img/microsoft/WOZ-screen.png" >
+                      <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Results screen from the WOZ test. I controlled the graph by toggling the visibility of layers remotely in Figma.</p>
+                    </div>
+                    <div class="secondSlides" style="display:none;">
+                      <img class="image-crop-expanded" src="img/microsoft/kids-ideas.jpg">
+                      <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Using co-design to gather design ideas from kids</p>
                     </div>
 
 
+                    <!-- <div class="portfolio">
+                        <img id="large-image" src="img/microsoft/behavioral.jpg">
+                        <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Still from a Wizard of Oz test.</p>
+                    </div> -->
+
                     <div class="grid-1 ">
 
+                      <div class="info-chunk">
+                        <h4 class="large-h4">Early prototype testing was aimed at gauging age appropriateness, feasibility in the classroom, and educational value of the concept.</h4>
 
-                        <div class="info-chunk">
+                      </div>
+                    </div>
+
+
+                    <!-- <div class="grid-1 ">
+
+                      <div class="info-chunk">
+                        <h4 class="large-h4">Early prototype testing was aimed at gauging age appropriateness, feasibility in the classroom, and educational value of the concept.</h4>
+                        <ul class="big-list">
+                          <img src="img/microsoft/WOZ.jpg" target="_blank">
+                          <p class="caption">Wizard of Oz test setup with a plywood trebuchet & Figma prototype interface.</p>
+
+                          <li>A set of Wizard of Oz tests revealed weaknesses in the relationship between the trebuchet and the digital interface.</li>
+                          <p>Our experiment initially included a paper worksheet to track data that was calculated by the interface. In all of our tests, the worksheet was quickly forgotten as participants focused mainly on the trebuchet itself. We moved towards integrating historical data tracking into the interface.</p>
+                            <div class="spacer-25"></div>
+                            <div class="divider"></div>
+
+
+
+                          <p>We also gathered valuable feedback about how the session went from the teacher. She felt comfortable with the level of difficulty, and educational value of the experiment, but suggested the addition of focused goals to keep kids on-task and have them explore more than just the extremes.</p>
+
+                          <li>Simplify, but don't dumb down.</li>
+                          <p>4th graders are remarkably intelligent–they demonstrated a clear understanding of the trebuchet mechanics and weren't afraid to ask blunt questions. Yet we found that some portions of the experiment were too laborious–we needed to simplify every aspect that wasn't materially supporting the learning objectives.</p>
+                        </ul>
+                      </div>
+                    </div> -->
+                    <div class="grid-2">
+
+                      <div class="info-chunk">
+                        <img src="img/microsoft/WOZ.jpg" target="_blank">
+                      </div>
+
+                      <div class="info-chunk">
+                        <ul class="big-list">
+                          <li>A set of Wizard of Oz tests revealed weaknesses in the relationship between the trebuchet and the digital interface.</li>
+                        </ul>
+                        <p>We initially included a paper worksheet to track data that was calculated by the interface. In all of our tests, the worksheet was quickly forgotten as participants focused on the trebuchet. We moved towards integrating historical data tracking into the interface.</p>
+                      </div>
+
+                    </div>
+
+
+                    <div class="grid-2">
+
+                      <div class="info-chunk">
+                        <img src="img/microsoft/kokanee.jpg" target="_blank">
+                      </div>
+
+                      <div class="info-chunk">
+                        <ul class="big-list">
+                          <li>We brought our experiment into an elementary school classroom with 18 kids to see if it would actually descend into chaos.</li>
+                        </ul>
+                        <p>We were surprised to find... that it didn't. We had kids assemble a laser-cut trebuchet, make their own projectiles, and begin experimenting; they were clearly engaged by the activity and demonstrated understanding of how the variables affected one another.</p>
+                      </div>
+
+                    </div>
+
+                    <div class="grid-1">
+                      <div class="info-chunk">
+                        <blockquote><i class="fas fa-quote-left"></i> Blake usually struggles a bit with school subjects and isn't as engaged as the other kids. But he loves building, and it was nice to see him really brighten up today. <i class="fas fa-quote-right"></i>
+                        <br><br><span class="attribution">– Katie, 4th grade teacher</span></blockquote>
+                      </div>
+
+                      <div class="info-chunk">
+                        <blockquote><i class="fas fa-quote-left"></i> Can I buy this for one trillion dollars? <i class="fas fa-quote-right"></i>
+                        <br><br><span class="attribution">– Angel, 4th grader</span></blockquote>
+                      </div>
+                    </div>
+
+
+                        <!-- <div class="info-chunk">
                           <h4 class="large-h4">Further iteration and testing with kids helped us form insights into how they interact with technology.</h4>
                           <ol>
                             <li>Kids will immediately test the extremes.</li>
@@ -210,12 +307,11 @@
 
                             <li>Simplify, but don't dumb down.</li>
                             <p>4th graders are remarkably intelligent–they demonstrated a clear understanding of the trebuchet mechanics and weren't afraid to ask blunt questions. Yet we found that some portions of the experiment were too laborious–we needed to simplify every aspect that wasn't materially supporting the learning objectives.</p>
-                            <!-- <li>Having too many variables to alter in an experiment will muddle the educational outcome.</li> -->
                           </ol>
-                        </div>
+                        </div> -->
 
 
-                    </div>
+
 
 
 
