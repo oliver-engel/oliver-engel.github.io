@@ -21,7 +21,18 @@ function() {
 );
 
 
+$( ".emoji" ).hover(function() {
+  // $( this ).fadeOut( 100 );
+  // $( this ).fadeIn( 500 );
 
+	// $( "#changeLogo" ).fadeOut(100);
+	$( "#changeLogo" ).removeClass('fa-smile').addClass('fa-surprise');
+},
+function() {
+	$( "#changeLogo" ).removeClass('fa-surprise').addClass('fa-smile');
+}
+
+);
 
 /*--------------------------------------------------
 Function FadeHover
@@ -48,7 +59,7 @@ Function AppearItem
 ---------------------------------------------------*/
 
 	function AppearItem() {
-		$('.has-animation').each(function() {
+		$('.has-animation, .has-animation-nav').each(function() {
 			$(this).appear(function() {
 				$(this).delay($(this).attr('data-delay')).queue(function(next){
 					$(this).addClass('animate-in');
@@ -61,10 +72,13 @@ Function AppearItem
 	}//End AppearIteam
 
 
+
+
 $( document ).ready(function() {
 
 	// setTimeout(AppearItem, 500);
   AppearItem();
+
 
 
 

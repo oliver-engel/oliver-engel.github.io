@@ -2,27 +2,23 @@
 
 <html lang="en">
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <!-- Primary Meta Tags -->
   <title>Oliver Engel Design Portfolio ✨</title>
   <meta name="title" content="Oliver Engel Design Portfolio ✨">
-  <meta name="description" content="Human-Computer Interaction + Design graduate student at the University of Washington, Seattle. ">
+  <meta name="description" content="Human-Computer Interaction + Design graduate student at the University of Washington, Seattle.">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://oliverengel.com/">
-  <meta property="og:title" content="Oliver Engel Design Portfolio ✨">
-  <meta property="og:description" content="Human-Computer Interaction + Design graduate student at the University of Washington, Seattle. ">
-  <meta property="og:image" content="img/foundry.jpg">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://oliverengel.com/">
-  <meta property="twitter:title" content="Oliver Engel Design Portfolio ✨">
-  <meta property="twitter:description" content="Human-Computer Interaction + Design graduate student at the University of Washington, Seattle. ">
-  <meta property="twitter:image" content="img/foundry.jpg">
-
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42025560-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-42025560-2');
+  </script>
+  
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -31,11 +27,10 @@
   <meta name="author" content="Oliver Engel">
   <meta name="robots" content="NOODP">
 
-  <link rel="stylesheet" href="css/spectre.css">
-  <link rel="stylesheet" href="css/personalized.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="css/personalized.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500" rel="stylesheet">
 
   <!-- FAVICONS -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -47,315 +42,249 @@
 
   <script src="https://unpkg.com/scrollreveal"></script>
 
+</head>
 
-  </head>
-  <body cz-shortcut-listen="true">
+<body>
 
-    <div class="main-container">
-
-      <nav class="nav">
-          <div class="nav-container">
-
-              <div class="ani" class="name-logo">
-                  <a href="index.html" class="logo" href=""><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-square"></i></a>
-              </div>
-
-              <div class="links">
-                  <a class="sibling-fade" href="index.html">Projects</a>
-                  <a class="sibling-fade"  href="about.html">About</a>
-              </div>
-
-          </div>
-      </nav>
-
-
-      <div class="single-post">
-      	<div class="single-post-head has-animation">
-      			<h1 class="post-header">Microsoft Education<br><span class="grayText">STEM Trebuchets for 4th Graders</span></h1>
-      	</div>
-      </div>
-
-
-        <div class="page-content" id="content">
-          <div class="container" id="introduction">
-
-
-
-            <div class="portfolio header-image has-animation loop" data-delay="500">
-
-                <div class="spacer-50"></div>
-                <!-- <img class="image-crop-headers revealer " src="img/collective/hero.jpg"  alt="..."> -->
-                <!-- <video style="border-radius:3px " loop muted width="100%" height="" autoplay="autoplay">
-                  <source src="files/Sequence03.mp4" type="video/mp4" />
-                </video> -->
-
-                <div class="video-responsive">
-                  <iframe  style="pointer-events:none; " src="https://player.vimeo.com/video/325816441?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-
-                  <div class="grid-1 ">
-
-                    <div class="project-info">
-                      <div>
-                        <p class="text-uppercase-projects">ROLE</p>
-                        <p>Digital interaction design
-                        <br>Front-end development
-                        <br>Physical computing
-                        <br>User testing
-                        </p>
-                      </div>
-                      <div>
-                        <p class="text-uppercase-projects">LENGTH</p>
-                        <p>10 weeks</p>
-                      </div>
-                      <div class="mobile-remove">
-                        <p class="text-uppercase-projects">YEAR</p>
-                      <p>2019</p></div>
-                    </div>
-                  </div>
-
-                  <div class="grid-1 ">
-                    <div class="info-chunk">
-                      <h4 class="large-h4"><a href="https://www.microsoft.com/en-us/education/education-workshop/default.aspx">Hacking STEM</a> is a library of Arduino-based learning activities created by Microsoft Education. I helped design, develop, and test a potential new entry to their catalog.</h4>
-                      <p>Our response was the Trebuchet Trials: a 4th-grade STEM activity about potential and kinetic energy. Teams of three students use simple circuitry and cardstock templates to build a functioning trebuchet. By connecting an accelerometer and Arduino, students can visualize how potential energy is transformed into kinetic energy.</p>
-                      <p>The activity aligns with <a target="_blank" href="https://www.nextgenscience.org/">Next Generation Science Standards (NGSS)</a> and <a target="_blank" href="https://docs.google.com/spreadsheets/d/1AkoJsHbvPNi2i9mWYk-5evzz6W3g8Cie3XpuzmnVLx4/edit?usp=sharing">costs roughly $4</a> per student.</p>
-
-                    </div>
-                  </div>
-
-                  <div class="portfolio">
-                      <img id="large-image" src="img/microsoft/treb-hero.jpg">
-                      <p class="caption">The trebuchet, Arduino, and digital interface</p>
-                  </div>
-
-                  <div class="grid-1 ">
-                    <div class="info-chunk">
-                      <h4 class="large-h4">The functioning prototype uses an interactive data workbook informed by testing with children and teachers.</h4>
-                      <p>We used co-design methods and classroom testing thoughout development to inform lesson plan design, our physical form, and the digital interface.</p>
-                      <p>Students are encouraged to change the weights used, craft their own projectiles, and work through challenges that test their knowledge of energy transformation.</p>
-                      <p>I took ownership of both the physical computing and digital interaction design of the system, using <a href="https://p5js.org/" target="_blank">P5.js</a> and the <a href="https://www.arduino.cc/">Arduino IDE</a> to create a functioning experiment.</p>
-                    </div>
-                  </div>
-
-                  <div style=" margin-top:100px" class="video-responsive">
-                    <iframe style="border-radius:3px;"  style="pointer-events:none; " src="https://player.vimeo.com/video/325925014?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                  </div>
-
-
-                  <div class="grid-1 ">
-                    <div class="info-chunk">
-                      <h4 class="large-h4">We started with rapid ideation and testing with kids to start down-selecting our concepts.</h4>
-                      <p>A DIY speaker, hydroelectric turbine, genetically breeding robotic cats... our initial ideation and research aimed to expand our knowledge of the STEM education space. Concepts were developed by selecting interesting NGSS standards and devising a digital-analog experiment to teach that standard. Inspiration was also gathered from pioneers like <a href="http://web.media.mit.edu/~mres/" target="_blank">Mitchel Resnick</a>, who espouses a <a href="https://web.media.mit.edu/~mres/papers/constructionism-2014.pdf">constructivist</a> approach to STEM education.</p>
-                      <p>We honed in on three of our ideas: a trebuchet, a speaker, and a hydroelectric turbine, and put physical and video prototypes in front of kids to get their feedback and design ideas.</p>
-
-                      <div class="spacer-50"></div>
-                    </div>
-                  </div>
-
-
-                      <div class="gallery-thumbs">
-                        <div class="thumb">
-                          <img class="image-crop-thumb" src="img/microsoft/ideation.jpg" onclick="currentDiv(1, 'firstSlides')">
-                        </div>
-                        <div class="thumb">
-                          <img class="image-crop-thumb" src="img/microsoft/kidsteam_1.jpg" onclick="currentDiv(2, 'firstSlides')">
-                        </div>
-                        <div class="thumb">
-                          <img class="image-crop-thumb" src="img/microsoft/kids-ideas.jpg" onclick="currentDiv(3, 'firstSlides')">
-                        </div>
-                      </div>
-
-                      <div class="firstSlides">
-                        <img class=" image-crop-expanded" src="img/microsoft/ideation.jpg" >
-                        <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Discussing feedback from an ideation share-out</p>
-                      </div>
-                      <div class="firstSlides" style="display:none;">
-                        <img class="image-crop-expanded" src="img/microsoft/kidsteam_1.png" >
-                        <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Testing the first trebuchet iteration</p>
-                      </div>
-                      <div class="firstSlides" style="display:none;">
-                        <img class="image-crop-expanded" src="img/microsoft/kids-ideas.jpg">
-                        <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Using co-design to gather design ideas from kids</p>
-                      </div>
-
-
-                    <div class="grid-1 ">
-                        <div class="info-chunk">
-                          <h4 class="large-h4">The trebuchet was a hit with kids. But our Microsoft contact had reservations–would a classroom full of trebuchets cause chaos?</h4>
-                          <p>We decided to move forward with the trebuchet, but to frame our design around stakeholder buy-in. We knew that the concept was engaging and educational–and also that teachers may not want to take on the risk of flying projectiles in the classroom. We needed to find a balance between the needs of teachers, students, and Microsoft Education.</p>
-                          <p>We also needed to start fleshing out the digital interface–our first step was conducting a Wizard of Oz (WOZ) test to simulate the relationship between the trebuchet, sensor, and the computer.</p>
-
-                        </div>
-                    </div>
-
-                    <div class="spacer"></div>
-
-                    <div class="gallery-thumbs">
-                      <div class="thumb">
-                        <img class="image-crop-thumb" src="img/microsoft/behavioral.jpg" onclick="currentDiv(1, 'secondSlides')">
-                      </div>
-                      <div class="thumb">
-                        <img class="image-crop-thumb" src="img/microsoft/WOZ-screen.png" onclick="currentDiv(2, 'secondSlides')">
-                      </div>
-                      <div class="thumb">
-                        <img class="image-crop-thumb" src="img/microsoft/kids-ideas.jpg" onclick="currentDiv(3, 'secondSlides')">
-                      </div>
-                    </div>
-
-                    <div class="secondSlides">
-                      <img class="image-crop-expanded" src="img/microsoft/behavioral.jpg" >
-                      <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Still from a WOZ session.</p>
-                    </div>
-                    <div class="secondSlides" style="display:none;">
-                      <img class="image-crop-expanded" src="img/microsoft/WOZ-screen.png" >
-                      <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Results screen from the WOZ test. I controlled the graph by toggling the visibility of layers remotely in Figma.</p>
-                    </div>
-                    <div class="secondSlides" style="display:none;">
-                      <img class="image-crop-expanded" src="img/microsoft/kids-ideas.jpg">
-                      <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Using co-design to gather design ideas from kids</p>
-                    </div>
-
-
-                    <!-- <div class="portfolio">
-                        <img id="large-image" src="img/microsoft/behavioral.jpg">
-                        <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Still from a Wizard of Oz test.</p>
-                    </div> -->
-
-                    <div class="grid-1 ">
-
-                      <div class="info-chunk">
-                        <h4 class="large-h4">Early prototype testing was aimed at gauging age appropriateness, feasibility in the classroom, and educational value of the concept.</h4>
-
-                      </div>
-                    </div>
-
-
-                    <!-- <div class="grid-1 ">
-
-                      <div class="info-chunk">
-                        <h4 class="large-h4">Early prototype testing was aimed at gauging age appropriateness, feasibility in the classroom, and educational value of the concept.</h4>
-                        <ul class="big-list">
-                          <img src="img/microsoft/WOZ.jpg" target="_blank">
-                          <p class="caption">Wizard of Oz test setup with a plywood trebuchet & Figma prototype interface.</p>
-
-                          <li>A set of Wizard of Oz tests revealed weaknesses in the relationship between the trebuchet and the digital interface.</li>
-                          <p>Our experiment initially included a paper worksheet to track data that was calculated by the interface. In all of our tests, the worksheet was quickly forgotten as participants focused mainly on the trebuchet itself. We moved towards integrating historical data tracking into the interface.</p>
-                            <div class="spacer-25"></div>
-                            <div class="divider"></div>
-
-
-
-                          <p>We also gathered valuable feedback about how the session went from the teacher. She felt comfortable with the level of difficulty, and educational value of the experiment, but suggested the addition of focused goals to keep kids on-task and have them explore more than just the extremes.</p>
-
-                          <li>Simplify, but don't dumb down.</li>
-                          <p>4th graders are remarkably intelligent–they demonstrated a clear understanding of the trebuchet mechanics and weren't afraid to ask blunt questions. Yet we found that some portions of the experiment were too laborious–we needed to simplify every aspect that wasn't materially supporting the learning objectives.</p>
-                        </ul>
-                      </div>
-                    </div> -->
-                    <div class="grid-2">
-
-                      <div class="info-chunk">
-                        <img src="img/microsoft/WOZ.jpg" target="_blank">
-                      </div>
-
-                      <div class="info-chunk">
-                        <ul class="big-list">
-                          <li>A set of Wizard of Oz tests revealed weaknesses in the relationship between the trebuchet and the digital interface.</li>
-                        </ul>
-                        <p>We initially included a paper worksheet to track data that was calculated by the interface. In all of our tests, the worksheet was quickly forgotten as participants focused on the trebuchet. We moved towards integrating historical data tracking into the interface.</p>
-                      </div>
-
-                    </div>
-
-
-                    <div class="grid-2">
-
-                      <div class="info-chunk">
-                        <img src="img/microsoft/kokanee.jpg" target="_blank">
-                      </div>
-
-                      <div class="info-chunk">
-                        <ul class="big-list">
-                          <li>We brought our experiment into an elementary school classroom with 18 kids to see if it would actually descend into chaos.</li>
-                        </ul>
-                        <p>We were surprised to find... that it didn't. We had kids assemble a laser-cut trebuchet, make their own projectiles, and begin experimenting; they were clearly engaged by the activity and demonstrated understanding of how the variables affected one another.</p>
-                      </div>
-
-                    </div>
-
-                    <div class="grid-1">
-                      <div class="info-chunk">
-                        <blockquote><i class="fas fa-quote-left"></i> Blake usually struggles a bit with school subjects and isn't as engaged as the other kids. But he loves building, and it was nice to see him really brighten up today. <i class="fas fa-quote-right"></i>
-                        <br><br><span class="attribution">– Katie, 4th grade teacher</span></blockquote>
-                      </div>
-
-                      <div class="info-chunk">
-                        <blockquote><i class="fas fa-quote-left"></i> Can I buy this for one trillion dollars? <i class="fas fa-quote-right"></i>
-                        <br><br><span class="attribution">– Angel, 4th grader</span></blockquote>
-                      </div>
-                    </div>
-
-
-                        <!-- <div class="info-chunk">
-                          <h4 class="large-h4">Further iteration and testing with kids helped us form insights into how they interact with technology.</h4>
-                          <ol>
-                            <li>Kids will immediately test the extremes.</li>
-                            <p>Seconds after beginning a test, kids tried to make their projectile launch the farthest. Maybe not the best situation for a classroom environment.</p>
-                            <li>Be mindful of shorter attention spans.</li>
-                            <p>We initially had a paper worksheet to accompany the activity–but between the digital interface and the trebuchet itself, kids don't have the attention span to attend to all three components.</p>
-
-                            <li>Simplify, but don't dumb down.</li>
-                            <p>4th graders are remarkably intelligent–they demonstrated a clear understanding of the trebuchet mechanics and weren't afraid to ask blunt questions. Yet we found that some portions of the experiment were too laborious–we needed to simplify every aspect that wasn't materially supporting the learning objectives.</p>
-                          </ol>
-                        </div> -->
-
-
-
-
-
-
-
-
-
-
-                  <div class="grid-1 ">
-                    <div class="info-chunk"><div class="divider"></div><br>
-                      <h4 class="h4-multiline"><span class="grayText">Case study in progress, come back soon&nbsp; <i class="far fa-smile"></i></span></h4>
-
-                    </div>
-
-                  </div>
-                  <!-- <img   class="image-crop  " src="img/collective/hero.jpg"  alt="..."> -->
-
-                  </div>
-
-                  <div class=" global-footer" id="copyright">
-                    <img id="logo-gif" src="img/logo.gif">
-                    <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
-                  </div>
-
-              </div>
-            </div>
-          </div>
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="emoji" class="name-logo">
+          <a href="index.html" class="logo" href=""><i style="font-size:32px;" id="changeLogo" class="far fa-smile"></i></a>
         </div>
+        <div class="links">
+          <a class="sibling-fade" href="index.html">Projects</a>
+          <a class="sibling-fade" href="about.html">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="single-post">
+      <div class="single-post-head has-animation">
+        <h1 class="post-header">Microsoft Education<br><span class="gray-header">STEM Trebuchets for 4th Graders</span></h1>
       </div>
     </div>
 
-    <script>
+
+
+    <div class="page-content">
+      <div class="container">
+        <div class=" has-animation " data-delay="500">
+
+          <div class="spacer-75px"></div>
+
+          <div class="video-responsive">
+            <iframe style="pointer-events:none;" src="https://player.vimeo.com/video/325816441?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+
+          <div class="grid-1 ">
+
+            <div class="project-info">
+              <div class="info-chunk">
+                <p class="text-uppercase">ROLE</p>
+                <p>Digital interaction design
+                  <br>Front-end development
+                  <br>Physical computing
+                  <br>User testing
+                </p>
+              </div>
+              <div class="info-chunk">
+                <p class="text-uppercase">LENGTH</p>
+                <p>10 weeks</p>
+              </div>
+              <div class="info-chunk mobile-remove">
+                <p class="text-uppercase">YEAR</p>
+                <p>2019</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4><a href="https://www.microsoft.com/en-us/education/education-workshop/default.aspx">Hacking STEM</a> is a library of Arduino-based learning activities created by Microsoft. We were asked to create a potential new
+                entry to the catalog, including both a physical experiment and a digital interface.</h4>
+              <!-- <p>We were also tasked with basing the experiment on a learning objective from the Next Generation Science Standards (NGSS). We chose the standards:</p>
+              <p><a href="https://www.nextgenscience.org/pe/4-ps3-4-energy" target="_blank">4-PS3-4</a>: Apply scientific ideas to design, test, and refine a device that converts energy from one form to another.<br><br><a
+                  href="https://www.nextgenscience.org/pe/3-5-ets1-3-engineering-design" target="_blank">ETS1-3</a>: Plan and carry out fair tests in which variables are controlled and failure points are considered to identify aspects of a model or
+                prototype that can be improved.</p> -->
+            </div>
+          </div>
+
+          <!-- <div class="portfolio full-background">
+            <img id="large-image" src="img/microsoft/treb-hero.jpg" alt="The trebuchet, Arduino setup, and digital interface">
+            <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; The trebuchet, Arduino setup, and digital interface</p>
+          </div>
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4>Our response</h4>
+              <p>Our response was the Trebuchet Trials: a 4th-grade level activity that explores the transformation of energy in a medieval trebuchet. Students are asked to assemble a trebuchet out of printed cardstock templates, attach an
+                accelerometer to the arm of the trebuchet, and begin recording potential and kinetic energy values on a digital interface. </p>
+              <p>Students can interchange the amount of weights and types of projectiles they use, and record data simply by playing with the trebuchet. Historical data is kept accessible as students play, and prompts them to actively look for
+                patterns. They then apply the knowledge from playing to a series of challenges. For example, students are asked to launch projectiles with a certain amount of kinetic energy or to compete with their teammates for the farthest launch.
+              </p>
+              <p>We developed this activity with the help of teachers, students, and Microsoft Education.</p>
+              <p>It comes with a set of build instructions, and costs roughly $4 per student.
+            </div>
+          </div>
+
+
+          <div class="grid-2">
+            <div class="info-chunk small-graphics hover-underline-animation" onclick=" window.open('https://yoururl.com', '_blank');">
+              <img class="small-img" src="img/microsoft/instructions.svg">
+              <h4>Build instructions</h4>
+            </div>
+
+            <div class="info-chunk small-graphics hover-underline-animation" onclick=" window.open('https://yoururl.com', '_blank');">
+              <img class="small-img" src="img/microsoft/materials.svg">
+              <h4 class="">List of materials</h4>
+            </div>
+          </div>
+
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4>I took ownership of the digital interface and physical computing aspects on the project, creating the functional prototype with HTML, CSS, JS, and P5.js.</h4>
+              <p class="small-header">Mapping of physical trebuchet to the digital space:</p>
+              <p>The accelerometer can calculate the angle of the arm and reflect that on the interface, creating a satisfying connection between the two aspects.</p>
+              <p class="small-header">Calculating kinetic and potential energy:</p>
+              <p>Using a mix of timing and position functions, we can calculate the potential and kinetic energies of the system and update them in real-time as students use the experiment. On launch, the workbook immediately graphs the measured
+                results.</p>
+              <p class="small-header">Setting specific goals:</p>
+              <p>A challenges section encourages students to apply their learning to achieve specific goals. Teacher feedback and prototype testing has shown that students are more engaged when given specific desired outcomes.</p>
+            </div>
+          </div>
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4>Ideation</h4>
+              <p>A DIY speaker, hydroelectric turbine, genetically breeding robotic cats... our initial ideation and research aimed to expand our knowledge of the STEM education space. Concepts were developed by selecting interesting NGSS standards
+                and devising a digital-analog experiment to teach that standard. Inspiration was also gathered from pioneers like Mitchel Resnick, who espouses a constructivist approach to STEM education (essentially, learning by experience).</p>
+              <p>We honed in on three of our ideas: a trebuchet, a speaker, and a hydroelectric turbine, and created physical and video prototypes to better flesh out each one.</p>
+              <p>We then gathered feedback from stakeholders–kids responded positively to the speaker and the trebuchet, while our Microsoft contact expressed reservations about the potential chaos of classroom trebuchets.</p>
+              <blockquote>"In fourth grade we do an energy unit and this could perfectly tie into the unit and actually work better than some of our existing Science experiments... I would totally purchase this kit
+                for our energy unit next year if you created it."<br><br><span class="attribution">– Katie, 4<sup>th</sup> grade teacher</span></blockquote>
+              <p>Ultimately we moved forward with the trebuchet. We knew that it was engaging for kids, and that the educational aspect was valid, but that one of our larger design challenges would be securing stakeholder buy-in. We also were unsure
+                of some of the technical aspects–which sensors could we use to collect the data needed to calculate energy?</p>
+            </div>
+          </div>
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4>Testing & refining</h4>
+              <p>After narrowing to the trebuchet, we made a set of updates to the physical form and began generating ideas for the digital interface.</p>
+              <p>Our next set of questions focused on learning if the assembly and experimentation were age-appropriate, and testing assumptions about how data recording and analysis might work.</p>
+              <p>We developed a Wizard of Oz prototype that simulated how these pieces might work together–a fake sensor and a layered Figma document allowed us to show dynamic energy “results” as the participants used the trebuchet.</p>
+              <p>The tests inspired a set of significant changes–mainly that the experimentation aspect would focus on the counterweights and the projectiles, as opposed to the position of the arm. We removed a paper data tracking worksheet and opted
+                to integrate data-tracking into the interface. We also changed the data visualization from a line graph to a bar chart to better connect with the type of data being collected.</p>
+            </div>
+          </div>
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4>Validation in the classroom</h4>
+              <p>We had the opportunity to test with a group of 18 fourth-graders during their classtime at a local elementary school. We viewed this as our chance to evaluate if the activity would descend into chaos–a potential death knell for the
+                trebuchet.</p>
+              <p>Surprisingly… it didn’t! After a short demo, we had kids form groups to assemble and test the trebuchets. The building process was significantly quicker than we imagined, the educational value was apparent, and we received positive
+                feedback from both students and teachers.</p>
+
+              <blockquote> “Blake usually struggles a bit with school subjects and isn't as engaged as the other kids. But he loves building, and it was nice to see him really brighten up today.”<br><br>– Katie, 4<sup>th</sup> grade teacher</blockquote>
+              <blockquote>“I would buy this for one trillion dollars!”<br><br>– Angel, 4<sup>th</sup> grader</blockquote>
+              <p>We also discovered room for improvement; the pouch for projectile launching had a high rate of failure–we decided to move back to the cup design in order to reduce frustration with launching.</p>
+              <p>The teacher suggested that we incorporate specific goals for students to achieve in order to make the experiment more guided. We used this feedback to develop a set of challenges in the digital interface.</p>
+              <p>I felt that the success of this test was largely due to the fact that our homemade trebuchet just wasn’t that good. It launched fairly short distances even with a bunch of weights added. That happened to be the perfect way to control
+                chaos in the classroom, while still allowing for fun and play.</p>
+              <p>We kept this in mind as we developed a cheaper cardstock template version of the experiment.</p>
+            </div>
+          </div>
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4>Developing the tech</h4>
+              <p>While we were testing and validating the viability and desireability of the experiment, I took ownership of testing its feasibility. What types of data did we need to collect, what (cheap) sensors could give us that information, and
+                then how could we process that information in an engaging way?</p>
+              <p>To measure kinetic and potential energy, you need to be able to measure mass and speed, so I looked at common ways of measuring these values. Mass is typically measured with scales, speed with infrared sensors.</p>
+              <p>How could we do this with as few sensors and as simple wiring as possible? After experimentation I realized that I could measure just about everything I needed with an accelerometer (~$5).</p>
+              <p>Through a bit of math, the accelerometer could give us speed and position, but not weight. We decided on a discrete weight system–students place weights in a container and increment the value in the digital interface.</p>
+              <p>The tradeoff here was to radically simplify the wiring needed to set-up the activity, but to require students to manually input the number of weights used.</p>
+            </div>
+          </div>
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4>Testing the interface</h4>
+              <p>Another round of testing with kids focused on testing the relationship between the digital interface and the physical trebuchet. The functioning prototype used a barebones interface to display current and historical measurements as
+                students played with the experiment.</p>
+              <p>We also tested the hypothesis that setting specific goals would make the experiment more engaging, which turned out to be true. Students started to show teamwork and focus as they attempted to achieve the goals.</p>
+              <p>However, our interface was not as engaging as we anticipated; the kids were still focused on the trebuchet. In response, I developed an interactive trebuchet graphic that mapped 1:1 with the arm position of the physical trebuchet and
+                introduced a graphical overhaul to the rest of the interface.</p>
+            </div>
+          </div>
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4>Reflecting on the experience</h4>
+              <p>Designing with such a tight set of constraints gave our team the ability to rapidly ideate, downselect, and test our concepts and assumptions. We were always able to fall back on a set of key questions–is this achieving our desired
+                learning standard? Will this cost less than $10 per student? Would this work in a classroom?</p>
+              <p>Possibly the most difficult aspect was meeting the needs of multiple stakeholders–teachers, students, and Microsoft Education would sometimes give clashing feedback. Our use of prototypes–from behavioral, to video, to functional,
+                varied according to the particular stakeholder, and allowed us to triangulate design insights through our interactions with each party.</p>
+            </div>
+          </div>
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <h4>Next steps</h4>
+              <p>There a number of things which we would have liked to implement, given more time. In order to accomodate any kind of available weight, I could create a calibration sequence at the beginning of the experience–this would allow us to
+                avoid the manual input of weights in the interface.</p>
+              <p>The cardstock template system was our simplest build implementation, but it could have been made even simpler and allowed for more experimentation on the students’ part. A next step could be to allow for students to add their own DIY
+                pieces to the trebuchet.</p>
+            </div>
+          </div> -->
+
+
+
+
+
+
+
+
+
+          <div class="grid-1 ">
+            <div class="info-chunk">
+              <div class="divider"></div><br>
+              <h4 class="h4-multiline"><span class="gray-header">Case study in progress, come back soon&nbsp; <i class="far fa-smile"></i></span></h4>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class=" global-footer" id="copyright">
+          <img id="logo-gif" src="img/logo.gif">
+          <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+  <script>
     ScrollReveal().reveal('.');
-	  </script>
+  </script>
 
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <script src= "js/oliver.js"></script>
-    <script src= "js/slideshow.js"></script>
+  <script src="js/oliver.js"></script>
+  <script src="js/slideshow.js"></script>
 
 
 
 
 
 
-</body></html>
+</body>
+
+</html>

@@ -9,20 +9,15 @@
   <meta name="title" content="Oliver Engel Design Portfolio ✨">
   <meta name="description" content="Human-Computer Interaction + Design graduate student at the University of Washington, Seattle. ">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://oliverengel.com/">
-  <meta property="og:title" content="Oliver Engel Design Portfolio ✨">
-  <meta property="og:description" content="Human-Computer Interaction + Design graduate student at the University of Washington, Seattle. ">
-  <meta property="og:image" content="img/foundry.jpg">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://oliverengel.com/">
-  <meta property="twitter:title" content="Oliver Engel Design Portfolio ✨">
-  <meta property="twitter:description" content="Human-Computer Interaction + Design graduate student at the University of Washington, Seattle. ">
-  <meta property="twitter:image" content="img/foundry.jpg">
-
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42025560-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-42025560-2');
+  </script>
+  
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -31,8 +26,7 @@
   <meta name="author" content="Oliver Engel">
   <meta name="robots" content="NOODP">
 
-  <link rel="stylesheet" href="css/spectre.css">
-  <link rel="stylesheet" href="css/personalized.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500" rel="stylesheet">
@@ -49,27 +43,21 @@
 
   </head>
   <body>
-
-    <div class="main-container">
-
-      <nav class="nav">
-          <div class="nav-container">
-
-              <div class="ani" class="name-logo">
-                  <a href="index.html" class="logo" href=""><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-square"></i></a>
-              </div>
-
-              <div class="links">
-                  <a class="newHover" href="index.html">Projects</a>
-                  <a class="newHover"  href="about.html">About</a>
-
-              </div>
-          </div>
-      </nav>
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="emoji" class="name-logo">
+          <a href="index.html" class="logo" href=""><i style="font-size:32px;" id="changeLogo" class="far fa-smile"></i></a>
+        </div>
+        <div class="links">
+          <a class="sibling-fade" href="index.html">Projects</a>
+          <a class="sibling-fade" href="about.html">About</a>
+        </div>
+      </div>
+    </nav>
 
         <div class="single-post">
         	<div class="single-post-head has-animation">
-        			<h1 class="post-header">Red Share<br><span class="grayText">Mixed Media Installation</span></h1>
+        			<h1 class="post-header">Red Share<br><span class="gray-header">Mixed Media Installation</span></h1>
         	</div>
         </div>
 
@@ -77,16 +65,10 @@
           <div class="container" id="introduction">
 
 
-            <div class="spacer-50"></div>
+            <div class="spacer-75"></div>
 
 
-            <div class="portfolio header-image has-animation loop" data-delay="500">
-
-
-                <!-- <img class="image-crop-headers revealer " src="img/collective/hero.jpg"  alt="..."> -->
-                <!-- <video style="border-radius:3px " loop muted width="100%" height="" autoplay="autoplay">
-                  <source src="files/Sequence03.mp4" type="video/mp4" />
-                </video> -->
+            <div class="has-animation" data-delay="500">
 
                 <img class="image-crop-headers revealer " src="img/sp/setup.jpg"  alt="...">
 
@@ -95,15 +77,15 @@
 
                     <div class="project-info">
                       <div>
-                        <p class="text-uppercase-projects">ROLE</p>
+                        <p class="text-uppercase">ROLE</p>
                         <p>Artist</p>
                       </div>
                       <div>
-                        <p class="text-uppercase-projects">LENGTH</p>
+                        <p class="text-uppercase">LENGTH</p>
                         <p>4 months</p>
                       </div>
                       <div class="mobile-remove">
-                        <p class="text-uppercase-projects">YEAR</p>
+                        <p class="text-uppercase">YEAR</p>
                       <p>2018</p></div>
                     </div>
                   </div>
@@ -119,7 +101,7 @@
 
                   <div class="grid-1 ">
                     <div class="info-chunk"><div class="divider"></div><br>
-                      <h4 class="h4-multiline"><span class="grayText">Case study in progress, come back soon&nbsp; <i class="far fa-smile"></i></span></h4>
+                      <h4 class="h4-multiline"><span class="gray-header">Case study in progress, come back soon&nbsp; <i class="far fa-smile"></i></span></h4>
 
                     </div>
 
@@ -169,7 +151,7 @@
 
                   <div class="grid-3-2 ">
                     <div class="info-chunk">
-                      <h4 class="h4-multiline"><span class="grayText">Documentation in progress</span></h4>
+                      <h4 class="h4-multiline"><span class="gray-header">Documentation in progress</span></h4>
                     </div>
                  </div>
 
@@ -181,7 +163,7 @@
                </div>
              </div>
             </div>
-          </div>
+
         </div>
       </div>
     </div>

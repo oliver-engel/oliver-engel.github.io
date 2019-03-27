@@ -1,0 +1,68 @@
+
+.animated:hover {
+  -webkit-animation-duration  : 1s;
+  animation-duration          : 1s;
+  -webkit-animation-fill-mode : both;
+  animation-fill-mode         : both;
+}
+
+.has-animation {
+  opacity            : 0!important;
+  transform          : translateX(-60px);
+  -webkit-transition : transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s,
+                       opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
+  -webkit-transition : translateX(-60px);
+  transition         : transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s,
+                       opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
+}
+
+
+.animate-in {
+  opacity            : 1!important;
+  transform          : translateX(0px);
+  -webkit-transition : translateX(0px);
+}
+
+.has-animation-nav {
+  opacity            : 0!important;
+  transform          : translateY(60px);
+  -webkit-transition : transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s,
+                       opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
+  -webkit-transition : translateY(60px);
+  transition         : transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s,
+                       opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

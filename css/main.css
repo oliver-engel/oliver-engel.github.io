@@ -1,0 +1,328 @@
+/* OLIVER ENGEL PORTFOLIO */
+/* BUILT BY ME */
+
+@import url('normalize.css');
+@import url('nav.css');
+@import url('index.css');
+@import url('project.css');
+@import url('personalized.css');
+@import url('animations.css');
+
+.last-updated::after {
+  content : "Mar 2019";
+}
+
+@font-face {
+  font-family : 'Inter UI';
+  font-style  : normal;
+  font-weight : 500;
+  src         : url('/fonts/InterUI-Medium.woff2') format('woff2'),
+                url('/fonts/InterUI-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family : 'Inter UI';
+  font-style  : normal;
+  font-weight : normal;
+  src         : url('/fonts/InterUI-Regular.woff2') format('woff2'),
+                url('/fonts/InterUI-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/fonts/Recoleta-SemiBold.woff2') format('woff2'),
+        url('/fonts/Recoleta-SemiBold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* @font-face {
+  font-family : 'Sharp Grotesk Medium 20';
+  font-style  : normal;
+  font-weight : 500;
+  src         : url('/fonts/SharpGrotesk-Medium20.woff2') format('woff2'),
+                url('/fonts/SharpGrotesk-Medium20.woff') format('woff');
+} */
+
+:root {
+  --header-font        : "Recoleta";
+  --header-font-weight : 500;
+  --header-color       : #000;
+  --body-font          : "Inter UI";
+  --body-font-weight   : 400;
+  --body-color         : #000;
+  --purple             : #302ecd;
+  --light-purple       : #EBEAFB;
+  --dark-gray          : #2d2f32;
+  --sidebar-text       : #61606b;
+  --nav-links          : #9CA6B6;
+  --green              : #03884d;
+  --green-light        : #ECF4EE;
+  /* --green-text         : #009854; */
+  --green-text: #d83a32;
+  --logo-color         : #10c172;
+  --hover-text         : #302ecd;
+  --light-gray-text    : #667189;
+  --border-gray        : #ececec;
+  --yellow             : #989615;
+  --light-yellow       : #F4F3D9;
+  --portfolio-p        : #60768b;
+  --bg-color: #FCF6F6;
+}
+
+/* FONTS */
+
+html {
+  box-sizing                  : border-box;
+  -ms-text-size-adjust        : 100%;
+  -webkit-text-size-adjust    : 100%;
+  font-size                   : 20px;
+  -webkit-font-smoothing      : antialiased;
+  -moz-osx-font-smoothing     : grayscale;
+  line-height                 : 1.5;
+  -webkit-tap-highlight-color : transparent;
+}
+
+body {
+  color                   : var(--body-color);
+  overflow-x              : hidden;
+  /* background              : #fff; */
+  background: var(--bg-color);
+  font-family             : var(--body-font),
+                            sans-serif;
+  font-size               : 18px;
+  font-weight             : var(--body-font-weight);
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+}
+
+blockquote {
+  margin        : 0px;
+  margin        : 35px 0px 35px 0px;
+
+  padding       : 0px 25px 0px 25px;
+  color         : #00150b;
+  border-left   : 5px solid var(--green-text);
+  /* border-radius : 3px; */
+  font-size     : inherit;
+  font-size     : 1.1rem;
+  line-height   : 1.6em;
+}
+
+blockquote i {
+  padding-bottom : 25px;
+  color          : var(--green-text);
+}
+
+li {
+  line-height : 30px;
+}
+
+ul {
+  padding-left : 0px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing : inherit;
+}
+
+a {
+  color           : var(--green-text);
+  outline         : none;
+  text-decoration : none;
+  font-weight     : 500;
+}
+
+a.active,
+a:active,
+a:focus,
+a:hover {
+  color           : var(--green-text);
+  text-decoration : underline;
+}
+
+
+a:visited {
+  color : var(--green-text);
+}
+
+
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  margin-top     : 0;
+  margin-bottom  : .5em;
+  color          : var(--header-color);
+  font-family    : var(--header-font),
+                   sans-serif;
+  font-weight    : var(--header-font-weight);
+  font-weight    : var(--header-font-weight);
+  line-height : 1.4em;
+  /* letter-spacing : -.02em; */
+}
+
+h1 {
+  font-size   : 3.052em;
+
+}
+
+h2 {
+  color     : var(dark-gray);
+  font-size : 1.953em;
+}
+
+h3 {
+  color     : var(dark-gray);
+  font-size : 1.563em;
+}
+
+h4 {
+  color                   : var(--body-color);
+  overflow-x              : hidden;
+  font-family             : var(--body-font),
+                            sans-serif;
+  font-size               : 1.5rem;
+  font-weight             : 500;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+  /* line-height             : 1.4em; */
+  letter-spacing          : -1px;
+}
+
+h5 {
+  font-size : 1em;
+}
+
+h6 {
+  font-size : .8rem;
+}
+
+p {
+  margin-top  : 0px;
+  line-height : 1.5rem;
+}
+
+b {
+  font-weight : 500;
+}
+
+ol {
+  padding-left : 0px;
+}
+
+li {
+  padding-bottom : 15px;
+}
+
+.container {
+  display : grid;
+  width   : 100%;
+}
+
+.divider {
+  max-width  : 985px;
+  height     : .05rem;
+  margin     : .4rem 0;
+  border-top : .1rem solid #E1E0E4;
+}
+
+.page-content {
+  display               : grid;
+  margin                : 0 45px;
+  padding-top           : 45px;
+  grid-template-columns : 1fr;
+}
+
+.page-content > .container {
+  max-width : 1000px;
+  margin    : 0 auto;
+}
+
+
+/* SPACERS */
+
+.spacer-75px {
+  height : 75px;
+}
+
+.spacer-50px {
+  height : 50px;
+}
+
+.spacer-25px {
+  height : 25px;
+}
+
+
+/* MISC */
+
+.clear {
+  clear : both;
+}
+
+.gray-header {
+  color : #8390a5;
+}
+
+.button-green a:visited {
+  color : white;
+}
+
+#logo-gif {
+  width          : 75px;
+  margin-bottom  : 0px;
+  padding-bottom : 15px;
+}
+
+/* MEDIA QUERIES */
+
+@media
+  (max-width : 1076px) {
+  .nav-container {
+    padding : 0 15px;
+  }
+}
+
+@media
+  (max-width : 600px) {
+  .page-content {
+    margin : 0 15px;
+  }
+  .nav-container {
+    padding : 0 15px;
+  }
+}
+
+@media
+  (max-width : 800px) {
+  .grid-3 {
+    grid-template-columns : 1fr 1fr;
+  }
+
+  .mobile-remove {
+    display : none;
+  }
+
+  .floatImage {
+    width      : 100%;
+    float      : none;
+    object-fit : cover;
+  }
+
+  .grid,
+  .grid-2,
+  .grid-3-2,
+  .grid-padded {
+    grid-template-columns : 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns : 1fr;
+  }
+}
