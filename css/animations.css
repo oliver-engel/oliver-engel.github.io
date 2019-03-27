@@ -33,6 +33,13 @@
                        opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
 }
 
+.appearing{
+  animation: fadeappear .8s;
+    -moz-animation: fadeappear .8s; /* Firefox */
+    -webkit-animation: fadeappear .8s; /* Safari and Chrome */
+    -o-animation: fadeappear .8s; /* Opera */
+}
+
 
 @keyframes fadein {
     from {
@@ -65,4 +72,45 @@
     to {
         opacity: 1;
     }
+}
+
+@keyframes fadeappear {
+    from {
+        transform: translateX(-50px);
+        opacity:0;
+    }
+    to {
+      transform: translateX(0px);
+        opacity:1;
+    }
+}
+@-moz-keyframes fadeappear { /* Firefox */
+  from {
+      transform: translateX(-50px);
+      opacity:0;
+  }
+  to {
+    transform: translateX(0px);
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadeappear { /* Safari and Chrome */
+  from {
+      transform: translateX(-50px);
+      opacity:0;
+  }
+  to {
+    transform: translateX(0px);
+      opacity:1;
+  }
+}
+@-o-keyframes fadeappear { /* Opera */
+  from {
+      transform: translateX(-50px);
+      opacity:0;
+  }
+  to {
+    transform: translateX(0px);
+      opacity:1;
+  }
 }
