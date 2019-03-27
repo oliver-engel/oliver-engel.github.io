@@ -14,7 +14,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42025560-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-42025560-2');
   </script>
@@ -29,7 +32,6 @@
 
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="css/main.css">
-  <!-- <link rel="stylesheet" href="css/personalized.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   <!-- FAVICONS -->
@@ -39,8 +41,6 @@
   <link rel="manifest" href="favicons/manifest.json">
   <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
-
-  <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 
@@ -58,58 +58,56 @@
     </div>
   </nav>
 
-    <div class="single-post">
-      <div class="single-post-head has-animation">
-        <h1 class="post-header">Microsoft Education<br><span class="gray-header">STEM Trebuchets for 4th Graders</span></h1>
-      </div>
+  <div class="single-post">
+    <div class="single-post-head has-animation">
+      <h1 class="post-header">Microsoft Education<br><span class="gray-header">STEM Trebuchets for 4th Graders</span></h1>
     </div>
+  </div>
 
+  <div class="page-content">
+    <div class="container">
+      <div class=" has-animation " data-delay="500">
 
+        <div class="spacer-25px"></div>
 
-    <div class="page-content">
-      <div class="container">
-        <div class=" has-animation " data-delay="500">
+        <div class="video-responsive">
+          <iframe style="pointer-events:none;" src="https://player.vimeo.com/video/325816441?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
 
-          <div class="spacer-25px"></div>
+        <div class="grid-1 ">
 
-          <div class="video-responsive">
-            <iframe style="pointer-events:none;" src="https://player.vimeo.com/video/325816441?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-
-          <div class="grid-1 ">
-
-            <div class="project-info">
-              <div class="info-chunk">
-                <p class="text-uppercase">ROLE</p>
-                <p>Digital interaction design
-                  <br>Front-end development
-                  <br>Physical computing
-                  <br>User testing
-                </p>
-              </div>
-              <div class="info-chunk">
-                <p class="text-uppercase">LENGTH</p>
-                <p>10 weeks</p>
-              </div>
-              <div class="info-chunk mobile-remove">
-                <p class="text-uppercase">YEAR</p>
-                <p>2019</p>
-              </div>
+          <div class="project-info">
+            <div class="info-chunk">
+              <p class="text-uppercase">ROLE</p>
+              <p>Digital interaction design
+                <br>Front-end development
+                <br>Physical computing
+                <br>User testing
+              </p>
+            </div>
+            <div class="info-chunk">
+              <p class="text-uppercase">LENGTH</p>
+              <p>10 weeks</p>
+            </div>
+            <div class="info-chunk mobile-remove">
+              <p class="text-uppercase">YEAR</p>
+              <p>2019</p>
             </div>
           </div>
+        </div>
 
-          <div class="grid-1 ">
-            <div class="info-chunk">
-              <h4><a href="https://www.microsoft.com/en-us/education/education-workshop/default.aspx">Hacking STEM</a> is a library of Arduino-based learning activities created by Microsoft. We were asked to create a potential new
-                entry to the catalog, including both a physical experiment and a digital interface.</h4>
-              <!-- <p>We were also tasked with basing the experiment on a learning objective from the Next Generation Science Standards (NGSS). We chose the standards:</p>
+        <div class="grid-1 ">
+          <div class="info-chunk">
+            <h4><a href="https://www.microsoft.com/en-us/education/education-workshop/default.aspx">Hacking STEM</a> is a library of Arduino-based learning activities created by Microsoft. We were asked to create a potential new
+              entry to the catalog, including both a physical experiment and a digital interface.</h4>
+            <!-- <p>We were also tasked with basing the experiment on a learning objective from the Next Generation Science Standards (NGSS). We chose the standards:</p>
               <p><a href="https://www.nextgenscience.org/pe/4-ps3-4-energy" target="_blank">4-PS3-4</a>: Apply scientific ideas to design, test, and refine a device that converts energy from one form to another.<br><br><a
                   href="https://www.nextgenscience.org/pe/3-5-ets1-3-engineering-design" target="_blank">ETS1-3</a>: Plan and carry out fair tests in which variables are controlled and failure points are considered to identify aspects of a model or
                 prototype that can be improved.</p> -->
-            </div>
           </div>
+        </div>
 
-          <!-- <div class="portfolio full-background">
+        <!-- <div class="portfolio full-background">
             <img id="large-image" src="img/microsoft/treb-hero.jpg" alt="The trebuchet, Arduino setup, and digital interface">
             <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; The trebuchet, Arduino setup, and digital interface</p>
           </div>
@@ -248,35 +246,38 @@
 
 
 
-          <div class="grid-1 ">
-            <div class="info-chunk">
-              <div class="divider"></div><br>
-              <h4 class="h4-multiline"><span class="gray-header">Case study in progress, come back soon&nbsp; <i class="far fa-smile"></i></span></h4>
-
-            </div>
-
+        <div class="grid-1 ">
+          <div class="info-chunk">
+            <div class="divider"></div><br>
+            <h4 class="h4-multiline"><span class="gray-header">Case study in progress, come back soon&nbsp; <i class="far fa-smile"></i></span></h4>
           </div>
-
-        </div>
-
-        <div class=" global-footer" id="copyright">
-          <img id="logo-gif" src="img/logo.gif">
-          <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
         </div>
 
       </div>
+
+      <!-- <div class=" global-footer" id="copyright">
+        <img id="logo-gif" src="img/logo.gif">
+        <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
+      </div> -->
+
+
+      <div class=" global-footer" id="copyright">
+        <div>
+          <p><i class="fas fa-paperclip"></i> &nbsp;<a href="/files/EngelOliver_Resume.pdf" target="_blank">Resume</a></p>
+          <p><i class="fab fa-linkedin"></i> &nbsp;<a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a></p>
+        </div>
+        <div style="text-align:right">
+          <img id="logo-gif" src="img/logo.gif">
+          <p>Updated <span class="last-updated"></span></p>
+        </div>
+      </div>
+
     </div>
+  </div>
 
 
-
-
-
-  <script>
-    ScrollReveal().reveal('.');
-  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
   <script src="js/oliver.js"></script>
   <script src="js/slideshow.js"></script>
 

@@ -83,7 +83,19 @@
 /* FOOTER */
 
 .global-footer {
-  padding-top    : 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  padding-bottom: 50px;
+  /* padding-top    : 50px;
   padding-bottom : 50px;
-  text-align     : right;
+  text-align     : right; */
+}
+
+.global-footer p{
+  line-height:1.2rem;
+}
+
+.global-footer i{
+  color:#8390a5;
 }
