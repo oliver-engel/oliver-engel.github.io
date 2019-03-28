@@ -89,6 +89,10 @@
   transform-origin : bottom left;
 }
 
+.gallery{
+  margin-bottom:50px;
+}
+
 .image-crop {
   width         : 100%;
   height        : 350px;
@@ -103,7 +107,7 @@
   width         : 100%;
   height        : 150px;
   margin-bottom : 25px;
-  padding       : 15px;
+  padding       : 15px 0px 15px 0px;
   opacity       : .6;
   border-radius : 3px;
   border-radius : 3px;
@@ -118,8 +122,8 @@
 
 .image-crop-expanded {
   width         : 100%;
-  height        : 1000px;
-  padding       : 15px;
+  height        : 400px;
+  /* padding       : 15px 15px 0px 15px; */
   border-radius : 3px;
   object-fit    : cover;
 }
@@ -187,6 +191,7 @@
 }
 
 .small-graphics {
+
   padding       : 35px;
   border        : 2px solid var(--border-gray);
   border-radius : 3px;
@@ -217,7 +222,7 @@
 .hover-underline-animation {
   display  : inline-block;
   position : relative;
-  color    : #F1DFDA;
+  color    : var(--green-text);
 }
 
 .hover-underline-animation::after {
@@ -227,7 +232,7 @@
   left             : 0;
   width            : 100%;
   height           : 5px;
-  background-color : #DC6849;
+  background-color : var(--green-text);
   transform        : scaleX(0);
   transform-origin : bottom right;
   transition       : transform 0.25s ease-out;
@@ -276,7 +281,6 @@
 
 .grid-2 {
   display               : grid;
-  max-width             : 985px;
   margin-bottom         : 18px;
   padding-top           : 50px;
   grid-gap              : 1.5em;
@@ -296,6 +300,32 @@
   display               : grid;
   margin-bottom         : 50px;
   padding-top           : 35px;
-  grid-gap              : 1em;
+  grid-gap              : 2em;
   grid-template-columns : 3fr 2fr;
+}
+
+.text-overlay {
+  font-family    : var(--header-font);
+  font-size:1.3rem;
+  color:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-arrow-right{
+  font-size:20px;
+  padding-left:10px;
+  color:var(--green-text);
+}
+
+.embedded-image{
+  padding-top:25px;
+  padding-bottom:75px;
+}
+
+.embedded-image-less-padding{
+  padding-top:25px;
+  padding-bottom:25px;
 }

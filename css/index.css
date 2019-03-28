@@ -12,6 +12,10 @@
   transition-duration         : 0.3s;
 }
 
+.hvr-shrink:hover{
+  cursor: pointer;
+}
+
 .hvr-shrink:active,
 .hvr-shrink:focus,
 .hvr-shrink:hover {
@@ -26,5 +30,9 @@
 .info-chunk-home {
   margin-bottom : 50px;
   text-align    : center;
-  
+
+}
+
+#section-title{
+  padding-top:100px; text-align:center; line-height:12px;
 }
