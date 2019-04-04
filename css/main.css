@@ -68,7 +68,8 @@
   --yellow             : #989615;
   --light-yellow       : #F4F3D9;
   --portfolio-p        : #60768b;
-  --bg-color: #FCF6F6;
+  /* --bg-color: #FCF6F6; */
+  --bg-color: #FFF;
 }
 
 /* FONTS */
