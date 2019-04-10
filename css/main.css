@@ -282,7 +282,8 @@ li {
 }
 
 .rounded-btn:hover{
-
+  color               : white;
+  background          : var(--red-text);
 }
 
 
