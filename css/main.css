@@ -9,7 +9,7 @@
 @import url('animations.css');
 
 .last-updated::after {
-  content : "Mar 2019";
+  content : "Apr 2019";
 }
 
 @font-face {
@@ -56,11 +56,11 @@
   --light-purple       : #EBEAFB;
   --dark-gray          : #2d2f32;
   --sidebar-text       : #61606b;
-  --nav-links          : #9CA6B6;
+  --nav-links          : #846263;
   --green              : #03884d;
   --green-light        : #ECF4EE;
-  /* --green-text         : #009854; */
-  --green-text: #d83a32;
+  /* --red-text         : #009854; */
+  --red-text: #d83a32;
   --logo-color         : #10c172;
   --hover-text         : #302ecd;
   --light-gray-text    : #667189;
@@ -106,7 +106,7 @@ blockquote {
 
   padding       : 0px 25px 0px 25px;
   color         : #00150b;
-  border-left   : 5px solid var(--green-text);
+  border-left   : 5px solid var(--red-text);
   /* border-radius : 3px; */
   font-size     : inherit;
   font-size     : 1.1rem;
@@ -115,7 +115,7 @@ blockquote {
 
 blockquote i {
   padding-bottom : 25px;
-  color          : var(--green-text);
+  color          : var(--red-text);
 }
 
 li {
@@ -138,7 +138,7 @@ img{
 }
 
 a {
-  color           : var(--green-text);
+  color           : var(--red-text);
   outline         : none;
   text-decoration : none;
   font-weight     : 500;
@@ -148,13 +148,13 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-  color           : var(--green-text);
+  color           : var(--red-text);
   text-decoration : underline;
 }
 
 
 a:visited {
-  color : var(--green-text);
+  color : var(--red-text);
 }
 
 
@@ -199,7 +199,7 @@ h4 {
   font-weight             : 500;
   -webkit-font-smoothing  : antialiased;
   -moz-osx-font-smoothing : grayscale;
-  /* line-height             : 1.4em; */
+  line-height             : 1.4em;
   letter-spacing          : -1px;
 }
 
@@ -250,6 +250,39 @@ li {
 .page-content > .container {
   max-width : 1000px;
   margin    : 0 auto;
+}
+
+.rounded-btn{
+  margin-top:10px;
+  display             : inline-block;
+  -moz-appearance     : none;
+  -webkit-appearance  : none;
+  appearance          : none;
+  height              : 1.8rem;
+  padding             : .25rem .8rem;
+  padding-right       : 15px;
+  padding-left        : 15px;
+  color               : var(--red-text);
+  border-color        : var(--red-text);
+  border-radius       : .1rem;
+  /* background          : var(--red-text); */
+  outline             : none;
+  text-align          : center;
+  text-decoration     : none;
+  vertical-align      : middle;
+  font-size           : .8rem;
+  line-height         : 1.2rem;
+  white-space         : nowrap;
+  transition          : all .2s ease;
+  -moz-user-select    : none;
+  -ms-user-select     : none;
+  -webkit-user-select : none;
+  user-select         : none;
+  cursor              : pointer;
+}
+
+.rounded-btn:hover{
+
 }
 
 

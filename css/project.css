@@ -7,8 +7,10 @@
 .single-post {
   position    : relative;
   clear       : both;
-  margin-top  : 100px;
-  color       : #292929;
+  z-index:2;
+  /* margin-top  : 100px; */
+  /* background-color: #795548; */
+  /* color       : #689270; */
   overflow    : hidden;
   font-size   : 16px;
   line-height : 1.9em;
@@ -16,16 +18,19 @@
 
 .post-header {
   font-size : 2.3rem;
+  /* color:black; */
 }
 
 .single-post-head {
   position   : relative;
-  padding    : 15vh 20px 7vh;
+  padding    : 22vh 20px 10vh;
   text-align : center;
+  /* color:white; */
 }
 
 .single-post-head p {
   font-size : 16px;
+  /* color:white; */
 }
 
 .video-responsive {
@@ -222,7 +227,7 @@
 .hover-underline-animation {
   display  : inline-block;
   position : relative;
-  color    : var(--green-text);
+  color    : var(--red-text);
 }
 
 .hover-underline-animation::after {
@@ -232,7 +237,7 @@
   left             : 0;
   width            : 100%;
   height           : 5px;
-  background-color : var(--green-text);
+  background-color : var(--red-text);
   transform        : scaleX(0);
   transform-origin : bottom right;
   transition       : transform 0.25s ease-out;
@@ -317,7 +322,7 @@
 .fa-arrow-right{
   font-size:20px;
   padding-left:10px;
-  color:var(--green-text);
+  color:var(--red-text);
 }
 
 .embedded-image{
@@ -332,4 +337,14 @@
 
 .recent-photo > .image-crop{
   margin:0px;
+}
+
+.writing > h4{
+  margin: 10px 0px 5px 0px;
+}
+
+.writing{
+  /* border-top: 1px solid gray; */
+  border-bottom: .1rem solid #e1e0e4;
+  padding:35px 0px 75px 0px;
 }

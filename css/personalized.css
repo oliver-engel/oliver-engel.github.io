@@ -19,7 +19,7 @@
 
 
 .attribution {
-  /* color: var(--green-text); font-weight:500; */
+  /* color: var(--red-text); font-weight:500; */
 }
 
 .fa-quote-left {
@@ -135,7 +135,7 @@
 
 .sibling-hover:hover ~ .sibling-highlight {
   content    : " View Project";
-  color      : var(--green-text);
+  color      : var(--red-text);
   transition : all 0.3s;
   transition : .2s;
 }
