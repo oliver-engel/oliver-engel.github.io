@@ -265,7 +265,7 @@ li {
   color               : var(--red-text);
   border-color        : var(--red-text);
   border-radius       : .1rem;
-  /* background          : var(--red-text); */
+  background          : white;
   outline             : none;
   text-align          : center;
   text-decoration     : none;
@@ -344,6 +344,11 @@ li {
 
 @media
   (max-width : 800px) {
+
+
+  h1{
+    line-height:1.1em;
+  }
   .grid-3 {
     grid-template-columns : 1fr 1fr;
   }
