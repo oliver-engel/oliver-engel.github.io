@@ -5,7 +5,7 @@
 @import url('nav.css');
 @import url('index.css');
 @import url('project.css');
-@import url('personalized.css');
+/* @import url('personalized.css'); */
 @import url('animations.css');
 
 .last-updated::after {
