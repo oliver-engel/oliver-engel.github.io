@@ -2,12 +2,25 @@
 
 <html lang="en">
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <!-- Primary Meta Tags -->
   <title>Oliver Engel Design Portfolio</title>
   <meta name="title" content="Oliver Engel Design Portfolio">
   <meta name="description" content="Human-Computer Interaction + Design graduate student at the University of Washington, Seattle. ">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42025560-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-42025560-2');
+  </script>
 
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -20,7 +33,6 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-
   <!-- FAVICONS -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png?v=kP3m5Xdgdx">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png?v=kP3m5Xdgdx">
@@ -28,138 +40,132 @@
   <link rel="shortcut icon" href="favicons/favicon.ico?v=kP3m5Xdgdx">
   <meta name="theme-color" content="#ffffff">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <div class="main-container">
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="emoji" class="name-logo">
+        <a href="https://oliverengel.com/" class="logo" href=""><i style="font-size:32px;" id="changeLogo" class="far fa-smile"></i></a>
+      </div>
+      <div class="links">
+        <a class="sibling-fade" href="index.html">Projects</a>
+        <a class="sibling-fade" href="about.html">About</a>
+        <a class="sibling-fade" href="writing.html">Writing</a>
+      </div>
+    </div>
+  </nav>
 
-      <nav class="nav">
-          <div class="nav-container">
+  <div class="single-post">
+    <div class="single-post-head has-animation">
+      <h1 class="post-header">Code & Art<br><span class="gray-header">Various Projects</span></h1>
+    </div>
+  </div>
 
-              <div class="ani" class="name-logo">
-                  <a class="logo" href="index.html"><i class="fas fa-circle"></i>&nbsp;<i class="fas fa-square"></i></a>
-              </div>
+  <div class="page-content" id="content">
+    <div class="container" id="introduction">
 
-              <div class="links">
-                  <a class="sibling-fade" href="index.html">Projects</a>
-                  <a class="sibling-fade"  href="about.html">About</a>
+      <div class="spacer-25px"></div>
 
-              </div>
+      <div class="video-responsive">
+        <iframe src="https://player.vimeo.com/video/237709819?background=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+
+      <div class="has-animation" data-delay="500">
+
+        <div class="grid-1 ">
+          <div class="info-chunk">
+            <h1 class="post-header">Endless</h1>
+            <h4 class="large-h4">A warped VR simulation of hellish quotidian.</h4>
           </div>
-      </nav>
 
-      <div class="single-post">
-        <div class="single-post-head has-animation">
-            <h1 class="post-header">Code + Art<br><span class="gray-header">Various Projects</span></h1>
+          <div class="info-chunk">
+            <p>Players complete a day in the life (wake up, go to work, sleep, repeat), and earn a point each time they finish a day. They have 30 seconds to figure out a simple puzzle to move to the next part of the day, but each time a new cycle begins, their view is more progressively warped. Players report feeling physically sick after a few rounds. How much torture are you willing to endure for the high score?</p>
+            <p>Created with Unity 3D, and coded in C#.</p>
+          </div>
+
+          <div class="spacer"></div>
         </div>
       </div>
 
-        <div class="page-content" id="content">
+      <div class="spacer-25px"></div>
 
-          <div class="container" id="introduction">
+      <div class="video-responsive" style="margin-top:100px">
+        <iframe src="https://player.vimeo.com/video/249615054?background=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
 
+      <div class="has-animation" data-delay="500">
 
-
-            <div class="spacer-50"></div>
-
-            <div class="portfolio has-animation" data-delay="500">
-
-              <div class="video-responsive">
-                <iframe  style="pointer-events:none; " src="https://player.vimeo.com/video/326197897?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-              </div>
-
-                <div class="grid-3-2 ">
-                  <div class="info-chunk">
-                    <h2>Splitscreen</h2>
-                    <h4 class="h4-multiline"><br>Created in 2016 during the presidential election, Splitscreen plays with the language and syntax of news headlines. </h4>
-                  </div>
-                </div>
-
-                  <div class="grid">
-                    <div class="info-chunk">
-
-                      <p class="text-uppercase">Tools</p>
-                      <div class="chip-list">
-                        <span class="chip">Python</span>
-                        <span class="chip">Premiere</span>
-                      </div>
-                    </div>
-
-                    <div class="info-chunk">
-                      <p class="text-uppercase">About</p>
-                      <p>The program scrapes recent articles from different news sources, and combines them into one–spitting the result out into a terminal screen. It was created using Python, with some help from the Newspaper and Asciimatics APIs.  </p>
-                    </div>
-                  </div>
-
-                  <div class="video-responsive">
-                    <iframe src="https://player.vimeo.com/video/245870936" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                  </div>
-
-                  <div class="spacer"></div>
-                  <div class="divider"></div>
-                  <div class="spacer-25"></div>
-
-
-                  <div class="grid-3-2 ">
-                    <div class="info-chunk">
-                      <h2>Endless</h2>
-                      <h4 class="h4-multiline"><br>Endless is a VR simulation of what hell probably looks like.</h4>
-                    </div>
-                  </div>
-
-                    <div class="grid">
-                      <div class="info-chunk">
-
-                        <p class="text-uppercase">Tools</p>
-                        <div class="chip-list">
-                          <span class="chip">Unity 3D</span>
-                          <span class="chip">C#</span>
-                          <span class="chip">Premiere</span>
-                        </div>
-                      </div>
-
-                      <div class="info-chunk">
-                        <p class="text-uppercase">About</p>
-                        <p>Players complete a day in the life (wake up, go to work, sleep, repeat), and earn a point each time they finish a day. They have 30 seconds to figure out a simple puzzle to move to the next part of the day, but each time a new cycle begins, their view is more progressively warped. Players report feeling physically sick after a few rounds. How much torture are you willing to endure for the high score?</p>
-                      </div>
-                    </div>
-
-                    <div class="video-responsive">
-                      <iframe src="https://player.vimeo.com/video/237709819" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div>
-
-
-                    <div class="spacer"></div>
-                    <div class="divider"></div>
-                    <div class="spacer-25"></div>
-
-
-
-
-
-
-                  <div class="global-footer" id="copyright">
-                    <img id="logo-gif" src="img/logo.gif">
-                    <p><a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a> · Updated <span class="last-updated"></span></p>
-                  </div>
-
-            </div>
+        <div class="grid-1 ">
+          <div class="info-chunk">
+            <h1 class="post-header">Foundry</h1>
+            <h4 class="large-h4">An experiment in generative typography.</h4>
           </div>
+
+          <div class="info-chunk">
+            <p>For a school project, I had previously written a Python command-line tool that let me manipulate fonts by altering the arrangement and parameters of their bezier curves and control points.</p>
+            <p>To take the project a step further, I later designed a full UI based off of that code, focusing on a mix of interaction design and visual design. I pursued the project to practice building a product from the ground up, and within the technical constraints set by my own program.</p>
+          </div>
+
+
         </div>
       </div>
 
+      <div class="spacer-25px"></div>
 
-    <script>
-    ScrollReveal().reveal('.');
-	  </script>
+      <div class="video-responsive" style="margin-top:100px">
+        <iframe src="https://player.vimeo.com/video/245870936?background=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
 
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+      <div class="has-animation" data-delay="500">
 
-    <script src= "js/oliver.js"></script>
+        <div class="grid-1 ">
+          <div class="info-chunk">
+            <h1 class="post-header">Splitscreen</h1>
+            <h4 class="large-h4">Created in 2016 during the presidential election, Splitscreen plays with the language and syntax of news headlines.</h4>
+          </div>
+
+          <div class="info-chunk">
+            <p>The program scrapes recent articles from different news sources, and combines them into one–spitting the result out into a terminal screen. It was created using Python, with some help from the <a href="https://newspaper.readthedocs.io/en/latest/" target="_blank">Newspaper</a> and <a href="https://github.com/peterbrittain/asciimatics" target="_blank">Asciimatics</a> APIs.  </p>
+          </div>
+        </div>
+
+        <div class="grid-1 ">
+          <div class="info-chunk">
+            <div class="divider"></div><br>
+            <a href="redshare.html"><button class="rounded-btn"><i class="fas fa-angle-left"></i> &nbsp; Previous project</button></a>
+            <a style="float:right" href=""><button disabled class="rounded-btn"> Next project &nbsp;<i class="fas fa-angle-right"></i></button></a>
+
+            <div class="divider" style="margin-top:45px"></div><br>
+          </div>
+        </div>
 
 
-</body></html>
+
+
+
+
+      <div class=" global-footer" id="copyright">
+        <div>
+          <p><i class="fas fa-paperclip"></i> &nbsp;<a href="/files/EngelOliver_Resume.pdf" target="_blank">Resume</a></p>
+          <p><i class="fab fa-linkedin"></i> &nbsp;<a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a></p>
+        </div>
+        <div style="text-align:right">
+          <img id="logo-gif" src="img/logo.gif">
+          <p>Updated <span class="last-updated"></span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script src="js/oliver.js"></script>
+
+
+</body>
+
+</html>
