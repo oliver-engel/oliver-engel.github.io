@@ -269,6 +269,7 @@ li {
   outline             : none;
   text-align          : center;
   text-decoration     : none;
+  border: 1.25px solid var(--red-text);
   vertical-align      : middle;
   font-size           : .8rem;
   line-height         : 1.2rem;
@@ -278,12 +279,20 @@ li {
   -ms-user-select     : none;
   -webkit-user-select : none;
   user-select         : none;
-  cursor              : pointer;
+
 }
 
-.rounded-btn:hover{
+.rounded-btn:hover:enabled{
+  cursor              : pointer;
   color               : white;
   background          : var(--red-text);
+}
+
+.rounded-btn:disabled{
+  cursor              :default;
+  color: #E1E0E4;
+  border: 1.25px #E1E0E4 solid;
+
 }
 
 
