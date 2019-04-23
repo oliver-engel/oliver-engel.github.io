@@ -8,10 +8,10 @@
 
 .has-animation {
   opacity            : 0!important;
-  transform          : translateX(-60px);
+  transform          : translateY(60px);
   -webkit-transition : transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s,
                        opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
-  -webkit-transition : translateX(-60px);
+  -webkit-transition : translateY(60px);
   transition         : transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s,
                        opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
 }
@@ -19,8 +19,8 @@
 
 .animate-in {
   opacity            : 1!important;
-  transform          : translateX(0px);
-  -webkit-transition : translateX(0px);
+  transform          : translateY(0px);
+  -webkit-transition : translateY(0px);
 }
 
 .has-animation-nav {

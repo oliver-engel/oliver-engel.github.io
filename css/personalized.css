@@ -1,26 +1,7 @@
 
 
-.gallery-thumbs {
-  display               : grid;
-  grid-template-columns : 1fr 1fr 1fr;
-  grid-gap: 15px;
-}
-
-.thumb {
-  height        : 150px;
-  margin-bottom : 0px;
-  object-fit    : contain;
-}
-
-.small-img {
-  width : 125px !important;
-}
 
 
-
-.attribution {
-  /* color: var(--red-text); font-weight:500; */
-}
 
 .fa-quote-left {
   font-size : 24px;
@@ -28,10 +9,7 @@
 
 
 
-.project-info {
-  display               : grid;
-  grid-template-columns : 4fr 1fr 1fr;
-}
+
 
 /* .project-info p{ color:#5b657a; } */
 
@@ -121,24 +99,7 @@
 
 
 
-.sibling-highlight {
-  margin-bottom : 0px;
-  transition    : .5s;
-  transition    : all 0.3s;
-}
 
-#parent,
-.sibling-hover {
-  transition : all 0.3s;
-  cursor     : pointer;
-}
-
-.sibling-hover:hover ~ .sibling-highlight {
-  content    : " View Project";
-  color      : var(--red-text);
-  transition : all 0.3s;
-  transition : .2s;
-}
 
 .portfolio-item {
   margin-bottom : 125px;
@@ -147,70 +108,4 @@
 
 .first-nav-section {
   padding-bottom : 35px;
-}
-
-
-
-
-
-
-
-
-/* The Masonry Container */
-
-.masonry {
-  /* margin: 1.5em auto; */
-  max-width   : 100%;
-  padding-top : .9em;
-  /* column-gap: 1.5em; */
-}
-
-/* The Masonry Brick */
-
-.item {
-  margin     : 0 0 -.5em;
-  /* background : #fff; */
-  /* padding: 1em; */
-}
-
-/* Masonry on large screens */
-
-@media
-  only screen
-  and (min-width : 1024px) {
-  .masonry {
-    column-count : 2;
-  }
-}
-
-/* Masonry on large screens */
-
-@media
-  only screen
-  and (min-width : 1068px) {
-  .nav {
-    padding-left : 15px;
-  }
-}
-
-/* Masonry on medium-sized screens */
-
-@media
-  only screen
-  and (max-width : 1023px)
-  and (min-width : 768px) {
-  .masonry {
-    column-count : 2;
-  }
-}
-
-/* Masonry on small screens */
-
-@media
-  only screen
-  and (max-width : 767px)
-  and (min-width : 540px) {
-  .masonry {
-    column-count : 2;
-  }
 }

@@ -36,3 +36,22 @@
 #section-title{
   padding-top:100px; text-align:center; line-height:12px;
 }
+
+.sibling-highlight {
+  margin-bottom : 0px;
+  transition    : .5s;
+  transition    : all 0.3s;
+}
+
+#parent,
+.sibling-hover {
+  transition : all 0.3s;
+  cursor     : pointer;
+}
+
+.sibling-hover:hover ~ .sibling-highlight {
+  content    : " View Project";
+  color      : var(--red-text);
+  transition : all 0.3s;
+  transition : .2s;
+}

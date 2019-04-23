@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <!-- Primary Meta Tags -->
   <title>Oliver Engel Design Portfolio</title>
@@ -11,7 +14,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42025560-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-42025560-2');
   </script>
@@ -35,122 +41,117 @@
   <meta name="theme-color" content="#ffffff">
 
 
-  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
 
-  </head>
-  <body>
-
+<body>
 
 
-      <nav class="nav">
 
-        <div class="nav-container">
-          <div class="emoji" class="name-logo">
-            <a href="https://oliverengel.com/" class="logo" href=""><i style="font-size:32px;" id="changeLogo" class="far fa-smile"></i></a>
-          </div>
-          <div class="links">
-            <a class="sibling-fade" href="index.html">Projects</a>
-            <a class="sibling-fade" href="about.html">About</a>
-            <a class="sibling-fade" href="writing.html">Writing</a>
-          </div>
+  <nav class="nav" id="hide-nav">
+    <div class="nav-container">
+      <div class="links">
+        <a class="sibling-fade" href="index.html">💾 Work</a>
+        <a class="sibling-fade" href="writing.html">✏️ Writing</a>
+        <a class="sibling-fade" href="about.html">🥬 About</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="project-header fade-in" style="z-index:4; background-color:#009688;">
+
+    <!-- <img src="img/microsoft/microsoft.svg" style="position:absolute; width:50px; top:20vh; border-radius:0px;" class="rellax" data-rellax-speed="-2"> -->
+    <div class="project-header-content rellax fade-scroll" data-rellax-speed="-2">
+      <h2>I've typed out some of my thoughts.</h2>
+    </div>
+
+    <div style="text-align:center; position:absolute; color:white; bottom: 10vh;" class="CTA">
+      Read them with your eyes
+      <div class="scroll-down"></div>
+    </div>
+  </div>
+
+  <div class="page-content" id="content">
+    <div class="container portfolio" id="introduction">
+
+      <div class="spacer-50"></div>
+      <!-- <img class="image-crop-headers has-animation mobile-remove" src="img/writing.jpg" data-delay="500"> -->
+      <div class="grid-1 ">
+
+        <div class="info-chunk has-animation writing" data-delay="200">
+          <p class="text-uppercase">3 APR 19</p>
+          <h4>The comedy podcast every product designer should listen to</h4>
+          <p>In which I tell you what media to consume.</p>
+          <a href="https://uxdesign.cc/the-comedy-podcast-every-product-designer-should-listen-to-22d9d95e797" target="_blank"><button class="rounded-btn"><i class="fab fa-medium-m"></i> &nbsp; Read on Medium</button></a>
         </div>
-      </nav>
 
-    <div class="single-post">
-      <div class="single-post-head has-animation">
-          <h1 class="post-header smaller-margin">I typed these things out.</h1>
-          <p>Thoughts and reflections, mostly about design.</p>
+        <div class="info-chunk has-animation writing" data-delay="200">
+          <p class="text-uppercase">28 MAR 19</p>
+          <h4>4 tips for nailing the details in mobile icon design</h4>
+          <p>Some fun tidbits I gathered during a product design internship.</p>
+          <a href="https://uxdesign.cc/4-tips-for-nailing-the-details-in-mobile-icon-design-44d495e96899" target="_blank"><button class="rounded-btn"><i class="fab fa-medium-m"></i> &nbsp; Read on Medium</button></a>
+        </div>
+
+        <div class="info-chunk has-animation writing" data-delay="200">
+          <p class="text-uppercase">27 MAR 19</p>
+          <h4>Making the machine believable: Wizard of Oz-ing AI applications</h4>
+          <p>Reflecting on the experience of crafting a Wizard of Oz evaluation.</p>
+          <a href="https://uxdesign.cc/making-the-machine-believable-wizard-of-oz-ing-ai-applications-293cfbb0f244" target="_blank"><button class="rounded-btn"><i class="fab fa-medium-m"></i> &nbsp; Read on Medium</button></a>
+        </div>
+
+        <div class="info-chunk has-animation writing" data-delay="200">
+          <p class="text-uppercase">14 OCT 18</p>
+          <h4>Design sprint at UW: the CarePack donation app</h4>
+          <p>Case study of my first attempt at the design process; 5-day project.</p>
+          <a href="https://medium.com/@oliverengel/design-sprint-at-uw-the-carepack-donation-app-9fc4196521e8" target="_blank"><button class="rounded-btn"><i class="fab fa-medium-m"></i> &nbsp; Read on Medium</button></a>
+        </div>
 
       </div>
     </div>
 
-      <div class="page-content" id="content" >
-        <div class="container portfolio" id="introduction">
-
-          <div class="spacer-50"></div>
-          <img class="image-crop-headers has-animation" src="img/writing.jpg" data-delay="500">
-          <div class="grid-1 ">
-
-            <div class="info-chunk has-animation writing" data-delay="200">
-              <p class="text-uppercase">3 APR 19</p>
-              <h4>The comedy podcast every product designer should listen to</h4>
-              <p>In which I tell you what media to consume.</p>
-              <a href="https://uxdesign.cc/the-comedy-podcast-every-product-designer-should-listen-to-22d9d95e797" target="_blank"><button class="rounded-btn"><i class="fab fa-medium-m"></i> &nbsp; Read on Medium</button></a>
-            </div>
-
-            <div class="info-chunk has-animation writing" data-delay="200">
-              <p class="text-uppercase">28 MAR 19</p>
-              <h4>4 tips for nailing the details in mobile icon design</h4>
-              <p>Some fun tidbits I gathered during a product design internship.</p>
-              <a href="https://uxdesign.cc/4-tips-for-nailing-the-details-in-mobile-icon-design-44d495e96899" target="_blank"><button class="rounded-btn"><i class="fab fa-medium-m"></i> &nbsp; Read on Medium</button></a>
-            </div>
-
-            <div class="info-chunk has-animation writing" data-delay="200">
-              <p class="text-uppercase">27 MAR 19</p>
-              <h4>Making the machine believable: Wizard of Oz-ing AI applications</h4>
-              <p>Reflecting on the experience of crafting a Wizard of Oz evaluation.</p>
-              <a href="https://uxdesign.cc/making-the-machine-believable-wizard-of-oz-ing-ai-applications-293cfbb0f244" target="_blank"><button class="rounded-btn"><i class="fab fa-medium-m"></i> &nbsp; Read on Medium</button></a>
-            </div>
-
-            <div class="info-chunk has-animation writing" data-delay="200">
-              <p class="text-uppercase">14 OCT 18</p>
-              <h4>Design sprint at UW: the CarePack donation app</h4>
-              <p>Case study of my first attempt at the design process; 5-day project.</p>
-              <a href="https://medium.com/@oliverengel/design-sprint-at-uw-the-carepack-donation-app-9fc4196521e8" target="_blank"><button class="rounded-btn"><i class="fab fa-medium-m"></i> &nbsp; Read on Medium</button></a>
-            </div>
-
-            </div>
-          </div>
-
-            <div class="container portfolio" id="introduction" style="padding-top:100px">
-            <div class=" global-footer" id="copyright">
-              <div>
-                <p><i class="fas fa-paperclip"></i> &nbsp;<a href="/files/EngelOliver_Resume.pdf" target="_blank">Resume</a></p>
-                <p><i class="fab fa-linkedin"></i> &nbsp;<a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a></p>
-              </div>
-              <div style="text-align:right">
-                <img id="logo-gif" src="img/logo.gif">
-                <p>Updated <span class="last-updated"></span></p>
-              </div>
-            </div>
-
-          </div>
+    <div class="container portfolio" id="introduction" style="padding-top:100px">
+      <div class="global-footer" id="copyright">
+        <div>
+          <p><i class="fas fa-paper-plane"></i> &nbsp;<a href="/files/EngelOliver_Resume.pdf" target="_blank">Resume</a></p>
+          <p><i class="fab fa-linkedin"></i> &nbsp;<a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a></p>
         </div>
+        <div style="text-align:right">
+          <img id="logo-gif" src="img/logo.gif"  style="background:white;">
+          <p>Updated <span class="last-updated"></span></p>
+        </div>
+      </div>
 
+    </div>
+  </div>
 
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <script src= "js/oliver.js"></script>
+  <script src="js/oliver.js"></script>
 
-    <script>
-    ScrollReveal().reveal('.');
-	  </script>
+  <script type="text/javascript">
+    $(function() {
+      $('#playerID').click(function() {
+        var iteration = $(this).data('iteration') || 1
+        switch (iteration) {
+          case 1:
 
-    <script type="text/javascript">
-    	$(function(){
-    		$('#playerID').click(function(){
-    			var iteration=$(this).data('iteration')||1
-    			switch ( iteration) {
-    				case 1:
+            document.getElementById('playerID').innerHTML = '<i class="far fa-pause-circle fa-spin"></i> &nbsp; Diagonals – Stereolab';
+            document.getElementById('player').play()
+            break;
 
-              document.getElementById('playerID').innerHTML = '<i class="far fa-pause-circle fa-spin"></i> &nbsp; Diagonals – Stereolab';
-              document.getElementById('player').play()
-    					break;
+          case 2:
 
-    				case 2:
+            document.getElementById('playerID').innerHTML = '<i class="far fa-play-circle"></i> &nbsp; Diagonals – Stereolab';
+            document.getElementById('player').pause()
+            break;
+        }
+        iteration++;
+        if (iteration > 2) iteration = 1
+        $(this).data('iteration', iteration)
+      })
+    })
+  </script>
 
-              document.getElementById('playerID').innerHTML = '<i class="far fa-play-circle"></i> &nbsp; Diagonals – Stereolab';
-              document.getElementById('player').pause()
-    					break;
-    			}
-    			iteration++;
-    			if (iteration>2) iteration=1
-    			$(this).data('iteration',iteration)
-    		})
-    	})
-	</script>
+</body>
 
-</body></html>
+</html>
