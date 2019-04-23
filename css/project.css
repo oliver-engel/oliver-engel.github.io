@@ -6,6 +6,8 @@
 }
 
 
+
+
 #header-underline {
   /* color: #fff;
   text-decoration: none;
@@ -539,6 +541,15 @@ left: 0; right:0; margin:auto;
   (max-width : 748px) {
   .grid-2-embed {
     grid-template-columns: 1fr;
+  }
+
+  .project-header-content h2{
+    transform: translateY(0px);
+    font-size:22px;
+  }
+
+  h2{
+    line-height:1.1em !important
   }
 }
 
