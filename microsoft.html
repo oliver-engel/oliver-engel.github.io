@@ -56,11 +56,30 @@
     </div>
   </nav>
 
+  <aside class="u-marginAuto u-maxWidth1032 js-postLeftSidebar ">
+    <div id="menu" class=" show-menu u-foreground u-top0 u-transition--fadeOut300 u-fixed u-sm-hide" data-scroll="fixed" style="transform: translateY(150px);">
+      <ul id="side-list">
+        <a href="#overview">
+          <li>Overview</li>
+        </a>
+        <a href="#ideation">
+          <li>Ideation</li>
+        </a>
+        <a href="#prototyping">
+          <li>Prototyping</li>
+        </a>
+        <a href="#interaction">
+          <li><i class="fas fa-heart"></i> Interaction</li>
+        </a>
+      </ul>
+    </div>
+  </aside>
 
-  <div class="project-header fade-in" style="z-index:4">
-    <!-- <img src="img/microsoft/microsoft.svg" style="position:absolute; width:50px; top:20vh; border-radius:0px;" class="rellax" data-rellax-speed="-2"> -->
+
+  <div class="project-header fade-in big-image" style="z-index:4">
     <div class="project-header-content rellax fade-scroll" data-rellax-speed="-2">
-      <h2>We created a 4<sup>th</sup>-grade level science education kit for Microsoft Education's <a href="https://www.microsoft.com/en-us/education/education-workshop/activity-library.aspx" target="_blank" id="header-underline">HACKING STEM</a>. Our experiment teaches the transformation of energy using a papercraft trebuchet, Arduino, and a digital interface.</h2>
+      <h2>We created a 4<sup>th</sup>-grade level science education kit for Microsoft Education's <a href="https://www.microsoft.com/en-us/education/education-workshop/activity-library.aspx" target="_blank" id="header-underline">HACKING STEM</a>. Our
+        experiment teaches the transformation of energy using a papercraft trebuchet, Arduino, and a digital interface.</h2>
       <!-- <h2>Microsoft's <a href="https://www.microsoft.com/en-us/education/education-workshop/activity-library.aspx" target="_blank" id="header-underline">HACKING STEM</a> is a library of Arduino-based learning
         activities for elementary school students. We created a potential new
         entry to the catalog, including both a physical experiment and a digital interface.</h2> -->
@@ -73,18 +92,18 @@
   </div>
 
 
-
   <div class="page-content">
     <div class="container">
 
-      <div class="video-responsive">
+      <div class="video-responsive big-image">
         <iframe src="https://player.vimeo.com/video/325925014?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         <!-- <iframe style="pointer-events:none;" src="https://player.vimeo.com/video/325816441?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
       </div>
 
       <div class="grid-1 has-animation">
         <h3 id="overview">Overview</h3>
-        <p>The Trebuchet Trials is a STEM education kit that encourages learning through play. Developed with the help of teachers, 4th grade students, and <a href="https://www.microsoft.com/en-us/education" target="_blank">Microsoft Education</a>, it addresses the need to provide experiental STEM education to kids growing up in an increasingly digital world.</p>
+        <p>The Trebuchet Trials is a STEM education kit that encourages learning through play. Developed with the help of teachers, 4th grade students, and <a href="https://www.microsoft.com/en-us/education" target="_blank">Microsoft Education</a>,
+          it addresses the need to provide experiental STEM education to kids growing up in an increasingly digital world.</p>
         <p>I contributed materially to the development of a functioning digital data workbook & physical computing features, and worked with kids and teachers to iteratively refine the experiment.</p>
       </div>
 
@@ -92,16 +111,21 @@
         <h3>The ask</h3>
         <p>"Build an affordable inquiry and project-based activity to visualize data across science, technology, engineering, and math (STEM) curriculum."</p>
         <p>Specifically, we were to create an experiment that cost under $10 per student (excluding the Arduino and computer), and that aligned with a <a href="https://www.nextgenscience.org/" target="_blank">Next Generation Science Standard</a>.</p>
+
+        <a href="redshare.html"><button class="rounded-btn"><i class="fas fa-angle-left"></i> &nbsp; Jump to the digital interaction design</button></a>
+
       </div>
 
       <div class="has-animation">
-        <img data-src="img/microsoft/treb-hero.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy">
-        <p class="caption has-animation"><i class="fas fa-info-circle"></i> &nbsp; The trebuchet, Arduino setup, and digital interface</p>
+        <img data-src="img/microsoft/treb-hero.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image">
+        <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; The trebuchet, Arduino setup, and digital interface</p>
       </div>
 
-      <div class="grid-1 has-animation">
+      <div class="grid-1 has-animation" id="ideation">
         <h3>Starting with the literature</h3>
-        <p>At the outset, we knew we needed to develop a conceptual framework about what makes a successful educational experience for kids. We noticed <a href="https://web.media.mit.edu/~mres/papers/constructionism-2014.pdf" target="_blank">trends in STEM education</a> have shifted towards creative experimentation and play as a form of learning. Some thought leaders like Mitchel Resnick also argue for the value of a constructionist approach, where students assemble the tool that is then used for experimentation. We also thoroughly reviewed Microsoft's Hacking STEM projects.</p>
+        <p>At the outset, we knew we needed to develop a conceptual framework about what makes a successful educational experience for kids. We noticed <a href="https://web.media.mit.edu/~mres/papers/constructionism-2014.pdf" target="_blank">trends
+            in STEM education</a> have shifted towards creative experimentation and play as a form of learning. Some thought leaders like Mitchel Resnick also argue for the value of a constructionist approach, where students assemble the tool that is
+          then used for experimentation. We also thoroughly reviewed Microsoft's Hacking STEM projects.</p>
       </div>
 
       <div class="grid-1 has-animation image-next">
@@ -111,48 +135,58 @@
 
 
       <div class="has-animation">
-        <img style="width:100%" data-src="img/microsoft/idea-grid.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy">
+        <img style="width:100%" data-src="img/microsoft/idea-grid.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image">
         <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; An initial set of experiment concepts.</p>
       </div>
 
       <div class="grid-1 has-animation">
-        <p>However, there were so many unknowns: were any of these ideas technically feasible? Would they spark joy and also be educational? Are they age-appropriate? We did our best to extrapolate these unknowns by gathering feedback from the studio for the most promising directions forward.</p>
+        <p>However, there were so many unknowns: were any of these ideas technically feasible? Would they spark joy and also be educational? Are they age-appropriate? We did our best to extrapolate these unknowns by gathering feedback from the studio
+          for the most promising directions forward.</p>
         <p>After careful consideration we narrowed to the trebuchet, a hydroelectric turbine, and a DIY speaker.</p>
       </div>
 
-      <div class="grid-1 has-animation image-next">
+      <div class="grid-1 has-animation image-next" id="prototyping">
         <h2>Pushing ahead with prototypes</h2>
-        <p>We needed to start getting our ideas in front of kids and teachers to help narrow into a single direction, so we made video and experiential prototypes for each concept. We showed the video prototypes to elementary school teachers, and brought the experiential prototypes to a group of kids to gather their feedback.</p>
+        <p>We needed to start getting our ideas in front of kids and teachers to help narrow into a single direction, so we made video and experiential prototypes for each concept. We showed the video prototypes to elementary school teachers, and
+          brought the experiential prototypes to a group of kids to gather their feedback.</p>
       </div>
 
       <div class="has-animation">
-        <img style="width:100%" data-src="img/microsoft/experiential-prototype.jpg" alt="Experiential prototyping with kids" data-action="zoom" class="lazy">
+        <img style="width:100%" data-src="img/microsoft/experiential-prototype.jpg" alt="Experiential prototyping with kids" data-action="zoom" class="lazy big-image">
         <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Practicing co-design with a kiddo!</p>
       </div>
 
       <div class="has-animation">
         <div class="grid-2">
 
-          <video style="width:100%" autoplay loop data-action="zoom">
+          <div class="video-responsive big-image">
+            <iframe src="https://player.vimeo.com/video/331924620?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+
+          <div class="video-responsive big-image">
+            <iframe src="https://player.vimeo.com/video/331924644?muted=1&background=1&loop=1&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+
+          <!-- <video style="width:100%" autoplay loop muted data-action="zoom">
             <source src="files/speaker.webm" type="video/webm">
           </video>
 
-          <video style="width:100%" autoplay loop data-action="zoom">
+          <video style="width:100%" autoplay loop muted data-action="zoom">
             <source src="files/trebuchet.webm" type="video/webm">
-          </video>
-
+          </video> -->
 
         </div>
         <p class="caption"><i class="fas fa-info-circle"></i> &nbsp; Excerpts from video prototypes we shared with teachers. Trebuchet video by Javan Wang.</p>
       </div>
 
       <div class="grid-1 has-animation image-next">
-        <p>Generating rapid prototypes made us start to grapple with designing for multiple stakeholders. We found that kids were highly engaged with the speaker and trebuchet concepts, that teachers thought the trebuchet was the most educational, but that our contact at Microsoft thought that the trebuchet might descend into classroom chaos.</p>
+        <p>Generating rapid prototypes made us start to grapple with designing for multiple stakeholders. We found that kids were highly engaged with the speaker and trebuchet concepts, that teachers thought the trebuchet was the most educational,
+          but that our contact at Microsoft thought that the trebuchet might descend into classroom chaos.</p>
       </div>
     </div>
   </div>
 
-  <div class="project-header has-animation" style="z-index:4">
+  <div class="project-header has-animation big-image" style="z-index:4">
     <!-- <img src="img/microsoft/microsoft.svg" style="position:absolute; width:50px; top:20vh; border-radius:0px;" class="rellax" data-rellax-speed="-2"> -->
     <div class="project-header-content">
       <p style="color:white">In response to the trebuchet video prototype:</p>
@@ -168,18 +202,39 @@
   <div class="page-content">
     <div class="container">
 
-        <div class="grid-1">
-          <p>Ultimately we moved forward with the trebuchet. We knew that it was engaging for kids, and that the educational aspect was valid, but that one of our larger design challenges would be securing stakeholder buy-in. We also were unsure
-              of some of the technical aspects–which sensors could we use to collect the data needed to calculate energy?</p>
-        </div>
+      <div class="grid-1 has-animation">
+        <p>Ultimately we moved forward with the trebuchet. We knew that it was engaging for kids, and that the educational aspect was valid, but that one of our larger design challenges would be securing stakeholder buy-in. We also were unsure
+          of some of the technical aspects–which sensors could we use to collect the data needed to calculate energy?</p>
+      </div>
 
-        <div class="grid-1">
+      <!-- <div class="grid-1">
           <h2>Evaluating behaviors</h2>
           <p>We quickly made a set of updates to the physical form and began generating ideas for the digital interface. We primarily wanted to test assumptions about how data recording and analysis might work, and developed a Wizard of Oz prototype that simulated how these pieces might fit together. A fake sensor and a layered Figma document allowed us to show dynamic energy “results” as the participants used the trebuchet.</p>
           <br><br><div class="divider"></div><br><br>
           <h2 style="color:gray">Case study in progress. Come back soon!</h2>
 
-        </div>
+        </div> -->
+
+
+      <div class="grid-1 has-animation" id="interaction">
+        <h2>Leading interaction design</h2>
+        <p>While gathering insights from a series of behavioral and physical prototype tests, I took ownership of the project's interaction design. </p>
+
+
+
+      </div>
+
+      <section style="width:100%; border-radius:3px; margin-top:25px" id="trebuchet-animation-holder" class="big-image has-animation">
+      </section>
+      <p class="caption "><i class="fas fa-chevron-left"></i>&nbsp; Move your cursor back and forth &nbsp;<i class="fas fa-chevron-right"></i></p>
+
+      <div class="grid-1 has-animation image-next" id="interaction">
+        <p>As the experiment evolved, we identified a set of possible variables to include and the ouput data that we wanted to visualize. Identifying all possible data helped us collectively iterate on UI concepts.</p>
+        <br><br><div class="divider"></div><br><br>
+        <h2 style="color:gray">Case study in progress. Come back soon!</h2>
+      </div>
+
+
 
 
 
@@ -198,22 +253,49 @@
     </div>
 
   </div>
+
+
+
+  <!-- <div class="project-header fade-in big-image" style="z-index:4; background-color:#babec7;">
+    <div class="project-header-content " >
+
+      <div class="grid-container">
+        <div class="Image-1">
+          <img style="width:100%" data-src="img/microsoft/interface-sketch-2.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image">
+
+        </div>
+        <div class="Image-2">
+          <img style="width:100%" data-src="img/microsoft/interface-sketch-2.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image">
+
+        </div>
+        <div class="Image-3">
+          <img style="width:100%" data-src="img/microsoft/interface-sketch-1.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image">
+
+        </div>
+      </div>
+    </div>
+
+
+    </div> -->
+  </div>
+
+
 
 
 
   <div class="page-content">
     <div class="container">
-    <div class="global-footer" id="copyright">
-      <div>
-        <p><i class="fas fa-paper-plane"></i> &nbsp;<a href="/files/EngelOliver_Resume.pdf" target="_blank">Resume</a></p>
-        <p><i class="fab fa-linkedin"></i> &nbsp;<a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a></p>
-      </div>
-      <div style="text-align:right">
-        <img id="logo-gif" src="img/logo.gif"  style="background:white;">
-        <p>Updated <span class="last-updated"></span></p>
+      <div class="global-footer" id="copyright">
+        <div>
+          <p><i class="fas fa-paper-plane"></i> &nbsp;<a href="/files/EngelOliver_Resume.pdf" target="_blank">Resume</a></p>
+          <p><i class="fab fa-linkedin"></i> &nbsp;<a href="https://www.linkedin.com/in/oengel/" target="_blank">LinkedIn</a></p>
+        </div>
+        <div style="text-align:right">
+          <img id="logo-gif" src="img/logo.gif" style="background:white;">
+          <p>Updated <span class="last-updated"></span></p>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 
 
@@ -228,6 +310,9 @@
   <link href="css/zoom.css" rel="stylesheet">
   <script src="js/zoom.min.js"></script>
   <script src="js/transition.min.js"></script>
+  <script src="js/p5.min.js"></script>
+  <script src="js/p5.dom.min.js"></script>
+  <script src="js/sketch.js"></script>
 
 </body>
 

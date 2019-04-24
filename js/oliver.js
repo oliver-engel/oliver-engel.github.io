@@ -37,6 +37,65 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("orientationChange", lazyload);
 });
 
+
+
+//Check if objects are overlapping
+
+function isOverlapping(rect1, rect2) {
+  var overlap = !(rect1.right < rect2.left ||
+                rect1.left > rect2.right ||
+                rect1.bottom < rect2.top ||
+                rect1.top > rect2.bottom);
+  return overlap;
+}
+
+//Fade side menu when it collides with big images
+
+
+
+$(window).scroll(function(event){
+  hideMenuIfOverlap();
+});
+
+
+
+
+window.onload = function () {
+  // hideMenuIfOverlap();
+
+}
+
+function hideMenuIfOverlap() {
+
+  var bigImages = document.getElementsByClassName("big-image");
+
+  var menu = document.getElementById("menu");
+  var menuPosition = menu.getBoundingClientRect();
+
+  var bigImagesValue = bigImages[0].getBoundingClientRect();
+  // console.log(bigImagesValue);
+  // console.log(menuPosition);
+
+  var imagesLength = bigImages.length;
+
+
+  var overlap = false;
+
+  for (var i = 0; i < imagesLength; i++) {
+    overlap = overlap || isOverlapping(menuPosition, bigImages[i].getBoundingClientRect());
+
+  }
+
+  if (overlap) {
+
+    document.getElementById("menu").className = document.getElementById("menu").className.replace("show-menu", "hide-menu");
+  } else {
+
+    document.getElementById("menu").className = document.getElementById("menu").className.replace("hide-menu", "show-menu");
+  }
+}
+
+
 //
 
 /*--------------------------------------------------
@@ -135,15 +194,6 @@ $( document ).ready(function() {
 
 
 
-
-
-
-
-
-  // console.log("Hey, get outta here.");
-  // console.log("You're not supposed to see this.");
-  // console.log("Oops, I just haiku'd");
-
 	console.log("Sneaky sneaky. Watcha doin back here?");
 
   //CHOOSE LINKS TO DISABLE
@@ -161,4 +211,35 @@ $('.item').each(function(i){
   setTimeout(function(){
     $('.item').eq(i).addClass('is-visible');
   }, 200*i);
+});
+
+
+
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top - 300
+        }, 800, function() {
+          // Callback after animation
+        });
+      }
+    }
 });

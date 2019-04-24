@@ -126,3 +126,91 @@
 .global-footer i{
   color:#8390a5;
 }
+
+/*! CSS Used from: https://cdn-static-1.medium.com/_/fp/css/main-branding-base.sMRbh_65n82B91860QdvTg.css */
+
+aside {
+    display: block;
+}
+
+
+
+.show-menu {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out 0s;
+}
+
+.hide-menu {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out 0s;
+}
+
+#side-list {
+  font-size:15px;
+  line-height: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-image: none !important;
+  text-align:right;
+}
+
+
+
+
+
+.u-foreground {
+    position: relative!important;
+    z-index: 100!important;
+}
+
+.u-background {
+    z-index: 70!important;
+}
+
+.u-marginLeft5 {
+    margin-left: 5px!important;
+}
+
+.u-marginVertical10 {
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+}
+
+.u-marginAuto {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.u-marginLeft3 {
+    margin-left: 3px!important;
+}
+
+.u-fixed {
+    position: fixed!important;
+}
+
+.u-relative {
+    position: relative!important;
+}
+
+.u-top0 {
+    top: 0!important;
+}
+
+.u-maxWidth1032 {
+    max-width: 1064px!important;
+}
+
+.u-transition--fadeIn300 {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: visibility 0s linear 0s, opacity .3s 0s;
+    transition: visibility 0s linear 0s, opacity .3s 0s;
+}
+
+@media screen and (max-width:991px) {
+    .u-sm-hide {
+        display: none!important;
+    }
+}
