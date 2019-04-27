@@ -86,7 +86,7 @@ blockquote {
   margin: 35px 0px 35px 0px;
   padding: 0px 25px 0px 25px;
   /* color: #00150b; */
-  border-top: 5px solid var(--red-text);
+  border-left: 5px solid var(--red-text);
   font-size: inherit;
   font-size: 1.1rem;
   line-height: 1.6em;
@@ -96,6 +96,8 @@ blockquote i {
   padding-bottom: 25px;
   color: var(--red-text);
 }
+
+
 
 li {
   line-height: 30px;

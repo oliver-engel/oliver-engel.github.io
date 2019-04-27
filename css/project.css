@@ -5,6 +5,17 @@
   /* font-size:13px; */
 }
 
+.dark-section{
+  background-color:black;
+  color:white;
+  padding-bottom:50px;
+  margin-bottom:0px;
+}
+
+.dark-section h2 {
+  color:white;
+}
+
 .grid-container {
   padding-top:50px;
   display: grid;
@@ -18,6 +29,18 @@
   width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.serif{
+  font-family: 'Lora', serif;
+}
+
+
+.heavy{
+  font-weight:900;
+  /* font-family: 'Lora', serif; */
+  text-transform: uppercase;
+  font-size:15px;
 }
 
 .Image-1 { grid-area: Image-1; }
@@ -568,6 +591,9 @@ left: 0; right:0; margin:auto;
 @media
   (max-width : 748px) {
   .grid-2-embed {
+    grid-template-columns: 1fr;
+  }
+  .grid-2 {
     grid-template-columns: 1fr;
   }
 
