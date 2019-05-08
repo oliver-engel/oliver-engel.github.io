@@ -11,6 +11,18 @@
   content: "Apr 2019";
 }
 
+.info-chunk > h1{
+  line-height:1.1em;
+}
+
+.p-space{
+  margin-top:25px;
+}
+
+.p-space > p {
+  padding:10px 0px 10px 0px;
+}
+
 
 @font-face {
     font-family: 'Fakt Pro';
@@ -129,7 +141,7 @@ img {
 }
 
 p > a {
-  /* text-transform: uppercase; */
+
   color: var(--red-text);
   outline: none;
   text-decoration: none;
@@ -206,7 +218,7 @@ h3 {
   font-size: 1.563em;
 }
 
-h4 {
+h4, h6 {
   color: var(--body-color);
   overflow-x: hidden;
   font-family: var(--body-font),
@@ -223,9 +235,9 @@ h5 {
   font-size: 1em;
 }
 
-h6 {
+/* h6 {
   font-size: .8rem;
-}
+} */
 
 p {
   margin-top: 0px;
