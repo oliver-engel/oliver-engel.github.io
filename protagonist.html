@@ -129,7 +129,12 @@
         <p><span style="font-weight:900; text-transform:uppercase">Protagonist</span> is a voice-controlled experience for the Google Home that responds to the growing segment of audio-only interactive media. It plays to the strengths of audio recognition and analysis to transform passive listening into immersive engagement.</p>
         <p>When prompted, users use their voice to respond to other characters in a story and subsequently affect the narrative arc, depending on how they respond. Think of it like an extension of <a href="https://goosebumps.scholastic.com/books" target="_blank">Goosebumps</a>, or more recently, <a href="https://en.wikipedia.org/wiki/Black_Mirror:_Bandersnatch" target="_blank">Bandersnatch</a>.</p>
         <p>Users can give open-ended responses, which are analyzed for content and emotional qualities to choose which narrative path should be taken. This differs from existing choose-your-own-adventure media in that the user is not restricted to selecting from a predefined list of options, but rather can be expressive in their response and let the algorithm sort out the rest.</p>
-        <blockquote>* Please note that this is a technical specification write-up! It's more meant for the eyes of a developer. However, I believe it showcases the level of detail I use to document projects.</blockquote>
+        <blockquote>* Please note that this is a technical specification write-up! It's more meant for the eyes of developers, who would be making the product. However, I believe it showcases the level of detail I use to document projects.</blockquote>
+      </div>
+
+      <div class="has-animation">
+        <img style="margin-top:15px; width:100%" data-src="img/protagonist/start.jpg" alt="Experiential prototyping with kids" data-action="zoom" class="lazy big-image">
+        <p class="caption">Fig 1. Triggering a story via the app entry point.</p>
       </div>
 
       <div class="grid-1 has-animation ">
@@ -140,7 +145,6 @@
       </div>
 
 
-
       <div class="grid-1 has-animation image-next">
         <h5>App entry point</h5>
         <p>A user can also trigger a story through their Google Home app (Figure 1), by navigating to the browse tab and tapping on the story.</p>
@@ -148,19 +152,19 @@
 
       <div class="has-animation">
         <img data-src="img/protagonist/entrypoint.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image">
-        <p class="caption">Fig 1. The app entrypoint, embedded in the current Google Home android app.</p>
+        <p class="caption">Fig 2. The app entrypoint, embedded in the current Google Home Android app.</p>
       </div>
 
-      <div class="has-animation">
+      <!-- <div class="has-animation">
         <img style="margin-top:15px; width:100%" data-src="img/protagonist/start.jpg" alt="Experiential prototyping with kids" data-action="zoom" class="lazy big-image">
         <p class="caption">Fig 2. Triggering the entry point in context.</p>
-      </div>
+      </div> -->
 
       <div class="grid-1 has-animation" id="ideation">
         <h5>Bulk of the experience</h5>
         <p>The bulk of the experience is the user listening to the story and responding to prompts. If the user is playing Goosebumps: Camp Nightmare, a reimagination of a Goosebumps classic, it might begin like...</p>
         <blockquote >
-          <p><i class="fas fa-volume-up"></i><br>A schoolbus is shaking and churning as it barrels down a highway, the excited chatter and laughter of children hanging in the air like a warm cloud.</p>
+          <p>A schoolbus is shaking and churning as it barrels down a highway, the excited chatter and laughter of children hanging in the air like a warm cloud.</p>
           <p><span class="heavy">Narrator<br></span> “It’s a cold Autumn morning, and you and your friends are on your way to a school camping trip...”</p>
           <p><span class="heavy">Dori, one of the characters<br></span> My cousin told me not to wander off into the woods while we’re out camping. She said there’s ghosts out there. Do you believe in ghosts?</p>
           <p><span class="heavy">User, responding with voice<br></span> Hmm, I don’t really believe in them.</p>
@@ -217,219 +221,162 @@
 
       <div class="grid-1 has-animation " >
         <h5>Prompts</h5>
-        <p>Once the story reaches a point at which the user can interact with the narrative, they are given a prompt. Prompts are questions that are posed to the user, typically by the story narrator or by another character in the story, and are immediately followed by an audio cue that informs the user that they can speak to enter an input (see sound design section). Prompts are supplied by content creators, as they are specific to the narrative in which they exist. </p>
+        <p>Once the story reaches a point at which the user can interact with the narrative, they are given a prompt. Prompts are questions that are posed to the user, typically by the story narrator or by another character in the story, and are immediately followed by an audio cue that informs the user that they can speak to enter an input (see <a href="#sound">sound design</a> section). Prompts are supplied by content creators, as they are specific to the narrative in which they exist. </p>
       </div>
 
       <div class="grid-1 has-animation " >
         <h5>Responses</h5>
-        <p>Responses are user-provided voice inputs that occur directly after a prompt is given. These are the inputs that are processed via the text-to-speech -> NLU pipeline. They can take any form that the user chooses, which introduces potential problems in recognition and content analysis issues. For specific directions in error recovery and response analysis, see Section VI.</p>
+        <p>Responses are user-provided voice inputs that occur directly after a prompt is given. These are the inputs that are processed via the text-to-speech -> NLU pipeline. They can take any form that the user chooses, which introduces potential problems in recognition and content analysis issues. For specific directions in error recovery and response analysis, see <a href="#recovery">error recovery</a>.</p>
       </div>
 
-      <div class="grid-1 has-animation " >
+      <div class="grid-1 has-animation "  >
         <h5>Decision nodes</h5>
-        <p>Decision nodes are the points at which a story diverges into two or more different directions, or “branches”. Which branch is taken depends on the output of the response analyzing algorithms. See Section V for an in-depth explanation of the types of nodes and their algorithms.</p>
+        <p>Decision nodes are the points at which a story diverges into two or more different directions, or “branches”. Which branch is taken depends on the output of the response analyzing algorithms. See <a href="#algorithm">decision nodes</a> for an in-depth explanation of the types of nodes and their algorithms.</p>
       </div>
 
-      <div class="grid-1 has-animation " >
+      <div class="grid-1 has-animation image-next " >
         <h5>Branches</h5>
         <p>Branches are the different paths taken throughout a story. One decision node can lead to one or more separate branches.</p>
       </div>
 
-
-
-
-    </div>
-  </div>
-
-
-  <div class="page-content">
-    <div class="container">
-
-      <div class="grid-1 has-animation">
-        <p>Ultimately we moved forward with the trebuchet. We knew that it was engaging for kids, and that the educational aspect was valid, but that one of our larger design challenges would be securing stakeholder buy-in. We also were unsure
-          of some of the technical aspects–which sensors could we use to collect the data needed to calculate energy?</p>
+      <div class="grid-1 has-animation " style="width:100%">
+        <h2>Technology specifications</h2>
       </div>
 
-      <div class="grid-1 has-animation">
-        <h2>Validation in the classroom</h2>
-        <p>We had the opportunity to test with a group of eighteen 4<sup>th</sup> graders during their classtime at a local elementary school. This was our chance to evaluate if the activity would descend into chaos–a potential death knell for the
-          trebuchet.</p>
+      <div class="has-animation">
+        <img style="margin-top:15px; width:100%" data-src="img/protagonist/techstack.png" alt="Experiential prototyping with kids" data-action="zoom" class="lazy big-image">
+        <p class="caption">Fig 5. The tech stack for Protagonist.</p>
       </div>
 
-      <div class="grid-2 big-image has-animation" style="padding-top:25px">
-        <img data-action="zoom" style="width:100%" src="img/microsoft/kokanee.jpg">
-        <img data-action="zoom" style="width:100%" src="img/microsoft/kokanee-2.jpg">
-      </div>
-      <p class="caption">Kids experimenting with a cardboard iteration of the trebuchet.</p>
-
-      <div class="grid-1 has-animation image-next">
-        <p>Surprisingly… it didn’t! After a short demo, we had kids form groups to assemble and test the trebuchets. The building process was significantly quicker than we imagined, the educational value was apparent, and we received positive
-          feedback from both students and the teacher.</p>
-        <p>The teacher suggested that we incorporate specific goals for students to achieve in order to make the experiment more guided. We used this feedback to develop a set of challenges in the digital interface.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="project-header has-animation big-image" style="z-index:4">
-    <div class="project-header-content">
-      <h2 class="has-animation" style="transform:translateY(0px)">“Blake usually struggles a bit with school subjects and isn't as engaged as the other kids. But he loves building, and it was nice to see him really brighten up today.”<br><br><span
-          class="attribution">– Katie, 4<sup>th</sup> grade teacher</span></h2>
-      <br><br><br><br>
-      <h2 class="has-animation" style="transform:translateY(0px)">“I would buy this for one trillion dollars!”<br><br><span class="attribution">– Angel, 4<sup>th</sup> grader</span></h2>
-    </div>
-  </div>
-
-  <div class="page-content">
-    <div class="container">
-      <div class="grid-1 has-animation">
-        <p>I felt that the success of this test was largely due to the fact that our homemade trebuchet just wasn’t that good. It launched fairly short distances even with a bunch of weights added– but that happened to be the perfect way to control
-          chaos in the classroom, while still allowing for fun and play.</p>
-        <p>We kept this in mind as we developed a cheaper cardstock template version of the experiment.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="page-content">
-    <div class="container">
-      <div class="grid-1 has-animation" id="interaction">
-
-        <h2>Leading interaction design</h2>
-        <p>While we gathered insights from a series of behavioral and physical prototype tests, I took ownership of the project's interaction design. </p>
+      <div class="grid-1 has-animation " >
+        <h5>Platform</h5>
+        <p>This product will be developed for the Google Home and Google Hub devices, with entry points also available via a linked Android device. The mobile device entry point will serve as a visual navigation aid to help users learn about available content, while the interactive audio experience will take place within the Google Home.</p>
       </div>
 
-      <section style="width:100%; border-radius:3px; margin-top:25px" id="trebuchet-animation-holder" class="big-image has-animation">
-      </section>
-      <p class="caption"><i class="fas fa-chevron-left"></i>&nbsp; Move your cursor back and forth &nbsp;<i class="fas fa-chevron-right"></i></p>
-
-      <div class="grid-1 has-animation image-next" id="interaction">
-        <p>As the experiment evolved, we identified a set of possible variables to include and the ouput data that we wanted to visualize. Identifying all possible data helped us collectively iterate on UI concepts.</p>
+      <div class="grid-1 has-animation " >
+        <h5>API justification</h5>
+        <p>The design necessitates three main technology components: first is a deep learning speech recognition algorithm that will be used to capture and transcribe user voice input into machine-readable text. We will use the Google Cloud Speech-to-Text REST API for speech recognition, with audio input from the Google Home built-in microphone.</p>
+        <p>The second component is natural language processing, for which we will use the IBM Cloud Natural Language Understanding (NLU) API. Text inputs generated from the Speech-to-Text API will be passed to NLU for processing, particularly to analyze for keywords and sentiment of the user input.</p>
+        <p>The third component is decision trees, which will form the basis for the branching nature of the choose-your-own-adventure narrative. While “playing” the audio experience, users will be navigating the branching structure, determined by the outputs of the NLU API for keywords, and sentiment, which are mapped to different branches of the narrative. You can read more about the specifics of the decisions in the <a href="#branch">algorithm section</a>.</p>
       </div>
 
-    </div>
-
-  </div>
-
-  <div class="dark-section">
-
-    <div class="page-content">
-      <div class="container">
-
-        <div class="grid-2 big-image" style="align-items: center; grid-row-gap:150px">
-          <img style="width:100%" data-src="img/microsoft/interface-sketch-3.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
-          <div class="has-animation">
-            <h2>The kernel</h2>
-            <p>Generated during the ideation phase, there were two pieces of data we absolutely needed: kinetic and potential energy. We also understood a need for historical data tracking.</p>
-          </div>
-
-          <div class="has-animation">
-            <h2>Expanding functionality</h2>
-            <p>While developing a behavioral prototype, I expanded on the core functions of the interface. This early sketch imagines a hole-and-peg positioning system, a timer, and projectile distance measurements. </p>
-          </div>
-
-          <img style="width:100%" data-src="img/microsoft/interface-sketch-2.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
-
-          <img style="width:100%" data-src="img/microsoft/interface-WOZ.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
-          <div class="has-animation">
-            <h2>Digital iteration</h2>
-            <p>The interface began to move into Figma as we further tested and refined. This example is an excerpt from a clickable prototype used in tandem with the trebuchet behavioral tests.</p>
-          </div>
-
-          <div class="has-animation">
-            <h2>Responding to prototypes</h2>
-            <p>Based on our Wizard of Oz sessions, and a deeper understanding of technical limitations, the interface moved towards and simpler and more automated flow. Students wouldn't have to manually run a timer or measure distances. The focus of
-              data input shifted to the weights used. </p>
-          </div>
-          <img style="width:100%" data-src="img/microsoft/interface-sketch-2.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
-
-          <img style="width:100%" data-src="img/microsoft/treb-diagram.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
-          <div class="has-animation">
-            <h2>Sparking joy</h2>
-            <p>A co-design session with kids revealed a lack of interactive joy. I designed a moving trebuchet graphic that mirrors the arm movement of the physical trebuchet, and gave the interface a visual overhaul to better respond to this.</p>
-          </div>
-
-          <div class="has-animation">
-            <h2>Specifying elements</h2>
-            <p>Delivery time was fast approaching, and I soon had to hand off the interface design to... myself. I worked with my team to specify the exact behaviors of different elements in the interface, and created diagrams and redlines to help
-              myself in the development phase.</p>
-          </div>
-          <img style="width:100%" data-src="img/microsoft/interface-sketch-2.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
-
-
-          <img style="width:100%" data-src="img/microsoft/interface-sketch-2.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
-          <div class="has-animation">
-            <h2>Front-end freak-out</h2>
-            <p>Now, I'm not the greatest front-end developer in the world. While transforming my design into code, I had to leave plenty of things out–but got considerable help from the great <a
-                href="https://makeabilitylab.cs.washington.edu/member/jonfroehlich/" target="_blank">Jon Froehlich</a> on my implementation. The final product ended up being simpler than I had envisioned, but performed its core functions. Let's call
-              it an MVP.</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="page-content" style="padding-top:0px;">
-    <div class="container">
-
-      <div class="grid-1 has-animation">
-        <h2 id="keyfeatures">Key features</h2>
-        <p>The final design culminated in a set of features that responded to prototype tests, constant iteration, and feedback from peers.</p>
+      <div class="grid-1 has-animation " style="width:100%" id="algorithm">
+        <h2>Decision nodes</h2>
       </div>
 
-      <div class="grid-1 has-animation">
-        <h5>LIVE GRAPHICAL MIRRORING</h5>
-        <p>Using data streamed from an <a href="https://learn.sparkfun.com/tutorials/accelerometer-basics/all" target="_blank">accelerometer</a>, a digital trebuchet mirrors the movement of the physical trebuchet to create a delightful interaction.
-        </p>
-        <img style="width:100%" data-src="img/microsoft/mapping.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
+      <div class="has-animation">
+        <img style="margin-top:15px; width:100%" data-src="img/protagonist/nodetypes.png" alt="Experiential prototyping with kids" data-action="zoom" class="lazy big-image">
+        <p class="caption">Fig 6. The 4 different types of nodes, explained below.</p>
       </div>
 
-      <div class="grid-1 has-animation">
-        <h5>AUTOMATED DATA TRACKING</h5>
-        <p>Every time a projectile is launched, the interface automatically calculates the kinetic energy and graphs it in the data tracker. Minimal manual input lets students focus on identifying trends, not rote recording.</p>
-        <img style="width:100%" data-src="img/microsoft/mapping.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
+      <div class="grid-1 has-animation " >
+        <h5>Concept</h5>
+        <p>Decision nodes are the most important components of the story: they respond to user voice input and help to move the story forward. There are multiple types of decision nodes: trivial nodes, pivotal nodes, and reversal nodes (see Figure 6).</p>
+        <p>A <span class="keyword">trivial node</span> is a section of the story where branches converge on the same path. As the name indicates, the user’s selection is trivial; it could be a question like “what color shirt do you want to put on?” These types of questions give the user a more personalized experience; it’s not necessary for every node to lead to a major plot pivot.</p>
+        <p>A <span class="keyword">pivotal node</span> occurs when there is a major plot pivot. In this case, the user is prompted with character dialogue, and based on their response will significantly affect the story.</p>
+        <p>A <span class="keyword">reversal node</span> occurs when the user is forced back to an earlier branch in the story. This is a common tactic in choose-your-own-adventure novels and can help the user experience more pieces of the story.</p>
+        <p>Finally, an <span class="keyword">ending node</span> leads to one of the story’s endings; it may or may not be paired with a prompt.</p>
       </div>
 
-      <div class="grid-1 has-animation">
-        <h5>TARGETED CHALLENGES</h5>
-        <p>We found through classroom testing that students need specific goals so that the play-learning is structured. Asking them to hit certain criteria with their tests encourages critial thinking and pattern recognition.</p>
-        <img style="width:100%" data-src="img/microsoft/mapping.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
+
+      <div class="grid-1 has-animation image-next" id="branch">
+        <h5>Algorithm</h5>
+        <p>Selecting a branch at a decision node is the key algorithmic piece of the Protagonist experience. Here’s how it works:</p>
+        <ol>
+          <li>Each branch option is assigned a set of sentiment and keyword tags. These could be terms like “sad”, “angry”, or “selfish”.</li>
+          <li>The user is given a prompt from a character in the story, and responds to the prompt with their voice.</li>
+          <li>The Speech-to-Text REST API transcribes the voice input to text.</li>
+          <li>The NLU API analyzes the text for keywords and sentiment, and generates corresponding tags for the user’s input.</li>
+          <li>The tags from the user input are compared to the tags from the branch. In the case of a direct match, the matching branch is immediately selected. If there is no direct match, then the closest matching branch is selected.</li>
+        </ol>
       </div>
 
-      <div class="grid-1 has-animation">
-        <h5>LOW-COST SETUP</h5>
-        <p>Not including the Arduino and computer, this 3-student group activity is made from classroom materials. The main components are a $5 accelerometer and printed cardstock templates. It costs ~$4 per student.</p>
-        <img style="width:100%" data-src="img/microsoft/cutting.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
+      <div class="has-animation">
+        <img style="margin-top:15px; width:100%" data-src="img/protagonist/semantic.png" alt="Experiential prototyping with kids" data-action="zoom" class="lazy big-image">
+        <p class="caption">Fig 7. Process of mapping tags to branches.</p>
       </div>
 
-    </div>
-  </div>
 
-  <div class="page-content" style="padding-top:0px;">
-    <div class="container">
-      <div class="grid-1 has-animation">
-        <h2 id="reflection">Reflecting on the experience</h2>
-        <p>Designing with such a tight set of constraints gave our team the ability to rapidly ideate, downselect, and test our concepts and assumptions. We were always able to fall back on a set of key questions–is this achieving our desired
-          NGSS standard? Will this cost less than $10 per student? Would this work in a classroom?</p>
-        <p>Possibly the most difficult aspect was meeting the needs of multiple stakeholders–teachers, students, and Microsoft Education would sometimes give clashing feedback. Our use of prototypes–from behavioral, to video, to functional,
-          varied according to the particular stakeholder, and allowed us to triangulate design insights through our interactions with each party.</p>
+      <div class="grid-1 has-animation" id="recovery">
+        <h2>Error Prevention & Recovery</h2>
+        <p>User input analysis has the greatest potential for user frustration, since an erroneous choice of branch could break immersion and make the user feel as if they aren’t in control of the story. To minimize errors here, we will use the following method to analyze a user response (also illustrated above in figure 7):</p>
+        <ol>
+          <li>Using the IBM NLU API, generate at least 5 novel tags based on the voice input. Tags with similar semantic meaning (e.g. “sad” or “grieving”) should be grouped and counted as a single tag to allow for greater diversity in the list of tags. The API also outputs its confidence in the assigned tag, ranging from 0 to 1.0.</li>
+          <li>Compare the generated tags with the tags assigned to each branch, and calculate the similarity of their outputs. For example, if the API outputs a “sad” sentiment with .67 confidence, and an “angry” sentiment with .29 confidence, then the “sad” sentiment should carry greater statistical weight. So if one of the branches is assigned the tag “unhappy”, and the other is assigned “satisfied”, then the user’s input will trigger the branch with the “unhappy” tag.</li>
+          <li>If the generated tags all have low confidence (< .2), then it could signify an issue with the microphone, an issue with the user’s input, or failure in translating user input into text. The next section addresses these issues.</li>
+        </ol>
+
       </div>
 
-      <div class="grid-2 has-animation" style="align-items: center;">
+      <div class="grid-1 has-animation" >
+        <h5>Recovery from poor vocal input quality or inaccurate voice-to-text</h5>
+        <p>A known limitation of speech recognition algorithms is their relatively high levels of inaccuracy. This may result in unrecognized user input which is unable to be analyzed for sentiment and keywords.</p>
+        <p>If the classification of user input is impossible, a clarifying question can be used to ask the user for clarification. For example, if Dori asks the user if they believe in ghosts, and the user’s response is unrecognizable, a .wav file can be triggered so that Dori asks “What? I don’t know what you said”, or whatever the content creator chooses. If after two clarifying questions it is still impossible to assign tags to the input, a branch is randomly chosen.</p>
+      </div>
 
-        <img style="width:100%" data-src="img/microsoft/winners.jpg" alt="The trebuchet, Arduino setup, and digital interface" data-action="zoom" class="lazy big-image has-animation">
-        <div>
-          <h4>La fin</h4>
-          <p>Woohoo! During a showcase at Microsoft in Redmond, WA, we won an award for the "best technical implementation". Thanks to my great teammates Sakshat Goyal and Javan Wang, and also to advisors Michael Smith and Jon Froehlich.</p>
-        </div>
+      <div class="grid-1 has-animation" >
+        <h5>Minimizing noisy inputs</h5>
+        <p>To minimize interference between speaker output and user voice input, the output volume should be reduced to 10% of its current volume while the user is giving their input. Though it could potentially break immersion, this is common practice with smart speaker setups so that voice input is not obscured by the Google Home’s sound output.</p>
+      </div>
+
+      <div class="grid-1 has-animation" id="sound" >
+        <h2>Sound design</h2>
+        <p>Sound design is integral to the experience of Protagonist. However, a majority of the audio is provided as .wav files by content creators. There is only one sound effect that persists through all stories on the platform: the prompt cue. Whenever the user reaches a prompt, there is a brief audio cue directly following the end of the prompt to let the user know that the story is awaiting vocal input.</p>
+      </div>
+
+      <div class="has-animation">
+        <img style="margin-top:15px; width:100%" data-src="img/protagonist/sound.png" alt="Experiential prototyping with kids" data-action="zoom" class="lazy big-image">
+        <p class="caption">Fig 8. Layering of sounds during user response window</p>
+      </div>
+
+      <div class="grid-1 has-animation" >
+        <p>Sound design becomes more complex when the user is expected to give a response (see Figure 8). During the response window, there is either a background musical score or a soundscape, depending on whichever is used by the content creator. This is included to avoid breaking the flow of the story. If the user does not respond for 5-8 seconds, a re-prompt may be triggered: this is when the character that posed the prompt can prompt the user again, in case they don’t remember the question or are unable to answer. This can be either the same prompt, or a rephrasing of the prompt (e.g. “so do you believe in ghosts or what?” These must be supplied as additional .wav files that are triggered on a regular cadence.</p>
+        <p>After 25 seconds with no input from the user, a branch is randomly chosen.</p>
+      </div>
+
+
+
+      <div class="grid-1 has-animation " >
+        <h2>Visual design</h2>
+        <p>There is no additional visual UI component to Protagonist, as it lives in the Google Home App. The only UI customization will be a hero image that is uploaded by a content creator. This hero image appears in Figure 1 and 2. The only brand asset needed is the Protagonist logo, below.</p>
+        <img style="margin-top:15px; width:100%" data-src="img/protagonist/logo.png" alt="Experiential prototyping with kids" data-action="zoom" class="lazy big-image">
+      </div>
+
+      <center><div id="divider-dotted" class="divider"></div></center>
+
+
+      <div class="grid-1 has-animation" >
+        <p>Woah, did you really read all of that? Yikes. Take a <a href="files/protagonist.pdf">downloadable PDF version</a> of this so you can read again at your leisure, ya freak.</p>
       </div>
 
       <div class="grid-1" style="align-items:center; justify-content: center; text-align:center">
-
-        <p style="font-size:32px;"><a href="pitch.html">NEXT PROJECT</a></p>
+        <p style="font-size:32px;"><a href="library.html">NEXT PROJECT</a></p>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
 
     <div class="page-content">
       <div class="container">
@@ -457,10 +404,7 @@
     <link href="css/zoom.css" rel="stylesheet">
     <script src="js/zoom.min.js"></script>
     <script src="js/transition.min.js"></script>
-    <script src="js/p5.min.js"></script>
-    <script src="js/p5.dom.min.js"></script>
-    <script src="js/sketch.js"></script>
-    <script src="js/sidebar.js"></script>
+
 
 </body>
 

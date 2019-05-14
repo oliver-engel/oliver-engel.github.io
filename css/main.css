@@ -116,8 +116,11 @@ li {
 }
 
 ol {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 18px;
+}
+
+ol > li {
+  padding-bottom:15px;
 }
 
 ul {
@@ -243,6 +246,10 @@ p {
   margin-top: 0px;
   line-height: 1.5rem;
 }
+
+/* *::selection {
+  background: #FF9632;
+} */
 
 b {
   font-weight: 500;
