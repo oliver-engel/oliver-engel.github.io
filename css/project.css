@@ -11,7 +11,88 @@
   font-weight: 900;
   padding:5px 5px 0px 5px;
   border-radius: 3px;
+}
 
+#see-final{
+  transition: 0.3s all;
+  border: 1px solid #3f47f5;
+  color: #3f47f5;
+  background-color: white;
+  padding:10px 25px 8px 25px;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow    : 0 5px 10px rgba(0,0,0,0.03),
+                  0 5px 10px rgba(0,0,0,0.01);
+
+}
+
+#see-final:hover{
+  text-decoration: none;
+  box-shadow    : 0 10px 30px rgba(0,0,0,0.05),
+                  0 10px 30px rgba(0,0,0,0.03);
+
+}
+
+.top-space-h5{
+  padding-top:15px;
+}
+
+.content-box{
+  background: #545AF7;
+  border: 1px solid #dadada;
+  padding:50px 50px 0px 50px;
+  border-radius: 3px;
+  color:white;
+
+  box-shadow    : 0 10px 20px rgba(0,0,0,0.05),
+                  0 10px 20px rgba(0,0,0,0.03);
+}
+
+.content-box > * {
+  color:white;
+}
+
+.medium-block{
+  border-radius: 3px;
+  border: 1px solid white;
+  transition: 0.3s all;
+/* padding:150px;
+position: absolute; */
+}
+
+.medium-block:hover{
+  border: 1px solid #dadada;
+  text-decoration: none;
+  box-shadow    : 0 10px 20px rgba(0,0,0,0.05),
+                  0 10px 20px rgba(0,0,0,0.03);
+
+}
+
+#the-problem-pitch{
+  background-color: #5459f7;
+  background-image: linear-gradient(180deg, #5459f7 51%, #b554f7 100%);
+
+}
+
+#the-response-pitch{
+  background-color: #B554F7;
+
+}
+
+.video-grid > p{
+  font-size:20px;
+  line-height: 1.3em;
+
+}
+
+.project-header-content > *{
+  color: white;
+}
+
+.project-header-content > p{
+  font-size: 24px;
+  line-height: 1.5em;
+  text-align: left;
 }
 
 .dark-section{
@@ -518,7 +599,7 @@ left: 0; right:0; margin:auto;
 
 .grid-3-2 {
   display               : grid;
-  margin-bottom         : 50px;
+  margin-bottom         : 150px;
   padding-top           : 35px;
   grid-gap              : 2em;
   grid-template-columns : 3fr 2fr;
@@ -532,6 +613,27 @@ left: 0; right:0; margin:auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.feature{
+  text-align: center;
+}
+
+.feature > h4 {
+  margin:20px 0px 10px 0px;
+}
+
+.feature > p {
+  line-height:1.3em;
+}
+
+.feature-icon{
+  height:100px;
+  max-width:150px;
+  background-color: none;
+  background: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 .blog-date{
@@ -633,13 +735,23 @@ left: 0; right:0; margin:auto;
     grid-template-columns: 1fr;
   }
 
+  .grid-3-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+
+
   .project-header-content h2{
     transform: translateY(0px);
     font-size:22px;
   }
 
   h2{
-    line-height:1.1em !important
+    line-height:1.45em !important
   }
 }
 
@@ -654,6 +766,16 @@ left: 0; right:0; margin:auto;
   .masonry {
     column-count : 2;
   }
+
+  #content-box-1{
+    transform:translateY(-50px);
+
+  }
+
+  #content-box-2{
+    transform:translateY(50px);
+  }
+
 }
 
 /* Masonry on large screens */
@@ -725,8 +847,3 @@ left: 0; right:0; margin:auto;
   /* content:"🥽"; */
   position: absolute;
 }
-
-
-
-/*! CSS Used fontfaces */
-@font-face{font-family:"Post Grotesk Medium";src:url("https://sherryyx.github.io/assets/fonts/PostGrotesk-Medium.ttf");}

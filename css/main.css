@@ -78,9 +78,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
+
 }
 
 body {
+
   color: var(--body-color);
   overflow-x: hidden;
   /* background              : #fff; */
@@ -125,6 +127,11 @@ ol > li {
 
 ul {
   padding-left: 0px;
+}
+
+video{
+  border-radius: 3px;
+  width: 100%;
 }
 
 img {
@@ -333,6 +340,21 @@ li {
   padding-bottom:72px;
 }
 
+.viewport-border{
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 12px solid #fff1e8;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  z-index:1000;
+  user-select: none;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
 /* SPACERS */
 .spacer-75px {
   height: 75px;
@@ -370,6 +392,8 @@ li {
   .nav-container {
     padding: 0 15px;
   }
+
+
 }
 
 @media (max-width : 600px) {
