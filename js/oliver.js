@@ -10,7 +10,7 @@ Appear Plugin
 document.addEventListener("DOMContentLoaded", function() {
 
   fadeInPage();
-  
+
   var lazyloadImages = document.querySelectorAll("img.lazy");
   var lazyloadThrottleTimeout;
 
@@ -204,9 +204,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var anchors = document.getElementsByTagName('a');
 
     for (var idx=0; idx<anchors.length; idx+=1) {
-      if (anchors[idx].hostname !== window.location.hostname) {
-            continue;
-        }
+      if (anchors[idx].hostname !== window.location.hostname || anchors[idx].pathname === window.location.pathname) {
+  continue;
+}
         anchors[idx].addEventListener('click', function(event) {
             var fader = document.getElementById('fader'),
                 anchor = event.currentTarget;
