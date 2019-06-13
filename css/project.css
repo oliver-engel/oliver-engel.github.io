@@ -79,6 +79,23 @@ position: absolute; */
 
 }
 
+
+#the-brief-microsoft{
+  background-color: #f18116;
+  background-image: linear-gradient(0deg, #D83A32 0%, #d83a32 28%);
+
+}
+
+#the-response-microsoft{
+  background-color:#D83A32;
+
+}
+
+.half-header{
+  width:50vw;
+
+}
+
 .video-grid > p{
   font-size:20px;
   line-height: 1.3em;
@@ -254,6 +271,47 @@ left: 0; right:0; margin:auto;
 
 }
 
+.project-header-half{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+  /* height: 100vh;
+  width:50vw;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  text-align:center; */
+
+}
+
+.project-header-half-content{
+  display: grid;
+
+  align-items: center;
+  justify-content: center;
+  padding:75px;
+  height:100vh;
+
+}
+
+.project-header-half-content > p {
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+
+.vertical-line{
+  z-index:100000;
+border-left: 6px solid white;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
 
 
 #divider-dotted{
@@ -748,6 +806,7 @@ left: 0; right:0; margin:auto;
   .project-header-content h2{
     transform: translateY(0px);
     font-size:22px;
+  
   }
 
   h2{
