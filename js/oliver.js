@@ -230,3 +230,17 @@ window.addEventListener('pageshow', function (event) {
   var fader = document.getElementById('fader');
   fader.classList.remove('fade-in');
 });
+
+
+// SIDEBAR
+
+$(function() {
+  $('.sidebar-sticky').hover(function() {
+    $('.sidebar-links').css('opacity', '1');
+    $('.sidebar-sticky').css('background', 'white');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.sidebar-links').css('opacity', '0');
+    $('.sidebar-sticky').css('background', 'none');
+  });
+});

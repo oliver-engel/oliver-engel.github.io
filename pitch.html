@@ -39,7 +39,7 @@
 
   <!-- <link rel="stylesheet" href="css/microsoft-exp.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png?v=kP3m5Xdgdx">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png?v=kP3m5Xdgdx">
@@ -56,12 +56,28 @@
   <nav class="nav" id="hide-nav">
     <div class="nav-container">
       <div class="links">
-        <a class="sibling-fade" href="index.html" style="color:var(--nav-links)">🏠 Work</a>
-        <a class="sibling-fade" href="writing.html" style="color:var(--nav-links)">✏️ Writing</a>
-        <a class="sibling-fade" href="about.html" style="color:var(--nav-links)">🥝 About</a>
+        <a class="sibling-fade" href="index.html">🏠 Work</a>
+        <a class="sibling-fade" href="writing.html">✏️ Writing</a>
+        <a class="sibling-fade" href="about.html">🥝 About</a>
       </div>
     </div>
   </nav>
+
+
+  <div class="sidebar-sticky fade-in">
+    <img style="width:75px; background:none;" src="img/sidebar.svg">
+    <div class="sidebar-links">
+      <a id="sidebar-link" href="#introduction">Introduction</a><br>
+      <a id="sidebar-link" href="#keyfeatures">Key Features</a><br>
+      <a id="sidebar-link" href="#process">Process</a><br>
+      <a id="sidebar-link" href="#MVP">Defining MVP</a><br>
+      <a id="sidebar-link" href="#proto">Prototyping</a><br>
+      <a id="sidebar-link" href="#iterating">Iterating</a><br>
+      <a id="sidebar-link" href="#detailed-design">Design spec</a><br>
+      <a id="sidebar-link" href="#reflect">Reflection</a><br>
+    </div>
+  </div>
+
 
   <div class="project-header fade-in" style="z-index:4; background-color:#545AF7;">
     <div class="project-header-content rellax fade-scroll" data-rellax-speed="-2">
@@ -160,10 +176,10 @@
   </div>
 
   <div class="page-content" id="content">
-    <div class="container" id="introduction">
+    <div class="container">
 
-      <div class="grid-1 has-animation">
-        <h2>🎉 &nbsp; MVP features</h2>
+      <div class="grid-1 has-animation" id="keyfeatures">
+        <h2>🎉 &nbsp; Key features</h2>
       </div>
 
       <div class="grid-3" style="padding-bottom:50px">
@@ -264,7 +280,7 @@
         <h2>🎢 &nbsp; Design process</h2>
       </div>
 
-      <div class="grid-1 has-animation">
+      <div class="grid-1 has-animation" id="process">
         <h3>Onboarding</h3>
         <h5 class="top-space-h5">Defining my role</h5>
         <p>This was a bit different than a typical design school project; I joined a team with an already-decided product concept for an AI speaking trainer. I defined my job as formulating the specifics of the product–what features would we include?
@@ -302,7 +318,7 @@
       </div>
 
       <div class="grid-1 has-animation ">
-        <h3>User and expert interviews</h3>
+        <h3 id="#research">User and expert interviews</h3>
         <h5 class="top-space-h5">Reaching target users and industry professionals</h5>
         <p>I helped make a set of interview guides so that our team could collectively perform interviews and contribute to data-gathering. Other teammates performed expert interviews with HR professionals, a student resource program manager, and a
           business leader currently at the University of Washington, while I performed interviews with target users.</p>
@@ -340,7 +356,7 @@
       </div>
 
       <div class="grid-1 has-animation image-next">
-        <h3>Carving out an MVP</h3>
+        <h3 id="MVP">Carving out an MVP</h3>
         <h5 class="top-space-h5">Triangulating business & research & tech</h5>
         <p>Determining MVP features was a function of a Kano survey, the abilities of our developers, and user research. Kano results indicated high desirability in voice analysis features like filler word detection (“um”, “like”…) and vocal pitch,
           as well as video analysis features like body language and eye contact.</p>
@@ -360,7 +376,7 @@
         <p class="caption">A diagram of MVP functionality.</p>
       </div>
 
-      <div class="grid-1 has-animation ">
+      <div id="proto" class="grid-1 has-animation ">
         <h3>Behavioral prototyping</h3>
         <p>I wanted to create a Wizard of Oz (WOZ) prototype to address some of my uncertainties: how would people react to the AI’s feedback? What motivates or demotivates certain feature usage? Does the MVP demonstrate a complete and enjoyable
           experience?</p>
@@ -438,7 +454,7 @@
   <div class="page-content">
     <div class="container">
 
-      <div class="grid-1 has-animation">
+      <div class="grid-1 has-animation" id="iterating">
         <h3>Moving towards production</h3>
         <p>This process ended up being messier than the ideal flow from napkin sketch to polished pixels. Here's some of the ways I attempted to communicate my vision for interaction design to the team.</p>
       </div>
@@ -533,7 +549,7 @@
       </div>
       <p class="caption">Left: me giving a product demo. Right: The final presentation to a group of VCs at PSL.</p>
 
-      <div class="grid-1 has-animation">
+      <div class="grid-1 has-animation" id="reflect">
         <h3>Reflecting on the experience</h3>
         <h5 class="top-space-h5">A rewarding challenge</h5>
         <p>This was undoubtedly the most challenging project I’ve yet to work on. I found myself at first struggling to communicate both the value of design and the outcomes of my work on the project. Many of my teammates had not worked with a
