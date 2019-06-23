@@ -76,7 +76,7 @@
   </div>
 
 
-  <div class="project-header fade-in big-image" style="z-index:4">
+  <div class="project-header fade-in big-image">
     <div class="project-header-content rellax fade-scroll" data-rellax-speed="-2">
       <h2>We created a 4<sup>th</sup>-grade level science education kit for Microsoft Education's <a href="https://www.microsoft.com/en-us/education/education-workshop/activity-library.aspx" target="_blank" id="header-underline">HACKING STEM</a>. Our
         experiment teaches the transformation of energy using a papercraft trebuchet, Arduino, and a digital interface.</h2>
@@ -127,11 +127,11 @@
 
       <div class="grid-1 has-animation">
         <h4 class="large-h4" id="overview">I spearheaded the interaction design, visual design, and front-end development of an interactive data workbook. </h4>
-        <h5 class="top-space-h5">The design response</h5>
+        <!-- <h5 class="top-space-h5">The design response</h5>
         <p>The Trebuchet Trials is a STEM education kit that encourages learning through play. Developed with the help of teachers, 4th grade students, and <a href="https://www.microsoft.com/en-us/education" target="_blank">Microsoft Education</a>,
-          it addresses the need to provide experiental STEM education to kids growing up in an increasingly digital world.</p>
-        <h5 class="top-space-h5">My role</h5>
-        <p>I contributed materially to the design of a functioning digital data workbook & physical computing features, and worked with kids and teachers to iteratively refine the experiment. We recieved an award for <strong>Best Technical Implementation</strong> during an expo at Microsoft in Redmond, WA.</p>
+          it addresses the need to provide experiental STEM education to kids growing up in an increasingly digital world.</p> -->
+        <!-- <h5 class="top-space-h5">My role</h5> -->
+        <p>My team and I worked with kids and teachers to develop and iterate on both digital and physical components of a STEM education kit. We recieved an award for <strong>Best Technical Implementation</strong> during an expo at Microsoft in Redmond, WA.</p>
         <p>Made alongside the talented <a href="https://javanwang.com/" target="_blank">Javan Wang</a> and <a href="http://sakshatgoyal.com/">Sakshat Goyal</a>.</p>
       </div>
     </div>
@@ -152,56 +152,72 @@
         <p class="caption">The trebuchet, Arduino setup, and digital interface</p>
       </div>
 
-      <div class="grid-1 has-animation">
-        <h2 id="keyfeatures">Key features</h2>
-        <p>The final design culminated in a set of features that responded to prototype tests, constant iteration, and feedback from peers.</p>
+      <div class="grid-1 has-animation" style="padding-bottom:65px">
+        <h3 id="keyfeatures">The response</h3>
+        <p>The Trebuchet Trials is a STEM education kit that encourages learning through play. Developed with the help of teachers, 4<sup>th</sup> grade students, and <a href="https://www.microsoft.com/en-us/education" target="_blank">Microsoft Education</a>,
+          it addresses the need to provide experiental STEM education to kids growing up in an increasingly digital world.</p>
+
+        <p>Our response was based on the 4<sup>th</sup> grade NGSS Standard 4-PS3-4: Apply scientific ideas to test a device that converts energy from one form to another. In our case, the trebuchet teaches the concepts of transforming potential to kinetic energy.</p>
+
       </div>
 
-      <div class="grid-1 has-animation">
+
+
+      <div class="grid-3-2 has-animation" style="justify-content: center; align-items: center;">
         <video playsinline autoplay loop muted>
-            <source src="/videos/live-graphical-mirroring.webm" type="video/webm" />
-            <source src="/videos/loading-animation.mp4" type="video/mp4" />
+          <source src="/videos/live-graphical-mirroring.webm" type="video/webm" />
+          <source src="/videos/loading-animation.mp4" type="video/mp4" />
         </video>
-        <div style="padding: 50px 0px 100px 0px">
-          <h5>Live graphical mirroring</h5>
-          <p>Using data streamed from an <a href="https://learn.sparkfun.com/tutorials/accelerometer-basics/all" target="_blank">accelerometer</a>, a digital trebuchet mirrors the movement of the physical trebuchet to create a delightful interaction.
+
+        <div class="video-grid">
+          <h3>Live graphical mirroring</h3>
+          <p>Using data streamed from an Arduino accelerometer, a digital trebuchet mirrors the movement of the physical trebuchet to create a delightful interaction.
           </p>
         </div>
       </div>
 
-      <div class="grid-1 has-animation">
+      <div class="grid-3-2 has-animation" style="justify-content: center; align-items: center;">
         <video playsinline autoplay loop muted>
             <source src="/videos/automated-data-tracking.webm" type="video/webm" />
             <source src="/videos/automated-data-tracking.mp4" type="video/mp4" />
         </video>
-        <div style="padding: 50px 0px 100px 0px">
-          <h5>Automated data tracking</h5>
+
+        <div class="video-grid">
+          <h3>Automated data tracking</h3>
           <p>Every time a projectile is launched, the interface automatically calculates the kinetic energy and graphs it in the data tracker. Minimal manual input lets students focus on identifying trends, not rote recording.</p>
+          </p>
         </div>
       </div>
 
-      <div class="grid-1 has-animation">
+      <div class="grid-3-2 has-animation" style="justify-content: center; align-items: center;">
         <video playsinline autoplay loop muted>
             <source src="/videos/targeted-challenges.webm" type="video/webm" />
             <source src="/videos/targeted-challenges.mp4" type="video/mp4" />
         </video>
-        <div style="padding: 50px 0px 100px 0px">
-          <h5>Targeted challenges</h5>
+
+        <div class="video-grid">
+          <h3>Targeted challenges</h3>
           <p>We found through classroom testing that students need specific goals so that the play-learning is structured. Asking them to hit certain criteria with their tests encourages critial thinking and pattern recognition.</p>
         </div>
       </div>
 
-      <div class="grid-1 has-animation">
+      <div class="grid-3-2 has-animation" style="justify-content: center; align-items: center;">
         <video playsinline autoplay loop muted>
             <source src="/videos/low-cost-setup.webm" type="video/webm" />
             <source src="/videos/low-cost-setup.mp4" type="video/mp4" />
         </video>
 
-        <div style="padding: 50px 0px 100px 0px">
-          <h5>Low-cost setup</h5>
+        <div class="video-grid">
+          <h3>Low-cost setup</h3>
           <p>Not including the Arduino and computer, this 3-student group activity is made from classroom materials. The main components are a $5 accelerometer and printed cardstock templates. It costs ~$4 per student.</p>
         </div>
       </div>
+
+
+      <div class="grid-1 has-animation" style="margin-bottom:100px; margin-top:0px;">
+        <a id="see-final" href="#detailed-design">Wanna see the final product in more detail?</a>
+      </div>
+
 
       <div class="grid-1 has-animation">
         <h2>🎢 &nbsp; Design process</h2>
@@ -444,9 +460,9 @@
         <p>Similarly, using CSS variables meant that it was easy to create different color palettes for the experiment and challenges sections, something which I had presumed to need extensive Javascript.</p>
       </div>
 
-      <div class="grid-1 has-animation" style="width:100%">
+      <div class="grid-1 has-animation" style="width:100%" id="detailed-design">
         <h2>Detailed design spec</h2>
-        <p>Section in progress.</p>
+        <p>Still working on this section! Check back soon.</p>
 
       </div>
 
@@ -496,8 +512,6 @@
           further investigate each one. We constantly iterated on the physical form and the digital interface, to the point that the studio was littered with trebuchets and whiteboard scribblings.</p>
 
       </div>
-
-
 
       <div class="grid-1" style="align-items:center; justify-content: center; text-align:center">
         <p style="font-size:32px;"><a href="library.html">NEXT PROJECT</a></p>
