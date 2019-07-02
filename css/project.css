@@ -20,6 +20,13 @@
 
 }
 
+.padding-bottom-50px{
+  padding-bottom: 50px;
+}
+
+.margin-bottom-50px{
+  margin-bottom: 50px;
+}
 
 
 
@@ -38,6 +45,13 @@
 .no-img-bg{
   background: none;
   padding: 50px 0px 50px 0px;
+  border-radius: 3px;
+}
+
+.img-padding{
+  background: none;
+  /* padding: 50px 0px 50px 0px; */
+  border-radius: 3px;
 }
 
 

@@ -129,7 +129,7 @@ video {
 
 img {
   /* margin-top:72px; */
-  border-radius: 3px;
+  border-radius: 3px !important;
   width: 100%;
   transition: 0.3s;
   background: #F1F1FA;
