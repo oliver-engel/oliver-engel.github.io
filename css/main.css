@@ -8,7 +8,7 @@
 /* @import url('personalized.css'); */
 /* @import url('animations.css'); */
 .last-updated::after {
-  content: "June 2019";
+  content: "July 2019";
 }
 
 .info-chunk>h1 {
