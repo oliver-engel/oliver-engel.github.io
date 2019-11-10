@@ -143,11 +143,28 @@
   border-radius: 3px;
   border: 1px solid white;
   transition: 0.3s all;
+
   /* padding:150px;
 position: absolute; */
 }
 
 .medium-block:hover {
+  border: 1px solid #dadada;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05),
+    0 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.blog-block {
+  border-radius: 3px;
+  border: 1px solid white;
+  transition: 0.3s all;
+  margin-bottom:50px;
+  /* padding:150px;
+position: absolute; */
+}
+
+.blog-block:hover {
   border: 1px solid #dadada;
   text-decoration: none;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05),
@@ -447,10 +464,18 @@ position: absolute; */
   padding-top: 100px;
 }
 
+#divider-dotted-blog {
+  width: 50px;
+  border-bottom: 10px dotted var(--border-gray);
+  border-top: none;
+}
+
 .full-width {
   width: 100vw;
   margin-left: calc(-50vw + 75%);
   border: 2px solid green;
+
+
 }
 
 .single-post {
@@ -478,8 +503,30 @@ position: absolute; */
 }
 
 .single-post-head p {
-  font-size: 16px;
+  font-size: 20px;
   /* color:white; */
+}
+
+.description > i {
+  opacity: 35%;
+  margin-right:5px;
+}
+
+.blog-title > .text-uppercase {
+  padding-bottom:15px;
+}
+
+.blog-title > .description{
+  padding-bottom:25px;
+}
+
+.blog-tag{
+  font-size:18px;
+}
+
+.blog-tag > i{
+  opacity:50%;
+  margin-right:5px;
 }
 
 .video-responsive {
@@ -515,7 +562,7 @@ position: absolute; */
   margin-bottom: 0px;
   color: #5b657a;
   text-transform: uppercase;
-  font-size: .65rem;
+  font-size: .8rem;
   font-weight: 500;
 }
 
@@ -734,7 +781,18 @@ position: absolute; */
 
 .grid-1 {
   display: grid;
-  max-width: 675px;
+  max-width:650px;
+  margin: 0 auto;
+  /* padding-bottom         : 36px; */
+  padding-top: 72px;
+  align-self: center;
+  /* grid-gap              : 1.5em; */
+  grid-template-columns: 1fr;
+}
+
+.grid-1-writing {
+  display: grid;
+  max-width:800px;
   margin: 0 auto;
   /* padding-bottom         : 36px; */
   padding-top: 72px;
@@ -852,8 +910,9 @@ position: absolute; */
 
 .writing {
   /* border-top: 1px solid gray; */
-  border-bottom: .1rem solid #e1e0e4;
-  padding: 60px 0px 60px 0px;
+  width:100%;
+  /* border-bottom: .1rem solid #e1e0e4; */
+  padding: 30px 60px 60px 60px;
 }
 
 .award {
@@ -904,6 +963,16 @@ position: absolute; */
 }
 
 @media (max-width : 748px) {
+
+  h1{
+    font-size:2em !important;
+  }
+
+  .writing {
+
+    padding: 20px 0px 60px 0px;
+  }
+
   .grid-2-embed {
     grid-template-columns: 1fr;
   }
@@ -961,6 +1030,9 @@ position: absolute; */
 
 /* Masonry on small screens */
 @media only screen and (max-width : 767px) and (min-width : 540px) {
+
+
+  }
   .masonry {
     column-count: 2;
   }

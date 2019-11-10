@@ -67,24 +67,42 @@
 
       <div class="spacer-50"></div>
       <!-- <img class="image-crop-headers has-animation mobile-remove" src="img/writing.jpg" data-delay="500"> -->
-      <div class="grid-1 ">
+      <div class="grid-1-writing "  style="padding-top:0px;">
 
-        <div class="info-chunk has-animation writing" style="text-align:center">
-          <p class="text-uppercase">8 MAY 19</p>
-          <h1>A Madlibs experiment in research synthesis</h1>
-          <p>Ignorance is the mother of inventing things that probably already exist.</p>
+        <img src="img/blog/synthesis.jpg" alt="Arranged post-its with data written on them" class="full-width-image">
+
+
+        <div class="info-chunk has-animation writing blog-title" style="text-align:center">
+          <p class="text-uppercase">08 MAY 19</p>
+          <h1>An Experiment in Design Research Synthesis</h1>
+          <p class="description"><i class="fas fa-info-circle"></i> Drawing connections in data through structured storytelling</p>
+          <span class="blog-tag"><i class="fas fa-tag"></i> Research</span>
+          <span class="blog-tag"><i class="fas fa-tag"></i> Design</span>
+          <!-- <p>Ignorance is the mother of inventing things that probably already exist.</p> -->
         </div>
 
         <div class="info-chunk has-animation writing p-space" >
+          <h3>From a mass of data</h3>
           <p>Today while staring at a wall of post-it data, I felt overwhelmed at the thought of synthesizing out something of value. My eyes were darting around between quotes and stories as I tried to draw connections in my head, but there was simply too much to take in so as to generate something meaningful–even after a round of sorting.</p>
           <p>In response, I physically picked up a random piece of data, sat with it, and let it guide me. I found that it became easier to sit with one point and extrapolate out in different directions–<span class="var">x</span> behavior seems to be caused by <span class="var">y</span> constraints, which could mean that <span class="var">z</span>. Or maybe <span class="var">x y z</span> happen in a sequence. I took data points and arranged them into these small stories, interpolating between them with conjunctions like <i>because</i> and <i>therefore</i>.</p>
+        </div>
+
           <div class="has-animation">
             <img data-src="img/blog/madlib.jpg" alt="Arranged post-its with data written on them" data-action="zoom" class="lazy big-image">
             <p class="caption">A Madlib synthesis story.</p>
           </div>
-          <p>Vertical stacks act as supporting evidence-the "and" conjunction that binds equivalent data. In this case, the data could read: libraries struggle to integrate their programming with what people are already doing, BECAUSE communication between patrons and the library is old-fashioned and clunky (and people have certain expectations about the timing of events). THEREFORE, programming is often trial and error, where they "throw something against the wall and hope it sticks". In this case I've used data from 4 separate interviews, along with my understanding of the larger dataset to create a narrative.</p>
-          <p>Creating a set of mini stories from disparate data points felt like a productive way of synthesizing behaviors, since it seems to produce actionable insights that trace determinants and outcomes equally. It also serves as an easy entry point for someone outside the project to ground themselves to the data; implicit connections become explicit.</p>
-          <p>I’m sure this is a method that’s been used before, but I’m not even sure how to search for it online, so I'm not aware of it. I’ll call it Madlib synthesis for now.</p>
+
+        <div class="grid-1-writing ">
+          <div class="info-chunk has-animation writing" >
+            <p>Vertical stacks act as supporting evidence-the "and" conjunction that binds equivalent data. In this case, the data could read: libraries struggle to integrate their programming with what people are already doing, BECAUSE communication between patrons and the library is old-fashioned and clunky (and people have certain expectations about the timing of events). THEREFORE, programming is often trial and error, where they "throw something against the wall and hope it sticks". In this case I've used data from 4 separate interviews, along with my understanding of the larger dataset to create a narrative.</p>
+          </div>
+          <div class="info-chunk has-animation writing" >
+            <h3>Takeaways</h3>
+
+            <p>Creating a set of mini stories from disparate data points felt like a productive way of synthesizing behaviors, since it seems to produce actionable insights that trace determinants and outcomes equally. It also serves as an easy entry point for someone outside the project to ground themselves to the data; implicit connections become explicit.</p>
+            <p>I’m sure this is a method that’s been used before, but I’m not even sure how to search for it online, so I'm not aware of it. I’ll call it Madlib synthesis for now.</p>
+          </div>
+
         </div>
 
         <div class="grid-1" style="align-items:center; justify-content: center; text-align:center">
@@ -105,48 +123,13 @@
           <p>Updated <span class="last-updated"></span></p>
         </div>
       </div>
-
     </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
   <script src="js/oliver.js"></script>
-  <script src="js/rellax.min.js"></script>
-  <script>
-    // Accepts any class name
-    var rellax = new Rellax('.rellax');
-
-    if (screen.width <= 500) {
-    document.location = "mobile.html";
-    }
-  </script>
   <link href="css/zoom.css" rel="stylesheet">
   <script src="js/zoom.min.js"></script>
-
-  <script type="text/javascript">
-    $(function() {
-      $('#playerID').click(function() {
-        var iteration = $(this).data('iteration') || 1
-        switch (iteration) {
-          case 1:
-
-            document.getElementById('playerID').innerHTML = '<i class="far fa-pause-circle fa-spin"></i> &nbsp; Diagonals – Stereolab';
-            document.getElementById('player').play()
-            break;
-
-          case 2:
-
-            document.getElementById('playerID').innerHTML = '<i class="far fa-play-circle"></i> &nbsp; Diagonals – Stereolab';
-            document.getElementById('player').pause()
-            break;
-        }
-        iteration++;
-        if (iteration > 2) iteration = 1
-        $(this).data('iteration', iteration)
-      })
-    })
-  </script>
 
 </body>
 
