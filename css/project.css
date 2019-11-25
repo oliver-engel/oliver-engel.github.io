@@ -1,3 +1,20 @@
+
+.daily-photo{
+  width:65vw; margin-top:150px;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  justify-content:center;
+  align-items: flex-end;
+  text-align: right;
+  grid-column-gap: 25px;
+  grid-row-gap: 100px;
+  color:white;
+}
+
+.photo-date{
+  opacity:.35;
+}
+
 .fifty-fifty-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
