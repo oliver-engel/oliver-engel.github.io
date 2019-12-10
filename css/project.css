@@ -11,6 +11,20 @@
   color:white;
 }
 
+@media (max-width : 748px) {
+  .daily-photo{
+    width:90%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    margin-top:75px;
+  }
+
+  .daily-photo > img{
+    margin-bottom:150px !important;
+
+  }
+}
+
 .photo-date{
   opacity:.35;
 }
