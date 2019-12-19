@@ -47,7 +47,7 @@
   --border-gray        : #ececec;
   --yellow             : #989615;
   --light-yellow       : #F4F3D9;
-  --portfolio-p        : #60768b;
+  --gray-text        : #60768b;
 } */
 
 /* FONTS */
@@ -281,8 +281,8 @@ li {
   */
 }
 
-.portfolio-p {
-  color : var(--portfolio-p);
+.gray-text {
+  color : var(--gray-text);
 }
 
 .btn a:visited {

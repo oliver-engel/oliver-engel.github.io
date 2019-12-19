@@ -23,8 +23,12 @@
   transform         : scale(0.97);
 }
 
-.portfolio-p {
+.gray-text {
   color : var(--portfolio-p);
+}
+
+.dark-gray-text{
+  color: #435260;
 }
 
 .info-chunk-home {

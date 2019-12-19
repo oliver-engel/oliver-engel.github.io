@@ -1,3 +1,14 @@
+// Set kerning between T and o
+
+(function(b){function e(a,c){var d;if(b.isPlainObject(a))d=a;else try{d=b.parseJSON(a)}catch(f){d=b.parseJSON('{"'+a+'":'+c+"}")}return d}function h(a,c){var d="";b(a).replaceWith(b.map(a.nodeValue.split("").reverse(),function(a,e){var g=a;b.each(c,function(c,e){d==c[1]&&a==c[0]&&(g=b.fn.wrapCharacter(a,e))});d=a;return g}).reverse().join(""))}b.fn.wrapCharacter=function(a,b){return'<span style="letter-spacing:'+b+'em">'+a+"</span>"};b.fn.jerning=function(a,c){var d=e(a,c),f=this.contents();b.each(f,
+function(a,c){1==c.nodeType&&b(c).jerning(d);3==c.nodeType&&h(c,d)});return this}})(jQuery);
+
+$('h2').jerning("To", -0.15);
+
+$('h1').jerning("ft", -0.05);
+$('h1').jerning("rt", 0.01);
+
+
 /*--------------------------------------------------
 Appear Plugin
 ---------------------------------------------------*/
