@@ -3,7 +3,7 @@
 @import url('normalize.css');
 
 .last-updated::after {
-  content: "Dec 2019";
+  content: "Mar 2020";
 }
 
 @font-face {

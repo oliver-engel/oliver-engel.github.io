@@ -50,6 +50,13 @@
 	animation: gradientBG 10s ease infinite;
 }
 
+.dashboard-animated{
+  background-color: #27348a;
+  background-image: linear-gradient(90deg, #FA5E50 0%, #f57f18 100%);
+  background-size: 300% 300%;
+	animation: gradientBG 10s ease infinite;
+}
+
 .ch-animated{
   background-color: #4d738a;
   background-image: linear-gradient(90deg, #4d738a 0%, #9FACE6 100%);
