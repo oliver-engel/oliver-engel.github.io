@@ -9,6 +9,8 @@ $('h1').jerning("ft", -0.05);
 $('h1').jerning("rt", 0.01);
 
 
+
+
 /*--------------------------------------------------
 Appear Plugin
 ---------------------------------------------------*/
@@ -63,8 +65,12 @@ Function FadeSiblings
 ---------------------------------------------------*/
 
 $(window).scroll(function(){
-    $(".fade-scroll").css("opacity", 1 - $(window).scrollTop() / 550);
+    $(".fade-scroll").css("opacity", 1 - $(window).scrollTop() / 500);
   });
+
+  $(window).scroll(function(){
+      $(".fadein-scroll").css("opacity", 0 + $(window).scrollTop() / 100);
+    });
 
 
 

@@ -94,10 +94,10 @@
 
 
           <div class="info-chunk-home has-animation">
-            <a class="sibling-hover" data-tippy-content="In the Works!" href="dashboard.html">
+            <a class="sibling-hover" data-tippy-content="Read Case Study" href="dashboard.html" id="boundless" onmouseover="wordChange()">
               <img class="image-crop hvr-shrink" src="img/dashboard.jpg"></a>
             <h3 class="sibling-highlight">Boundless</h3>
-            <p class="gray-text">Crafting a dashboard experience</p>
+            <p id="boundless-text" class="gray-text">Crafting a dashboard experience</p>
           </div>
 
           <div class="info-chunk-home has-animation">
@@ -222,9 +222,14 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/oliver.js"></script>
   <script src="js/rellax.min.js"></script>
+  <script src="js/baffler.min.js"></script>
   <script>
     // Accepts any class name
     var rellax = new Rellax('.rellax');
@@ -247,8 +252,6 @@
     });
   </script>
 
-  <script src="https://unpkg.com/popper.js@1"></script>
-  <script src="https://unpkg.com/tippy.js@5"></script>
 
   <script>
     tippy.setDefaultProps({
@@ -257,14 +260,11 @@
       dynamicTitle: true
     });
 
-    tippy('.sibling-hover');
+    // tippy('.sibling-hover');
 
     tippy('#copier', {
 
     });
-
-
-
 
 
   </script>

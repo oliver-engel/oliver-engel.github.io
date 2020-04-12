@@ -53,6 +53,11 @@
   cursor     : pointer;
 }
 
+.sibling-hover:hover{
+
+  opacity:.85;
+}
+
 .sibling-hover:hover ~ .sibling-highlight {
   content    : " View Project";
   color      : var(--red-text);
