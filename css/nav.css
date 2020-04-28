@@ -65,6 +65,7 @@
 
 
 .sidebar-sticky {
+  /* background: none !important; */
   transition: 0.3s all;
   position: -webkit-sticky;
   position: fixed;
