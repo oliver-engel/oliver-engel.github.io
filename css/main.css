@@ -14,14 +14,6 @@
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: 'Fakt Pro';
-  src: url('/fonts/FaktPro-Black.woff2') format('woff2'),
-    url('/fonts/FaktPro-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-} */
-
 @font-face {
     font-family: 'Sailec';
     src: url('/fonts/Sailec-Regular.woff2') format('woff2'),
