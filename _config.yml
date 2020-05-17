@@ -15,11 +15,11 @@ defaults:
   values:
     layout: post
     section: post
-email: your-email@example.com
-description: Write an awesome description for your new site here. You can edit this
-  line in _config.yml.
+email: oliverengel6@gmail.com
+description: Digital product designer based in Seattle, WA.
 baseurl: ''
-url: https://jekyll-netlify-boilerplate.netlify.com
+# url: https://jekyll-netlify-boilerplate.netlify.com
+url: http://oliverengel.com
 permalink: "/blog/:title"
 section: true
 netlifycms: true
