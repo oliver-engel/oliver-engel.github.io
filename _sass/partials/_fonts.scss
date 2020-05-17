@@ -23,3 +23,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Fakt Mono';
+    src: url('/assets/fonts/FaktMono-Blond.woff2') format('woff2'),
+        url('/assets/fonts/FaktMono-Blond.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
