@@ -34,7 +34,7 @@ layout: default-sidebar
         <div class="photo-grid">
           {% for image in site.static_files %}
             {% if image.path contains '/assets/img/photo/' %}
-                    <img class="photo-grid-image" class="showImage" loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="" />
+                    <img alt="Photography portfolio image" class="photo-grid-image" class="showImage" loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="" />
             {% endif %}
           {% endfor %}
         </div>
@@ -44,7 +44,7 @@ layout: default-sidebar
       <div class="mobile">
         {% for image in site.static_files %}
           {% if image.path contains '/assets/img/photo/' %}
-                  <img class="photo-grid-image-mobile" class="showImage" loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="" />
+                  <img alt="Photography portfolio image" class="photo-grid-image-mobile" class="showImage" loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="" />
           {% endif %}
         {% endfor %}
       </div>
