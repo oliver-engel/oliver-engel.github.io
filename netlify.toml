@@ -29,11 +29,7 @@
 # Headers rule example
 # For more information see:- https://www.netlify.com/docs/netlify-toml-reference/
 
-[[headers]]
-  for = "/*.woff"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Content-Type = "application/font-woff"
+#[[headers]]
 #   Define which paths this specific [[headers]] block will cover.
 #   for = "/*"
 
