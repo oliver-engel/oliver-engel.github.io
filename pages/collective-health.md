@@ -1,10 +1,10 @@
 ---
-layout: project
-permalink: work/collective-health
-section: home
 title: Collective Health
-thumb: /assets/img/uploads/collectivehealth/thumb.jpg
-hero: /assets/img/uploads/collectivehealth/hero.png
+permalink: work/collective-health
+layout: project
+section: home
+thumb: "/assets/img/uploads/collectivehealth/thumb.jpg"
+hero: "/assets/img/uploads/collectivehealth/hero.png"
 description: Extending mobile design systems
 category: Design Systems
 ---

@@ -1,10 +1,10 @@
 ---
-layout: project
-permalink: work/dashboard
-section: home
 title: Green Card Dashboard
-thumb: /assets/img/uploads/dashboard/thumb.jpg
-hero: /assets/img/uploads/dashboard/thumb.jpg
+permalink: work/dashboard
+layout: project
+section: home
+thumb: "/assets/img/uploads/dashboard/thumb.jpg"
+hero: "/assets/img/uploads/dashboard/thumb.jpg"
 description: Crafting a dashboard experience
 category: Product Design
 ---

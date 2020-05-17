@@ -1,11 +1,10 @@
 ---
-layout: project
-permalink: play/visual-rats
-section: home
 title: Visual Rats
-thumb: /assets/img/uploads/visualrats/thumb.png
-hero: /assets/img/uploads/visualrats/hero.png
-
+permalink: play/visual-rats
+layout: project
+section: home
+thumb: "/assets/img/uploads/visualrats/thumb.png"
+hero: "/assets/img/uploads/visualrats/hero.png"
 description: Computational art
 category: Miscellaneous
 ---

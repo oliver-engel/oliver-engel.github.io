@@ -1,10 +1,10 @@
 ---
-layout: project
-permalink: work/boundless-documents
-section: home
 title: Rolling Document Review
-thumb: /assets/img/uploads/rollingdocreview/thumb.png
-hero: /assets/img/uploads/rollingdocreview/hero.png
+permalink: work/boundless-documents
+layout: project
+section: home
+thumb: "/assets/img/uploads/rollingdocreview/thumb.png"
+hero: "/assets/img/uploads/rollingdocreview/hero.png"
 description: Design for turbulent times
 category: Product Design
 ---

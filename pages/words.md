@@ -1,9 +1,10 @@
 ---
-layout: words
 title: Words
+permalink: "/words"
+layout: words
 description: Things to read
-permalink: /words
 section: home
 headline: Sample some word salad
 theme: blue
 ---
+

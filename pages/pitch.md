@@ -1,10 +1,10 @@
 ---
-layout: project
-permalink: work/pitch
-section: home
 title: Pitch.ai
-thumb: /assets/img/uploads/pitch/thumb.jpg
-hero: /assets/img/uploads/pitch/hero.png
+permalink: work/pitch
+layout: project
+section: home
+thumb: "/assets/img/uploads/pitch/thumb.jpg"
+hero: "/assets/img/uploads/pitch/hero.png"
 description: Lean UX for an AI web app
 category: Product Design
 ---
