@@ -18,7 +18,6 @@ defaults:
 email: oliverengel6@gmail.com
 description: Digital product designer based in Seattle, WA.
 baseurl: ''
-# url: https://jekyll-netlify-boilerplate.netlify.com
 url: http://oliverengel.com
 permalink: "/blog/:title"
 section: true
