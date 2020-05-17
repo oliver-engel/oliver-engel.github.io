@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll"
+gem "jekyll", "~> 3.8"
 gem "liquid-c"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
