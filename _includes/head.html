@@ -1,0 +1,38 @@
+<head>
+  <!-- META SHIT -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Oliver Engel Design Portfolio">
+  <meta name="description" content="Digital Product Designer in Seattle, WA. MHCI+D Grad. ">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content=" Oliver Engel | Digital Product Designer" />
+  <meta name="keywords" content="oliver engel portfolio, portfolio design, portfolio oliverengel, minimal portfolio, photography, graphic design, ux, hci, uw, washington, seattle, design, interaction, interface, graduate, product design, digital product design, student ux, ux portfolio, visual designer, photography, pacific northwest" />
+  <meta name="author" content="Oliver Engel">
+  <meta name="robots" content="NOODP">
+
+
+  <title>
+     {%if page.title %}
+         {{ page.title }} | {{ site.title }}
+     {% else %}
+         {{ site.title }}
+     {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {% if jekyll.environment == 'production' and site.analytics %}
+    {% include analytics.html %}
+  {% endif %}
+
+  <!-- FAVICONS -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  <!-- <link rel="manifest" href="favicons/site.webmanifest?v=kP3m5Xdgdx">
+  <link rel="shortcut icon" href="favicons/favicon.ico?v=kP3m5Xdgdx"> -->
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://kit.fontawesome.com/9fe5b8cf17.js" crossorigin="anonymous"></script>
+  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>

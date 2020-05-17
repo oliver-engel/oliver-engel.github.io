@@ -1,0 +1,8 @@
+
+<div>
+{% for image in site.static_files %}
+  {% if image.path contains '/assets/img/uploads/etcetera/masonry/' %}
+          <img class="photo-grid-image" loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="" />
+  {% endif %}
+{% endfor %}
+</div>

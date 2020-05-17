@@ -1,0 +1,39 @@
+footer {
+  @include standard-content-width;
+  visibility: hidden;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  a{
+    font-size:.8em;
+  }
+
+  a > span {
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
+  }
+
+  .footer-icon {
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    bottom: 5px;
+    color: $off-white;
+  }
+
+  .footnote {
+    text-align: center;
+
+    @media (max-width: $screen-sm-min){
+      display: none;
+    }
+  }
+
+  .resume {}
+
+  .linkedin {
+    text-align: right;
+  }
+}

@@ -1,0 +1,172 @@
+/**
+ * PROJECT STYLES
+ */
+
+ .project{
+   .subhead{
+     padding-top: 2 * $vertical-rhythm;
+     color: $text-dark-gray;
+   }
+ }
+
+ .project-body {
+   @include standard-content-width;
+   @include fadeContentIn($quick);
+   // padding-top: $vertical-rhythm;
+
+   h3{
+     padding-top: $vertical-rhythm;
+
+     a{
+       color: $blue;
+     }
+     a:hover{
+       opacity:.65;
+     }
+   }
+
+   h5{
+     padding-top: $vertical-rhythm;
+   }
+
+   p{
+     padding-top: $vertical-rhythm;
+
+   }
+
+
+
+
+ }
+
+
+.full-width-section{
+  // width:100vw;
+
+  margin-top: $vertical-rhythm;
+  background: $bg-gray;
+  padding: 0 $vertical-rhythm 0 $vertical-rhythm;
+
+  .subhead{
+    padding-top:0px;
+  }
+
+  p{
+    padding-top:0px;
+  }
+}
+
+ .img-caption{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 2em;
+   align-items: center;
+   padding: $vertical-rhythm 0px  $vertical-rhythm;
+
+   @media(max-width: $screen-sm-min){
+     grid-template-columns: 1fr;
+
+     img{
+       margin-bottom: 25px;
+     }
+   }
+ }
+
+ .split-grid {
+  @include standard-content-width;
+  grid-gap: 2.5em;
+  border-top: 1px solid white;
+  padding-top: 2 * $vertical-rhythm;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: bottom;
+  @media (max-width: $screen-md-min) {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+}
+
+.right-panel {
+  height:100%;
+  object-fit: cover;
+
+  background: $gray;
+  @include fadeContentIn($quick);
+
+  @media (max-width: $screen-md-min) {
+    max-height:400px;
+  }
+
+}
+
+.left-panel {
+
+  .subhead{
+    padding-top:0px;
+  }
+
+  .category::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    content: "\f0d0";
+    padding-right:8px;
+  }
+
+  h1{
+    margin-bottom:8px;
+  }
+
+  p{
+    color:white;
+    font-size: 16px;
+  }
+
+
+  @include fadeContentIn($quick);
+  align-self: center;
+  text-align: center;
+}
+
+
+.portfolio-grid-item {
+  @include slideContentUp($quick);
+
+  h5{
+    padding-top:12px;
+    margin-bottom:0px;
+  }
+
+  img{
+    transition: 0.3s all;
+    height:400px;
+    // height:100%;
+    object-fit: cover;
+    // filter: grayscale(100);
+
+    &:hover{
+      transform: scale(1.1);
+      transform-origin: center;
+      // filter: grayscale(0);
+
+      .img-wrapper-portfolio{
+        border-radius: 6px;
+
+      }
+
+      &:after{
+        content:"tester";
+      }
+    }
+  }
+
+  .shorter-images{
+    height:300px;
+  }
+}
+
+.masonry{
+  column-count: 2;
+}
+.masonry-image{
+
+}

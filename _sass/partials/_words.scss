@@ -1,0 +1,153 @@
+//----------------------//
+//------BLOG/WORDS------//
+//----------------------//
+
+
+.blog-post{
+  p{
+    color: $text-light-gray;
+  }
+
+  .subhead{
+    color: gray;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    padding-top:$vertical-rhythm;
+    // padding-bottom:$vertical-rhythm;
+  }
+
+  h3{
+    padding-top:0px;
+  }
+}
+
+.words-page{
+  h3{
+    padding-bottom: $vertical-rhythm;
+  }
+}
+
+
+
+
+.blog-markdown{
+  // display: flex;
+  // justify-content: center;
+  align-items: center;
+
+  img + em {
+    // font-size: 20em;
+    // color:red;
+    font-style: normal;
+    font-family: $monospace;
+    font-size: .9em;
+    color:$text-gray;
+
+
+
+  }
+
+  img + em::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+    content: "↳";
+    // font-size:2em;
+    // content: url("data:image/svg+xml; utf8, <svg width='16' height='16' viewBox='0 0 86 86' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    // <path d='M3 0V83H86' stroke='gray' stroke-width='6'/>
+    // </svg>");
+    // padding-right:10px;
+
+    // position: absolute;
+    // transform: translate(-30px, -7px);
+    padding-right:15px;
+    color:#7f7f7f;
+  }
+
+  img{
+    width: 60vw;
+    position: relative;
+    left: calc(-30vw + 50%);
+    padding-top: .5 * $vertical-rhythm;
+    padding-bottom: .5 * $vertical-rhythm;
+
+
+
+    @media (max-width: $screen-md-min){
+      width: 100%;
+      left: auto;
+
+    }
+
+
+  }
+}
+
+.blog-wrapper{
+  margin-bottom:100px;
+
+
+}
+
+.blog-entry{
+  margin-bottom:0px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap:32px;
+
+  @media(max-width: $screen-md-min){
+    grid-template-columns: 1fr;
+
+  }
+
+  img{
+    transition: 0.3s all;
+    height:100%;
+    object-fit: cover;
+  }
+
+}
+
+.blog-entry-content > p {
+  font-size:.75em;
+}
+
+.post-image{
+  height:60vh;
+  max-height:100%;
+  margin-left: calc(-50vw + 50%);
+  width:100vw;
+  margin-bottom:35px;
+  object-fit:cover;
+}
+
+.img-wrapper{
+  display: inline-block;
+  overflow: hidden;
+  height: 300px;
+}
+
+#read-more{
+  font-family: $monospace, sans-serif;
+  transition: 0.2s all;
+  border-bottom: 1px solid $text-gray;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.blog-entry:hover{
+  cursor: pointer;
+  img{
+    transform: scale(1.1);
+  }
+
+  #read-more{
+    opacity:1 !important;
+    color:$red;
+    border-bottom: 1px solid $red;
+  }
+}

@@ -1,0 +1,1 @@
+Sitemap: https://jekyll-netlify-boilerplate.netlify.com/sitemap.xml

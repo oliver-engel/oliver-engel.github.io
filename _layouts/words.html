@@ -1,0 +1,37 @@
+---
+layout: default
+title: Words
+---
+
+<body class="words-page">
+
+<section class="content content-narrow">
+
+<h3>Writing stuff occasionally. No promises on quality.</h3>
+
+  {% for post in site.posts %}
+  <div class="blog-wrapper">
+    <a class="blog-entry" href="{{post.url}}">
+      <div class="img-wrapper">
+        <img src="{{post.thumb}}">
+      </div>
+
+      <div class="blog-entry-content">
+        <!-- <p class="blog-date">8 MAY 19</p> -->
+        <h5>{{post.title}}</h5>
+        <p>{{post.description}}</p>
+        <p><span id="read-more">Read More</span></p>
+      </div>
+
+    </a>
+  </div>
+  {% endfor %}
+
+
+
+
+</section>
+
+</div>
+
+</body>

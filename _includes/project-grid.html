@@ -1,0 +1,40 @@
+<div class="grid-2-column">
+
+  {% for page in site.pages %}
+  {% if page.url contains "/work"%}
+  <a href="{{page.url}}" id="boundless">
+
+    <div class="portfolio-grid-item">
+      <div class="img-wrapper-portfolio">
+        <img src="{{page.thumb}}">
+      </div>
+      <h5>{{page.title}}</h5>
+      <p>{{page.description}}</p>
+
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+
+</div>
+
+
+<div class="grid-3-column">
+
+  {% for page in site.pages %}
+  {% if page.url contains "/play"%}
+  <a href="{{page.url}}" id="boundless">
+
+    <div class="portfolio-grid-item">
+      <div class="img-wrapper-portfolio">
+        <img class="shorter-images" src="{{page.thumb}}">
+      </div>
+      <h5>{{page.title}}</h5>
+      <p>{{page.description}}</p>
+
+    </div>
+  </a>
+  {% endif %}
+  {% endfor %}
+
+</div>
