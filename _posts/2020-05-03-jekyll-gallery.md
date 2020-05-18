@@ -2,7 +2,6 @@
 title: Dead Simple Image Gallery with Jekyll
 date: 2020-05-03 12:00:00 Z
 permalink: "/words/jekyll-image-gallery"
-published: true
 categories:
 - misc
 layout: post

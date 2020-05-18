@@ -36,7 +36,7 @@ kramdown:
   input: GFM
   syntax_highlighter_opts:
     default_lang: html
-    css_class   : 'highlight'
+    css_class: highlight
 exclude:
 - README.md
 - LICENSE.txt
@@ -49,5 +49,4 @@ exclude:
 - vendor/cache/
 - vendor/gems/
 - vendor/ruby/
-
 highlighter: rouge
