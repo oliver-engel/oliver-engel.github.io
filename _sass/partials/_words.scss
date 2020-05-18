@@ -70,6 +70,12 @@
     left: calc(-30vw + 50%);
     padding-top: .5 * $vertical-rhythm;
     padding-bottom: .5 * $vertical-rhythm;
+
+    @media(max-width: $screen-sm-min){
+      width: 100%;
+      left:0px;
+
+    }
   }
 
   img{
@@ -128,6 +134,10 @@
   width:100vw;
   margin-bottom:35px;
   object-fit:cover;
+
+  @media(max-width: $screen-sm-min){
+    height:30vh;
+  }
 }
 
 .img-wrapper{
