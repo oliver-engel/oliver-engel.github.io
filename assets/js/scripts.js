@@ -22,13 +22,15 @@ function nextImage(){
   if(imgCounter === photoArray.length - 1){
     $(photoArray[imgCounter]).hide();
     imgCounter = 0;
-    $(photoArray[imgCounter]).css("display", "flex").hide().fadeIn(450);
+    // $(photoArray[imgCounter]).css("display", "flex").hide().fadeIn(450);
+    $(photoArray[imgCounter]).css("display", "flex");
+
   }
 
   else{
   //Hide current image, then fade in the next one
     $(photoArray[imgCounter]).hide();
-    $(photoArray[imgCounter + 1]).css("display", "flex").hide().fadeIn(450);
+    $(photoArray[imgCounter + 1]).css("display", "flex");
     imgCounter++;
   }
   //Increment for the next image
@@ -45,13 +47,13 @@ function prevImage(){
   if(imgCounter === 0){
     $(photoArray[imgCounter]).hide();
     imgCounter = photoArray.length - 1;
-    $(photoArray[imgCounter]).css("display", "flex").hide().fadeIn(300);
+    $(photoArray[imgCounter]).css("display", "flex");
   }
 
   //Hide current image, show the previous one
   else{
     $(photoArray[imgCounter]).hide();
-    $(photoArray[imgCounter - 1]).css("display", "flex").hide().fadeIn(300);
+    $(photoArray[imgCounter - 1]).css("display", "flex");
     imgCounter--;
   }
 };
