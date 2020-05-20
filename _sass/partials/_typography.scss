@@ -44,7 +44,7 @@ h1 {
   color:white;
   margin-top: 0;
   margin-bottom:20px;
-  font-family: $header-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: $header-font, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   user-select: none;
   font-size: 4.209em;
   letter-spacing: -.02em;
@@ -114,7 +114,7 @@ a{
 }
 
 sup{
-  font-family: $monospace, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-size:.65em;
   color:$text-gray;
   padding-left:4px;
@@ -133,7 +133,7 @@ a{
 }
 
 .subhead{
-  font-family: $monospace, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   color: $text-dark-gray;
   text-transform: uppercase;
   font-size: .75em;
