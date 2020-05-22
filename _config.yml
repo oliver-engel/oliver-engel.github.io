@@ -1,5 +1,5 @@
 ---
-title: Oliver Engel Design Portfolio
+title: Oliver Engel – Product Designer
 timezone: UTC
 collections:
   posts:
@@ -16,7 +16,7 @@ defaults:
     layout: post
     section: post
 email: oliverengel6@gmail.com
-description: Digital product designer based in Seattle, WA.
+description: Digital Product Designer based in Seattle, WA.
 baseurl: ''
 url: http://oliverengel.com
 permalink: "/blog/:title"
