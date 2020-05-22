@@ -25,7 +25,6 @@ netlifycms: true
 analytics: false
 plugins:
 - jekyll-sitemap
-
 sass:
   style: compressed
   sass_dir: _sass
