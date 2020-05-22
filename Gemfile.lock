@@ -3,12 +3,15 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    autoprefixer-rails (9.7.6)
+      execjs
     colorator (1.1.0)
     concurrent-ruby (1.1.6)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
+    execjs (2.7.0)
     ffi (1.12.2)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -41,6 +44,9 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
+    octopress-autoprefixer (2.0.1)
+      autoprefixer-rails
+      jekyll (~> 3.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.5)
@@ -62,6 +68,7 @@ DEPENDENCIES
   jekyll (~> 3.8)
   jekyll-sitemap
   liquid-c
+  octopress-autoprefixer
   tzinfo-data
 
 BUNDLED WITH
