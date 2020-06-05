@@ -18,10 +18,10 @@ defaults:
 email: oliverengel6@gmail.com
 description: Digital Product Designer based in Seattle, WA.
 baseurl: ''
-name: "Oliver Engel – Product Designer"
-short_name: "oe"
-language: "en"
-lang_direction: "ltr"
+name: Oliver Engel – Product Designer
+short_name: oe
+language: en
+lang_direction: ltr
 color: "#161618"
 url: https://oliverengel.com
 permalink: "/blog/:title"
