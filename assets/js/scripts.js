@@ -73,23 +73,25 @@ $(window).scroll(function() {
    }
 });
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.animated-header');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+if (document.querySelector('.animated-header') !== null) {
+  // Wrap every letter in a span
+  var textWrapper = document.querySelector('.animated-header');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: false})
-  .add({
-    targets: '.animated-header .letter',
-    translateY: [120,0],
-    easing: "easeOutExpo",
-    duration: 900,
-    delay: (el, i) => 10 * i
-  });
-
-  $(window).scroll(function(){
-      $(".fade-scroll").css("opacity", 1 - $(window).scrollTop() / 500);
+  anime.timeline({loop: false})
+    .add({
+      targets: '.animated-header .letter',
+      translateY: [120,0],
+      easing: "easeOutExpo",
+      duration: 900,
+      delay: (el, i) => 10 * i
     });
 
     $(window).scroll(function(){
-        $(".fadein-scroll").css("opacity", 0 + $(window).scrollTop() / 100);
+        $(".fade-scroll").css("opacity", 1 - $(window).scrollTop() / 500);
       });
+
+      $(window).scroll(function(){
+          $(".fadein-scroll").css("opacity", 0 + $(window).scrollTop() / 100);
+        });
+}

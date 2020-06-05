@@ -24,6 +24,9 @@
 <loc>http://localhost:4000/work/dashboard</loc>
 </url>
 <url>
+<loc>http://localhost:4000/pages/default</loc>
+</url>
+<url>
 <loc>http://localhost:4000/play/etcetera</loc>
 </url>
 <url>

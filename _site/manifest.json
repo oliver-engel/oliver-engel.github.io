@@ -1,0 +1,19 @@
+
+{
+  "lang": "",
+  "dir": "",
+  "name": "Oliver Engel",
+  "short_name": "",
+  "icons": [
+    {
+      "src": "\/favicon.png",
+      "sizes": "192x192",
+      "type": "image\/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#161618",
+  "start_url": "https://oliverengel.com/",
+  "display": "standalone",
+  "orientation": "natural"
+}
