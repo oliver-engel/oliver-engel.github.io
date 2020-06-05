@@ -7,6 +7,7 @@
 
 [[plugins]]
 package = "netlify-plugin-subfont"
+package = "netlify-plugin-image-optim"
 
 # REDIRECT and HEADERS examples.
 # Uncomment to use. Directives in this file will ALWAYS override any identical
