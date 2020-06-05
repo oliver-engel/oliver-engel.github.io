@@ -12,7 +12,8 @@
   ],
   "theme_color": "#161618",
   "background_color": "#161618",
-  "start_url": "https://oliverengel.com/",
+  "start_url": "/",
+  "scope": ".",
   "display": "standalone",
   "orientation": "natural"
 }
