@@ -11,6 +11,9 @@ package = "netlify-plugin-subfont"
 [[plugins]]
 package = "netlify-plugin-image-optim"
 
+[[plugins]]
+package = "netlify-plugin-submit-sitemap"
+
 # REDIRECT and HEADERS examples.
 # Uncomment to use. Directives in this file will ALWAYS override any identical
 # directives present in either _redirects and _headers files, and also any
