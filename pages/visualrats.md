@@ -8,6 +8,7 @@ hero: "/assets/img/uploads/visualrats/hero.png"
 description: Computational art
 category: Miscellaneous
 ---
+
 <div class="grid-2-column">
 
 
