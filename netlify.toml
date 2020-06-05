@@ -14,8 +14,6 @@ package = "netlify-plugin-image-optim"
 [[plugins]]
 package = "netlify-plugin-submit-sitemap"
 
-[[plugins]]
-package = "netlify-plugin-inline-critical-css"
 
 # REDIRECT and HEADERS examples.
 # Uncomment to use. Directives in this file will ALWAYS override any identical
