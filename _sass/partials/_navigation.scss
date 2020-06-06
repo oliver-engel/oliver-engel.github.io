@@ -54,7 +54,7 @@
 
 .updated-last {
   opacity:.5;
-  @media (max-width: $screen-sm-min) {
+  @media (max-width: $screen-md-min) {
     display: none;
   }
 }
