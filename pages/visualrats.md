@@ -8,3 +8,4 @@ hero: "/assets/img/uploads/visualrats/hero.png"
 description: Computational art
 category: Miscellaneous
 ---
+
