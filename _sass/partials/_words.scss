@@ -27,8 +27,15 @@
 }
 
 .words-page{
+
   h3{
+    // @include slideContentUp($quick);
     padding-bottom: $vertical-rhythm;
+    text-align: center;
+  }
+
+  .blog-wrapper{
+    @include slideContentUp($quickest);
   }
 }
 
