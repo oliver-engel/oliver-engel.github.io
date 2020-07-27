@@ -12,14 +12,14 @@ category: Product Design
 <p class="subhead">01. Setting the stage</p>
 
 ### As part of a successful green card application, [Boundless Immigration](https://www.boundless.com/) needs to collect dozens of difficult-to-obtain documents from customers.
-##### The process can take some customers weeks or months to complete. Moreover, a Boundless team member needs to look at every single uploaded document. We had a backlog of <span style="color:$red">20,000 documents</span><sup>1</sup> that weren't budging.
+##### The process can take some customers weeks or months to complete. Moreover, a Boundless team member needs to look at every single uploaded document, and often give feedback to the customer. Customers were frustrated that we couldn't give them that valuable feedback until they'd spent time finding every possible document we asked for.
 
 <div class="full-width-section">
   <div class="img-caption">
     <img src="/assets/img/uploads/rollingdocreview/burndown.png">
     <div>
       <p class="subhead">figure 1</p>
-      <p>A glacial pace: over a month and a half, our backlog of documents needing review only shrank by about 5%.</p>
+      <p>Whole lotta documents: after a new immigration ruling, customers suddenly had to upload twice as many documents, leading to a backlog of 20,000+ to review.</p>
     </div>
   </div>
 </div>
