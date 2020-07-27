@@ -130,6 +130,7 @@ p > strong{
 
 a{
   color: $text-dark-gray;
+
 }
 
 .subhead{
@@ -138,6 +139,23 @@ a{
   text-transform: uppercase;
   font-size: .75em;
   letter-spacing: .05em;
+}
+
+button{
+  font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  color: $text-dark-gray;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: .05em;
+  background:none;
+  color: $blue;
+  border: 1px solid #444444;
+  border-radius: 1px;
+  transition: all 0.2s;
+
+  &:hover{
+    border: 1px solid $blue;
+  }
 }
 
 .animated-header {
