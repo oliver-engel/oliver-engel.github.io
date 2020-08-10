@@ -49,3 +49,15 @@
     font-style: normal;
     unicode-range: U+000-5FF;
 }
+
+@font-face {
+    font-family: 'Kippenberger Web 75';
+    src: url('/assets/fonts/KippenbergerWeb-75Bold.eot');
+    src: url('/assets/fonts/KippenbergerWeb-75Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/KippenbergerWeb-75Bold.woff2') format('woff2'),
+        url('/assets/fonts/KippenbergerWeb-75Bold.woff') format('woff'),
+        url('/assets/fonts/KippenbergerWeb-75Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

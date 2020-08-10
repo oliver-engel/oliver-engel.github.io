@@ -112,6 +112,14 @@
   max-width:900px; margin: auto;
 }
 
+.verticalLine {
+  border-left: thin solid #34383c;
+  width:2px;
+  color:white;
+  // padding-top:10px;
+  margin-bottom: 75px;
+}
+
 .right-panel {
   height:100%;
   object-fit: cover;
