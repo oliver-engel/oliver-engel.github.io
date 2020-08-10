@@ -9,8 +9,6 @@ description: Design for turbulent times
 category: Product Design
 ---
 
-
-
 <p class="subhead">01. Setting the stage</p>
 
 ### As part of a successful green card application, [Boundless Immigration](https://www.boundless.com/) needs to collect dozens of difficult-to-obtain documents from customers.
