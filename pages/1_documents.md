@@ -9,6 +9,8 @@ description: Design for turbulent times
 category: Product Design
 ---
 
+
+
 <p class="subhead">01. Setting the stage</p>
 
 ### As part of a successful green card application, [Boundless Immigration](https://www.boundless.com/) needs to collect dozens of difficult-to-obtain documents from customers.
@@ -29,5 +31,6 @@ category: Product Design
 ### I led the redesign of an internal review tool, a customer-facing upload tool, and changes to our operational models to address a frustrating customer experience and reduce our backlog.
 
 ##### This is an ongoing project. More deets soon.
+
 
 <a href="/">Back to Work</a>
