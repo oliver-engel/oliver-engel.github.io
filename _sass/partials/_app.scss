@@ -194,6 +194,13 @@ video {
 
 }
 
+.remove-on-mobile{
+  display:block;
+  @media (max-width: $screen-md-min){
+    display: none;
+  }
+}
+
 .about-module {
   // padding-top: 20vh;
   display: grid;
