@@ -2,21 +2,12 @@
  * ALL THINGS TYPE
  */
 
-$header-font: "Kippenberger Web";
+$header-font: "Kippenberger";
 $header-font-weight: 700;
 $header-color: #000;
 $body-font: "Graphik";
 $body-font-weight: 400;
 $monospace: "Fakt Mono";
-
-$header-font-alt: "Kippenberger Web";
-$header-font-alt-weight: bold;
-
-
-.header-font-alt{
-  font-family: $header-font-alt, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  font-weight: $header-font-alt-weight !important;
-}
 
 
 *{
