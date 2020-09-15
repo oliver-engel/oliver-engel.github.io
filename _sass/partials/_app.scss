@@ -432,14 +432,6 @@ hr {
   will-change: transform;
 }
 
-.album{
-  img{width:100% !important}
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  h2{margin-bottom:0em !important;}
-  h4{padding-top:0px !important;}
-}
 
 .selected-track{
   border-bottom:none;
