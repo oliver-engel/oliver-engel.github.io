@@ -5,7 +5,7 @@ layout: project
 section: home
 thumb: "/assets/img/uploads/visualrats/thumb.png"
 hero: "/assets/img/uploads/visualrats/hero.png"
-description: Art, animation & ads
+description: Mixed media
 category: Miscellaneous
 ---
 

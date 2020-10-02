@@ -1,11 +1,11 @@
 ---
-title: Et Cetera
-permalink: play/etcetera
+title: PINNED ✳
+permalink: play/pinned
 layout: project
 section: home
-thumb: "/assets/img/uploads/etcetera/thumb.png"
+thumb: "/assets/img/uploads/pinned/thumb.jpg"
 hero: "/assets/img/uploads/etcetera/hero.png"
-description: Art & animation
+description: Fave stuff, WIP
 category: Side Project(s)
 ---
 

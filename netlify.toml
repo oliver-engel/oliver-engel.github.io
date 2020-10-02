@@ -11,6 +11,10 @@ package = "netlify-plugin-image-optim"
 [[plugins]]
 package = "netlify-plugin-submit-sitemap"
 
+[[redirects]]
+  from = "/play/pinned"
+  to = "https://pinned.netlify.app/"
+
 
 # REDIRECT and HEADERS examples.
 # Uncomment to use. Directives in this file will ALWAYS override any identical

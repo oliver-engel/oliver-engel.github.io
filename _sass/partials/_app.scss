@@ -65,7 +65,7 @@ video {
 }
 
 .grid-3-column {
-  padding-top:$vertical-rhythm;
+  padding-top:2 * $vertical-rhythm;
   display: grid;
   grid-column-gap: 1.5em;
   grid-row-gap: 5em;
