@@ -73,9 +73,9 @@
     a{
       user-select: none;
       text-decoration: none;
-      opacity: 0.3;
+      opacity: 0.5;
       margin-right: 25px;
-      color: $off-white;
+      color: $text-gray;
       font-size: .8em;
       font-weight: 400;
       transition: 0.3s;
@@ -86,7 +86,7 @@
     }
 
     a:hover {
-      opacity: 0.75;
+      opacity: 1;
       text-decoration: none;
       transition: 0.3s;
     }

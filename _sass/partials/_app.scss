@@ -299,9 +299,9 @@ hr {
 .modal__container {
   background-color: #fff;
   padding: 30px;
-  max-width: 500px;
+  max-width: 560px;
   max-height: 100vh;
-  border-radius: 1px;
+  border-radius: 12px;
   overflow-y: auto;
   box-sizing: border-box;
 }
@@ -324,24 +324,30 @@ hr {
 }
 
 .modal__close {
+  font-size:1em;
+  color:$blue;
   background: transparent;
   border: 1px solid white;
-  &:focus{
-    border:none !important;
-  }
+  // &:focus{
+  //   border:none !important;
+  // }
 }
 
 .modal__header .modal__close:before { content: "\2715"; }
 
 .modal__content {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   line-height: 1.5;
   color: rgba(0,0,0,.8);
+
+  p{
+    color: $bg-gray;
+  }
 }
 
 .modal__btn {
-  font-size: .875rem;
+  font-size: 2rem !important;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: .5rem;
@@ -355,7 +361,7 @@ hr {
   -webkit-appearance: button;
   text-transform: none;
   overflow: visible;
-  line-height: 1.15;
+  // line-height: 1.15;
   margin: 0;
   will-change: transform;
   -moz-osx-font-smoothing: grayscale;
@@ -369,13 +375,13 @@ hr {
 }
 
 .modal__btn:focus, .modal__btn:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  // -webkit-transform: scale(1.05);
+  // transform: scale(1.05);
 }
 
 .modal__btn-primary {
   background-color: #00449e;
-  color: #fff;
+  color: black;
 }
 
 

@@ -162,6 +162,10 @@ button{
   &:hover{
     border: 1px solid $blue;
   }
+
+  // &:focus{
+  //   border: none !important;
+  // }
 }
 
 .animated-header {
