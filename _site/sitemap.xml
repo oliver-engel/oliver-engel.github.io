@@ -25,13 +25,10 @@
 <loc>http://localhost:4000/work/collective-health</loc>
 </url>
 <url>
-<loc>http://localhost:4000/work/dashboard</loc>
+<loc>http://localhost:4000/archive/dashboard</loc>
 </url>
 <url>
 <loc>http://localhost:4000/pages/default</loc>
-</url>
-<url>
-<loc>http://localhost:4000/play/pinned</loc>
 </url>
 <url>
 <loc>http://localhost:4000/onhold/fernet</loc>
@@ -41,6 +38,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/info</loc>
+</url>
+<url>
+<loc>http://localhost:4000/work/mixtape</loc>
 </url>
 <url>
 <loc>http://localhost:4000/work/pitch</loc>

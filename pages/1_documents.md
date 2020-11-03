@@ -28,7 +28,7 @@ category: Product Design
 
 ### I led the redesign of an internal review tool, a customer-facing upload tool, and changes to our operational models to address a frustrating customer experience and reduce our backlog.
 
-##### This is an ongoing project. More deets soon.
+##### Please reach out for more info.
 
-
+<div class="spacer"></div>
 <a href="/">Back to Work</a>

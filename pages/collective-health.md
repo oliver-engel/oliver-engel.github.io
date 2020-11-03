@@ -9,11 +9,11 @@ description: Extending mobile design systems
 category: Design Systems
 ---
 
-<p class="subhead">01. Setting the stage</p>
+<p class="subhead">about the project</p>
 
-### I had the privilege of joining Collective Health’s Design Systems team, where I helped develop a design system for the iOS & Android consumer apps.
+### I had the privilege of joining [Collective Health’s](https://collectivehealth.com/) Design Systems team, where I helped develop pieces of a design system for the iOS & Android consumer apps.
 
-##### I learned a great deal about the level of detail that goes into a design system by working extensively with type, colors, icons & more. Details comin' at ya when I get the chance.
+##### I learned a great deal about the level of detail that goes into a design system by working extensively with type, colors, icons & more. Please reach out for more info.
 
-
+<div class="spacer"></div>
 <a href="/">Back to Work</a>

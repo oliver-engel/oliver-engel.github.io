@@ -1,6 +1,6 @@
 ---
 title: Green Card Dashboard
-permalink: work/dashboard
+permalink: archive/dashboard
 layout: project
 section: home
 thumb: "/assets/img/uploads/dashboard/thumb.jpg"
