@@ -1,6 +1,6 @@
 ---
 title: Protagonist
-permalink: onhold/protagonist
+permalink: play/protagonist
 layout: project
 section: home
 thumb: "/assets/img/uploads/protagonist/thumb.png"
@@ -9,3 +9,10 @@ description: Interactive VUI experience
 category: Miscellaneous
 ---
 
+<p class="subhead">DOCUMENTATION IN PROGRESS</p>
+
+### Proposal for an interactive podcast experience. Documentation coming at some point.
+
+<div class="spacer"></div>
+
+<a href="/">Back to Work</a>

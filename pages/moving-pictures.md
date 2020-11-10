@@ -1,0 +1,44 @@
+---
+title: Moving Pictures
+permalink: play/moving-pictures
+layout: project
+section: home
+thumb: "/assets/img/uploads/movingpictures/ross.gif"
+hero: "/assets/img/uploads/movingpictures/ross.gif"
+description: Handcrafted animations
+category: Miscellaneous
+---
+
+<!-- ### Endless
+A warped VR simulation of hellish quotidian
+
+<div class="video-responsive">
+        <iframe src="https://player.vimeo.com/video/237709819?background=1&muted=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div> -->
+
+<div class="narrow-content" style="padding: 100px 0px 100px 0px">
+<center>
+  <h3>Animated graphics and interfaces</h3>
+  <p>Mostly made with After Effects.</p>
+  </center>
+</div>
+
+<div class="video-responsive" style="margin-bottom: 100px;">
+  <iframe src="https://player.vimeo.com/video/334080771?loop=1" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="video-responsive" style="margin-bottom: 100px;" >
+  <iframe src="https://player.vimeo.com/video/477482138?loop=1" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="video-responsive" style="margin-bottom: 100px;" >
+  <iframe src="https://player.vimeo.com/video/477485199?loop=1" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="video-responsive" style="margin-bottom: 100px;" >
+  <iframe src="https://player.vimeo.com/video/334053981?loop=1" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="video-responsive" style="margin-bottom: 100px;" >
+  <iframe src="https://player.vimeo.com/video/325925014?loop=1&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>

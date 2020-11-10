@@ -31,7 +31,7 @@
 <loc>http://localhost:4000/pages/default</loc>
 </url>
 <url>
-<loc>http://localhost:4000/onhold/fernet</loc>
+<loc>http://localhost:4000/play/fernet</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
@@ -43,10 +43,13 @@
 <loc>http://localhost:4000/work/mixtape</loc>
 </url>
 <url>
+<loc>http://localhost:4000/play/moving-pictures</loc>
+</url>
+<url>
 <loc>http://localhost:4000/work/pitch</loc>
 </url>
 <url>
-<loc>http://localhost:4000/onhold/protagonist</loc>
+<loc>http://localhost:4000/play/protagonist</loc>
 </url>
 <url>
 <loc>http://localhost:4000/onhold/rrgs</loc>
