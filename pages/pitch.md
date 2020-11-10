@@ -3,7 +3,7 @@ title: Pitch.ai
 permalink: work/pitch
 layout: project
 section: home
-thumb: "/assets/img/uploads/pitch/thumb.jpg"
+thumb: "/assets/img/uploads/pitch/thumb.png"
 hero: "/assets/img/uploads/pitch/hero.png"
 description: Lean UX for an AI web app
 category: Product Design
