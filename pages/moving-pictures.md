@@ -32,12 +32,18 @@ A warped VR simulation of hellish quotidian
 </div>
 
 <div class="video-responsive" style="margin-bottom: 100px;" >
+  <iframe src="https://player.vimeo.com/video/334053981?loop=1" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="video-responsive" style="margin-bottom: 100px;" >
   <iframe src="https://player.vimeo.com/video/477485199?loop=1" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 
 <div class="video-responsive" style="margin-bottom: 100px;" >
-  <iframe src="https://player.vimeo.com/video/334053981?loop=1" width="640" height="640" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/477486034?loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
+
+
 
 <div class="video-responsive" style="margin-bottom: 100px;" >
   <iframe src="https://player.vimeo.com/video/325925014?loop=1&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
