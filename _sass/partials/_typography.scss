@@ -47,7 +47,7 @@ h1 {
   user-select: none;
   font-size: 4.209em;
   letter-spacing: -.02em;
-  line-height:1em;
+  line-height:.9em;
 }
 
 h2 {
@@ -176,4 +176,15 @@ button{
 .animated-header .letter {
   display: inline-block;
   line-height: 1em;
+}
+
+.has-dropcap:first-letter{
+  // initial-letter: 2;
+  font-family: Georgia, serif !important;
+  font-weight: $header-font-weight !important;
+  // font-style: italic;
+  font-size:3.8em;
+  float:left;
+  margin: 0.2em 0.1em 0.1em 0;
+
 }

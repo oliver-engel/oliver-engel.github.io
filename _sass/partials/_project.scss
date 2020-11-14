@@ -2,9 +2,46 @@
  * PROJECT STYLES
  */
 
+ .content-two-column{
+   -moz-column-count: 2;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 10px;
+  column-count: 2;
+  column-gap: 24px;
+
+  @media (max-width: $screen-sm-min){
+    column-count: 1;
+  }
+ }
+
+ .small-text{
+   color: $off-white;
+   font-size: .8em;
+ }
+
  .project{
+   .verticalLine{
+     margin-bottom:6px;
+   }
+
+   .header-paragraph{
+     color: $text-gray;
+   }
+
    .subhead{
      padding-top: 2 * $vertical-rhythm;
+     padding-bottom: $vertical-rhythm;
+     color: $off-white;
+     font-size:.7em;
+   }
+
+   h3{
+     padding-bottom: $vertical-rhythm;
+   }
+
+   p{
+     font-size:.8em;
      color: $text-gray;
    }
  }
@@ -17,12 +54,18 @@
  }
 
  .project-body {
-   @include standard-content-width;
+   // @include standard-content-width;
+   @include medium-content-width;
    @include fadeContentIn($quick);
    // padding-top: $vertical-rhythm;
+   padding-bottom: $vertical-rhythm;
+
+
+
+
 
    h3{
-     padding-top: $vertical-rhythm;
+     // padding-top: $vertical-rhythm;
 
      a{
        color: $blue;
@@ -40,6 +83,8 @@
      // padding-top: $vertical-rhythm;
 
    }
+
+
 
 
 

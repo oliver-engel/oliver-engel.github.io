@@ -30,3 +30,11 @@
   padding-left:10px;
   padding-right: 10px;
 }
+
+@mixin medium-content-width{
+  width:900px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left:10px;
+  padding-right: 10px;
+}
