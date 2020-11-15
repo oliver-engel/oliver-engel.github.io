@@ -11,7 +11,11 @@ category: Type Design
 
 <p class="subhead">DOCUMENTATION IN PROGRESS</p>
 
-### Designed a custom typeface – documentation coming at some point.
+### My first custom typeface, crafted from scratch.
+
+<div class="in-progress-module">
+<h5>🦺 This page is being worked on. Hold tight!</h5>
+</div>
 
 <div class="spacer"></div>
 

@@ -13,7 +13,9 @@ category: Product Design
 
 ### As part of a startup competition at the University of Washington, I joined a group of MBAs & engineers to develop a product demo and sales pitch to give at [Pioneer Square Labs](https://www.psl.com/).
 
-##### This project is finished, and I'm bustin' my ass to get it up here. Stay tuned.
+<div class="in-progress-module">
+<h5>🦺 This page is being worked on. Hold tight!</h5>
+</div>
 
 <div class="spacer"></div>
 <a href="/">Back to Work</a>

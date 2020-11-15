@@ -2,6 +2,10 @@
  * PROJECT STYLES
  */
 
+ .partial-divider{
+   width:900px;
+ }
+
  .content-two-column{
    -moz-column-count: 2;
   -moz-column-gap: 10px;
@@ -102,6 +106,10 @@
    .subhead{
      padding:0px;
    }
+
+   @media(max-width: $screen-sm-min){
+     display:none;
+   }
  }
 
  .project-bottom-bar{
@@ -113,8 +121,28 @@
    justify-content: center;
    margin: 0 auto;
    background-color: #282e3978;
+ }
 
+ .reach-out-module{
+   width:100%;
+   border: 1px solid $blue;
+   background-color: #2890ff0d;
+   text-align: center;
+   padding: 40px;
+   border-radius: 2px;
+   margin-top: $vertical-rhythm / 2;
+   margin-bottom: $vertical-rhythm / 2;
+ }
 
+ .in-progress-module{
+   width:100%;
+   border: 1px solid $yellow;
+   background-color: #ffe9280f;
+   text-align: center;
+   padding: 40px;
+   border-radius: 2px;
+   margin-top: $vertical-rhythm / 2;
+   margin-bottom: $vertical-rhythm / 2;
  }
 
  .no-padding-margins{
