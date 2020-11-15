@@ -10,9 +10,6 @@ category: Product Design
 role: Design Lead
 responsibilities: Research, business alignment, experience & UI design
 team: 5 Engineers, 1 PM, 2 Biz Stakeholders
-
-
-
 ---
 
 <p class="subhead">01. Setting the stage</p>
