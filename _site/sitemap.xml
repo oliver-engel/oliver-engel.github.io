@@ -16,10 +16,16 @@
 <loc>http://localhost:4000/play/photo</loc>
 </url>
 <url>
-<loc>http://localhost:4000/work/boundless-documents</loc>
+<loc>http://localhost:4000/onhold/boundless-documents</loc>
 </url>
 <url>
 <loc>http://localhost:4000/onhold/trebuchet</loc>
+</url>
+<url>
+<loc>http://localhost:4000/work/boundless-comms</loc>
+</url>
+<url>
+<loc>http://localhost:4000/work/mixtape</loc>
 </url>
 <url>
 <loc>http://localhost:4000/work/collective-health</loc>
@@ -38,9 +44,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/info</loc>
-</url>
-<url>
-<loc>http://localhost:4000/work/mixtape</loc>
 </url>
 <url>
 <loc>http://localhost:4000/play/moving-pictures</loc>

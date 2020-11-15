@@ -30,8 +30,8 @@
    }
 
    .subhead{
-     padding-top: 2 * $vertical-rhythm;
-     padding-bottom: $vertical-rhythm;
+     padding-top:  $vertical-rhythm / 2;
+     padding-bottom: $vertical-rhythm / 2;
      color: $off-white;
      font-size:.7em;
    }
@@ -76,11 +76,12 @@
    }
 
    h5{
-     padding-top: $vertical-rhythm;
+     // padding-top: $vertical-rhythm;
    }
 
    p{
      // padding-top: $vertical-rhythm;
+     hyphens: auto;
 
    }
 
@@ -91,6 +92,36 @@
 
  }
 
+ .project-details{
+   @include medium-content-width;
+   display: flex;
+   justify-content: space-between;
+   // grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding-bottom: 30px;
+
+   .subhead{
+     padding:0px;
+   }
+ }
+
+ .project-bottom-bar{
+   height:10vh;
+   bottom:0;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   background-color: #282e3978;
+
+
+ }
+
+ .no-padding-margins{
+   padding: 0px !important;
+   margin: 0px;
+ }
+
 
 .full-width-section{
   // width:100vw;
@@ -98,6 +129,7 @@
   margin-top: $vertical-rhythm;
   background: $bg-gray;
   padding: 0 $vertical-rhythm 0 $vertical-rhythm;
+  margin-bottom: $vertical-rhythm;
 
   .subhead{
     padding-top:0px;
@@ -114,6 +146,10 @@
    grid-column-gap: 2em;
    align-items: center;
    padding: $vertical-rhythm 0px  $vertical-rhythm;
+
+   .subhead{
+     padding:0px;
+   }
 
    @media(max-width: $screen-sm-min){
      grid-template-columns: 1fr;
@@ -247,4 +283,27 @@
 }
 .masonry-image{
 
+}
+
+.arrow-animation{
+
+  width: 25px;
+  animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes floating {
+	0% {
+		transform: translatey(5px);
+	}
+	50% {
+		transform: translatey(-5px);
+	}
+	100% {
+		transform: translatey(5px);
+	}
 }

@@ -13,7 +13,7 @@ category: Design Systems
 
 ### I had the privilege of joining [Collective Health’s](https://collectivehealth.com/) Design Systems team, where I helped develop pieces of a design system for the iOS & Android consumer apps.
 
-##### I learned a great deal about the level of detail that goes into a design system by working extensively with type, colors, icons & more. Please reach out for more info.
+<h5>🔒 Please reach out for more project details.</h5>
 
 <div class="spacer"></div>
 <a href="/">Back to Work</a>

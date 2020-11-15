@@ -186,5 +186,18 @@ button{
   font-size:3.8em;
   float:left;
   margin: 0.2em 0.1em 0.1em 0;
+}
 
+.term{
+  cursor: pointer;
+  color: $yellow;
+
+  &::after{
+    content: url('http://i.stack.imgur.com/Icd9n.png');
+    width:24px;
+    height:24px;
+    background: url('/assets/img/icons/info.svg') CENTER CENTER NO-REPEAT;
+    // padding-left: 4px;
+
+  }
 }

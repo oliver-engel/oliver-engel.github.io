@@ -115,3 +115,14 @@ if (document.querySelector('.animated-header') !== null) {
           $(".fadein-scroll").css("opacity", 0 + $(window).scrollTop() / 100);
         });
 }
+
+//Smooth scrolling hash links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

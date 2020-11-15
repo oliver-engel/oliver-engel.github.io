@@ -1,12 +1,18 @@
 ---
 title: Rolling Document Review
-permalink: work/boundless-documents
+permalink: onhold/boundless-documents
 layout: project
 section: home
 thumb: "/assets/img/uploads/rollingdocreview/thumb.png"
 hero: "/assets/img/uploads/rollingdocreview/hero.png"
 description: Design for turbulent times
 category: Product Design
+role: Design Lead
+responsibilities: Research, business alignment, experience & UI design
+team: 5 Engineers, 1 PM, 2 Biz Stakeholders
+
+
+
 ---
 
 <p class="subhead">01. Setting the stage</p>
