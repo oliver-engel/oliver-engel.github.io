@@ -7,7 +7,6 @@ thumb: "/assets/img/uploads/comms/thumb.jpg"
 hero: "/assets/img/uploads/comms/hero.jpg"
 description: Email is so 1996
 category: Product Design
-
 role: Design Lead
 responsibilities: Research, business alignment, experience & UI design
 team: 4 Engineers, 1 PM, 2 Biz Stakeholders
