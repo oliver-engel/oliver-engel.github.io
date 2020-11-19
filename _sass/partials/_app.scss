@@ -470,3 +470,24 @@ hr {
 .spacer{
   height:$vertical-rhythm;
 }
+
+.colophon{
+  text-align:center;
+  padding-top:$vertical-rhythm * 2.5;
+
+  p{
+    font-size: .8em;
+  }
+
+  .subhead{
+    color: $yellow;
+  }
+
+  @media(max-width: $screen-sm-min){
+    text-align:left;
+  }
+}
+
+p > i{
+  font-family: Georgia, serif !important;
+}
