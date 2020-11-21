@@ -141,6 +141,7 @@
   width:100vw;
   margin-bottom:35px;
   object-fit:cover;
+  border-radius: $border-radius-none !important;
 
   @media(max-width: $screen-sm-min){
     height:30vh;

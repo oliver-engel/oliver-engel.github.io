@@ -191,6 +191,7 @@ button{
 .term{
   cursor: pointer;
   color: $yellow;
+  border-radius: $border-radius-large;
 
   &::after{
     content: url('http://i.stack.imgur.com/Icd9n.png');

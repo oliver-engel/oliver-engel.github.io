@@ -6,7 +6,7 @@
 
     <div class="portfolio-grid-item">
       <div class="img-wrapper-portfolio">
-        <img loading="lazy" alt="{{page.title}} thumbnail" src="{{page.thumb}}">
+        <img onmouseover="imgHover()" onmouseout="imgHoverOut()" loading="lazy" alt="{{page.title}} thumbnail" src="{{page.thumb}}" class="project-hover">
       </div>
       <h5>{{page.title}}</h5>
       <p>{{page.description}}</p>
@@ -27,7 +27,7 @@
 
     <div class="portfolio-grid-item">
       <div class="img-wrapper-portfolio">
-        <img loading="lazy" alt="{{page.title}} thumbnail" class="shorter-images" src="{{page.thumb}}">
+        <img onmouseover="imgHover()" onmouseout="imgHoverOut()" loading="lazy" alt="{{page.title}} thumbnail" class="shorter-images project-hover" src="{{page.thumb}}">
       </div>
       <h5>{{page.title}}</h5>
       <p>{{page.description}}</p>
@@ -41,7 +41,7 @@
 
     <div class="portfolio-grid-item">
       <div class="img-wrapper-portfolio">
-        <img loading="lazy" alt="{{page.title}} thumbnail" class="shorter-images" src="/assets/img/uploads/pinned/thumb.jpg">
+        <img onmouseover="imgHover()" onmouseout="imgHoverOut()" loading="lazy" alt="{{page.title}} thumbnail" class="shorter-images project-hover" src="/assets/img/uploads/pinned/thumb.jpg">
       </div>
       <h5>PINNED ✳</h5>
       <p>Fave digital stuff</p>
@@ -50,3 +50,7 @@
   </a>
 
 </div>
+
+<script type="text/javascript">
+
+</script>

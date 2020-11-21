@@ -3,8 +3,8 @@ title: Visual Rats
 permalink: play/visual-rats
 layout: project
 section: home
-thumb: "/assets/img/uploads/visualrats/thumb.gif"
-hero: "/assets/img/uploads/visualrats/thumb.gif"
+thumb: "/assets/img/uploads/visualrats/thumb.png"
+hero: "/assets/img/uploads/visualrats/hero.png"
 description: Mixed media
 category: Miscellaneous
 ---

@@ -1,3 +1,26 @@
+function imgHover(){
+  console.log("testing");
+  var imgs = document.getElementsByClassName("project-hover");
+
+  for(var i=0; i<imgs.length; i++){
+    imgs[i].style.filter = "grayscale(100%)";
+    console.log("in here");
+  }
+}
+
+function imgHoverOut(){
+  console.log("testing");
+  var imgsOut = document.getElementsByClassName("project-hover");
+
+  for(var i=0; i<imgsOut.length; i++){
+    imgsOut[i].style.filter = "grayscale(0%)";
+    console.log("in here");
+  }
+}
+
+
+
+
 jQuery(document).ready(function($) {
 
   var rellax = new Rellax('.rellax');

@@ -43,7 +43,7 @@ samp {
 }
 
 img {
-  border-radius: 1px;
+  border-radius: $border-radius-large;
   width: 100%;
   display: block;
 }
@@ -102,7 +102,6 @@ video {
   }
   img{
     transition: .2s all;
-    border-radius: 2px;
     max-height:300px;
     height:100%;
     width:auto;
@@ -237,11 +236,26 @@ video {
   }
 }
 
+
+
 .img-wrapper-portfolio {
   display: inline-block;
   overflow: hidden;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+  border-radius:$border-radius-large;
+
+
+  img{
+    border-radius:$border-radius-large;
+
+  }
+
+  &:hover{
+    img{
+      filter: grayscale(0%) !important;
+    }
+  }
 }
 
 a {

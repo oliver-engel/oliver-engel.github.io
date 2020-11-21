@@ -129,7 +129,7 @@
    background-color: #2890ff0d;
    text-align: center;
    padding: 40px;
-   border-radius: 2px;
+   border-radius: $border-radius-large !important;
    margin-top: $vertical-rhythm / 2;
    margin-bottom: $vertical-rhythm / 2;
  }
@@ -140,7 +140,7 @@
    background-color: #ffe9280f;
    text-align: center;
    padding: 40px;
-   border-radius: 2px;
+   border-radius: $border-radius-large !important;
    margin-top: $vertical-rhythm / 2;
    margin-bottom: $vertical-rhythm / 2;
  }
@@ -153,7 +153,7 @@
 
 .full-width-section{
   // width:100vw;
-
+  border-radius: $border-radius-xlarge;
   margin-top: $vertical-rhythm;
   background: $bg-gray;
   padding: 0 $vertical-rhythm 0 $vertical-rhythm;
@@ -230,6 +230,7 @@
 }
 
 .right-panel {
+  border-radius: $border-radius-large $border-radius-large 0px 0px;
   height:100%;
   object-fit: cover;
 
@@ -285,13 +286,14 @@
     object-fit: cover;
     // filter: grayscale(100);
 
+
     &:hover{
       transform: scale(1.1);
       transform-origin: center;
       // filter: grayscale(0);
 
       .img-wrapper-portfolio{
-        border-radius: 6px;
+        border-radius: $border-radius-large;
 
       }
 
@@ -314,9 +316,8 @@
 }
 
 .arrow-animation{
-
-  width: 25px;
-  animation-name: floating;
+    width: 25px;
+    animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
