@@ -134,6 +134,8 @@
   font-size:.75em;
 }
 
+
+
 .post-image{
   height:60vh;
   max-height:100%;
@@ -149,6 +151,7 @@
 }
 
 .img-wrapper{
+  border-radius: $border-radius-large !important;
   display: inline-block;
   overflow: hidden;
   height: 300px;
