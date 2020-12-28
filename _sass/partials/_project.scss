@@ -136,14 +136,15 @@
    margin-bottom: $vertical-rhythm / 2;
 
    a{
+     cursor: pointer;
      color:white;
      border-bottom: 1px solid #ffffff38;
      padding-bottom: 5px;
-
      &:hover{
        border-bottom: 1px solid $blue;
      }
    }
+
  }
 
  .in-progress-module{
@@ -155,6 +156,15 @@
    border-radius: $border-radius-large !important;
    margin-top: $vertical-rhythm / 2;
    margin-bottom: $vertical-rhythm / 2;
+
+   a{
+     color:white;
+     border-bottom: 1px solid #ffffff38;
+     padding-bottom: 5px;
+     &:hover{
+       border-bottom: 1px solid $yellow;
+     }
+   }
  }
 
  .no-padding-margins{

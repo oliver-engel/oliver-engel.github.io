@@ -46,7 +46,7 @@ team: 4 Engineers, 1 PM, 2 Biz Stakeholders
 </div>
 
 <div class="reach-out-module">
-<h5>🔒 Please reach out for more project details.</h5>
+<h5>🔒 Please <a data-micromodal-trigger="open-to-work">reach out</a> for more project details.</h5>
 </div>
 
 <div class="spacer"></div>
