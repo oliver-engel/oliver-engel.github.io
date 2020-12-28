@@ -1,14 +1,13 @@
 ---
-title: Insanely Good Music Videos
-date: 2020-09-14 12:00:00 Z
+title: My Favorite Music Videos
+date: 2020-12-27 12:00:00 Z
 permalink: "/words/music-videos"
-published: false
 categories:
 - misc
 layout: post
-description: Combining the best of sound + visual art
-thumb: "/assets/img/blog/80s/thumb.jpg"
-hero: "/assets/img/blog/80s/hero.jpg"
+description: A running list of great video art.
+thumb: "/assets/img/blog/videos/thumb.jpg"
+hero: "/assets/img/blog/videos/hero.jpg"
 ---
 
 ![Weval – Someday](/assets/img/blog/videos/weval.jpg)
@@ -62,7 +61,7 @@ A disturbingly realistic mocap-based music video that sits neatly in the in the 
 I always come back to this one. There's something unsettling and beautiful about life-sized stop-motion. My only wish is that the video was higher quality.
 
 <div class="tracks-footer">
-  <a href="https://www.youtube.com/watch?v=TNRCvG9YtYI" class="selected-track">Watch on YouTube</a>
+  <a href="https://vimeo.com/2323231" class="selected-track">Watch on Vimeo</a>
 </div>
 
 
