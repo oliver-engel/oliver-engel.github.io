@@ -1,5 +1,5 @@
 ---
-permalink: "/404.html"
+permalink: "/success.html"
 layout: fourohfour
 section: 404
 ---
