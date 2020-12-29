@@ -511,3 +511,44 @@ hr {
 p > i{
   font-family: Georgia, serif !important;
 }
+
+.email-collect{
+  padding: $vertical-rhythm/2 0px $vertical-rhythm 0px;
+  text-align: center;
+  margin: 0 auto;
+
+
+  input{
+    padding:10px 20px;
+    border-radius: $border-radius-medium;
+    border:0px;
+    &::placeholder{
+      color:$text-gray;
+    }
+  }
+
+  button{
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    margin-left: 10px;
+    border-radius: $border-radius-medium;
+  }
+
+}
+
+.form-container{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .form-children{
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
