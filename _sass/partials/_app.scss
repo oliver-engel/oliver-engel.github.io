@@ -500,7 +500,7 @@ hr {
   }
 
   .subhead{
-    color: $yellow;
+    color: $pink;
   }
 
   @media(max-width: $screen-sm-min){
@@ -525,6 +525,11 @@ p > i{
     &::placeholder{
       color:$text-gray;
     }
+
+    &:focus{
+      box-shadow: none;
+    }
+    
   }
 
   button{
@@ -533,6 +538,23 @@ p > i{
     padding: 0px 15px;
     margin-left: 10px;
     border-radius: $border-radius-medium;
+    background-color: $blue;
+    border: 1px solid $blue;
+    color:white;
+
+    &:hover{
+      background-color: #1a5ea7;
+      border: 1px solid #1a5ea7;
+    }
+
+    &:disabled{
+      background-color: $bg-color;
+      opacity:50%;
+      color:$text-gray;
+      pointer-events: none;
+      border: 1px solid #444444;
+
+    }
   }
 
 }

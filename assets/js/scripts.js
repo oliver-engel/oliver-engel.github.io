@@ -19,7 +19,14 @@ function imgHoverOut(){
 }
 
 
-
+$('.email-collect').on("keyup", action);
+function action() {
+   if($('.email-input').val().length > 0) {
+      $('#submit-button').prop("disabled", false);
+   }else {
+      $('#submit-button').prop("disabled", true);
+   }
+}
 
 jQuery(document).ready(function($) {
 

@@ -156,7 +156,7 @@ button{
   background:none;
   color: $blue;
   border: 1px solid #444444;
-  border-radius: 1px;
+  border-radius: $border-radius-medium !important;
   transition: all 0.2s;
 
   &:hover{
