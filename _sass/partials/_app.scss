@@ -260,6 +260,10 @@ video {
 
 a {
   text-decoration: none;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 hr {
@@ -527,9 +531,10 @@ p > i{
     }
 
     &:focus{
-      box-shadow: none;
+      outline: none;
+      box-shadow: 0 0 0 2pt $blue;
     }
-    
+
   }
 
   button{
@@ -541,6 +546,11 @@ p > i{
     background-color: $blue;
     border: 1px solid $blue;
     color:white;
+
+    &:focus{
+      outline: none;
+      box-shadow: 0 0 0 2pt $blue;
+    }
 
     &:hover{
       background-color: #1a5ea7;
