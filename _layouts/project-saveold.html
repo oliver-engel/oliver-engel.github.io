@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<div class="project">
+
+
+
+
+<div class="split-grid" data-aos="fade-up">
+  <div class="left-panel slideUp">
+    <!-- <p class="subhead category">{{page.category}}</p> -->
+
+    <h1 class="">{{page.title}}</h1>
+    <!-- <center>
+      <div class="verticalLine">
+        <br><br>
+      </div>
+    </center> -->
+    <p class="header-paragraph">{{page.description}}</p>
+
+  </div>
+
+  <img class="right-panel" src="{{page.hero}}">
+
+
+</div>
+<hr style="margin-bottom:0px;">
+
+<a href="#scroll-to-start">
+  <div class="project-bottom-bar ">
+    <!-- <p class="no-padding-margins arrow-animation"></p> -->
+    <img class="arrow-animation" src="/assets/img/icons/arrow-down.svg">
+    <!-- <img style="width: 200px;" src="/assets/img/icons/scroll.svg"> -->
+  </div>
+</a>
+
+<hr>
+
+{% if page.role %}
+<div id="scroll-to-start" class="project-details">
+  <div>
+    <p class="subhead">⚡ Role</p>
+    <p>{{page.role}}</p>
+  </div>
+
+  <div>
+    <p class="subhead">💥 Responsibilities</p>
+    <p>{{page.responsibilities}}</p>
+  </div>
+
+  <div>
+    <p class="subhead">🚀 Team</p>
+    <p>{{page.team}}</p>
+  </div>
+</div>
+
+
+<hr class="partial-divider">
+{% endif %}
+
+<div class="project-body">
+  {{content}}
+</div>
+
+{% include project-nav.html %}
+
+</div>

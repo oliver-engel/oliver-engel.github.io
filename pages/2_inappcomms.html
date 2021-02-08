@@ -1,0 +1,387 @@
+---
+title: In-App Comms
+description: Designing a scalable comms system for resolving green card application issues
+permalink: work/boundless-comms
+layout: project
+section: home
+thumb: "/assets/img/uploads/comms/thumb.jpg"
+hero: "/assets/img/uploads/comms/hero-alt.jpg"
+
+website: boundless.com
+company: Boundless Immigration
+location: Seattle, WA
+date: OCT 2020
+role: Design Lead
+responsibilities: Research, business alignment, experience & UI design
+team: 4 Engineers, 1 PM, 2 Biz Stakeholders
+
+intro: Every green card application has potentially dozens of issues buried in its hundreds of pages of content.
+intro-details: And our team used to handle all of them by emailing back and forth with our thousands of customers. You can imagine what their inboxes started to look like.
+logo: "/assets/img/uploads/comms/logo.svg"
+theme: themegreen
+internalnav: true
+video: false
+year: 2020
+
+---
+
+
+<section class="animate-on-scroll">
+  <p id="page-anchor-01">01. Setting the Stage</p>
+  <p class="subhead">01. Setting the Stage</p>
+
+  <h3>As the product design lead, I worked with ops and engineering to devise a new system from scratch.</h3>
+  <p>As a test case for our MVP, we only implemented it in one piece of our process: the <span class="term"><span class="hint--top hint--large" aria-label="A phase of the Boundless green card application process where an ops teammember reviews the entire green card application and collects and sends issues to the customer to resolve.">Quality Assurance (QA)</span></span> stage. The plan is now to extend it to at least 3 other phases. Here's how the tools work:</p>
+  <!-- <h3>We needed to remove email from our process entirely and replace it with a more scalable system.</h3> -->
+  <!-- <p>However, replacing email entirely is a gargantuan task. So I worked with operations, business stakeholders, and our engineers to craft an MVP that would relieve some of the burden now and set us up for longer-term improvements.</p> -->
+  <!-- <p>Email is used in just about every piece of the sometimes months-long process, which means our customer service reps were dealing with increasingly clogged inboxes. Tedious back & forth communications often take multiple rounds of emailing to resolve. This reliance on email was untenable for long-term growth.</p>
+  <p>The <span class="term"><span class="hint--bottom hint--large" aria-label="A phase of the Boundless green card application process where a CS teammember assembles a list of questions and tasks to send to the customer before they can move forward in the process.">Quality Assurance (QA) Return</span></span> is the most email-heavy phase of the Boundless process. After our team does a complete review of an application, they assemble a list of questions and to-do items via email for the customer to take care of before moving on to the next phase.</p> -->
+</section>
+
+
+
+<img class="animate-on-scroll" src="/assets/img/uploads/comms/threaded-comms.png">
+
+<!-- <div class="iframe-wrapper animate-on-scroll content-wide">
+  <center>
+    <iframe style=""class="autoplay-video" src="https://player.vimeo.com/video/335975407?autoplay=1&loop=1&muted=1&autopause=0" width="1000" height="564" frameborder="0" allow="autoplay"></iframe>
+  </center>
+</div> -->
+
+<section class="animate-on-scroll">
+  <p id="page-anchor-02" class="subhead">02. The Admin Tool</p>
+  <p class="subhead">02. The Admin Tool</p>
+  <h3>Part 1: An admin tool MVP for creating and managing issues</h3>
+  <h6>The first tool in a new system</h6>
+  <p>This project coincided with a push to build a new admin system from scratch to house all of our various ops tools, so we had no previous UI to build off of. Visually, it's clean but barebones–a gestural sketch that's flexible enough for us to continue adding to and moving our old admin tools over.</p>
+</section>
+
+
+<div class="two-column-grid animate-on-scroll">
+  <img src="/assets/img/uploads/comms/data-model.jpg">
+  <div>
+    <h6>Providing structure to issues</h6>
+    <p>When an ops member used to create an issue, that meant writing free-form text into an email; no structure to the process at all. In our MVP, ops folks create discrete issues that can have communications and status attached to them.</p>
+  </div>
+</div>
+
+<div class="spacer-2x"></div>
+
+<div class="two-column-grid animate-on-scroll">
+  <div>
+    <h6>The secret sauce: the fly-out thread panel</h6>
+    <p>To track the context of an issue all in the same place, we needed messages on an issue to be threaded. I designed the thread as a scrollable fly-out panel to avoid needing to retrofit it into every other tool.</p>
+  </div>
+  <img src="/assets/img/uploads/comms/threads-closeup.jpg">
+</div>
+
+<section class="animate-on-scroll">
+  <p id="page-anchor-03" class="subhead">03. The Customer Tool</p>
+  <p class="subhead">03. The Customer Tool</p>
+  <h3>Part 2: A simple customer UI</h3>
+  <h6>Reusing the thread model</h6>
+  <p>Although I explored other ways of displaying a thread to customers, we found that the fly-out model worked well enough for the MVP and cut down on development time. Customers get a main list of issues, each with a thread attached to them.</p>
+</section>
+
+<img class="animate-on-scroll" src="/assets/img/uploads/comms/customer-ui.jpg">
+
+<!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FqRJegocCdMM74Yv9bUDTyh%2FStructured-QA-Returns-For-Eng-Copy%3Fnode-id%3D1887%253A680" allowfullscreen></iframe> -->
+
+<div class="spacer-2x"></div>
+
+<div class="two-column-grid animate-on-scroll">
+  <img src="/assets/img/uploads/comms/boundless-petition.jpg">
+  <div>
+    <h6>Building off of an existing layout</h6>
+    <p>Other parts of our info gathering experience use a similar 3-column layout – a great starting point for building a quick new info-gathing tool. This is an example of it being used in a pre-pay eligibility checking flow.</p>
+  </div>
+</div>
+
+<section class="animate-on-scroll">
+  <h6>Batching communications</h6>
+  <p>We couldn't send a customer's answers back to the ops team piecemeal as they answered them (imagine getting bits and pieces of answers over the course of a few days), so we based it on a batching system where everything is sent back to us when it's finished.</p>
+</section>
+
+<section class="animate-on-scroll">
+  <p id="page-anchor-04" class="subhead">04. Project Results</p>
+  <p class="subhead">04. Project Results</p>
+  <h5>A smashing success</h5>
+  <p>After about two months of collecting data post-release, I was excited to see some concrete quantitative proof that our tool had helped. Our primary metric for success was how long it took to get the customer through the whole QA process. Here's some fun stats from a pool of 485 customers:</p>
+</section>
+
+<figure class="animate-on-scroll">
+  <img src="/assets/img/uploads/comms/sqar-graph.jpg">
+  <figcaption>Before & after the product release</figcaption>
+</figure>
+
+<!-- <u class="check-before">25% of customers finished in the same week their QA started</u>, compared to 12.8% previously – a nearly 100% lift. -->
+
+<section class="success-module animate-on-scroll">
+  <p class="check-before"><u>2x lift in same-week completions</u></p>
+  <p>25% of customers finished in the same week their QA started, compared to 12.8% previously.</p>
+</section>
+
+<section class="success-module animate-on-scroll">
+  <p class="check-before"><u>50.1% of all customers finished after 1 week</u></p>
+  <p>Compared to 29.7% of customers before – a 1.7x lift.</p>
+</section>
+
+<section class="success-module animate-on-scroll">
+  <p class="check-before"><u>30% reduction in customers taking 4 weeks or longer</u></p>
+  <p>Only 9.6% of customers took 4 weeks or longer, compared to 39% before.</p>
+</section>
+
+<section class="success-module animate-on-scroll">
+  <p class="check-before"><u>CS team delight</u></p>
+  <p>It wasn't a high bar to clear from the previous email-driven experience – but the CS team loves their new tool.</p>
+</section>
+
+
+
+<section class="animate-on-scroll">
+  <p id="page-anchor-05" class="subhead">05. Details to Come</p>
+  <p class="subhead">05. Details to Come</p>
+  <h3>Thanks for reading so far – I'm working on adding more details to this project.</h3>
+  <p>Consider this a case study MVP. I'll add more detailed designs and the process once I get the chance.</p>
+</section>
+
+<!-- <div class="full-viewwidth animate-on-scroll">
+  <div class="max-width-section">
+    <div class="img-caption">
+      <img src="/assets/img/uploads/comms/email-stat.jpg">
+      <div>
+        <h5>Stuffed email inboxes aren't scalable</h5>
+        <p>Growing inbox backlogs means more tedious work for CS folks and slower response times for customers.</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- <section class="animate-on-scroll">
+  <p id="page-anchor-02" class="subhead">02. The Challenge</p>
+  <p class="subhead">02. The Challenge</p>
+
+  <h3>Our MVP needed to establish a scalable messaging system in our existing app, with the QA Return process as our test case.</h3>
+
+  <p>Early on, we aligned with our stakeholders on a set of business goals:</p>
+</section> -->
+
+<!-- <div class="full-viewwidth animate-on-scroll">
+  <div class="callout-list">
+    <div class="callout-list-item">
+      <p class="number">01</p>
+      <h5>Reduce phase length</h5>
+      <p>Reduce the amount of time a customer spends in Quality Assurance returns phase, thereby improving our CX.</p>
+    </div>
+    <div class="callout-list-item">
+      <p class="number">02</p>
+      <h5>Reduce manual effort</h5>
+      <p>Reduce the time and manual effort needed by CS to handle QA Return issues, thereby improving our per-customer unit economics.</p>
+    </div>
+    <div class="callout-list-item">
+      <p class="number">03</p>
+      <h5>Reduce back & forths</h5>
+      <p>Reduce the number of back & forths with a customer during the QA return, thereby improving both CX and unit economics.</p>
+    </div>
+  </div>
+</div>
+
+<div class="full-viewwidth green-bg animate-on-scroll">
+  <figure class="crossfade">
+    <img class="bottom" src="/assets/img/uploads/comms/main-admin.png">
+    <img class="top" src="/assets/img/uploads/comms/main-admin-wireframe.jpg">
+    <figcaption><i>[Fig. 1]</i> Admin view of our in-app comms system.</figcaption>
+  </figure>
+</div> -->
+
+<!-- <div class="full-viewwidth green-bg scrolling-wrapper">
+  <figure class="card">
+    <img class="bottom" src="/assets/img/uploads/comms/main-admin.png">
+    <figcaption><i>[Fig. 1]</i> Admin view of our in-app comms system.</figcaption>
+  </figure>
+  <figure class="card">
+    <img src="/assets/img/uploads/comms/threaded-comms.png">
+    <figcaption><i>[Fig. 1]</i> Admin view of our in-app comms system.</figcaption>
+  </figure>
+  <figure class="card">
+    <img src="/assets/img/uploads/comms/paper-mvp.jpg">
+    <figcaption><i>[Fig. 1]</i> Admin view of our in-app comms system.</figcaption>
+  </figure>
+</div> -->
+
+<!-- <section class="animate-on-scroll"> -->
+  <!-- <p id="page-anchor-03" class="subhead">03. The Product</p>
+  <p class="subhead">03. The Product</p>
+
+  <h3>I led the design of the customer and admin experiences. Here's how the new tools & process work.</h3>
+</section>
+
+
+<div class="full-viewwidth">
+  <div class="max-width-section animate-on-scroll" style="margin-top:0px;">
+    <div class="img-caption">
+      <img src="/assets/img/uploads/comms/email-stat.jpg">
+      <div>
+        <h5>Issue creation</h5>
+        <p>A CS team member reviews a customer's entire application, and uses the QA Return tool to create a running list of issues. They use a third-party tool called Typinator to quickly add pre-written messages.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-width-section animate-on-scroll">
+    <div class="img-caption">
+      <img src="/assets/img/uploads/comms/email-stat.jpg">
+      <div>
+        <h5>Send to customer</h5>
+        <p>The list of questions and issues is sent over to the customer, who receives a no-reply email that directs them to the issue interface in their dashboard.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-width-section animate-on-scroll">
+    <div class="img-caption">
+      <img src="/assets/img/uploads/comms/email-stat.jpg">
+      <div>
+        <h5>Collecting customer replies</h5>
+        <p>The customer is required to reply to every issue, at which point they'll be prompted to wrap up and send everything back to us.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-width-section animate-on-scroll">
+    <div class="img-caption">
+      <img src="/assets/img/uploads/comms/email-stat.jpg">
+      <div>
+        <h5>Tracking and resolving issues</h5>
+        <p>The CS team member is informed of the new customer response–they look over the responses, make any changes necessary, and add new replies if needed. If everything was properly addressed, they finish up in the tool and send it on to the next phase of the process.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<section class="animate-on-scroll">
+  <p id="page-anchor-04" class="subhead">04. Interaction Details</p>
+  <p class="subhead">04. Interaction Details</p>
+
+  <h3>The system was designed to be extendable to future tools, and was a chance to start from scratch.</h3>
+  <p>A significant part of the project was establishing the MVP of a new admin tool, unconstrained by the limitations of tools we'd made in the past. I aimed for a light touch on navigation, since we didn't have a clear idea of how the tool would evolve in the future, and focused mostly on the concept of providing structure to unstructured data.</p>
+</section>
+<div class="spacer-1x"></div>
+
+<div class="full-viewwidth">
+  <div class="img-plus-text">
+    <figure>
+      <img src="/assets/img/uploads/comms/paper-mvp.jpg">
+      <figcaption><i>[Fig. 1]</i> Admin view of our in-app comms system.</figcaption>
+    </figure>
+
+    <div class="description">
+      <h4>Rapid testing with real customers</h4>
+      <p>The CS team ran a rough, rapid test of the product with 15 sets of customers. It consisted of a Google doc that CS & customers communicated through. We used the experiment and feedback from customers to glean a few helpful insights:</p>
+      <ol>
+        <li>A single QA issue most commonly spans multiple data points; for example a questionnaire answer + a document.</li>
+        <li>Issues require status: knowing if & how something has been addressed is table stakes.</li>
+        <li>Many common issues with specific data points ought to be addressed at earlier points in our process.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+
+<h5>Information input</h5>
+<p>In the sketch & mid-fidelity phases, I explored many variations of how we could structure data coming into the system. I used my research sessions with CS folks to inform information input variants that could differentiate between green card sponsor and beneficiary, the type of question being asked, linking out to specific parts of the Boundless dashboard, etc. However, we decided that the MVP in its simplest form could function well with only the free-form text entry paired with our canned response system. [add variant sketches]</p>
+
+<div class="full-viewwidth" >
+  <figure>
+    <img src="/assets/img/uploads/comms/main-admin.png">
+    <figcaption><i>[Fig. 1]</i> Admin view of our in-app comms system.</figcaption>
+  </figure>
+</div>
+
+<p id="page-anchor-05" class="subhead">05. Project Results</p>
+<p class="subhead">05. Project Results</p>
+<h5>A smashing success</h5>
+
+<p>After about two months of collecting data post-release, I was excited to see some concrete quantitative proof that our tool had helped. Our primary metric for success was how long it took to get the customer through the whole QA process. Here's some fun stats from a pool of 485 customers:</p>
+
+<div class="full-viewwidth" >
+  <figure>
+    <img src="/assets/img/uploads/comms/sqar-graph.jpg">
+    <figcaption><i>[Fig. 1]</i> Admin view of our in-app comms system.</figcaption>
+  </figure>
+</div> -->
+<!-- <u class="check-before">25% of customers finished in the same week their QA started</u>, compared to 12.8% previously – a nearly 100% lift. -->
+
+<!-- <div class="success-module">
+  <p class="check-before"><u>2x lift in same-week completions</u></p>
+  25% of customers finished in the same week their QA started, compared to 12.8% previously.
+</div>
+
+
+<div class="success-module">
+  <p class="check-before"><u>50.1% of all customers finished after 1 week</u></p>
+  Compared to 29.7% of customers before – a 1.7x lift.
+</div>
+
+<div class="success-module">
+  <p class="check-before"><u>30% reduction in customers taking 4 weeks or longer</u></p>
+  Only 9.6% of customers took 4 weeks or longer, compared to 39% before.
+</div>
+
+<div class="success-module">
+  <p class="check-before"><u>CS team delight</u></p>
+  It wasn't a high bar to clear from the previous email-driven experience – but the CS team loves their new tool.
+</div>
+
+<div class="spacer-1x"></div>
+
+
+<h5>Scaling the system</h5>
+
+<p>The groundwork we laid with the MVP has become the central aspect of a host of new projects our team is working on. We're currently exploring how to build on the MVP to accommodate many different customer touch points in our service. I was also able to run some post-release research sessions to learn about how the tool</p> -->
+
+
+
+
+
+
+<!-- <div class="full-viewwidth" >
+  <div class="img-plus-text">
+    <figure>
+      <img src="/assets/img/uploads/comms/main-admin.png">
+      <figcaption><i>[Fig. 1]</i> Admin view of our in-app comms system.</figcaption>
+    </figure>
+
+    <div class="description">
+      <h4>The thread panel</h4>
+      <p>Clicking Open Thread toggles a fly-out thread panel on the right side of the screen. It's important for our internal team to be able to track customer communications on specific issues, because they use that information to update their application.</p>
+
+      <p>I chose to design the thread panel as a fly-out overlay for a few reasons:</p>
+      <ol>
+        <li>The pattern does not demand a permanent place in the interface structure, thereby allowing it to be easily included in future tools</li>
+        <li>The pattern could be replicated on the customer-facing interface, which we decided early on as a requirement due to time constraints.</li>
+        <li>The pattern follows a model of progressive disclosure; thread details are often messy and don't need to be surfaced in the default interface view, but are still one click away.</li>
+      </ol>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+<!-- <div class="content-two-column">
+  <p class="has-dropcap">While this project was specifically about bringing the QA returns process into our web experience, the other major goal was creating a UI pattern that can then be extended to other parts of the process.<br><br>We also had the chance to build a new admin UI system from the ground up, again with the goal of making it extensible when more tools are eventually added.</p>
+
+</div> -->
+
+<!-- <div class="reach-out-module">
+<h5>🔒 Please <a data-micromodal-trigger="open-to-work">reach out</a> for more project details.</h5>
+</div> -->
+
+<!-- <div class="spacer"></div>
+<a href="/">Back to Work</a> -->

@@ -1,35 +1,47 @@
-<div class="grid-2-column">
+
 
   {% for page in site.pages %}
   {% if page.url contains "/work"%}
-  <a href="{{page.url}}" id="boundless">
+  <a href="{{page.url}}" id="boundless" >
 
-    <div class="portfolio-grid-item">
+    <div class="two-column-grid slideUp hoverScale project-grid" style="margin-bottom: 48px;" onmouseover="imgHover(this)" onmouseout="imgHoverOut()">
+      <img loading="lazy" alt="{{page.title}} thumbnail" src="{{page.thumb}}" class="project-thumbnail">
+      <div class="project-grid-description">
+        <!-- <p class="subhead">Boundless Immigration</p> -->
+        <h5>{{page.title}}</h5>
+        <p>{{page.description}}</p>
+        <!-- <div class="spacer-1x"></div>
+        <p class="subhead">{{page.date}} • {{page.role}}</p> -->
+
+      </div>
+    </div>
+
+    <!-- <div class="portfolio-grid-item">
       <div class="img-wrapper-portfolio">
-        <img onmouseover="imgHover()" onmouseout="imgHoverOut()" loading="lazy" alt="{{page.title}} thumbnail" src="{{page.thumb}}" class="project-hover">
+        <img onmouseover="imgHover()" onmouseout="imgHoverOut()" loading="lazy" alt="{{page.title}} thumbnail" src="{{page.thumb}}" class="project-thumbnail">
       </div>
       <h5>{{page.title}}</h5>
       <p>{{page.description}}</p>
 
-    </div>
+    </div> -->
   </a>
   {% endif %}
   {% endfor %}
 
-</div>
+<div class="spacer-2x"></div>
+<p class="subhead text-center animate-on-scroll">OTHER STUFF</p>
 
-
-<div class="grid-3-column">
+<div class="three-column-grid project-grid-small animate-on-scroll">
 
   {% for page in site.pages %}
   {% if page.url contains "/play"%}
   <a href="{{page.url}}" id="boundless">
 
-    <div class="portfolio-grid-item">
+    <div class="portfolio-grid-item hoverScale" onmouseover="imgHover(this)" onmouseout="imgHoverOut()">
       <div class="img-wrapper-portfolio">
-        <img onmouseover="imgHover()" onmouseout="imgHoverOut()" loading="lazy" alt="{{page.title}} thumbnail" class="shorter-images project-hover" src="{{page.thumb}}">
+        <img alt="{{page.title}} thumbnail" class="shorter-images project-thumbnail" src="{{page.thumb}}">
       </div>
-      <h5>{{page.title}}</h5>
+      <h6>{{page.title}}</h6>
       <p>{{page.description}}</p>
 
     </div>
@@ -37,17 +49,17 @@
   {% endif %}
   {% endfor %}
 
-  <a href="https://pinned.netlify.app/">
+  <!-- <a href="https://pinned.netlify.app/">
 
-    <div class="portfolio-grid-item">
+    <div class="portfolio-grid-item hoverScale" onmouseover="imgHover(this)" onmouseout="imgHoverOut()">
       <div class="img-wrapper-portfolio">
-        <img onmouseover="imgHover()" onmouseout="imgHoverOut()" loading="lazy" alt="{{page.title}} thumbnail" class="shorter-images project-hover" src="/assets/img/uploads/pinned/thumb.jpg">
+        <img onmouseover="imgHover()" onmouseout="imgHoverOut()" loading="lazy" alt="{{page.title}} thumbnail" class="shorter-images project-thumbnail" src="/assets/img/uploads/pinned/thumb.jpg">
       </div>
-      <h5>PINNED ✳</h5>
+      <h6>PINNED ✳</h6>
       <p>Fave digital stuff</p>
 
     </div>
-  </a>
+  </a> -->
 
 </div>
 

@@ -3,7 +3,7 @@
 <h3>As part of a successful green card application, <a href="https://www.boundless.com/">Boundless Immigration</a> needs to collect dozens of difficult-to-obtain documents from customers.</h3>
 <h5>The process can take some customers weeks or months to complete. Moreover, a Boundless team member needs to look at every single uploaded document. We had a backlog of <span style="color:$red">20,000 documents</span><sup>1</sup> that weren’t budging.</h5>
 
-<div class="full-width-section">
+<div class="max-width-section">
   <div class="img-caption">
     <img src="/assets/img/uploads/rollingdocreview/burndown.png" />
     <div>

@@ -1,18 +1,23 @@
 // LAYOUTS
-$content-max-width: 1200px;
-$content-narrow-max-width: 660px;
-$vertical-rhythm: 50px;
+//CONTENT WIDTHS
+$content-wide: 1000px;
+$content-standard: 650px;
+$content-full: 100vw;
+
+$vertical-rhythm: 48px;
 
 //MISC STYING
 $border-radius-medium: 6px;
 $border-radius-large: 10px;
 $border-radius-none: 0px;
 $border-radius-xlarge: 35px;
+$border-radius-infinite: 10000px;
 
 // MAIN COLORS
 $gray: #3c3c3c;
 $blue: #2890ff;
 $green: #50FA7F;
+$light-green: #9EB2AB;
 $orange: #ffa61a;
 $off-white: #E9EDEA;
 $yellow: #FFE928;
@@ -21,6 +26,8 @@ $pink: #E5AFA7;
 $active-link: $pink;
 $bg-color: #161618;
 $bg-gray: #222225;
+$transp-gray: #282e3978;
+$transp-gray-lighter: #282e3929;
 
 
 // TYPE COLORS
@@ -40,3 +47,14 @@ $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1240px;
 $screen-xl-min: 1920px;
+
+// SIZING
+$base-unit: 4px;
+// $1x: $base-unit;
+// $2x: 2 * $base-unit;
+// $3x: 3 * $base-unit;
+// $4x: 4 * $base-unit;
+// $5x: 5 * $base-unit;
+// $6x: 6 * $base-unit;
+// $7x: 7 * $base-unit;
+// $8x: 8 * $base-unit;

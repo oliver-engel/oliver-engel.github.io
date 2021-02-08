@@ -3,6 +3,33 @@
 
     <p class="name" onclick="location.href='/'">Oliver Engel &nbsp; &nbsp;</p>
 
+    {% if page.internalnav %}
+
+    <div class="internal-nav">
+      <!-- <span class="global-title">{{page.title}} /</span> -->
+      <!-- <span class="inactive" id="section-title">Project Sections</span> -->
+
+
+
+      <p class="internal-nav-toggle" href="#" id="section-title">Project Sections</p>
+
+
+      <ul class="custom-select" id="internal-nav-select">
+        <!-- <li href="#" id="section-title"></li> -->
+      </ul>
+
+    </div>
+
+      <!-- <span class="custom-select" style="width:200px;">
+        <select id="internal-nav-select">
+          <option href="#" id="section-title">Project Sections</option>
+        </select>
+      </span> -->
+
+
+
+    {% else %}
+
     <div class="links">
       <a href="/" {% if page.url == "/" or page.url contains "/work" or page.url contains "/play" %}class="active" {% endif %}>
         Work</a>
@@ -13,6 +40,7 @@
       <a href="/info" {% if page.url contains "/info"%}class="active" {% endif %}>
         Info</a>
     </div>
+    {% endif %}
 
     <!-- <a href="" class="subhead updated-last" style="margin-bottom: 0px;">OPEN TO NEW ROLES</a> -->
     <!-- <button class="remove-on-mobile" data-micromodal-trigger="open-to-work">WANNA SAY HEY?</button> -->
@@ -31,7 +59,7 @@
         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
       </header>
       <main class="modal__content" id="modal-1-content">
-          <p style="margin-bottom:0px">Shoot an email on over to oliverengel6@gmail.com. Currently looking for a developer to partner with on some cool side projects.
+          <p style="margin-bottom:0px">Shoot an email on over to oliverengel6@gmail.com. I'm currently on the hunt for my next design challenge – startups preferred.
           </p>
       </main>
 

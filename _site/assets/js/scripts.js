@@ -1,19 +1,22 @@
-function imgHover(){
+function imgHover(obj){
   console.log("testing");
-  var imgs = document.getElementsByClassName("project-hover");
+  var imgs = document.getElementsByClassName("hoverScale");
+
+
 
   for(var i=0; i<imgs.length; i++){
-    imgs[i].style.filter = "grayscale(100%)";
-    console.log("in here");
+    if(obj != imgs[i]){
+      imgs[i].style.opacity = "0.5";
+    }
   }
 }
 
 function imgHoverOut(){
   console.log("testing");
-  var imgsOut = document.getElementsByClassName("project-hover");
+  var imgsOut = document.getElementsByClassName("hoverScale");
 
   for(var i=0; i<imgsOut.length; i++){
-    imgsOut[i].style.filter = "grayscale(0%)";
+    imgsOut[i].style.opacity = "1";
     console.log("in here");
   }
 }
@@ -28,11 +31,7 @@ function action() {
    }
 }
 
-jQuery(document).ready(function($) {
 
-  var rellax = new Rellax('.rellax');
-
-});
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -114,15 +113,16 @@ function checkKey(e) {
     }
 }
 
-//PREVENT WHACKY FOOTER SHIT
+// //PREVENT WHACKY FOOTER SHIT
+//
+// $(window).scroll(function() {
+//    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+//      $("footer").css("visibility", "visible");
+//      $("footer").fadeIn();
+//    }
+// });
 
-$(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-     $("footer").css("visibility", "visible");
-     $("footer").fadeIn();
-   }
-});
-
+//ANIMATED HEADER
 if (document.querySelector('.animated-header') !== null) {
   // Wrap every letter in a span
   var textWrapper = document.querySelector('.animated-header');
@@ -146,13 +146,96 @@ if (document.querySelector('.animated-header') !== null) {
         });
 }
 
-//Smooth scrolling hash links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+//----INTERNAL NAV----//
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+//Changing internal nav based on hash links
+var anchors = document.querySelectorAll('[id^="page-anchor"]');
+
+//Get anchors into a usable state
+var anchor_elements = $.map(anchors, function(el){
+  return $(el).get();
+});
+
+
+var sectionTitle = document.querySelector('#section-title');
+
+//Fired by the IntersectionObserver
+function handler(entries, observer) {
+  for (entry of entries) {
+    if (entry.isIntersecting){
+      //Get the text content of the hash link
+      var hashContent =  entry.target.innerHTML;
+      sectionTitle.innerHTML = hashContent;
+    }
+  }
+}
+
+/* By default, invokes the handler whenever:
+   1. Any part of the target enters the viewport
+   2. The last part of the target leaves the viewport */
+
+
+var navList = document.getElementById("internal-nav-select");
+
+
+for(i=0; i < anchor_elements.length; i++){
+  let observer = new IntersectionObserver(handler);
+  observer.observe(anchor_elements[i]);
+
+  //Creating li for all nav sections and appending
+  var section = document.createElement("li");
+  var link = document.createElement("a");
+  var sectionText = section.text = anchor_elements[i].innerHTML;
+  var hashLink = anchor_elements[i].id;
+
+  link.setAttribute('href', '#' + hashLink);
+
+  section.appendChild(document.createTextNode(sectionText));
+  link.appendChild(section);
+  navList.appendChild(link);
+
+}
+
+//Handling toggles
+$(document).ready(function(){
+    $('.internal-nav-toggle').click(function(event){
+        event.stopPropagation();
+         $(".custom-select").slideToggle("fast");
+    });
+    $(".custom-select").on("click", function (event) {
+        event.stopPropagation();
     });
 });
+
+$(document).on("click", function () {
+    $(".custom-select").slideUp("fast");
+});
+
+//----END INTERNAL NAV----//
+
+
+//Fadescroll
+$(window).scroll(function(){
+    $(".fade-scroll").css("opacity", 1 - $(window).scrollTop() / 550);
+  });
+
+
+
+//----ANIMATE ON SCROLL----//
+
+//Get all elements with AOS class
+var animateOnScroll = document.querySelectorAll('.animate-on-scroll');
+
+//Get into a usable state
+var aosElements = $.map(animateOnScroll, function(el){
+  return $(el).get();
+});
+console.log(aosElements.length);
+
+//Iterate over and add data elements
+for(var i=0; i<aosElements.length; i++){
+  aosElements[i].setAttribute('data-aos', 'fade-up');
+  aosElements[i].setAttribute('data-aos-delay', '250');
+}
+
+//----END ANIMATE ON SCROLL----//

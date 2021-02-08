@@ -12,6 +12,7 @@ $monospace: "Fakt Mono";
 
 *{
   font-display: swap;
+  // hyphens: auto;
 
   @media (max-width: $screen-md-min){
     font-size: 98%;
@@ -33,17 +34,22 @@ h5,
 h6 {
   color:$off-white;
   margin-top: 0;
-  // font-family: $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   margin-bottom:.2em;
+
+  a{
+    color: $blue;
+  }
+  a:hover{
+    opacity:.65;
+  }
 }
 
 h1 {
-
+  @include header;
+  font-weight: $header-font-weight;
   color:white;
   margin-top: 0;
   margin-bottom:20px;
-  font-family: $header-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  font-weight: $header-font-weight;
   user-select: none;
   font-size: 4.209em;
   letter-spacing: -.02em;
@@ -51,7 +57,7 @@ h1 {
 }
 
 h2 {
-  font-family: $header-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  @include header;
   font-weight: $header-font-weight !important;
 
   font-size: 3.157em;
@@ -64,11 +70,12 @@ h2 {
 }
 
 h3 {
-  font-family: $header-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  @include header;
   font-weight: $header-font-weight !important;
 
-  font-size: 2.369em;
+  font-size: 2em;
   line-height: 1.3em;
+  padding-bottom: $vertical-rhythm/2;
 
   @media (max-width: $screen-md-min){
     font-size: 1.777em;
@@ -86,12 +93,28 @@ h5 {
   font-weight: $body-font-weight;
 }
 
-p {
-  font-family: $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  color:$text-gray;
-  margin-top: 0px;
+h6{
   font-size:1em;
   line-height: 1.8em;
+  font-weight:400;
+  margin-bottom: 0em;
+}
+
+p {
+  @include sans;
+  color:$text-gray;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size:.9em;
+  line-height: 1.8em;
+}
+
+p + p {
+  margin-top: $vertical-rhythm/3;
+}
+
+h6 + p{
+  margin-bottom: $vertical-rhythm/2;
 }
 
 p {
@@ -120,10 +143,10 @@ a{
 }
 
 sup{
-  font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  @include monospace;
   font-size:.65em;
   color:$text-gray;
-  padding-left:4px;
+
 }
 
 b {
@@ -136,19 +159,25 @@ p > strong{
 
 a{
   color: $text-dark-gray;
+}
 
+ol{
+  padding-left: 1.5em;
+  color:inherit;
 }
 
 .subhead{
-  font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  color: $text-dark-gray;
+  // font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  @include monospace;
+  color: $off-white;
   text-transform: uppercase;
-  font-size: .75em;
+  font-size: .7em;
   letter-spacing: .05em;
+  margin-bottom: $vertical-rhythm / 2;
 }
 
 button{
-  font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  @include monospace;
   color: $text-dark-gray;
   text-transform: uppercase;
   font-size: .75em;
@@ -179,10 +208,8 @@ button{
 }
 
 .has-dropcap:first-letter{
-  // initial-letter: 2;
-  font-family: Georgia, serif !important;
+  @include serif;
   font-weight: $header-font-weight !important;
-  // font-style: italic;
   font-size:3.8em;
   float:left;
   margin: 0.2em 0.1em 0.1em 0;
@@ -191,6 +218,7 @@ button{
 .term{
   cursor: pointer;
   color: $yellow;
+  word-break: break-all;
 
 
   &::after{
@@ -198,7 +226,42 @@ button{
     width:24px;
     height:24px;
     background: url('/assets/img/icons/info.svg') CENTER CENTER NO-REPEAT;
-    // padding-left: 4px;
+    padding-left: 4px;
 
+  }
+}
+
+li{
+  padding-bottom:10px;
+  color:inherit;
+}
+
+u{
+  text-decoration: none;
+  color: $green;
+  border-bottom: 1px solid $green;
+  padding-bottom: 5px;
+}
+
+figcaption {
+  font-size: 0.8em;
+  // padding-bottom: $vertical-rhythm/3;
+  @include serif;
+  font-style: italic;
+  padding-top: $vertical-rhythm/3;
+  text-align: center;
+  color: $text-gray;
+
+  i {
+    background-color: #2b303aab;
+    border-radius: $border-radius-infinite;
+    padding: 5px 12px;
+    margin-right: 5px;
+    font-style: normal;
+  }
+
+  a{
+    text-decoration: underline !important;
+    // border-bottom: 1px solid red;
   }
 }

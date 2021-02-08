@@ -1,6 +1,5 @@
 footer {
-  @include standard-content-width;
-  visibility: hidden;
+  @include wide-content-width;
   padding-top: 150px;
   padding-bottom: 50px;
   display: grid;

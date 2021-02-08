@@ -25,7 +25,7 @@ team: 5 Engineers, 1 PM, 2 Biz Stakeholders
 
 
 
-<div class="full-width-section">
+<div class="max-width-section">
   <div class="img-caption">
     <img src="/assets/img/uploads/rollingdocreview/burndown.png">
     <div>

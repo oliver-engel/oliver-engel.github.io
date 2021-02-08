@@ -47,6 +47,14 @@
   // justify-content: center;
   align-items: center;
 
+  // p{
+  //   padding-bottom: $vertical-rhythm;
+  // }
+
+  p + p {
+    margin-bottom: $vertical-rhythm/2;
+  }
+
   img + em {
     // font-size: 20em;
     // color:red;
@@ -137,6 +145,7 @@
 
 
 .post-image{
+  margin-top: $vertical-rhythm;
   height:60vh;
   max-height:100%;
   margin-left: calc(-50vw + 50%);
@@ -181,6 +190,7 @@
 .code-type{
   // text-align: right;
   position: absolute;
+  z-index: -5;
 
 
   margin-bottom: 5px !important;

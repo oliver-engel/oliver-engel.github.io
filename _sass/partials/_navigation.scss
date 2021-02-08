@@ -1,4 +1,4 @@
-/* NAVIGATION */
+//----GLOBAL NAV STYLING----//
 .nav {
   z-index: 999999;
   position: fixed;
@@ -7,39 +7,27 @@
   width: 100%;
   background-color: $bg-color;
   transition: all 0.3s;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .nav-container {
-  width: $content-max-width - 20;
-  max-width:100%;
-  margin: auto;
+  @include wide-content-width;
   -ms-flex-pack: justify;
   -ms-flex-wrap: wrap;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
-    .subhead{
-      font-size:.75em;
-    }
-
-
-
-}
-
-.nav .nav-container {
-  display: flex;
-  height: 100px;
-  align-items: center;
-  -ms-flex-align: center;
+  height: $vertical-rhythm * 2;
 
   @media (max-width: $screen-md-min){
     display:block !important;
     text-align: center;
-    padding-top:20px;
+    padding-top:$vertical-rhythm / 4;
   }
 }
+
+
 
 .name {
   cursor: pointer;
@@ -90,4 +78,119 @@
       text-decoration: none;
       transition: 0.3s;
     }
+
+
 }
+
+//----INTERNAL PROJECT NAV STYLING----//
+
+.internal-nav{
+  user-select: none;
+  text-decoration: none;
+  margin-bottom: 0px;
+  font-size: .8em;
+  font-weight: 400;
+  transition: 0.3s;
+
+  .global-title{
+    opacity:.5;
+  }
+}
+
+.internal-nav-toggle{
+  margin-bottom:0px;
+}
+
+#section-title{
+  transition: 0.2s all;
+  color:white;
+  cursor: pointer;
+
+  &::after{
+    transition: 0.2s all;
+    content: url('http://i.stack.imgur.com/Icd9n.png');
+    width:12px;
+    height:12px;
+    background: url('/assets/img/icons/chevron-down.svg') CENTER CENTER NO-REPEAT;
+    padding-left: 4px;
+  }
+
+  &:hover:after{
+    transition: 0.2s all;
+    padding-bottom:4px;
+  }
+}
+
+.custom-select:hover li {
+  opacity: 0.5;
+  transition: 0.3s all;
+}
+
+.custom-select:hover li:hover {
+  opacity: 1;
+}
+
+.custom-select{
+  background: #282E3E !important;
+  padding-left:0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor:pointer;
+  color:white;
+  background:none;
+  border: 0px;
+  box-shadow: none;
+  list-style:none;
+  padding:$vertical-rhythm/2;
+  display:none;
+  border-radius: $border-radius-medium;
+
+  a{
+    color:white;
+  }
+
+  li{
+    font-size: .8em;
+    list-style:none;
+    line-height: 2em;
+    padding-bottom: 0px !important;
+  }
+}
+
+.nav-pill {
+  z-index: -1;
+  font-size: 1em;
+  background-color: white;
+  color: $bg-color;
+  border-radius: $border-radius-infinite;
+  padding: 5px 15px;
+  position: fixed;
+  bottom: $vertical-rhythm;
+  right: $vertical-rhythm;
+}
+
+
+// .project-nav {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   grid-column-gap: 25px;
+//   @include standard-content-width;
+//   font-size: 0.8em;
+//   padding-bottom: $vertical-rhythm;
+//   @media(max-width: $screen-md-min) {
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-row-gap: 50px;
+//   }
+// }
+//
+// .project-smaller-nav {
+//   display: grid;
+//   grid-template-columns: repeat(5, 1fr);
+//   grid-column-gap: 25px;
+//   @include standard-content-width;
+//   font-size: 0.8em;
+//   @media (max-width: $screen-md-min) {
+//     display: none;
+//   }
+// }

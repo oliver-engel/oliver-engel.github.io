@@ -1,6 +1,7 @@
 ---
 title: Pitch.ai
-permalink: work/pitch
+permalink: play/pitch
+published: false
 layout: project
 section: home
 thumb: "/assets/img/uploads/pitch/thumb.png"
