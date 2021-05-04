@@ -420,6 +420,21 @@
   }
 }
 
+
+.themegray{
+  background-color: #262729;
+  * {
+    color:white;
+  }
+}
+
+.themelightpurple{
+  background-color: #7a7998;
+  * {
+    color:white;
+  }
+}
+
 .themesand{
   // background-color: #F3A672;
 
@@ -449,7 +464,7 @@
 }
 
 .project-header-content {
-  @include wide-content-width;
+  @include medium-content-width;
 
   a{
     border-bottom: 1px solid white;
@@ -464,8 +479,13 @@
   }
 
   p{
-    font-size:1.1em;
+    font-size:1em;
     padding-top: $vertical-rhythm/2;
+  }
+
+  h2{
+    font-size: 2.157em;
+    margin-bottom:0.5em;
   }
 }
 
@@ -530,6 +550,7 @@
 
 .project-date{
   @include monospace;
+  font-size:.9em;
 }
 
 .image-group{

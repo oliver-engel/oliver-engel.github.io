@@ -30,6 +30,12 @@
   max-width: 100%;
 }
 
+@mixin medium-content-width{
+  width:850px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 @mixin wide-content-width{
   width:$content-wide;
   margin: 0 auto;
