@@ -1,7 +1,7 @@
 ---
 title: Tag Selection Sidebar
-description: Interaction design for a complex tag selector
 permalink: work/tagsidebar
+description: Interaction design for a complex tag selector
 layout: project
 section: home
 hero: "/assets/img/projects/tagsidebar/hero.jpg"
@@ -10,3 +10,4 @@ tagname: Product Design
 org: Samsara
 year: 2021
 ---
+

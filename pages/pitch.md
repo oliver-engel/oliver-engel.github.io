@@ -1,17 +1,15 @@
 ---
 title: Pitch.ai
-description: Lean UX for an AI web app
 permalink: work/pinned
+published: false
+description: Lean UX for an AI web app
 layout: project
 section: home
 hero: "/assets/img/projects/pitch/thumb.png"
 tag: productdesign
 tagname: Product Design
-published: false
-
 org: MHCI+D
 year: 2019
-
 ---
 
 #### Pitch.ai is a public speaking trainer that lets a user record themselves practicing, and in turn receive a set of actionable tips, data visualizations, and training course recommendations.

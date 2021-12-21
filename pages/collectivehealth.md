@@ -1,7 +1,7 @@
 ---
 title: Mobile Design Systems
-description: Extending mobile design systems – work from my first tech internship
 permalink: work/collective-health
+description: Extending mobile design systems – work from my first tech internship
 layout: project
 section: home
 hero: "/assets/img/projects/collectivehealth/hero.jpg"

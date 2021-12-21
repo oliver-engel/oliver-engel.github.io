@@ -10,8 +10,6 @@ thumb: "/assets/img/blog/graphicdesign/thumb.jpg"
 hero: "/assets/img/blog/graphicdesign/hero.jpg"
 ---
 
-
-
 I originally wrote this beginner's guide to graphic design for my cousin, who's recently shown interest in the field. But I thought it might also be helpful to others looking to get into graphic design, so I'm sharing a version of it here. I'm imagining this as a living document – so it's written in Notion to keep it easily maintainable.
 
 

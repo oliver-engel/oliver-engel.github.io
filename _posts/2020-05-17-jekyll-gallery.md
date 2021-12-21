@@ -2,13 +2,13 @@
 title: Dead Simple Image Gallery with Jekyll
 date: 2020-05-17 12:00:00 Z
 permalink: "/words/jekyll-image-gallery"
+published: false
 categories:
 - misc
 layout: post
 description: Using Liquid tags and a bit of Javascript.
 thumb: "/assets/img/blog/jekyllgallery/thumb.jpg"
 hero: "/assets/img/blog/jekyllgallery/hero.jpg"
-published: false
 ---
 
 #### Background

@@ -1,7 +1,8 @@
 ---
 title: Safety Scoring
-description: I led a project to define a long-term vision for how drivers are scored in the Samsara safety platform.
 permalink: work/safety-score
+description: I led a project to define a long-term vision for how drivers are scored
+  in the Samsara safety platform.
 layout: project
 section: home
 hero: "/assets/img/projects/safetyscore/hero.jpg"
@@ -11,3 +12,4 @@ tagname: Product Design
 org: Samsara
 year: 2021
 ---
+

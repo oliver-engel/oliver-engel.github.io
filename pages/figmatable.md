@@ -1,7 +1,7 @@
 ---
 title: Figma Auto-Layout Table Kit
-description: A free, finely-crafted UI kit for Figma Community
 permalink: work/figmatable
+description: A free, finely-crafted UI kit for Figma Community
 layout: project
 section: home
 hero: "/assets/img/projects/figmatable/hero.jpg"
@@ -10,6 +10,7 @@ tagname: Product Design
 org: Personal Project
 year: 2021
 ---
+
 #### Why tables?
 
 Tables are some of the bread and butter of interface design. They also figure largely in my current role at [Samsara](https://samsara.com/), where I've learned a great deal about what goes into a high-quality table.

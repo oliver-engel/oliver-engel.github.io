@@ -1,7 +1,7 @@
 ---
 title: Boundless Immigration
-description: A selection of work from my time at the “TurboTax of Immigration”
 permalink: work/boundless
+description: A selection of work from my time at the “TurboTax of Immigration”
 layout: project
 section: home
 hero: "/assets/img/projects/boundless/hero.jpg"
