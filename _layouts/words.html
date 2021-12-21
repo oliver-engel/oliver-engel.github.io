@@ -3,30 +3,24 @@ title: Words
 layout: default
 ---
 
-<body class="words-page">
+<body class="blog-home">
 
-<section class="content content-narrow">
+<section class="content standard-width">
 
-<h3>Writing stuff occasionally. No promises on quality.</h3>
+  <div class="spacer-12x"></div>
 
+  <h3>Writing stuff occasionally.<br>No promises on quality.</h3>
 
-<form class="email-collect" name="contact" method="POST" data-netlify="true" action="/success.html">
+  <div class="spacer-24x"></div>
+
+<!-- <form class="email-collect" name="contact" method="POST" data-netlify="true" action="/success.html">
   <p>Want spicy new words in your inbox?</p>
-
   <div class="form-container">
-
     <label class="form-children"><input class="email-input" type="email" name="email" placeholder="gimme@ur-email.com"/></label>
     <button id="submit-button" disabled class="form-children" type="submit">Sign up</button>
-
   </div>
+</form> -->
 
-</form>
-
-<center>
-  <div class="verticalLine">
-    <br><br>
-  </div>
-</center>
 
   {% for post in site.posts %}
   <div class="blog-wrapper">
@@ -37,8 +31,9 @@ layout: default
 
       <div class="blog-entry-content">
         <!-- <p class="blog-date">8 MAY 19</p> -->
-        <h5>{{post.title}}</h5>
+        <p><b>{{post.title}}</b></p>
         <p>{{post.description}}</p>
+        <div class="spacer-2x"></div>
         <p><span id="read-more">Read More</span></p>
       </div>
 
@@ -50,7 +45,5 @@ layout: default
 
 
 </section>
-
-</div>
 
 </body>

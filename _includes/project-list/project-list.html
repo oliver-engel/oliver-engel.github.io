@@ -1,0 +1,39 @@
+
+<section class="projects filterable-content">
+
+  {% for page in site.pages %}
+  {% if page.url contains "/work"%}
+
+  <a href="{{page.url}}" class="project-row filterDiv {{page.tag}}">
+    <div class="hero-wrapper">
+      <img class="hero" src="{{page.hero}}">
+      <div class="project-hover-text">
+        <h4 class="centered-text">View Project</h4>
+        <h4 class="spinner">✷</h4>
+      </div>
+    </div>
+
+    <div class="spacer-6x"></div>
+
+    <p><b>{{page.title}}</b></p>
+    <p>{{page.description}}</p>
+
+    <div class="spacer-6x"></div>
+
+    <div class="justify-space-between">
+
+      <div class="date-and-logo">
+        <p>{{page.year}} • {{page.org}}</p>
+        <!-- <img src="{{page.logo}}"> -->
+      </div>
+
+      <div class="pill">{{page.tagname}}</div>
+
+
+    </div>
+  </a>
+  <!-- <div class="spacer-12x"></div> -->
+
+  {% endif %}
+  {% endfor %}
+</section>

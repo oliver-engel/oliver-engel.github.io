@@ -2,7 +2,7 @@
  * ALL THINGS TYPE
  */
 
-$header-font: "Kippenberger";
+$header-font: "Graphik";
 $header-font-weight: 900;
 $header-color: #000;
 $body-font: "Graphik";
@@ -12,84 +12,56 @@ $monospace: "Fakt Mono";
 
 *{
   font-display: swap;
-  // hyphens: auto;
-
-  @media (max-width: $screen-md-min){
-    font-size: 98%;
-  }
-
-  @media (max-width: $screen-sm-min){
-    // font-size: 93%;
-  }
 }
 
 html{
   font-size:100%;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color:$off-white;
-  margin-top: 0;
-  margin-bottom:.2em;
-
-  a{
-    color: $blue;
-  }
-  a:hover{
-    opacity:.65;
-  }
-}
 
 h1 {
-  @include header;
-  font-weight: $header-font-weight;
-  color:white;
-  margin-top: 0;
-  margin-bottom:20px;
+  @include sans;
+  // font-weight: $header-font-weight;
+  font-weight: 500;
+  margin-top: $size-6x;
+  margin-bottom:$size-6x;
   user-select: none;
-  font-size: 4.209em;
+  font-size: 3rem;
   letter-spacing: -.02em;
   line-height:.9em;
 }
 
 h2 {
-  @include header;
-  font-weight: $header-font-weight !important;
+  @include sans;
+  font-weight: 500;
 
-  font-size: 3.157em;
-  line-height: 1.3em;
-  letter-spacing: -.03em;
-
-  @media (max-width: $screen-md-min){
-    font-size: 2.369em;
-  }
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 h3 {
-  @include header;
-  font-weight: $header-font-weight !important;
+  @include sans;
+  font-weight: 500;
 
-  font-size: 2em;
-  line-height: 1.3em;
-  padding-bottom: $vertical-rhythm/2;
-
-  @media (max-width: $screen-md-min){
-    font-size: 1.777em;
-  }
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 0;
 
 }
 
 h4 {
-  font-size: 1.777em;
-  font-weight: $body-font-weight;
+  font-size: 1.25em;
+  font-weight: 500;
+  // margin-top: 2.5rem;
+  margin-bottom: .5rem;
+
+  i{
+    font-size:1em;
+  }
 }
 
 h5 {
-  font-size: 1.333em;
+  font-size: 1rem;
   font-weight: $body-font-weight;
 }
 
@@ -102,20 +74,14 @@ h6{
 
 p {
   @include sans;
-  color:$text-gray;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size:.9em;
-  line-height: 1.8em;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-p + p {
-  margin-top: $vertical-rhythm/3;
-}
 
-h6 + p{
-  margin-bottom: $vertical-rhythm/2;
-}
+
 
 p {
   a {
@@ -129,23 +95,14 @@ p {
   }
 
   a:hover{
-    opacity:.65;
+    opacity:.65 !important;
   }
 }
 
-a{
-  h3{
-    transition: 0.1s all;
-    color:$blue;
-  }
-
-
-}
 
 sup{
   @include monospace;
   font-size:.65em;
-  color:$text-gray;
 
 }
 
@@ -154,11 +111,12 @@ b {
 }
 
 p > strong{
-  letter-spacing: .03em;
+  font-weight: 500;
 }
 
 a{
-  color: $text-dark-gray;
+  color: inherit;
+  text-decoration: none;
 }
 
 ol{
@@ -167,35 +125,14 @@ ol{
 }
 
 .subhead{
-  // font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   @include monospace;
-  color: $off-white;
   text-transform: uppercase;
   font-size: .7em;
   letter-spacing: .05em;
-  margin-bottom: $vertical-rhythm / 2;
+  // margin-bottom: $vertical-rhythm / 2;
 }
 
-button{
-  @include monospace;
-  color: $text-dark-gray;
-  text-transform: uppercase;
-  font-size: .75em;
-  letter-spacing: .05em;
-  background:none;
-  color: $blue;
-  border: 1px solid #444444;
-  border-radius: $border-radius-medium !important;
-  transition: all 0.2s;
 
-  &:hover{
-    border: 1px solid $blue;
-  }
-
-  // &:focus{
-  //   border: none !important;
-  // }
-}
 
 .animated-header {
   font-weight: $header-font-weight;
@@ -243,25 +180,9 @@ u{
   padding-bottom: 5px;
 }
 
-figcaption {
-  font-size: 0.8em;
-  // padding-bottom: $vertical-rhythm/3;
-  @include serif;
-  font-style: italic;
-  padding-top: $vertical-rhythm/3;
-  text-align: center;
+
+
+// Special Classes
+.subdued-text{
   color: $text-gray;
-
-  i {
-    background-color: #2b303aab;
-    border-radius: $border-radius-infinite;
-    padding: 5px 12px;
-    margin-right: 5px;
-    font-style: normal;
-  }
-
-  a{
-    text-decoration: underline !important;
-    // border-bottom: 1px solid red;
-  }
 }

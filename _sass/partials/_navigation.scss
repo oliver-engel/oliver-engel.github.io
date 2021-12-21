@@ -1,196 +1,45 @@
-//----GLOBAL NAV STYLING----//
-.nav {
-  z-index: 999999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: $bg-color;
-  transition: all 0.3s;
-  padding: 0 10px;
-}
+.nav-wrapper{
+  margin: 0 auto;
+  max-width: $content-standard;
 
-.nav-container {
-  @include wide-content-width;
-  -ms-flex-pack: justify;
-  -ms-flex-wrap: wrap;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: $vertical-rhythm * 2;
+  nav{
+    font-size:.875rem;
+    line-height: .875rem;
+    text-align:center;
+    width: 100%;
+    height: $size-24x;
+    display:flex;
+    gap: $size-1x;
+    align-items: center;
 
-  @media (max-width: $screen-md-min){
-    display:block !important;
-    text-align: center;
-    padding-top:$vertical-rhythm / 4;
-  }
-}
-
-
-
-.name {
-  cursor: pointer;
-  opacity: 1;
-  font-size: 22px;
-  color: $off-white;
-  margin-bottom: 2px;
-  @media (max-width: $screen-xs-min) {
-    display: none;
-  }
-}
-
-.updated-last {
-  // opacity:.5;
-  color: $blue;
-  @media (max-width: $screen-md-min) {
-    display: none;
-  }
-}
-
-.active {
-  padding-bottom: 3px;
-  opacity: 1 !important;
-  color: $active-link !important;
-  text-decoration: none !important;
-  border-bottom: 1px solid $active-link;
-  font-weight: 600;
-}
-
-.links{
-    a{
-      user-select: none;
+    a {
+      transition: all 0.12s;
+      border-radius: $border-radius-standard;
+      padding: $size-2x $size-3x;
       text-decoration: none;
-      opacity: 0.5;
-      margin-right: 25px;
-      color: $text-gray;
-      font-size: .8em;
-      font-weight: 400;
-      transition: 0.3s;
+      color: white;
+
+      i {
+        opacity: 0.5;
+      }
+
+      &:hover {
+        background-color: #1a1a1a;
+        cursor: pointer;
+      }
     }
 
-    a:last-child {
-      margin-right: 0;
-    }
-
-    a:hover {
-      opacity: 1;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-
-}
-
-//----INTERNAL PROJECT NAV STYLING----//
-
-.internal-nav{
-  user-select: none;
-  text-decoration: none;
-  margin-bottom: 0px;
-  font-size: .8em;
-  font-weight: 400;
-  transition: 0.3s;
-
-  .global-title{
-    opacity:.5;
-  }
-}
-
-.internal-nav-toggle{
-  margin-bottom:0px;
-}
-
-#section-title{
-  transition: 0.2s all;
-  color:white;
-  cursor: pointer;
-
-  &::after{
-    transition: 0.2s all;
-    content: url('http://i.stack.imgur.com/Icd9n.png');
-    width:12px;
-    height:12px;
-    background: url('/assets/img/icons/chevron-down.svg') CENTER CENTER NO-REPEAT;
-    padding-left: 4px;
+    .active {
+        background-color: #1a1a1a;
+      }
   }
 
-  &:hover:after{
-    transition: 0.2s all;
-    padding-bottom:4px;
-  }
-}
-
-.custom-select:hover li {
-  opacity: 0.5;
-  transition: 0.3s all;
-}
-
-.custom-select:hover li:hover {
-  opacity: 1;
-}
-
-.custom-select{
-  background: #282E3E !important;
-  padding-left:0px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor:pointer;
-  color:white;
-  background:none;
-  border: 0px;
-  box-shadow: none;
-  list-style:none;
-  padding:$vertical-rhythm/2;
-  display:none;
-  border-radius: $border-radius-medium;
-
-  a{
-    color:white;
+  .justify-center{
+    justify-content: center;
   }
 
-  li{
-    font-size: .8em;
-    list-style:none;
-    line-height: 2em;
-    padding-bottom: 0px !important;
+  .justify-full-width{
+    justify-content: space-between;
+
   }
 }
-
-.nav-pill {
-  z-index: -1;
-  font-size: 1em;
-  background-color: white;
-  color: $bg-color;
-  border-radius: $border-radius-infinite;
-  padding: 5px 15px;
-  position: fixed;
-  bottom: $vertical-rhythm;
-  right: $vertical-rhythm;
-}
-
-
-// .project-nav {
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   grid-column-gap: 25px;
-//   @include standard-content-width;
-//   font-size: 0.8em;
-//   padding-bottom: $vertical-rhythm;
-//   @media(max-width: $screen-md-min) {
-//     grid-template-columns: repeat(2, 1fr);
-//     grid-row-gap: 50px;
-//   }
-// }
-//
-// .project-smaller-nav {
-//   display: grid;
-//   grid-template-columns: repeat(5, 1fr);
-//   grid-column-gap: 25px;
-//   @include standard-content-width;
-//   font-size: 0.8em;
-//   @media (max-width: $screen-md-min) {
-//     display: none;
-//   }
-// }

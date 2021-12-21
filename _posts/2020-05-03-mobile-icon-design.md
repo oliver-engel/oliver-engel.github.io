@@ -9,6 +9,7 @@ description: Some fun tidbits I gathered during a product design internship at C
   Health.
 thumb: "/assets/img/blog/icondesign/thumb.jpg"
 hero: "/assets/img/blog/icondesign/hero.png"
+published: false
 ---
 
 I recently had the opportunity to work for [Collective Health](https://collectivehealth.com/) in San Francisco, as both a design intern and a contractor. As a member of the Design Systems team, I worked a lot with mobile app icons and learned about what goes into a high-quality, production-ready icon set.

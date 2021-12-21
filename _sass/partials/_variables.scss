@@ -1,39 +1,47 @@
 // LAYOUTS
 //CONTENT WIDTHS
-$content-wide: 1000px;
-$content-standard: 650px;
-$content-full: 100vw;
+$content-standard: 700px;
+$content-fullwidth: 100vw;
+
+
 
 $vertical-rhythm: 48px;
 
 //MISC STYING
-$border-radius-medium: 6px;
-$border-radius-large: 10px;
-$border-radius-none: 0px;
-$border-radius-xlarge: 35px;
-$border-radius-infinite: 10000px;
+$border-radius-standard: 8px;
 
 // MAIN COLORS
+$card-color:white;
+$bg-color: #2A2C33;
+
+$divider: #D6DBE1;
+
+$gray-hover: #f5f4f4;
+$gray-outline: #d3d3d5;
+
+
 $gray: #3c3c3c;
-$blue: #2890ff;
+$blue: #0918c7;
 $green: #50FA7F;
 $light-green: #9EB2AB;
 $orange: #ffa61a;
 $off-white: #E9EDEA;
 $yellow: #FFE928;
-$red: #e24329;
+$red: #e71a1a;
 $pink: #E5AFA7;
 $active-link: $pink;
-$bg-color: #161618;
+
+$purple-700: #2B088C;
+$purple-200: #d1c7f1;
+$purple-100: #F1EDFE;
+
 $bg-gray: #222225;
 $transp-gray: #282e3978;
 $transp-gray-lighter: #282e3929;
 
 
 // TYPE COLORS
-$text-light-gray: #d4d4d4;
-$text-gray: #8f9ba8;
-$text-dark-gray: #808080;
+$text-gray: #5C6774;
 
 // ANIMATIONS
 $quickest: 0.4s;
@@ -50,11 +58,15 @@ $screen-xl-min: 1920px;
 
 // SIZING
 $base-unit: 4px;
-// $1x: $base-unit;
-// $2x: 2 * $base-unit;
-// $3x: 3 * $base-unit;
-// $4x: 4 * $base-unit;
-// $5x: 5 * $base-unit;
-// $6x: 6 * $base-unit;
-// $7x: 7 * $base-unit;
-// $8x: 8 * $base-unit;
+$size-1x: 1 * $base-unit;
+$size-2x: 2 * $base-unit;
+$size-3x: 3 * $base-unit;
+$size-4x: 4 * $base-unit;
+$size-5x: 5 * $base-unit;
+$size-6x: 6 * $base-unit;
+$size-7x: 7 * $base-unit;
+$size-8x: 8 * $base-unit;
+$size-10x: 10 * $base-unit;
+$size-12x: 12 * $base-unit;
+$size-16x: 16 * $base-unit;
+$size-24x: 24 * $base-unit;

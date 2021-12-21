@@ -3,31 +3,46 @@ layout: default
 ---
 
 <body class="blog-post">
+  <!-- <img class="post-hero-image" src="{{page.hero}}"> -->
 
-  <section class="content content-narrow">
+  <div class="post-intro">
+    <img class="post-hero-image" src="{{page.hero}}">
 
-    <h2>{{page.title}}</h2>
-    <p>{{page.description}}</p>
+    <div class="post-header">
+      <!-- <p class="subhead">{{page.year}} • {{page.org}}</p> -->
+      <h2>{{page.title}}</h2>
+      <p class="subdued-text">{{page.description}}</p>
 
-    <img class="post-image" src="{{page.hero}}">
+      <!-- <span class="pill">{{page.tagname}}</span> -->
 
-    <div class="blog-markdown">
+    </div>
+  </div>
+
+  <section class="content remove-top-radius ">
+
+    <!-- <div class="post-header">
+      <h2>{{page.title}}</h2>
+      <p class="subdued-text">{{page.description}}</p>
+    </div> -->
+
+
+<!--
+    <div class="spacer-16x"></div>
+    <hr>
+    <div class="spacer-12x"></div> -->
+
+
+    <div class="blog-markdown standard-width">
       {{content}}
     </div>
-    <hr style="margin-top:100px;">
 
-    {% if page.previous.url %}
-    <p class="subhead">Next post</p>
-    <a href="{{page.previous.url}}"><h3>{{page.previous.title}}</h3></a>
+    <div class="spacer-8x"></div>
 
-    {% else %}
-      <p class="subhead">Previous post</p>
-      <a href="{{page.next.url}}"><h3>{{page.next.title}}</h3></a>
+    <!-- <hr> -->
 
-    {% endif%}
+    {% include navigation/post-internal-navigation.html %}
+
 
   </section>
-
-
 
 </body>

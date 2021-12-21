@@ -11,24 +11,10 @@ thumb: "/assets/img/blog/wizardofoz/thumb.jpg"
 hero: "/assets/img/blog/wizardofoz/thumb.jpg"
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Over the last six months at Samsara, I've come to appreciate the value of data-driven design as an effective method of making decisions, telling stories, and ultimately shaping product and design decisions. I've still got plenty to learn here, but I wanted to share some tactical ways that data has influenced my design process.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+#### Assessing magnitude
 
-Jekyll also offers powerful support for code snippets:
+Most design projects I work on have some amount of research involved, whether it's talking to customers, pulling feedback submissions, or looking through old research documentation. It's also quite rare that I feel like I've gathered *enough* research to confidently proclaim a true accounting of people's pain points, needs, and desires. Invariably there is only time for so much research and our customer base happens to have highly diverse use cases.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Data can help here. After identifying a pain point, it can help to *assess its magnitude* to understand whether it is the isolated request of a noisy few or a general pain point worth investing design and engineering time into.

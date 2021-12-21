@@ -1,0 +1,27 @@
+{% assign productdesign_array = "" | split: ',' %}
+{% assign frontend_array = "" | split: ',' %}
+{% assign visuals_array = "" | split: ',' %}
+
+
+{% for page in site.pages %}
+  {% if page.tag == "productdesign" %}
+    {% assign productdesign_array = productdesign_array | push: tag %}
+
+  {% elsif page.tag == "frontend" %}
+    {% assign frontend_array = frontend_array | push: tag %}
+
+  {% elsif page.tag == "visuals" %}
+    {% assign visuals_array = visuals_array | push: tag %}
+  {% endif %}
+
+{% endfor %}
+
+
+<!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all'); tapSound()"> All Projects</button>
+  <button class="btn" onclick="filterSelection('frontend'); tapSound()"> Front-End Dev <span class="numberCircle"><span>{{ frontend_array.size }}</span></span></button>
+  <button class="btn" onclick="filterSelection('productdesign'); tapSound()"> Product Design <span class="numberCircle"><span>{{ productdesign_array.size }}</span></span></button>
+  <button class="btn" onclick="filterSelection('visuals'); tapSound()"> Visuals <span class="numberCircle"><span>{{ visuals_array.size }}</span></span></button>
+  <!-- <button class="btn" onclick="filterSelection('misc'); tapSound()"> Misc</button> -->
+</div>

@@ -2,67 +2,28 @@
 layout: default
 ---
 
-<div class="project">
+<body class="blog-post">
 
-  <div class="project-header fade-scroll {{page.theme}}" >
-    <div class="project-header-content ">
-      <!-- <img class="logo" src="{{page.logo}}"> -->
-      <!-- <p class="subhead">{{page.company}} | {{page.location}} | {{page.date}}</p> -->
-      {% if page.year and page.website == false %}
-      <div class="project-date">
-        {{page.year}}
-        <div class="spacer-1x"></div>
-      </div>
-      {% endif %}
+  <div class="post-intro">
+    <img class="post-hero-image" src="{{page.hero}}">
 
-      {% if page.website and page.year %}
-      <div class="project-date">
-        {{page.year}} • <a href="https://{{page.website}}">{{page.website}}</a>
-        <div class="spacer-1x"></div>
-      </div>
-      {% endif %}
-
-      <h2>{{page.intro}}</h2>
-      <p>{{page.intro-details}}</p>
-      <!-- <p class="subhead">October 2020</p> -->
+    <div class="post-header">
+      <p class="subhead">{{page.year}} • {{page.org}}</p>
+      <h2>{{page.title}}</h2>
+      <p class="subdued-text">{{page.description}}</p>
 
     </div>
   </div>
 
-  {% if page.video %}
-    <video playsinline autoplay loop muted class="hero-image slideUp">
-            <source src="/assets/img/uploads/microsoft/hacking-stem-hero.mp4" type="video/mp4" />
-    </video>
-    <!-- <div class="hero-image">
-      <iframe class="autoplay-video slideUp" src="{{page.videourl}}" frameborder="0" ></iframe>
-    </div> -->
+  <section class="content remove-top-radius">
 
-    {% else %}
-    <img class="hero-image slideUp" src="{{page.hero}}">
-  {% endif %}
-
-    <!-- {% if page.role %}
-    <div id="scroll-to-start" class="project-details">
-      <div>
-        <p class="subhead">⚡ Role</p>
-        <p>{{page.role}}</p>
-      </div>
-
-      <div>
-        <p class="subhead">💥 Responsibilities</p>
-        <p>{{page.responsibilities}}</p>
-      </div>
-
-      <div>
-        <p class="subhead">🚀 Team</p>
-        <p>{{page.team}}</p>
-      </div>
+    <div class="blog-markdown standard-width">
+      {{content}}
     </div>
-    <hr class="partial-divider">
-    {% endif %} -->
 
-  <div class="project-body">
-    {{content}}
-  </div>
+    {% include project-list/inline-project-list.html %}
 
-</div>
+  </section>
+
+
+</body>

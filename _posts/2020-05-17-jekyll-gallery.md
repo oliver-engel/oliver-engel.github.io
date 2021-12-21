@@ -8,6 +8,7 @@ layout: post
 description: Using Liquid tags and a bit of Javascript.
 thumb: "/assets/img/blog/jekyllgallery/thumb.jpg"
 hero: "/assets/img/blog/jekyllgallery/hero.jpg"
+published: false
 ---
 
 #### Background

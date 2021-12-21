@@ -1,0 +1,50 @@
+<!-- <div class="inline-project-list standard-width">
+  <h4>Similar projects (you might like)</h4>
+  <div class="spacer-2x"></div>
+
+  <hr>
+  <div class="spacer-8x"></div>
+
+  <section class="projects" id="smaller-project-list">
+
+    {% for page in site.pages %}
+    {% if page.tag contains "productdesign" %}
+
+    <a href="{{page.url}}" class="project-row {{page.tag}}">
+
+      <section>
+        <div class="hero-wrapper">
+          <img class="hero" src="{{page.hero}}">
+          <div class="project-hover-text">
+            <h4 class="centered-text">View Project</h4>
+            <h4 class="spinner">✷</h4>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p><b>{{page.title}}</b></p>
+        <p>{{page.description}}</p>
+      </section>
+    </a>
+
+
+    {% endif %}
+    {% endfor%}
+  </section>
+
+</div> -->
+
+<div class="standard-width">
+
+  <a data-micromodal-trigger="project-list-modal" onmouseover="hover();" onmouseout="unhover();">
+    <section class="next-section">
+      <div>
+        <p class="subhead">still interested?</p>
+        <h3>See more projects</h3>
+      </div>
+      <img id="memoji-hover" src="/assets/img/icons/ponder.png" >
+    </section>
+  </a>
+
+</div>

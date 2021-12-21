@@ -30,27 +30,30 @@
   max-width: 100%;
 }
 
-@mixin medium-content-width{
-  width:850px;
-  margin: 0 auto;
-  max-width: 100%;
+@mixin highlight-color-light{
+  ::selection {
+  background: $purple-100; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: $purple-100; /* Gecko Browsers */
+  }
 }
 
-@mixin wide-content-width{
-  width:$content-wide;
-  margin: 0 auto;
-  max-width: 100%;
+@mixin highlight-color-dark{
+  ::selection {
+  background: #1a1a1a; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #1a1a1a; /* Gecko Browsers */
+  }
 }
 
-@mixin full-content-width{
-  width:$content-full;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 
+
+@mixin margin-0-auto{
+  margin:0 auto;
 }
+
 
 @mixin monospace{
   font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;

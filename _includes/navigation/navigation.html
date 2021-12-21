@@ -1,0 +1,9 @@
+<section class="nav-wrapper">
+  <nav class="justify-center">
+    <a href="/" {% if page.url == "/" %}class="active" {% endif %}>
+      <i class="fas fa-home"></i> &nbsp; Home</a>
+
+    <a href="/words" {% if page.url contains "/words"%}class="active" {% endif %}>
+      <i class="fas fa-pen-nib"></i> &nbsp; Writing</a>
+  </nav>
+</section>
