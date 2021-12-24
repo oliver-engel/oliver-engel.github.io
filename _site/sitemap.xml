@@ -31,6 +31,9 @@
 <loc>http://localhost:4000/info</loc>
 </url>
 <url>
+<loc>http://localhost:4000/pinned</loc>
+</url>
+<url>
 <loc>http://localhost:4000/work/safety-score</loc>
 </url>
 <url>
