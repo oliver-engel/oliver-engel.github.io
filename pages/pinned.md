@@ -1,5 +1,6 @@
 ---
 title: Pinned
-permalink: /pinned
+permalink: "/pinned"
 layout: pinned
 ---
+
