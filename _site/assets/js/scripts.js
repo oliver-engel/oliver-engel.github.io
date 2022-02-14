@@ -84,51 +84,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-var imgCounter = 0;
-
-function nextImage(){
-
-  //Get all the images into an array
-  var photoArray = document.getElementsByClassName('photo-grid-image');
-
-  //If we get to the end of the array
-  if(imgCounter === photoArray.length - 1){
-    $(photoArray[imgCounter]).hide();
-    imgCounter = 0;
-    // $(photoArray[imgCounter]).css("display", "flex").hide().fadeIn(450);
-    $(photoArray[imgCounter]).css("display", "flex");
-  }
-
-  else{
-  //Hide current image, then fade in the next one
-    $(photoArray[imgCounter]).hide();
-    $(photoArray[imgCounter + 1]).css("display", "flex");
-    imgCounter++;
-  }
-  //Increment for the next image
-  console.log(imgCounter);
-};
-
-
-function prevImage(){
-
-  //Get all the images into an array
-  var photoArray = document.getElementsByClassName('photo-grid-image');
-
-  //If we get to the beginning of the array
-  if(imgCounter === 0){
-    $(photoArray[imgCounter]).hide();
-    imgCounter = photoArray.length - 1;
-    $(photoArray[imgCounter]).css("display", "flex");
-  }
-
-  //Hide current image, show the previous one
-  else{
-    $(photoArray[imgCounter]).hide();
-    $(photoArray[imgCounter - 1]).css("display", "flex");
-    imgCounter--;
-  }
-};
+// var imgCounter = 0;
+//
+// function nextImage(){
+//
+//   var photoArray = document.getElementsByClassName('photo-grid-image');
+//
+//   if(imgCounter === photoArray.length - 1){
+//     $(photoArray[imgCounter]).hide();
+//     imgCounter = 0;
+//     $(photoArray[imgCounter]).css("display", "flex");
+//   }
+//
+//   else{
+//     $(photoArray[imgCounter]).hide();
+//     $(photoArray[imgCounter + 1]).css("display", "flex");
+//     imgCounter++;
+//   }
+//   console.log(imgCounter);
+// };
+//
+//
+// function prevImage(){
+//
+//   var photoArray = document.getElementsByClassName('photo-grid-image');
+//
+//   if(imgCounter === 0){
+//     $(photoArray[imgCounter]).hide();
+//     imgCounter = photoArray.length - 1;
+//     $(photoArray[imgCounter]).css("display", "flex");
+//   }
+//
+//   else{
+//     $(photoArray[imgCounter]).hide();
+//     $(photoArray[imgCounter - 1]).css("display", "flex");
+//     imgCounter--;
+//   }
+// };
 
 //ARROW KEY FUNCTIONS
 
@@ -144,17 +136,11 @@ function checkKey(e) {
     }
 }
 
-// //PREVENT WHACKY FOOTER SHIT
-//
-// $(window).scroll(function() {
-//    if($(window).scrollTop() + $(window).height() == $(document).height()) {
-//      $("footer").css("visibility", "visible");
-//      $("footer").fadeIn();
-//    }
-// });
+
 
 //ANIMATED HEADER
-if (document.querySelector('.animated-header') !== null) {
+if (document.querySelector('.animated-header') !== null ) {
+
   // Wrap every letter in a span
   var textWrapper = document.querySelector('.animated-header');
   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

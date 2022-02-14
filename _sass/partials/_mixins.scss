@@ -92,7 +92,7 @@
   color: #154b15;
   cursor: pointer;
   display: inline-block;
-  padding: 7px 20px;
+  padding: $size-2x $size-5x;
   text-align: center;
   text-decoration: none;
   transition: all 250ms;
@@ -108,28 +108,5 @@
 
   &:focus {
     outline: none;
-  }
-}
-
-
-@mixin custom-scrollbar{
-    /* width */
-  ::-webkit-scrollbar {
-    width: 20px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: red;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
   }
 }

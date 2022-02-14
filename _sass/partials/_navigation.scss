@@ -11,6 +11,11 @@
 
   nav{
 
+    @media (max-width: $screen-xs-min){
+      padding-left: $size-4x;
+      padding-right: $size-4x;
+    }
+
     section{
       transform: translateY(-1px);
     }
@@ -145,7 +150,7 @@
   background-color: black;
   opacity: .70;
   width:100vw;
-  height:100vw;
+  height:100vh;
   position: fixed;
   top: 0;
   left: 0;

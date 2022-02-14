@@ -109,7 +109,7 @@ ul{
 }
 
 .blog-markdown {
-  padding: $size-12x;
+  // padding: $size-12x;
 
 
   blockquote{
@@ -124,10 +124,12 @@ ul{
   }
 
   img{
-   max-width: 700px;
-   width: 100vw;
-   position: relative;
-   left: calc(-350px + 50%);
+    @media (min-width: $screen-sm-min){
+     max-width: 700px;
+     width: 100vw;
+     position: relative;
+     left: calc(-350px + 50%);
+   }
   }
 
   h4{
@@ -200,6 +202,9 @@ ul{
 }
 
 .full-page-content{
+  @media (max-width: $screen-md-min) {
+    padding: $size-4x;
+  }
   padding-top: $size-10x;
 }
 
@@ -280,6 +285,9 @@ ul{
   height:100vh;
   object-fit: cover;
 
+  @media (max-width: $screen-sm-min){
+    height: 66vh;
+  }
 
 }
 

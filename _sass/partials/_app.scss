@@ -13,7 +13,7 @@ html {
   // overflow-x: hidden;
   scroll-behavior: smooth;
 
-  @media (max-width: $screen-md-min) {
+  @media (max-width: $screen-sm-min) {
     font-size: 14px;
   }
 }
@@ -115,9 +115,7 @@ iframe{
   @include margin-0-auto;
   padding: $size-12x 0;
 
-  @media (max-width: $screen-md-min) {
-    padding: $size-4x;
-  }
+
   // max-width: $content-standard;
   // background-color: $card-color;
   border-radius: $border-radius-standard;
@@ -454,13 +452,18 @@ iframe{
 
 .full-header{
   height: 40vh;
-  width: 100vw;
+  // width: 100vw;
   color:white;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   // background-color: $green;
+
+  @media (max-width: $screen-xs-min){
+    gap: $size-4x;
+    text-align: center;
+  }
 }
 
 .floating-button{
@@ -475,15 +478,22 @@ body.disable-scroll {
   overflow: hidden;
 }
 
-// #sidebar {
-//   max-height: 100vh;
-//   height: 100%;
-//   width: 400px;
-//   background-color: $bg-color;
-//   color:red;
-//   position: fixed;
-//   top: 0px;
-//   right: 0px;
-//   z-index: 10000;
-//   padding: $size-8x;
-// }
+
+.show-on-mobile{
+  @media (min-width: $screen-xs-min) {
+    display: none;
+  }
+  @media (max-width: $screen-xs-min) {
+    display: contents;
+  }
+}
+
+.hide-on-mobile{
+  @media (min-width: $screen-xs-min) {
+    height: auto;
+  }
+  @media (max-width: $screen-xs-min) {
+    height: 0;
+    display: none;
+  }
+}

@@ -3,7 +3,7 @@
  */
 
 $header-font: "Proxima Soft";
-$header-font-weight: 900;
+$header-font-weight: 600;
 $header-color: #000;
 $body-font: "Graphik";
 $body-font-weight: 400;
@@ -141,6 +141,7 @@ ol{
 .animated-header {
   font-weight: $header-font-weight;
   overflow: hidden;
+
 }
 
 .animated-header .letter {
