@@ -5,13 +5,16 @@ layout: default
 
 <body class="blog-home">
 
-<section class="content standard-width">
+<section class="full-header">
+  <h2 class="animated-header">My (very) occasional written words.</h2>
+</section>
+
+<section class="standard-width">
 
   <div class="spacer-12x"></div>
 
-  <h3>Writing stuff occasionally.<br>No promises on quality.</h3>
 
-  <div class="spacer-24x"></div>
+  <!-- <div class="spacer-24x"></div> -->
 
 <!-- <form class="email-collect" name="contact" method="POST" data-netlify="true" action="/success.html">
   <p>Want spicy new words in your inbox?</p>
@@ -23,7 +26,7 @@ layout: default
 
 
   {% for post in site.posts %}
-  <div class="blog-wrapper">
+  <div class="blog-wrapper slideUp">
     <a class="blog-entry" href="{{post.url}}">
       <div class="img-wrapper">
         <img src="{{post.thumb}}">

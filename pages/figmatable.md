@@ -9,6 +9,8 @@ tag: productdesign
 tagname: Product Design
 org: Personal Project
 year: 2021
+orgurl: https://www.figma.com/community/file/1008915545779167203/%F0%9F%8C%80-Auto-Layout-Table-Kit
+order: 2
 ---
 
 #### Why tables?
@@ -19,9 +21,11 @@ Too many design resources are optimized for visual aesthetic rather than real-wo
 
 The kit uses best practice UI construction (autolayout, responsive elements, etc.) and features a customizable design system to make designing and changing tables simple and fluid.
 
+---
+
 #### UI Kit
 
+> [View on Figma Community](https://www.figma.com/community/file/1008915545779167203/%F0%9F%8C%80-Auto-Layout-Table-Kit)
+
+
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FU2y0gbV2T6ygyuARf2LR9w%2F%25F0%259F%258C%2580-Auto-Layout-Table-Kit-(Community)%3Fnode-id%3D40%253A789" allowfullscreen></iframe>
-
-
-<a id="block-link" href="https://www.figma.com/community/file/1008915545779167203/%F0%9F%8C%80-Auto-Layout-Table-Kit">View on Figma Community</a>

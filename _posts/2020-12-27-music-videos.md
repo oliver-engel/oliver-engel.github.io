@@ -20,61 +20,61 @@ I don't know how this video possibly came into creation. What I do know is that 
   <a href="https://vimeo.com/328690392" class="selected-track">Watch on Vimeo</a>
 </div> -->
 
-##### [Watch on Vimeo](https://vimeo.com/328690392)
+> [Watch on Vimeo](https://vimeo.com/328690392)
 
 ---
 
 ![James Blake – Can't Believe The Way We Flow](/assets/img/blog/videos/blake.jpg)
 ### James Blake – Can't Believe The Way We Flow
-<code><b>2019 • Frank Lebon</b></code>
+2019 • Frank Lebon
 
 
 Equal parts nostalgic and modern, a brilliant music video about love and relationships. It gets real around the :40 mark.
 
-##### [Watch on Vimeo](https://vimeo.com/347759832)
+> [Watch on Vimeo](https://vimeo.com/347759832)
 
 ---
 
 
 ![Aphex Twin - T69 Collapse](/assets/img/blog/videos/t69.jpg)
 ### Aphex Twin - T69 Collapse
-<code><b>2018 • Nicky Smith</b></code>
+2018 • Nicky Smith
 
 
 The top comment is "when you download an acid trip from your dealer and the .rar is corrupt". No further commentary.
 
-##### [Watch on YouTube](https://www.youtube.com/watch?v=SqayDnQ2wmw)
+> [Watch on YouTube](https://www.youtube.com/watch?v=SqayDnQ2wmw)
 
 ---
 
 ![S+C+A+R+R - The Rest Of My Days](/assets/img/blog/videos/scar.jpg)
 ### S+C+A+R+R – The Rest Of My Days
-<code><b>2020 • Jack Antoine Charlot</b></code>
+2020 • Jack Antoine Charlot
 
 A disturbingly realistic mocap-based music video that sits neatly in the in the trough of the uncanny valley. The dance moves are pretty sweet.
 
-##### [Watch on YouTube](https://www.youtube.com/watch?v=uPiao5BKtBo)
+> [Watch on YouTube](https://www.youtube.com/watch?v=uPiao5BKtBo)
 
 ---
 
 ![Radiohead – Weird Fishes](/assets/img/blog/videos/weird.jpg)
 ### Radiohead – Weird Fishes
-<code><b>2008 • Tobias Stretch</b></code>
+2008 • Tobias Stretch
 
 
 I always come back to this one. There's something unsettling and beautiful about life-sized stop-motion. My only wish is that the video was higher quality.
 
 
-##### [Watch on Vimeo](https://vimeo.com/2323231)
+> [Watch on Vimeo](https://vimeo.com/2323231)
 
 ---
 
 ![King Gizzard & The Lizard Wizard – People-Vultures](/assets/img/blog/videos/king.jpg)
 ### King Gizzard & The Lizard Wizard – People-Vultures
-<code><b>2016 • Danny Cohen / Jason Galea</b></code>
+2016 • Danny Cohen / Jason Galea
 
 
 An enormous papier-mâché vulture roams the Australian wilderness and eliminates a series of enemies.
 
 
-##### [Watch on YouTube](https://www.youtube.com/watch?v=6f78_Tf4Tdk)
+> [Watch on YouTube](https://www.youtube.com/watch?v=6f78_Tf4Tdk)

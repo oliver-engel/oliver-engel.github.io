@@ -1,5 +1,5 @@
 ---
-title: Boundless Immigration
+title: Simplifying Immigration
 permalink: work/boundless
 description: A selection of work from my time at the “TurboTax of Immigration”
 layout: project
@@ -9,13 +9,15 @@ tag: productdesign
 tagname: Product Design
 org: Boundless Immigration
 year: 2019 - 2021
+orgurl: http://boundless.com
+order: 1
 ---
 
-#### Designing at a rapid-scale startup
+#### Design at a rapidly scaling startup
 
 During my 2 years at [Boundless Immigration](https://www.boundless.com/), I worked extensively on both customer and internal-facing products, and grew alongside the company as it scaled from 30 employees to 150.
 
-I grew immensely as a designer by leading projects from end to end & engaging with all the parts of the design process, as well as stepping into product strategy, UX writing, and systems work.
+I improved immensely as a designer by leading projects from end to end & engaging with all the parts of the design process, as well as stepping into product strategy, UX writing, and systems work.
 
 Here’s a selection of project snippets from my time there.
 

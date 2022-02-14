@@ -1,8 +1,9 @@
 
-<section class="projects filterable-content">
+<section class="projects filterable-content slideUp">
 
-  {% for page in site.pages %}
-  {% if page.url contains "/work"%}
+  {% assign sorted_pages = site.pages | sort:"order" | where: "layout","project" %}
+  {% for page in sorted_pages %}
+
 
   <a href="{{page.url}}" class="project-row filterDiv {{page.tag}}">
     <div class="hero-wrapper">
@@ -15,7 +16,7 @@
 
     <div class="spacer-6x"></div>
 
-    <p><b>{{page.title}}</b></p>
+    <h4>{{page.title}}</h4>
     <p>{{page.description}}</p>
 
     <div class="spacer-6x"></div>
@@ -24,7 +25,6 @@
 
       <div class="date-and-logo">
         <p>{{page.year}} • {{page.org}}</p>
-        <!-- <img src="{{page.logo}}"> -->
       </div>
 
       <div class="pill">{{page.tagname}}</div>
@@ -34,6 +34,5 @@
   </a>
   <!-- <div class="spacer-12x"></div> -->
 
-  {% endif %}
   {% endfor %}
 </section>

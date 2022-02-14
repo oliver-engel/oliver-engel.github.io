@@ -4,15 +4,18 @@ layout: default
 
 <body class="blog-post">
 
+
+
   <div class="post-intro">
     <img class="post-hero-image" src="{{page.hero}}">
 
-    <div class="post-header">
-      <p class="subhead">{{page.year}} • {{page.org}}</p>
+    <div class="post-header slideUp">
+      <p>{{page.year}} • <a href="{{page.orgurl}}">{{page.org}}</a></p>
       <h2>{{page.title}}</h2>
-      <p class="subdued-text">{{page.description}}</p>
+      <p>{{page.description}}</p>
 
     </div>
+
   </div>
 
   <section class="content remove-top-radius">
@@ -20,6 +23,7 @@ layout: default
     <div class="blog-markdown standard-width">
       {{content}}
     </div>
+
 
     {% include project-list/inline-project-list.html %}
 

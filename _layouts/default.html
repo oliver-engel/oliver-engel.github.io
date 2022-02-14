@@ -15,15 +15,26 @@ layout: compress
       fadeInPage();
     </script> -->
 
+    {% include navigation/navigation.html %}
 
-    {% if page.layout contains "post" %}
-      {% include navigation/blog-navigation.html %}
-    {% elsif page.layout contains "project" %}
-      {% include navigation/project-navigation.html %}
+    <script src="/assets/js/fader.js"></script>
+    <svg id="fader"></svg>
+    <script>
+      fadeInPage();
+    </script>
 
-    {% else %}
-      {% include navigation/navigation.html %}
-    {% endif %}
+
+    {% comment %}
+      {% if page.layout contains "post" %}
+        {% include navigation/blog-navigation.html %}
+      {% elsif page.layout contains "project" %}
+        {% include navigation/project-navigation.html %}
+
+      {% else %}
+        {% include navigation/navigation.html %}
+      {% endif %}
+
+    {% endcomment %}
 
     <div class="full-page-content">
       {{content}}
@@ -38,11 +49,11 @@ layout: compress
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
 
     <script src="/assets/js/scripts.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script> -->
 
 
   </body>

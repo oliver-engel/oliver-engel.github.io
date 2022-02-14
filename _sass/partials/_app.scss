@@ -12,6 +12,10 @@ html {
   -webkit-tap-highlight-color: transparent;
   // overflow-x: hidden;
   scroll-behavior: smooth;
+
+  @media (max-width: $screen-md-min) {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -63,21 +67,23 @@ video {
 }
 
 button {
-  font-size: .875rem;
-  line-height: .875rem;
-  user-select: none;
-  background: $purple-100;
-  color: $purple-700;
-  transition: all 0.2s;
-  border-radius: $border-radius-standard;
-  border: 0;
-  padding: $size-2x $size-3x;
-  max-height: $size-12x;
-  border: 1px solid white;
+  @include delicious-button;
+}
 
-  &:hover {
-    border: 1px solid $purple-200;
-  }
+button.secondary-button{
+  @include header;
+  background-color: #f3f3f3;
+  color: black;
+  box-shadow: none;
+  border-radius: 100px;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 iframe{
@@ -107,21 +113,16 @@ iframe{
 
 .content {
   @include margin-0-auto;
-  padding: $size-12x;
+  padding: $size-12x 0;
 
   @media (max-width: $screen-md-min) {
     padding: $size-4x;
   }
   // max-width: $content-standard;
-  background-color: $card-color;
+  // background-color: $card-color;
   border-radius: $border-radius-standard;
 
   @include highlight-color-light;
-
-  // *{
-  //   max-width: $content-standard;
-  //   margin: 0 auto;
-  // }
 
 }
 
@@ -149,28 +150,15 @@ iframe{
 }
 
 .work-experience {
-  #resume-button {
-    i, p{
-      font-size: .875rem;
-      line-height: .875rem;
-    }
 
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: $size-2x;
-    text-align: center;
-    background-color: $purple-100;
-    color: $purple-700;
-    border-radius: $border-radius-standard;
-    padding: $size-3x;
-    margin-top: $size-4x;
-  }
-  padding: $size-4x 0;
+  padding: 0;
 
   a {
     text-decoration: none;
+  }
+
+  p {
+    margin-bottom: 0 !important;
   }
 
   li{
@@ -178,8 +166,12 @@ iframe{
   }
 
   img {
-    width: $size-12x;
-    height: $size-12x;
+    margin: 0 !important;
+    width: $size-12x !important;
+    height: $size-12x !important;
+    left: 0 !important;
+    background-color: $gray-hover;
+    border-radius: $border-radius-standard;
   }
 
   section {
@@ -197,9 +189,10 @@ iframe{
     }
 
     &:hover {
-      background-color: $gray-hover;
+      background-color: #2e363d;
 
       i {
+        color: $green;
         opacity: 1;
         margin-left: auto;
       }
@@ -247,6 +240,7 @@ iframe{
     }
 
     .hero-wrapper {
+      transition: all 250ms;
       display: block;
       position: relative;
       text-align: center;
@@ -257,6 +251,11 @@ iframe{
     }
 
     &:hover {
+
+      .hero-wrapper{
+        transform: scale(1.05) rotate(-1deg);
+
+      }
       b {
         border-bottom: 1px solid black;
       }
@@ -266,7 +265,7 @@ iframe{
       }
 
       .hero {
-        filter: brightness(.2);
+        filter: brightness(.4);
       }
     }
   }
@@ -289,14 +288,15 @@ iframe{
 }
 
 .pill {
-  background-color: $gray-hover;
+  color:$text-gray;
+  background-color: #f5f4f421;
   justify-content: center;
   align-items: center;
   font-size: 0.875rem;
   line-height: 0.875rem;
   // display: inline-flex;
   padding: $size-2x $size-3x;
-  border-radius: 1000px;
+  border-radius: $border-radius-standard;
 }
 
 .filterDiv {
@@ -432,6 +432,12 @@ iframe{
   }
 }
 
+.project-row{
+  h4{
+    margin-top: 0px;
+  }
+}
+
 
 #smaller-project-list{
   a{
@@ -445,3 +451,39 @@ iframe{
     }
   }
 }
+
+.full-header{
+  height: 40vh;
+  width: 100vw;
+  color:white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  // background-color: $green;
+}
+
+.floating-button{
+  z-index: 0;
+  position: fixed;
+  bottom: $size-8x;
+  right: $size-8x;
+
+}
+
+body.disable-scroll {
+  overflow: hidden;
+}
+
+// #sidebar {
+//   max-height: 100vh;
+//   height: 100%;
+//   width: 400px;
+//   background-color: $bg-color;
+//   color:red;
+//   position: fixed;
+//   top: 0px;
+//   right: 0px;
+//   z-index: 10000;
+//   padding: $size-8x;
+// }

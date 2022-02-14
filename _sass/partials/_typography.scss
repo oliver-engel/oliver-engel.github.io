@@ -2,7 +2,7 @@
  * ALL THINGS TYPE
  */
 
-$header-font: "Graphik";
+$header-font: "Proxima Soft";
 $header-font-weight: 900;
 $header-color: #000;
 $body-font: "Graphik";
@@ -19,10 +19,11 @@ html{
 }
 
 
+
+
 h1 {
-  @include sans;
+  @include header;
   // font-weight: $header-font-weight;
-  font-weight: 500;
   margin-top: $size-6x;
   margin-bottom:$size-6x;
   user-select: none;
@@ -32,26 +33,27 @@ h1 {
 }
 
 h2 {
-  @include sans;
-  font-weight: 500;
+  @include header;
 
   font-size: 2rem;
   line-height: 2rem;
 }
 
 h3 {
-  @include sans;
-  font-weight: 500;
-
+  @include header;
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin: 0;
+  color:white;
 
 }
 
 h4 {
+  @include header;
+  color:white;
+
+
   font-size: 1.25em;
-  font-weight: 500;
   // margin-top: 2.5rem;
   margin-bottom: .5rem;
 
@@ -62,7 +64,9 @@ h4 {
 
 h5 {
   font-size: 1rem;
-  font-weight: $body-font-weight;
+  @include header;
+  color:white;
+  margin: 0;
 }
 
 h6{
@@ -78,6 +82,7 @@ p {
   margin-bottom: 0px;
   font-size: 1rem;
   line-height: 1.5rem;
+  color:$text-gray;
 }
 
 
@@ -85,17 +90,13 @@ p {
 
 p {
   a {
-    transition: 0.3s all;
-    user-select: none;
-    text-decoration: none;
-    border-bottom: 1px solid;
-    padding-bottom:3px;
     transition: 0.1s all;
-    color:$blue;
-  }
+    border-bottom: 1px solid #cbd4da61;
 
-  a:hover{
-    opacity:.65 !important;
+   &:hover{
+     color: $green;
+     border-bottom: 1px solid #8bc34a6b;
+   }
   }
 }
 
@@ -108,6 +109,7 @@ sup{
 
 b {
   font-weight: 500;
+  color:white;
 }
 
 p > strong{
@@ -131,6 +133,8 @@ ol{
   letter-spacing: .05em;
   // margin-bottom: $vertical-rhythm / 2;
 }
+
+
 
 
 

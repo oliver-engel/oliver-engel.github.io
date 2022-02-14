@@ -1,5 +1,11 @@
+.footer-wrapper{
+  background-color: $bg-color;
+
+}
+
 footer {
   max-width: $content-standard;
+  width: 100%;
   margin: 0 auto;
   padding: $size-8x 0;
   display: grid;
@@ -50,7 +56,7 @@ footer {
     font-size:.8rem;
   }
 
-  padding-top: $size-8x;
+  padding-top: $size-4x;
   text-align: center;
   color:#9faab7;
 
