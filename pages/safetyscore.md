@@ -11,7 +11,6 @@ tag: productdesign
 tagname: Product Design
 org: Samsara
 year: 2021
-order: 4
 order: 100
 ---
 

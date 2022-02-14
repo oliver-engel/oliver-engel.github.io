@@ -1,7 +1,6 @@
 ---
 title: Graphics & Illustrations
 permalink: work/graphics
-published: true
 description: Various visual explorations
 layout: project
 section: home
