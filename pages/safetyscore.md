@@ -1,5 +1,5 @@
 ---
-title: Scoring Driver Safety 🔒
+title: "Scoring Driver Safety \U0001F512"
 permalink: work/safety-score
 description: I led a project to define a long-term vision for how drivers are scored
   in the Samsara safety platform.
