@@ -1,6 +1,7 @@
 ---
 title: Microsoft Education
 permalink: work/trebuchet
+published: false
 description: STEM lesson plans for kids – teaching potential and kinetic energy through
   Arduinos
 layout: project
@@ -11,7 +12,6 @@ tagname: Front-End Dev
 org: MHCI+D
 year: 2019
 order: 100
-published: false
 ---
 
 {% include components/password.html %}
