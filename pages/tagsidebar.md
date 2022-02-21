@@ -1,5 +1,5 @@
 ---
-title: Tag Selection Sidebar
+title: Tag Selection Sidebar 🔒
 permalink: work/tagsidebar
 description: Interaction design for a complex tag selector
 layout: project

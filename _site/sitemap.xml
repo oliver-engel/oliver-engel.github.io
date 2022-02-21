@@ -25,16 +25,10 @@
 <loc>http://localhost:4000/work/figmatable</loc>
 </url>
 <url>
-<loc>http://localhost:4000/work/graphics</loc>
-</url>
-<url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/about</loc>
-</url>
-<url>
-<loc>http://localhost:4000/work/pinned</loc>
 </url>
 <url>
 <loc>http://localhost:4000/work/safety-score</loc>

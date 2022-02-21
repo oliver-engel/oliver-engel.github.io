@@ -1,5 +1,5 @@
 ---
-title: Scoring Driver Safety
+title: Scoring Driver Safety 🔒
 permalink: work/safety-score
 description: I led a project to define a long-term vision for how drivers are scored
   in the Samsara safety platform.
@@ -11,7 +11,7 @@ tag: productdesign
 tagname: Product Design
 org: Samsara
 year: 2021
-order: 100
+order: 3
 ---
 
 {% include components/password.html %}
