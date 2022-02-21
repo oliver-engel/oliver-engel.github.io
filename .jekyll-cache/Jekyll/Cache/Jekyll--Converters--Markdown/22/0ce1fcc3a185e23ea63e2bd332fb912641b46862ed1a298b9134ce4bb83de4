@@ -1,0 +1,10 @@
+I"ì<h3>Password, please!.</h3>
+
+<div class="input-group">
+  <input autofocus="" type="text" id="fname" name="fname" placeholder="Code word here" />
+  <button class="secondary-button">Submit</button>
+</div>
+
+<div class="spacer-12x"></div>
+
+:ET

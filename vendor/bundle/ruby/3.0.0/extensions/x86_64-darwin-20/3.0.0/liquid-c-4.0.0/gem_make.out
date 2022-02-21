@@ -1,0 +1,20 @@
+current directory: /Users/oliverengel/Desktop/Projects/oliver-engel.github.io/vendor/bundle/ruby/3.0.0/gems/liquid-c-4.0.0/ext/liquid_c
+/Users/oliverengel/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/oliverengel/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20220219-93896-qg25h1.rb extconf.rb
+creating Makefile
+
+current directory: /Users/oliverengel/Desktop/Projects/oliver-engel.github.io/vendor/bundle/ruby/3.0.0/gems/liquid-c-4.0.0/ext/liquid_c
+make "DESTDIR=" clean
+
+current directory: /Users/oliverengel/Desktop/Projects/oliver-engel.github.io/vendor/bundle/ruby/3.0.0/gems/liquid-c-4.0.0/ext/liquid_c
+make "DESTDIR="
+compiling block.c
+compiling lexer.c
+compiling liquid.c
+compiling parser.c
+compiling tokenizer.c
+compiling variable.c
+linking shared-object liquid_c.bundle
+
+current directory: /Users/oliverengel/Desktop/Projects/oliver-engel.github.io/vendor/bundle/ruby/3.0.0/gems/liquid-c-4.0.0/ext/liquid_c
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 liquid_c.bundle ./.gem.20220219-93896-ir4df7

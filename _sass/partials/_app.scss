@@ -497,3 +497,31 @@ body.disable-scroll {
     display: none;
   }
 }
+
+.input-group{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: $size-2x;
+
+  button{
+    border-radius: $border-radius-standard;
+  }
+}
+
+input{
+  border: none;
+  padding: $size-2x;
+  border-radius: $border-radius-standard;
+  background: #2e363d;
+
+  &:focus{
+    outline: -webkit-focus-ring-color auto 0px;
+    outline-color: blue;
+    outline-style: auto;
+    outline-width: 0px;
+
+    border: 1px solid $green;
+    caret-color: $green;
+    color:white;
+  }
+}
