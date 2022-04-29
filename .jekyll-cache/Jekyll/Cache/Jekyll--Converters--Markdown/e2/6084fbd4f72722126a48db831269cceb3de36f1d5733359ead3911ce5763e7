@@ -1,0 +1,37 @@
+I"l
+<p>Over the last year at <a href="https://samsara.com/">Samsara</a>, I’ve come to appreciate the value of data-driven design as an effective method of making decisions, telling stories, and ultimately shaping product and design decisions. I’ve still got plenty to learn here, but I wanted to share some tactical ways that data has influenced some of my design work.</p>
+
+<h4>Assessing magnitude</h4>
+
+<p>Most design projects I work on have some amount of research involved, whether it’s talking to customers, pulling feedback submissions, or looking through old research documentation. It’s also quite rare that I feel like I’ve gathered <em>enough</em> research to confidently proclaim a true accounting of people’s pain points, needs, and desires. There is only time for so much research and our customer base happens to have highly diverse use cases.</p>
+
+<p>Data can help here. After identifying a pain point, it can help to <em>assess its magnitude</em> to understand whether it is the isolated request of a noisy few or a general pain point worth investing design and engineering time into.</p>
+
+<p>Let’s say we’ve heard multiple times in customer calls that data in some parts of the platform seems inaccurate, so they turn it off in settings.</p>
+
+<p>Is this the rumblings of a few opinionated customers, or does it reflect broader usage trends? In our case, this feedback is tied to a specific feature: and it turns out that 80% of customers in our platform have also turned this feature off.</p>
+
+<p>Well-scoped data requests like this can be a powerful storytelling tool. In this case, it’s an argument to invest time researching <em>why</em> customers don’t trust the feature–something not so accessible by looking at data itself.</p>
+
+<p>A value like 80% gives us a quick understanding of the magnitude of the problem. What it doesn’t do is give us causation, nor a direction on how to solve it.</p>
+
+<h4>Influencing strategy</h4>
+
+<p>to do</p>
+
+<h4>Data without context will mislead you</h4>
+
+<p>Data can often <em>feel</em> objective, but that’s where the potential for mistake lies: data without context will mislead you.</p>
+
+<p>Let’s say we pulled that 80% value querying our data warehouse:</p>
+<ul>
+  <li>Of all customers, how many have the feature turned off?</li>
+</ul>
+
+<p>Is this really the right request to make? What if we then realized that 1) this feature is only rolled out to 40% of customers, and 2) the setting is opt-in?</p>
+
+<p>Suddenly, the 80% doesn’t feel true. So we re-write our query:</p>
+<ul>
+  <li>Of customers who have this feature enabled, how many have opted in and then opted out?</li>
+</ul>
+:ET

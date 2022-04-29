@@ -191,7 +191,7 @@ ul{
 
 .post-header {
   position: absolute;
-  top: 28%;
+  top: 30%;
   text-align: center;
   left:0;
   right:0;
@@ -217,7 +217,7 @@ ul{
   margin: 0 auto;
   border-radius: 0px;
   filter: brightness(.4);
-  height:100vh;
+  height:95vh;
   object-fit: cover;
 
   @media (max-width: $screen-sm-min){
@@ -249,5 +249,14 @@ ul{
   #read-more {
     color: $active-link;
     border-bottom: 1px solid $active-link;
+  }
+}
+
+ul{
+  background-color: $bg-gray-lighter;
+  border-radius: $border-radius-standard;
+  margin-bottom: $size-12x;
+  li{
+    color:white;
   }
 }

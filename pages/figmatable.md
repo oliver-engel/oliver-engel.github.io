@@ -17,7 +17,7 @@ order: 2
 
 In 2022, I started releasing free Figma Community resources for download. I've so far released a couple relatively successfully kits, mostly focused around design systems. I choose projects to work on based on what I'm feeling most passionate about at the moment, with some plans to release additional kits for data viz UIs, map UIs, and fully-fledged design system starters.
 
-Each kit is created with Figma best practices, and with an eye towards practicality in real-world design situations.
+Each kit is created with Figma best practices, and with an eye towards practicality in real-world design applications.
 
 <div class="spacer-8x"></div>
 
@@ -35,17 +35,9 @@ I use these smaller projects as a way to test out the latest & greatest Figma fe
 ![Figma table UI kit](/assets/img/projects/figmakits/kitdetails2.jpg)
 *Details from a table UI kit*
 
-
-
-
-
 To see and download the files yourself, check out my Figma Community profile.
 
 > [View @oe on Figma Community](https://www.figma.com/@oe)
 
 
 ---
-
-
-
-<!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/@oe" allowfullscreen></iframe> -->
