@@ -1,62 +1,19 @@
-<!-- <div class="inline-project-list standard-width">
-  <h4>Similar projects (you might like)</h4>
-  <div class="spacer-2x"></div>
-
-  <hr>
-  <div class="spacer-8x"></div>
-
-  <section class="projects" id="smaller-project-list">
-
-    {% for page in site.pages %}
-    {% if page.tag contains "productdesign" %}
-
-    <a href="{{page.url}}" class="project-row {{page.tag}}">
-
-      <section>
-        <div class="hero-wrapper">
-          <img class="hero" src="{{page.hero}}">
-          <div class="project-hover-text">
-            <h4 class="centered-text">View Project</h4>
-            <h4 class="spinner">✷</h4>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <p><b>{{page.title}}</b></p>
-        <p>{{page.description}}</p>
-      </section>
-    </a>
-
-
-    {% endif %}
-    {% endfor%}
-  </section>
-
-</div> -->
+<!-- Project nav is used to direct users to browse more projects when reaching the end of the current project. -->
 
 <div class="standard-width">
-  <!-- <a data-micromodal-trigger="project-list-modal" onmouseover="hover();" onmouseout="unhover();"> -->
-
     <section class="next-section">
       <div>
-        <p class="subhead">still interested?</p>
+        <p class="subhead">Still Interested?</p>
         <h3 >See More Projects</h3>
       </div>
-      <!-- <img id="memoji-hover" src="" > -->
     </section>
-
-
 </div>
 
 <script>
-
   $('.next-section').click(function() {
     $('.dropdown-menu').toggleClass('toggled');
     $('#chevron').toggleClass('rotate-chevron');
     $("#focus-overlay").fadeToggle(150);
     console.log("in here");
   });
-
-
 </script>

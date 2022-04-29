@@ -1,6 +1,6 @@
 .nav-wrapper{
   z-index: 1006;
-  background-color: #2e363d;
+  background-color: $bg-gray-lighter;
   box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 32px rgba(17,17,26,0.05);
   width: 100%;
   position: fixed;
@@ -27,14 +27,10 @@
     line-height: .875rem;
     text-align:center;
     width: 100%;
-    // height: $size-12x;
     padding-top: $size-2x;
     display:flex;
     gap: $size-1x;
     align-items: center;
-
-
-
 
     a {
       user-select: none;
@@ -42,7 +38,7 @@
       // border-radius: $border-radius-standard;
       padding: $size-2x $size-3x;
       text-decoration: none;
-      color:$text-gray;
+      color:$gray-200;
 
 
       border-bottom: 2px solid #fff00000 !important;
@@ -113,7 +109,7 @@
 
     &:hover{
       img{
-        transform: scale(1.05) rotate(-1deg);
+        @include scale-rotate;
       }
 
       p{

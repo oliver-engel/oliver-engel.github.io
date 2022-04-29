@@ -20,7 +20,8 @@ footer {
   a{
     text-decoration: none;
     font-size:.8em;
-    color: #9faab7 !important;
+    color: $gray-200;
+    // color: #9faab7 !important;
   }
 
   a > span {
@@ -28,13 +29,6 @@ footer {
     padding-bottom: 3px;
   }
 
-  .footer-icon {
-    position: absolute;
-    align-self: center;
-    left: 50%;
-    bottom: 5px;
-    color: $off-white;
-  }
 
   .footnote {
     text-align: center;
@@ -58,7 +52,7 @@ footer {
 
   padding-top: $size-4x;
   text-align: center;
-  color:#9faab7;
+  color: $gray-200;
 
   @media (max-width: $screen-sm-min) {
     padding: $size-8x $size-4x 0 $size-4x;

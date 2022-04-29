@@ -51,14 +51,12 @@
   font-size: 1.25rem;
   letter-spacing: 0.02em;
   line-height: 1.25;
-  color: $bg-gray;
+  color: $gray-900;
   box-sizing: border-box;
 }
 
 .modal__close {
   font-size: 1em;
-  color: $purple-700;
-  background: $purple-100 !important;
   background: transparent;
   border: 1px solid white;
   padding: $size-2x;
@@ -78,7 +76,7 @@
   color: rgba(0,0,0,.8);
 
   p {
-    color: $bg-gray;
+    color: inherit;
     margin-bottom:0px;
   }
 }

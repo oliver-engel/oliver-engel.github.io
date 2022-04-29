@@ -1,0 +1,27 @@
+I"v<h3>What’s with the kits?</h3>
+
+<p>In 2022, I started releasing free Figma Community resources for download. I’ve so far released a couple relatively successfully kits, mostly focused around design systems. I choose projects to work on based on what I’m feeling most passionate about at the moment, with some plans to release additional kits for data viz UIs, map UIs, and fully-fledged design system starters.</p>
+
+<p>Each kit is created with Figma best practices, and with an eye towards practicality in real-world design situations.</p>
+
+<p><img src="/assets/img/projects/figmakits/tablekitcover.jpg" alt="Figma table UI kit" />
+<em>Details from table UI kit</em></p>
+
+<blockquote>
+  <p><a href="https://www.figma.com/community/file/1008915545779167203/%F0%9F%8C%80-Auto-Layout-Table-Kit">View @oe on Figma Community</a></p>
+</blockquote>
+
+<h4>Why tables?</h4>
+
+<p>Tables are some of the bread and butter of interface design. They also figure largely in my current role at <a href="https://samsara.com/">Samsara</a>, where I’ve learned a great deal about what goes into a high-quality table.</p>
+
+<p>Too many design resources are optimized for visual aesthetic rather than real-world flexibility; this free UI kit aims to address some of the painpoints of actually designing tables.</p>
+
+<p>The kit uses best practice UI construction (autolayout, responsive elements, etc.) and features a customizable design system to make designing and changing tables simple and fluid.</p>
+
+<hr />
+
+<h4>UI Kit</h4>
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/@oe" allowfullscreen=""></iframe>
+:ET

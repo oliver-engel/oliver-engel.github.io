@@ -1,27 +1,32 @@
-// LAYOUTS
-//CONTENT WIDTHS
+// TYPE
+$header-font: "Proxima Soft";
+$header-font-weight: 600;
+$body-font: "Graphik";
+$body-font-weight: 400;
+$monospace: "Fakt Mono";
+
+// CONTENT WIDTHS
 $content-standard: 600px;
 $content-fullwidth: 100vw;
-
-
-
 $vertical-rhythm: 48px;
 
-//MISC STYING
+// BORDER RADIUS
 $border-radius-standard: 6px;
-
-// MAIN COLORS
-$card-color:white;
-// $bg-color: #2A2C33;
-$bg-color: #1b1f23;
-
-$divider: #2d3338;
-
-$gray-hover: #f5f4f4;
-$gray-outline: #d3d3d5;
+$border-radius-max: 1000px;
 
 
-$gray: #3c3c3c;
+// GRAYSCALE
+$gray-50: #fafafa;
+$gray-100: #f4f4f5;
+$gray-200: #e4e4e7;
+$gray-300: #d4d4d8;
+$gray-400: #a1a1aa;
+$gray-500: #71717a;
+$gray-600: #52525b;
+$gray-700: #3f3f46;
+$gray-800: #27272a;
+$gray-900: #18181b;
+
 $blue: #0918c7;
 $green: #8bc34a;
 $light-green: #9EB2AB;
@@ -30,19 +35,19 @@ $off-white: #E9EDEA;
 $yellow: #FFE928;
 $red: #e71a1a;
 $pink: #E5AFA7;
-$active-link: $green;
 
-$purple-700: #2B088C;
-$purple-200: #d1c7f1;
-$purple-100: #F1EDFE;
+$card-color:white;
+$bg-color: #1b1f23;
+$divider: #2d3338;
 
 $bg-gray: #222225;
+$bg-gray-lighter: #2e363d;
+
 $transp-gray: #282e3978;
 $transp-gray-lighter: #282e3929;
 
-
 // TYPE COLORS
-$text-gray: #ccd4db;
+$active-link: $green;
 
 // ANIMATIONS
 $quickest: 0.4s;

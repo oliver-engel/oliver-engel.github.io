@@ -1,29 +1,16 @@
-/**
- * ALL THINGS TYPE
- */
+// *{
+//   font-display: swap;
+// }
+//
+// html{
+//   font-size:100%;
+// }
 
-$header-font: "Proxima Soft";
-$header-font-weight: 600;
-$header-color: #000;
-$body-font: "Graphik";
-$body-font-weight: 400;
-$monospace: "Fakt Mono";
-
-
-*{
-  font-display: swap;
+h1, h2, h3, h4, h5 {
+  @include header;
 }
-
-html{
-  font-size:100%;
-}
-
-
-
 
 h1 {
-  @include header;
-  // font-weight: $header-font-weight;
   margin-top: $size-6x;
   margin-bottom:$size-6x;
   user-select: none;
@@ -33,14 +20,11 @@ h1 {
 }
 
 h2 {
-  @include header;
-
   font-size: 2rem;
   line-height: 2rem;
 }
 
 h3 {
-  @include header;
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin: 0;
@@ -49,12 +33,8 @@ h3 {
 }
 
 h4 {
-  @include header;
   color:white;
-
-
   font-size: 1.25em;
-  // margin-top: 2.5rem;
   margin-bottom: .5rem;
 
   i{
@@ -64,7 +44,6 @@ h4 {
 
 h5 {
   font-size: 1rem;
-  @include header;
   color:white;
   margin: 0;
 }
@@ -82,11 +61,8 @@ p {
   margin-bottom: 0px;
   font-size: 1rem;
   line-height: 1.5rem;
-  color:$text-gray;
+  color: $gray-200;
 }
-
-
-
 
 p {
   a {
@@ -131,7 +107,6 @@ ol{
   text-transform: uppercase;
   font-size: .7em;
   letter-spacing: .05em;
-  // margin-bottom: $vertical-rhythm / 2;
 }
 
 
@@ -183,11 +158,4 @@ u{
   color: $green;
   border-bottom: 1px solid $green;
   padding-bottom: 5px;
-}
-
-
-
-// Special Classes
-.subdued-text{
-  color: $text-gray;
 }

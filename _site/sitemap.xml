@@ -22,7 +22,7 @@
 <loc>http://localhost:4000/pages/default</loc>
 </url>
 <url>
-<loc>http://localhost:4000/work/figmatable</loc>
+<loc>http://localhost:4000/work/figmakits</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
@@ -32,9 +32,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/work/safety-score</loc>
-</url>
-<url>
-<loc>http://localhost:4000/success.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/work/tagsidebar</loc>
@@ -52,10 +49,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/fonts/transfonter.org-20220214-011340/demo.html</loc>
-<lastmod>2022-02-19T18:43:08+00:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/boundless.html</loc>
 <lastmod>2022-02-19T18:43:08+00:00</lastmod>
 </url>
 <url>

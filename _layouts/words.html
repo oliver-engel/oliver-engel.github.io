@@ -5,48 +5,33 @@ layout: default
 
 <body class="blog-home">
 
-<section class="full-header">
-  <h2 class="animated-header">My (very) occasional written words.</h2>
-</section>
+  <section class="full-header">
+    <h2 class="animated-header">My (very) occasional written words.</h2>
+  </section>
 
-<section class="standard-width">
+  <section class="standard-width">
 
-  <div class="spacer-12x"></div>
+    <div class="spacer-12x"></div>
 
+    {% for post in site.posts %}
+    <div class="blog-wrapper slideUp">
+      <a class="blog-entry" href="{{post.url}}">
+        <div class="img-wrapper">
+          <img src="{{post.thumb}}">
+        </div>
 
-  <!-- <div class="spacer-24x"></div> -->
+        <div class="blog-entry-content">
+          <!-- <p class="blog-date">8 MAY 19</p> -->
+          <p><b>{{post.title}}</b></p>
+          <p>{{post.description}}</p>
+          <div class="spacer-2x"></div>
+          <p><span id="read-more">Read More</span></p>
+        </div>
 
-<!-- <form class="email-collect" name="contact" method="POST" data-netlify="true" action="/success.html">
-  <p>Want spicy new words in your inbox?</p>
-  <div class="form-container">
-    <label class="form-children"><input class="email-input" type="email" name="email" placeholder="gimme@ur-email.com"/></label>
-    <button id="submit-button" disabled class="form-children" type="submit">Sign up</button>
-  </div>
-</form> -->
+      </a>
+    </div>
+    {% endfor %}
 
-
-  {% for post in site.posts %}
-  <div class="blog-wrapper slideUp">
-    <a class="blog-entry" href="{{post.url}}">
-      <div class="img-wrapper">
-        <img src="{{post.thumb}}">
-      </div>
-
-      <div class="blog-entry-content">
-        <!-- <p class="blog-date">8 MAY 19</p> -->
-        <p><b>{{post.title}}</b></p>
-        <p>{{post.description}}</p>
-        <div class="spacer-2x"></div>
-        <p><span id="read-more">Read More</span></p>
-      </div>
-
-    </a>
-  </div>
-  {% endfor %}
-
-
-
-
-</section>
+  </section>
 
 </body>

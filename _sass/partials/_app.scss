@@ -6,11 +6,10 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: 16px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
-  // overflow-x: hidden;
   scroll-behavior: smooth;
 
   @media (max-width: $screen-sm-min) {
@@ -26,7 +25,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-variant-ligatures: common-ligatures;
-
   @include highlight-color-dark;
 }
 
@@ -59,32 +57,22 @@ hr {
   background-color: $divider;
   border: none;
 }
-// VIDEO ///////////////////////////////
 
 video {
   display: block;
   border-radius: $border-radius-standard;
 }
 
+
+// BUTTONS //////////
 button {
-  @include delicious-button;
+  @include primary-button;
 }
 
 button.secondary-button{
-  @include header;
-  background-color: #f3f3f3;
-  color: black;
-  box-shadow: none;
-  border-radius: 100px;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  @include secondary-button;
 }
+// END BUTTONS //////
 
 iframe{
   margin: $size-4x 0;
@@ -98,7 +86,7 @@ iframe{
   overflow: hidden;
   border-radius: 3px;
   /* pointer-events : none; */
-  margin-bottom: $vertical-rhythm;
+  margin-bottom: $size-12x;
 }
 
 .video-responsive iframe {
@@ -114,10 +102,6 @@ iframe{
 .content {
   @include margin-0-auto;
   padding: $size-12x 0;
-
-
-  // max-width: $content-standard;
-  // background-color: $card-color;
   border-radius: $border-radius-standard;
 
   @include highlight-color-light;
@@ -168,7 +152,7 @@ iframe{
     width: $size-12x !important;
     height: $size-12x !important;
     left: 0 !important;
-    background-color: $gray-hover;
+    background-color: $gray-50;
     border-radius: $border-radius-standard;
   }
 
@@ -177,7 +161,6 @@ iframe{
     display: inline-flex;
     gap: $size-5x;
     padding: $size-3x;
-    // border:1px solid red;
     width: 100%;
     border-radius: $border-radius-standard;
 
@@ -187,7 +170,7 @@ iframe{
     }
 
     &:hover {
-      background-color: #2e363d;
+      background-color: $bg-gray-lighter;
 
       i {
         color: $green;
@@ -251,8 +234,7 @@ iframe{
     &:hover {
 
       .hero-wrapper{
-        transform: scale(1.05) rotate(-1deg);
-
+        @include scale-rotate;
       }
       b {
         border-bottom: 1px solid black;
@@ -286,91 +268,16 @@ iframe{
 }
 
 .pill {
-  color:$text-gray;
-  background-color: #f5f4f421;
+  color:$gray-200;
+  background-color: #27272a;
   justify-content: center;
   align-items: center;
   font-size: 0.875rem;
   line-height: 0.875rem;
-  // display: inline-flex;
   padding: $size-2x $size-3x;
   border-radius: $border-radius-standard;
 }
 
-.filterDiv {
-  display: none;
-  /* Hidden by default */
-  // overflow-x: scroll;
-}
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-.active {
-  color: white !important;
-  // background-color: $bg-color !important;
-  border: 2px solid $bg-color !important;
-
-  .numberCircle {
-    background: white;
-    color: black;
-  }
-
-  &:hover {
-    border: none;
-  }
-}
-
-#myBtnContainer {
-  @media (max-width: $screen-sm-min) {
-    overflow-x: scroll;
-  }
-  z-index: 100;
-  position: -webkit-sticky;
-  /* Safari & IE */
-  position: sticky;
-  top: 0;
-  padding: $size-4x 0;
-  background-color: white;
-  white-space: nowrap;
-
-  .active {
-    background-color: $bg-color !important;
-  }
-
-  .btn {
-    height: $size-12x;
-    color: $bg-color;
-    background-color: white;
-    border: 2px solid $gray-hover;
-    border-radius: 1000px;
-    display: inline-block;
-    font-size: 0.9rem;
-
-    .numberCircle {
-      margin-left: $size-1x;
-      display: inline-block;
-      line-height: 0;
-      border-radius: 50%;
-      // border: 2px solid;
-      background: $gray-hover;
-      // font-size: 32px;
-    }
-
-    .numberCircle span {
-      display: inline-block;
-      padding-top: 50%;
-      padding-bottom: 50%;
-      margin: 0 8px;
-      @include monospace;
-    }
-
-    &:hover {
-      border: 2px solid $gray-outline;
-    }
-  }
-}
 
 .fourohfour{
   text-align: center;
@@ -381,41 +288,9 @@ iframe{
   }
 }
 
-.fancy-link-preview{
-  width:100%;
-  background-color: $gray-hover;
-  height: $size-8x;
-}
-
-
-#block-link {
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background: $purple-100;
-  color: $purple-700;
-  border: 1px solid $purple-100 !important;
-  // background-color: #2890ff0d;
-  text-align: center;
-  padding: $size-8x;
-  margin-top: $size-4x;
-  border-radius: $border-radius-standard;
-  text-decoration: none;
-
-  &:hover{
-    border: 1px solid $purple-200 !important;
-    opacity:1 !important;
-  }
-}
-
-.full-page-width{
-  width: 100%;
-}
 
 .inline-project-list{
-  margin: 0 auto;
+  @include margin-0-auto;
   max-width: $content-standard;
   padding: $size-12x;
   background: white;
@@ -426,8 +301,6 @@ iframe{
     margin-top: 0;
   }
 
-  li{
-  }
 }
 
 .project-row{
@@ -437,28 +310,26 @@ iframe{
 }
 
 
-#smaller-project-list{
-  a{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: $size-12x;
-    align-items: center;
-
-    .hero{
-      max-height: 160px;
-    }
-  }
-}
+// #smaller-project-list{
+//   a{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-gap: $size-12x;
+//     align-items: center;
+//
+//     .hero{
+//       max-height: 160px;
+//     }
+//   }
+// }
 
 .full-header{
   height: 40vh;
-  // width: 100vw;
   color:white;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  // background-color: $green;
 
   @media (max-width: $screen-xs-min){
     gap: $size-4x;
@@ -466,13 +337,6 @@ iframe{
   }
 }
 
-.floating-button{
-  z-index: 0;
-  position: fixed;
-  bottom: $size-8x;
-  right: $size-8x;
-
-}
 
 body.disable-scroll {
   overflow: hidden;
@@ -498,6 +362,8 @@ body.disable-scroll {
   }
 }
 
+
+// FORM CONTROLS
 .input-group{
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -512,7 +378,7 @@ input{
   border: none;
   padding: $size-2x;
   border-radius: $border-radius-standard;
-  background: #2e363d;
+  background: $bg-gray-lighter;
 
   &:focus{
     outline: -webkit-focus-ring-color auto 0px;
@@ -525,3 +391,4 @@ input{
     color:white;
   }
 }
+/////////////////////////////

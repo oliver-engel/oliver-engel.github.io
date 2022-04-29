@@ -3,35 +3,21 @@ layout: default
 ---
 
 <body class="blog-post">
-  <!-- <img class="post-hero-image" src="{{page.hero}}"> -->
 
   <div class="post-intro">
     <img class="post-hero-image" src="{{page.hero}}">
-
     <div class="post-header slideUp">
-      <!-- <p class="subhead">{{page.year}} • {{page.org}}</p> -->
       <h2>{{page.title}}</h2>
-      <p class="subdued-text">{{page.description}}</p>
-
-      <!-- <span class="pill">{{page.tagname}}</span> -->
-
+      <p>{{page.description}}</p>
     </div>
   </div>
 
-  <section class="content remove-top-radius ">
-
-
+  <section class="content remove-top-radius">
     <div class="blog-markdown standard-width">
       {{content}}
     </div>
-
     <div class="spacer-8x"></div>
-
-    <!-- <hr> -->
-
     {% include navigation/post-internal-navigation.html %}
-
-
   </section>
 
 </body>

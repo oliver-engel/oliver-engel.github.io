@@ -3,10 +3,6 @@
   padding-bottom:0px !important;
 }
 
-.reverse-margin{
-  margin-top: $vertical-rhythm !important;
-  margin-bottom: $vertical-rhythm * 3 !important;
-}
 
 .spinner{
   -webkit-animation: spin 4s linear infinite;
@@ -18,7 +14,7 @@
 
 
 .content-standard{
-  @include standard-content-width;
+  @include standard-width;
 }
 
 .remove-top-radius{

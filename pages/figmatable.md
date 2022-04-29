@@ -1,31 +1,51 @@
 ---
-title: Figma Auto-Layout Table Kit
-permalink: work/figmatable
-description: A free, finely-crafted UI kit for Figma Community
+title: Figma Community Kits
+permalink: work/figmakits
+description: Finely-crafted open source design kits
 layout: project
 section: home
-hero: "/assets/img/projects/figmatable/hero.jpg"
+hero: "/assets/img/projects/figmakits/hero.jpg"
 tag: productdesign
 tagname: Product Design
 org: Personal Project
-year: 2021
+year: Ongoing
 orgurl: https://www.figma.com/community/file/1008915545779167203/%F0%9F%8C%80-Auto-Layout-Table-Kit
 order: 2
 ---
 
-#### Why tables?
+### What's with the kits?
 
-Tables are some of the bread and butter of interface design. They also figure largely in my current role at [Samsara](https://samsara.com/), where I've learned a great deal about what goes into a high-quality table.
+In 2022, I started releasing free Figma Community resources for download. I've so far released a couple relatively successfully kits, mostly focused around design systems. I choose projects to work on based on what I'm feeling most passionate about at the moment, with some plans to release additional kits for data viz UIs, map UIs, and fully-fledged design system starters.
 
-Too many design resources are optimized for visual aesthetic rather than real-world flexibility; this free UI kit aims to address some of the painpoints of actually designing tables.
+Each kit is created with Figma best practices, and with an eye towards practicality in real-world design situations.
 
-The kit uses best practice UI construction (autolayout, responsive elements, etc.) and features a customizable design system to make designing and changing tables simple and fluid.
+<div class="spacer-8x"></div>
+
+![Figma table UI kit](/assets/img/projects/figmakits/covers.png)
+
+<div class="spacer-8x"></div>
+
+I use these smaller projects as a way to test out the latest & greatest Figma features, as well as continually create digital assets in a way that's helpful to other designers.
+
+<div class="spacer-8x"></div>
+
+![Figma table UI kit](/assets/img/projects/figmakits/kitdetails.jpg)
+*Details from a systems documentation kit*
+
+![Figma table UI kit](/assets/img/projects/figmakits/kitdetails2.jpg)
+*Details from a table UI kit*
+
+
+
+
+
+To see and download the files yourself, check out my Figma Community profile.
+
+> [View @oe on Figma Community](https://www.figma.com/@oe)
+
 
 ---
 
-#### UI Kit
-
-> [View on Figma Community](https://www.figma.com/community/file/1008915545779167203/%F0%9F%8C%80-Auto-Layout-Table-Kit)
 
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FU2y0gbV2T6ygyuARf2LR9w%2F%25F0%259F%258C%2580-Auto-Layout-Table-Kit-(Community)%3Fnode-id%3D40%253A789" allowfullscreen></iframe>
+<!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/@oe" allowfullscreen></iframe> -->
