@@ -1,6 +1,7 @@
 ---
 title: Graphics & Illustrations
 permalink: work/graphics
+published: false
 description: Various visual explorations
 layout: project
 section: home
@@ -10,7 +11,6 @@ tagname: Visuals
 org: Various
 year: 2014 – 2021
 order: 100
-published: false
 ---
 
 ### Still building stuff out here.

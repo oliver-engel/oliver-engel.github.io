@@ -1,5 +1,5 @@
 ---
-title: Tag Selection Sidebar 🔒
+title: "Tag Selection Sidebar \U0001F512"
 permalink: work/tagsidebar
 description: Interaction design for a complex tag selector
 layout: project
