@@ -2,7 +2,6 @@
 title: Data-driven design
 date: 2021-11-08 12:00:00 Z
 permalink: "/words/data-driven-design"
-published: true
 layout: post
 description: Learning how data can validate, misguide, and clarify parts of the design
   process.
