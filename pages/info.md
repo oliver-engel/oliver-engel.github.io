@@ -12,6 +12,6 @@ color: text-color
 
 <div class="spacer-8x"></div>
 ### A bit about yours truly.
-Lover of interface design, typography, Hawaiian shirts, 80, Belgian beer, IDM, photography, cinematography, thrift stores, typography, illustration, motion design, PF Flyers, creative coding... did I mention typography?
+Lover of interface design, typography, Hawaiian shirts, Elden Ring, Belgian beer, IDM, photography, cinematography, thrift stores, typography, illustration, motion design, PF Flyers, creative coding... did I mention typography?
 
 ---

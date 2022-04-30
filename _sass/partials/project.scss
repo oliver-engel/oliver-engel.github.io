@@ -1,3 +1,5 @@
+
+
 .album-list {
 
   display: grid;
@@ -17,9 +19,26 @@
       display: flex;
 
       &:hover{
+
         .dot{
+          border: 1.5px solid #22222582;
+          background-color: #ffffff24;
+
           transform: scale(1);
           opacity: 1;
+
+          &:before {
+            content: " ";
+            border-radius: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 3px solid #ffffff24;
+            background-color: $bg-gray;
+          }
         }
       }
     }
@@ -32,6 +51,7 @@
         -webkit-animation: spin 8s linear infinite;
         -moz-animation: spin 8s linear infinite;
         animation: spin 8s linear infinite;
+        border: 5px solid #ffffff24;
 
       }
     }
@@ -43,8 +63,8 @@
     opacity: 0;
     position: absolute;
     background-color: $bg-gray;
-    width:30px;
-    height:30px;
+    width:48px;
+    height:48px;
     border-radius: 100%;
     left: 0;
     right: 0;
@@ -62,7 +82,7 @@
   }
 
   img {
-    transition: 0.3s all;
+    transition: 0.2s all;
     max-height: 300px !important;
     max-width: 300px;
     object-fit: cover;
