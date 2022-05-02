@@ -4,7 +4,7 @@ permalink: work/figmakits
 description: Finely-crafted open source design kits
 layout: project
 section: home
-hero: "/assets/img/projects/figmakits/hero.jpg"
+hero: "/assets/img/projects/figmakits/hero2.jpg"
 tag: productdesign
 tagname: Product Design
 org: Personal Project
