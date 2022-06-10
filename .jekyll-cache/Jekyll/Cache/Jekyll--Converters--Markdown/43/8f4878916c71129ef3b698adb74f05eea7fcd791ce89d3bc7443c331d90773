@@ -1,0 +1,35 @@
+I"�<hr />
+<h5>About Samsara</h5>
+<p><a href="https://www.samsara.com/">Samsara</a> is an enterprise hardware + software platform for connecting physical operations (like vehicles and other assets) to the cloud. I work on Safety, which is an area that uses AI dash cams and other hardware to capture events like speeding, distracted driving, and crashes.</p>
+
+<hr />
+
+<h5>The Challenge</h5>
+
+<h3>The Safety Score, a highly visible (and sensitive) feature of our highest-ARR product, had low adoption in customer workflows and often required heavy customer support involvement to set up properly.</h3>
+
+<p>Safety scores are used to identify which drivers should be coached on safe driving practices, and manifest as a number between 0 and 100.</p>
+
+<p><img src="/assets/img/projects/safetyscore/scoring.jpg" alt="Scores" />
+<em>Scoring is entirely configurable by customers</em></p>
+
+<hr />
+
+<h5>The Product</h5>
+<h3>I designed a guided onboarding flow and settings overhaul for Safety Scoring, geared towards increasing feature adoption and reducing customer support tickets.</h3>
+
+<p>While it’s not yet GA’d, the updates have seen relatively rapid adoption in beta as well as positive customer feedback.</p>
+
+<p><img src="/assets/img/projects/safetyscore/product.jpg" alt="Snapshot of the product" />
+<em>A snapshot of the onboarding experience</em></p>
+
+<hr />
+
+<h3>Looking for a more full case study?</h3>
+<p>Includes an interactive prototype, design process + more.</p>
+<blockquote>
+  <p><a href="https://www.figma.com/proto/Ng4GJPBsWfJFSCvrTeRhmF/Boundless-%7C-Customer-Dashboard?page-id=137%3A1581&amp;node-id=137%3A1649&amp;viewport=2342%2C776%2C0.09&amp;scaling=scale-down&amp;starting-point-node-id=137%3A1649&amp;show-proto-sidebar=1">View on Figma</a></p>
+</blockquote>
+
+<hr />
+:ET

@@ -10,6 +10,7 @@ tagname: Product Design
 org: Samsara
 year: 2021
 order: 100
+published: false
 ---
 
 {% include components/password.html %}

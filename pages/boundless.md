@@ -33,7 +33,7 @@ I worked alongside another designer through the end-to-end design process to cre
 
 #### In-App Comms Tool
 
-To move away from taxing email-based communications with customers, I owned an MVP of an in-app communications tool that was tailored to our operations team. It significantly improved efficiency of customer issue tracking and has been extended to multiple other tools in our system.
+To move away from taxing email-based communications with customers, I led design of an in-app communications tool that was tailored to our operations team. It significantly improved efficiency of customer issue tracking and has been extended to multiple other tools in our system.
 
 ![](/assets/img/projects/boundless/hero.jpg)
 
@@ -57,7 +57,7 @@ When I joined Boundless, they used Sketch and Illustrator for design work. I swi
 
 #### Task management system
 
-As part of a larger product initiative, I worked on a task assignment and discovery system that enabled our teams in Las Vegas and the Philippines to move away from their outdated work distribution models (which were mostly based on Slack messages and Trello boards).
+As part of a larger product initiative, I designed a task assignment and discovery system that enabled our teams in Las Vegas and the Philippines to move away from their outdated work distribution models (which were mostly based on Slack messages and Trello boards).
 
 ![](/assets/img/projects/boundless/tasks.jpg)
 

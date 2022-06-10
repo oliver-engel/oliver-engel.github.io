@@ -78,7 +78,24 @@ ul{
 }
 
 .blog-markdown {
+  h6{
+    color:white;
+    @include sans;
+    // text-transform: uppercase;
+    padding-bottom: .6rem;
+    // letter-spacing: .05rem;
+    font-weight:500;
+    font-size: .9rem;
+    &:before{
+      position: absolute;
+      transform:translateX(-20px);
+      content:"✸";
+    }
 
+  }
+  h3{
+    line-height:2rem;
+  }
 
   blockquote{
     margin: 0 $size-3x 0 0;
