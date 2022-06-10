@@ -13,9 +13,6 @@ orgurl: http://boundless.com
 order: 2
 ---
 
-
-
-
 ---
 ##### About Boundless Immigration
 [Boundless Immigration](https://www.boundless.com/) is an online service that helps immigrants apply for marriage-based green cards, fiancé visas, and a range of other legal statuses. Customers pair with customer support and an immigration attorney and work with them over 2-3 months to prepare their application.

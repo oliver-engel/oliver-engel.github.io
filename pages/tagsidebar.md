@@ -1,6 +1,7 @@
 ---
 title: "Tag Selection Sidebar \U0001F512"
 permalink: work/tagsidebar
+published: false
 description: Interaction design for a complex tag selector
 layout: project
 section: home
@@ -10,7 +11,6 @@ tagname: Product Design
 org: Samsara
 year: 2021
 order: 100
-published: false
 ---
 
 {% include components/password.html %}
