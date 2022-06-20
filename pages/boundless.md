@@ -1,7 +1,7 @@
 ---
 title: Simplifying Immigration
 permalink: work/boundless
-description: A selection of work from my time at the “TurboTax of Immigration”
+description: A selection of projects from my time at Boundless
 layout: project
 section: home
 hero: "/assets/img/projects/boundless/hero.jpg"

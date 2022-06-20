@@ -1,0 +1,18 @@
+I"u<h3>I love frontend!</h3>
+
+<p>I’m by no means a professional software developer, but I do love doing front-end work. This portfolio you’re browsing now was all hand coded by me, and I like making microsites as an opportunity to try out new techniques and have fun.</p>
+
+<hr />
+
+<h3>Pinned: a bookmarking microsite</h3>
+
+<p><img src="/assets/img/projects/pinned/site.png" alt="Pinned site" /></p>
+
+<p>I made Pinned to curate some of my favorite digital places. Developed as a static site using Jekyll, and hosted on Netlify.</p>
+
+<blockquote>
+  <p><a href="https://pinned.netlify.app/">View site</a></p>
+</blockquote>
+
+<hr />
+:ET
