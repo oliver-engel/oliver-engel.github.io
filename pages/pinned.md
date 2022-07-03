@@ -1,7 +1,6 @@
 ---
 title: Pinned Microsite
 permalink: work/pinned
-published: true
 description: A quick weekend bookmarking microsite
 layout: project
 section: home
@@ -13,8 +12,6 @@ orgurl: https://pinned.netlify.com/
 year: 2020
 order: 100
 ---
-
-
 
 #### Pinned: a bookmarking microsite
 
