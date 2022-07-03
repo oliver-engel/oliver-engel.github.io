@@ -133,6 +133,30 @@ iframe{
 
 .work-experience {
 
+  .featured{
+    img{
+      width: 80px !important;
+      height: 80px !important;
+      filter: grayscale(0);
+    }
+
+    &:before{
+      content: "Soon!";
+      position: absolute;
+      background: $green;
+      border-radius: 1000px;
+      padding: 0 12px;
+      // color:white;
+      z-index:1000;
+      font-size: 12px;
+      font-weight: 500;
+      @include header;
+      transform: translateX(50px)rotateZ(7deg) ;
+      border:2px solid $bg-color;
+
+    }
+  }
+
   padding: 0;
 
   a {
@@ -160,6 +184,7 @@ iframe{
   section {
     transition: 0.1s all;
     display: inline-flex;
+    align-items: center;
     gap: $size-5x;
     padding: $size-3x;
     width: 100%;

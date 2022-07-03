@@ -1,4 +1,4 @@
-I"<hr />
+I"<hr />
 <h6>About Samsara</h6>
 <p><a href="https://www.samsara.com/">Samsara</a> is an enterprise hardware + software platform for connecting physical operations (like vehicles and other assets) to the cloud. I work on Safety, which is an area that uses AI dash cams and other hardware to capture events like speeding, distracted driving, and crashes.</p>
 
@@ -27,9 +27,8 @@
 
 <h3>Looking for a more full case study?</h3>
 <p>Includes an interactive prototype, design process + more.</p>
-<blockquote>
-  <p><a href="https://www.figma.com/proto/jMqB7SHyxXqfG2sW7GSORx/Samsara-%7C-Safety-Scoring-Onboarding-%26-Settings?page-id=0%3A1&amp;node-id=29%3A8606&amp;viewport=1127%2C155%2C0.02&amp;scaling=contain&amp;starting-point-node-id=29%3A8606&amp;show-proto-sidebar=1">View on Figma</a></p>
-</blockquote>
+
+<p><button data-micromodal-trigger="contact-modal">Reach Out</button></p>
 
 <hr />
 :ET

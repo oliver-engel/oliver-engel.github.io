@@ -11,7 +11,7 @@ color: text-color
 ![Photo of me](assets/img/misc/self.jpg)
 
 <div class="spacer-8x"></div>
-### A bit about yours truly.
-Lover of interface design, typography, Hawaiian shirts, Elden Ring, Belgian beer, IDM, photography, cinematography, thrift stores, typography, illustration, motion design, PF Flyers, creative coding... did I mention typography?
+### A bit about yours truly
+Lover of interface design, typography, Hawaiian shirts, Elden Ring, brown ales, IDM, photography, cinematography, thrift stores, typography, illustration, motion design, PF Flyers, creative coding... did I mention typography?
 
 ---
