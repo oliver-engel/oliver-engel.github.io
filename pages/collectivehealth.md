@@ -1,6 +1,7 @@
 ---
 title: "Mobile Design Systems \U0001F512"
 permalink: work/collective-health
+published: false
 description: Extending mobile design systems – work from my first tech internship
 layout: project
 section: home
@@ -10,7 +11,6 @@ tagname: Product Design
 org: Collective Health
 year: 2018
 order: 4
-published: false
 ---
 
 <!-- #### Collective Health is an SF startup improving the experience of employer-based healthcare.
