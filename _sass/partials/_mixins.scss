@@ -23,19 +23,19 @@
 
 @mixin highlight-color-light{
   ::selection {
-  background: #0e0f10; /* WebKit/Blink Browsers */
+  background: #2e363d; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-    background: #0e0f10; /* Gecko Browsers */
+    background: #2e363d; /* Gecko Browsers */
   }
 }
 
 @mixin highlight-color-dark{
   ::selection {
-  background: #0e0f10; /* WebKit/Blink Browsers */
+  background: #304517; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-    background: #0e0f10; /* Gecko Browsers */
+    background: #304517; /* Gecko Browsers */
   }
 }
 //////////////////////////////////////////
@@ -80,6 +80,7 @@
   @include header;
   border-radius: $border-radius-max;
   padding: $size-2x $size-5x;
+  padding-top: 10px;
   text-align: center;
   text-decoration: none;
   border: 0;
