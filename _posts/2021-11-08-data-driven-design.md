@@ -5,8 +5,8 @@ permalink: "/words/data-driven-design"
 layout: post
 description: Learning how data can validate, misguide, and clarify parts of the design
   process.
-thumb: "/assets/img/blog/datadrivendesign/hero.jpg"
-hero: "/assets/img/blog/datadrivendesign/hero.jpg"
+thumb: "/assets/img/blog/datadrivendesign/hero2.jpg"
+hero: "/assets/img/blog/datadrivendesign/hero2.jpg"
 ---
 
 ### Some thoughts on data & design
@@ -62,4 +62,4 @@ The earlier you pull data, the better. You can weave it into a product review, i
 
 While it may seem technical at first, partnering with someone on data science or engineering can often simplify data pulls quite a bit. It of course doesn't hurt to become literate in how to pull data yourself, which is something I'm working on.
 
-Hopefully I've explained a few of the reasons why setting aside time to pull and validate data is now an inseparable part of my design process. 
+Hopefully I've explained a few of the reasons why setting aside time to pull and validate data is now an inseparable part of my design process.
