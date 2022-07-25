@@ -44,8 +44,9 @@ While it's not yet GA'd, the updates have seen relatively rapid adoption in beta
 
 ---
 
-### Looking for a more full case study?
+### Looking for a full case study?
 Includes an interactive prototype, design process + more.
-> [View on Figma](https://www.figma.com/proto/jMqB7SHyxXqfG2sW7GSORx/Samsara-%7C-Safety-Scoring-Onboarding-%26-Settings?page-id=0%3A1&node-id=29%3A8606&viewport=1127%2C155%2C0.02&scaling=contain&starting-point-node-id=29%3A8606&show-proto-sidebar=1)
+
+<button data-micromodal-trigger="contact-modal">Reach Out</button>
 
 ---

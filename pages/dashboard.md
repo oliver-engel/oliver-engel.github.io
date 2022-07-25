@@ -40,8 +40,9 @@ The dashboard led to a 33% decline in inbound customer support emails over the f
 
 ---
 
-### Looking for a more full case study?
+### Looking for a full case study?
 Includes an interactive prototype, design process + more.
-> [View on Figma](https://www.figma.com/proto/Ng4GJPBsWfJFSCvrTeRhmF/Boundless-%7C-Customer-Dashboard?page-id=137%3A1581&node-id=137%3A1649&viewport=2342%2C776%2C0.09&scaling=scale-down&starting-point-node-id=137%3A1649&show-proto-sidebar=1)
+
+<button data-micromodal-trigger="contact-modal">Reach Out</button>
 
 ---

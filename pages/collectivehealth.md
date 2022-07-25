@@ -1,6 +1,7 @@
 ---
 title: "Mobile Design Systems \U0001F512"
 permalink: work/collective-health
+published: false
 description: Extending mobile design systems – work from my first tech internship
 layout: project
 section: home

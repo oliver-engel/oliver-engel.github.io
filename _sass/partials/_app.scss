@@ -133,6 +133,30 @@ iframe{
 
 .work-experience {
 
+  .featured{
+    img{
+      width: 80px !important;
+      height: 80px !important;
+      filter: grayscale(0);
+    }
+
+    &:before{
+      content: "Soon!";
+      position: absolute;
+      background: $green;
+      border-radius: 1000px;
+      padding: 0 12px;
+      // color:white;
+      z-index:1000;
+      font-size: 12px;
+      font-weight: 500;
+      @include header;
+      transform: translateX(50px)rotateZ(7deg) ;
+      border:2px solid $bg-color;
+
+    }
+  }
+
   padding: 0;
 
   a {
@@ -148,6 +172,7 @@ iframe{
   }
 
   img {
+    filter: grayscale(100%);
     margin: 0 !important;
     width: $size-12x !important;
     height: $size-12x !important;
@@ -159,6 +184,7 @@ iframe{
   section {
     transition: 0.1s all;
     display: inline-flex;
+    align-items: center;
     gap: $size-5x;
     padding: $size-3x;
     width: 100%;
@@ -187,6 +213,8 @@ iframe{
 
 .date-and-logo {
   * {
+    @include monospace;
+
     font-size: 0.875rem;
   }
   display: inline-flex;
@@ -268,8 +296,9 @@ iframe{
 }
 
 .pill {
+  @include monospace;
   color:$gray-200;
-  background-color: #27272a;
+  background-color: #2e2e32;
   justify-content: center;
   align-items: center;
   font-size: 0.875rem;
@@ -392,3 +421,49 @@ input{
   }
 }
 /////////////////////////////
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}/* Created with https://www.css-gradient.com */
+
+
+
+
+
+body{
+  // &:after{
+  //   animation: grain 8s steps(10) infinite;
+  //   background-image: url("/assets/img/uploads/global/paper.png");
+  //   content: "";
+  //   height: 300%;
+  //   left: -50%;
+  //   opacity: 0.1;
+  //   position: fixed;
+  //   top: -100%;
+  //   width: 300%;
+  //   user-select: none;
+  //   pointer-events: none;
+    // z-index:-1000;
+  // }
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
