@@ -16,7 +16,7 @@ As a side note, I’ve recently been able to put this advice to the test, and wa
 
 I've also put together a free Figma Community resource with a version of this guide and a simple starter template for your own presentation:
 
-> [Download on Figma Community](https://www.notion.so/oliverengel/The-Graphic-Design-Primer-40753e8952c14902b85d998bba745411)
+> [Download on Figma Community](hhttps://www.figma.com/community/file/1134973529360132718)
 
 
 
@@ -172,4 +172,4 @@ I would strongly recommend assembling your presentation in Figma. Being able to 
 
 To help you get started, I've put together a free Figma Community workbook + kit! The template includes some starters for your background section, your projects, and your process, as well as a workbook style exercise to decide on what you'll be presenting on.
 
-> [Download on Figma Community](https://www.notion.so/oliverengel/The-Graphic-Design-Primer-40753e8952c14902b85d998bba745411)
+> [Download on Figma Community](https://www.figma.com/community/file/1134973529360132718)
