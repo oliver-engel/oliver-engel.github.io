@@ -17,7 +17,7 @@ As a side note, I’ve recently been able to put this advice to the test, and wa
 
 I've also put together a free Figma Community resource with a version of this guide and a simple starter template for your own presentation:
 
-> [Download on Figma Community](hhttps://www.figma.com/community/file/1134973529360132718)
+> [Download on Figma Community](https://www.figma.com/community/file/1134973529360132718)
 
 
 
