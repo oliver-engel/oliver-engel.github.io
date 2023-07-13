@@ -77,10 +77,11 @@
 // BUTTONS
 
 @mixin base-button{
-  @include header;
-  border-radius: $border-radius-max;
-  padding: $size-2x $size-5x;
-  padding-top: 10px;
+  @include sans;
+  font-weight: 500;
+  border-radius: $border-radius-max !important;
+  padding: $size-3x $size-6x;
+  // padding-top: 10px;
   text-align: center;
   text-decoration: none;
   border: 0;
@@ -90,6 +91,7 @@
   cursor: pointer;
   display: inline-block;
   transition: all 250ms;
+  height:48px;
 
   &:hover {
     @include scale-rotate;
@@ -107,7 +109,7 @@
 
 @mixin secondary-button{
   @include base-button;
-  background-color: #f3f3f3;
+  background-color: #ebebeb;
   color: black;
   box-shadow: none;
 }

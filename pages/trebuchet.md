@@ -1,12 +1,12 @@
 ---
-title: Microsoft Education
+title: Hacking STEM
 permalink: work/trebuchet
-published: false
-description: STEM lesson plans for kids – teaching potential and kinetic energy through
-  Arduinos
+published: true
+shortdescription: Prototyping learning experiences for kids
+description: Prototyping a STEM lesson plan that teaches kids about potential and kinetic energy.
 layout: project
 section: home
-hero: "/assets/img/projects/trebuchet/hero.jpg"
+hero: "/assets/img/video/trebuchet"
 tag: frontend
 tagname: Front-End Dev
 org: MHCI+D
@@ -14,4 +14,4 @@ year: 2019
 order: 100
 ---
 
-{% include components/password.html %}
+

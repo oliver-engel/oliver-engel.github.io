@@ -98,11 +98,11 @@ ul{
   }
 }
 
-.blog-home {
-  h3 {
-    text-align: center;
-  }
-}
+// .blog-home {
+//   h3 {
+//     text-align: center;
+//   }
+// }
 
 .blog-markdown {
   h6{
@@ -136,10 +136,10 @@ ul{
 
   img{
     @media (min-width: $screen-sm-min){
-     max-width: 700px;
+     max-width: 1000px;
      width: 100vw;
      position: relative;
-     left: calc(-350px + 50%);
+     left: calc(-500px + 50%);
    }
   }
 
@@ -194,11 +194,19 @@ ul{
 }
 
 .full-page-content{
+  margin: 0 16px;
+
+  transition: 0.25s all;
   @media (max-width: $screen-md-min) {
     padding: $size-4x;
   }
   padding-top: $size-10x;
+
+  background: #EEEAE3;
+  border-radius: 48px 48px 0 0;
 }
+
+
 
 
 .blog-wrapper {
@@ -243,14 +251,14 @@ ul{
 }
 
 .post-header {
-  position: absolute;
-  top: 30%;
+  // position: absolute;
+  // top: 30%;
   text-align: center;
-  left:0;
-  right:0;
+  // left:0;
+  // right:0;
   margin-left: auto;
   margin-right: auto;
-  background: white;
+  // background: white;
   max-width: $content-standard;
   padding: $size-16x;
   border-radius: $border-radius-standard;
@@ -267,11 +275,13 @@ ul{
 
 .post-hero-image {
   // width: $content-standard;
-  margin: 0 auto;
+  // margin: 0 32px;
   border-radius: 0px;
-  filter: brightness(.4);
-  height:95vh;
+  // filter: brightness(.4);
+  // height:95vh;
   object-fit: cover;
+  // width: 100vw;
+  width: 100%;
 
   @media (max-width: $screen-sm-min){
     height: 66vh;

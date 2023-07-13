@@ -61,12 +61,35 @@
   }
 }
 
+
+@mixin slideContentDown ($duration) {
+  animation: $duration ease-out 0s 1 slideDown;
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-60px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+
+
 .fadeIn {
   @include fadeContentIn($quick);
 }
 
 .slideUp {
-  @include slideContentUp($quickest);
+  @include slideContentUp($quick);
+}
+
+.slideDown {
+  @include slideContentDown($quickest);
 }
 
 @keyframes gradient {
@@ -125,5 +148,5 @@
 ////////////////////
 
 .letter {
-  @include color-change($quick);
+  // @include color-change($quick);
 }

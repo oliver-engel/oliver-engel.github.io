@@ -1,34 +1,24 @@
 <section class="nav-wrapper">
   <nav>
-    <a href="/" {% if page.url == "/" %}class="active" {% endif %}>Home</a>
-    <section>
-      <a id="dropdown-toggle" {% if page.url contains "/work"  %}class="active" {% endif %}>Work <i id="chevron" class="fas fa-chevron-down"></i></a>
-      <a href="/words" {% if page.url contains "/words"%}class="active" {% endif %}>Writing</a>
+    <!-- <div class="fixed"><a href="/" >Oliver</a></div> -->
+    <a href="/" > <img class="profile-pic" src="/assets/img/misc/portrait2.jpg"> </a>
+    <section class="main-nav-links">
+      <a href="/" {% if page.url == "/" or page.url contains "/work" %}class="active" {% endif %}>Design</a>
+      <a href="/resources" {% if page.url contains "/resources"%}class="active" {% endif %}>Resources</a>
       <a href="/about" {% if page.url contains "/about"%}class="active" {% endif %}>About</a>
     </section>
-    <a data-micromodal-trigger="contact-modal" >Say Hi</a>
+
+    <div class="fixed"><button data-micromodal-trigger="contact-modal" class="secondary-button" >Say Hi</button></div>
 
   </nav>
 </section>
 
-<section class="dropdown-menu">
-
-  {% assign sorted_pages = site.pages | sort:"order" | where: "layout","project" %}
-  {% for page in sorted_pages %}
-
-  <a href="{{page.url}}" <div>
-    <img src="{{page.hero}}">
-    <p>{{page.title}}</p>
-    </div>
-  </a>
 
 
 
-  {% endfor %}
 
-</section>
 
-<div id="focus-overlay"></div>
+<!-- <div id="focus-overlay"></div> -->
 
 
 <div class="modal micromodal-slide" id="contact-modal" aria-hidden="true">
@@ -39,7 +29,7 @@
         <!-- <button class="modal__close" aria-label="Close modal" data-micromodal-close></button> -->
       </header>
       <main class="modal__content" id="modal-1-content">
-        <p>Shoot an email on over to oliverengel6 [at] gmail.com. Happy to chat side projects, job opportunities, or just about anything else.
+        <p>Shoot an email on over to oliverengel6@gmail.com. Happy to chat side projects, job opportunities, or just about anything else.
         </p>
         <div class="spacer-8x"></div>
         <div style="display: flex; justify-content:space-between">
@@ -58,31 +48,12 @@
 
 
 <script>
-  $('#dropdown-toggle').click(function() {
-    $('.dropdown-menu').toggleClass('toggled');
-    $('#chevron').toggleClass('rotate-chevron');
-    $("#focus-overlay").fadeToggle(150);
-    console.log("in here");
-  });
 
-  $('#focus-overlay').click(function() {
-    $('.dropdown-menu').toggleClass('toggled');
-    $('#chevron').toggleClass('rotate-chevron');
-    $("#focus-overlay").fadeToggle(150);
-
-  });
-
-  $('#copy-email').click(function() {
-    var originalText = $('#copy-email').html();
-    /* Get the text field */
-     /* Copy the text inside the text field */
-    navigator.clipboard.writeText("oliverengel6@gmail.com");
-
-    $('#copy-email').html('Copied!');
-
-    setTimeout(function() {
-      $('#copy-email').html(originalText)
-    }, 3000);
-
-  });
+$('#copy-email').click(function() {
+  var originalText = $('#copy-email').html();
+  /* Get the text field */ /* Copy the text inside the text field */ 
+  navigator.clipboard.writeText("oliverengel6@gmail.com");
+  $('#copy-email').html('Copied!');
+  setTimeout(function() {
+    $('#copy-email').html(originalText) }, 3000); }); 
 </script>

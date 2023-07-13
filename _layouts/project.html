@@ -7,14 +7,32 @@ layout: default
 
 
   <div class="post-intro">
-    <img class="post-hero-image" src="{{page.hero}}">
+    <!-- <img class="post-hero-image" src="{{page.hero}}"> -->
 
     <div class="post-header slideUp">
       <p>{{page.year}} • <a href="{{page.orgurl}}">{{page.org}}</a></p>
-      <h2>{{page.title}}</h2>
+      <h1>{{page.title}}</h1>
       <p style="color:black;">{{page.description}}</p>
 
     </div>
+
+    <!-- <video class="post-hero-image" playsinline autoplay loop muted src="{{page.hero}}"> -->
+
+
+
+          <video class="post-hero-image" autoplay loop muted playsinline>
+
+            <!-- Provide the Safari video -->
+            <source 
+              src="{{page.hero | append: '.mp4'}}" 
+              type='video/mp4; codecs="hvc1"'>
+  
+              <!-- .. and the Chrome video -->
+            <source 
+            src="{{page.hero | append: '.webm'}}" 
+            type="video/webm">
+            </video>
+   
 
   </div>
 
@@ -25,7 +43,7 @@ layout: default
     </div>
 
 
-    {% include project-list/inline-project-list.html %}
+    {% comment}{% include project-list/inline-project-list.html  %} {% endcomment %}
 
   </section>
 

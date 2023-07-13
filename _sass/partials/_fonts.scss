@@ -1,4 +1,17 @@
 @font-face {
+    font-family: 'MD Nichrome';
+    src: url('MDNichrome-Bold.eot');
+    src: url('MDNichrome-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MDNichrome-Bold.woff2') format('woff2'),
+        url('MDNichrome-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
     font-family: 'Graphik';
     // font-display: swap;
     src: url('/assets/fonts/Graphik-Regular.eot');

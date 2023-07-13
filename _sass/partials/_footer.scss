@@ -5,11 +5,12 @@
 
 footer {
   max-width: $content-standard;
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
   padding: $size-8x 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  // grid-template-columns: 1fr 1fr 1fr;
 
   @media (max-width: $screen-sm-min) {
     grid-template-columns: 1fr 1fr;
@@ -19,8 +20,8 @@ footer {
 
   a{
     text-decoration: none;
-    font-size:.8em;
-    color: $gray-200;
+    // font-size:.8em;
+    // color: $gray-200;
     // color: #9faab7 !important;
   }
 
@@ -47,12 +48,12 @@ footer {
 
 .colophon{
   p{
-    font-size:.8rem;
+    // font-size:.8rem;
   }
 
   padding-top: $size-4x;
   text-align: center;
-  color: $gray-200;
+  // color: $gray-200;
 
   @media (max-width: $screen-sm-min) {
     padding: $size-8x $size-4x 0 $size-4x;

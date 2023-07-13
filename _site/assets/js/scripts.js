@@ -151,7 +151,8 @@ if (document.querySelector('.animated-header') !== null ) {
       translateY: [120,0],
       easing: "easeOutExpo",
       duration: 900,
-      delay: (el, i) => 10 * i
+      delay: (el, i) => 10 * i,
+      opacity: 1
     });
 
     $(window).scroll(function(){

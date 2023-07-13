@@ -1,11 +1,11 @@
 ---
 title: Pitch.ai
-permalink: work/pinned
+permalink: work/pitch
 published: false
 description: Lean UX for an AI web app
 layout: project
 section: home
-hero: "/assets/img/projects/pitch/thumb.png"
+hero: "/assets/img/projects/pitch/hero.webm"
 tag: productdesign
 tagname: Product Design
 org: MHCI+D

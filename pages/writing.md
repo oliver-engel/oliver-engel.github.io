@@ -1,7 +1,7 @@
 ---
-title: Words
-permalink: "/words"
-layout: words
+title: Resources
+permalink: "/resources"
+layout: resources
 section: home
 ---
 
