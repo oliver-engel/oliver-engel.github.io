@@ -12,9 +12,6 @@ org: Personal Project
 year: 2014-Now
 ---
 
-
-
-
 <div id="macy-container">
 {% for image in site.static_files %}
 {% if image.path contains '/assets/img/projects/graphics' %}
