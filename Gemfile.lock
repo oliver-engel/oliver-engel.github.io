@@ -31,8 +31,6 @@ GEM
       terminal-table (~> 2.0)
     jekyll-sass-converter (2.2.0)
       sassc (> 2.0.1, < 3.0)
-    jekyll-sitemap (1.4.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -66,8 +64,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  jekyll (~> 4.2.0)
-  jekyll-sitemap
+  jekyll (~> 4.2.2)
   liquid-c
   tzinfo-data
   webrick (~> 1.7)
