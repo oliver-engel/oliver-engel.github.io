@@ -1,5 +1,5 @@
 ---
-title: Oliver Engel – Product Designer
+title: Oliver Engel – Software Designer
 timezone: UTC
 collections:
   posts:
@@ -16,9 +16,9 @@ defaults:
     layout: post
     section: post
 email: oliverengel6@gmail.com
-description: Digital Product Designer based in Seattle, WA.
+description: Software Designer based in Seattle, WA.
 baseurl: ''
-name: Oliver Engel – Product Designer
+name: Oliver Engel – Software Designer
 short_name: oe
 language: en
 lang_direction: ltr
@@ -26,10 +26,7 @@ color: "#161618"
 url: https://oliverengel.com
 permalink: "/blog/:title"
 section: true
-netlifycms: true
 analytics: false
-plugins:
-- jekyll-sitemap
 sass:
   style: compressed
   sass_dir: _sass
