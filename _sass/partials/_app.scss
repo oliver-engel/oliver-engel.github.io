@@ -301,14 +301,16 @@ iframe{
 
 .pill {
   @include monospace;
-  color:$gray-200;
-  background-color: #2e2e32;
+  color:#3c402b;
+  border: 1px solid #c3c4bf;
+  // background-color: #2e2e32;
   justify-content: center;
   align-items: center;
   font-size: 0.875rem;
   line-height: 0.875rem;
   padding: $size-2x $size-3x;
-  border-radius: $border-radius-standard;
+  border-radius: 8px;
+  display: inline-flex;
 }
 
 
@@ -683,15 +685,31 @@ input{
 }
 html{
   height: 100%;
+  background-color: #e5eaec;
 }
 
 .minimal-home{
+
+  border-radius:2px;
+  border-top: 6px solid #cddc39;
+  max-width: 900px;
+  margin: 24px auto;
+
+
+  @media (max-width: $screen-sm-min) {
+    padding: 32px;
+    margin-top:0px;
+  }
 
   .work-list{
     padding-top: 64px;
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    @media (max-width: $screen-sm-min) {
+      padding-top: 32px;
+    }
 
   }
 
@@ -703,18 +721,20 @@ html{
 
     padding: 64px;
 
-    @media (max-width: $screen-sm-min) {
-      padding: 32px;
-    }
+    
 
     h1{
-      line-height: 3.5rem;
+      font-size: 2.6rem;
+      line-height: 3rem;
       max-width: 900px;
       user-select: text;
+      font-weight: 500;
 
       @media (max-width: $screen-sm-min) {
-        font-size: 2rem;
-        line-height: 2.4rem;
+        font-size: 1.7rem;
+        line-height: 2.1rem;
+        // @include sans;
+        font-weight: 500;
       }
       
     }
@@ -746,6 +766,12 @@ html{
       background-color: #cddc39;
       padding: 2px 6px;
       border-radius: 12px;
+
+      @media (max-width: $screen-sm-min) {
+        border-radius: 8px;
+        padding: 3px 6px 2px 6px;
+
+      }
     }
 
   .lists{
@@ -766,7 +792,24 @@ html{
   }
 }
 
-.tiny-button{
-  height:20px;
-  padding: 0 6px;
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: #dc4839;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right:8px;
+}
+
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:cubic-bezier(0.99,0,0.52,0.96);
+	-webkit-animation-direction: alternate;
 }
