@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Fakt';
+  src: url('/fonts/Fakt-Normal.eot');
+  src: url('/fonts/Fakt-Normal.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/Fakt-Normal.woff2') format('woff2'),
+      url('/fonts/Fakt-Normal.woff') format('woff'),
+      url('/fonts/Fakt-Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('/fonts/Fakt-SemiBold.eot');
+  src: url('/fonts/Fakt-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/Fakt-SemiBold.woff2') format('woff2'),
+      url('/fonts/Fakt-SemiBold.woff') format('woff'),
+      url('/fonts/Fakt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+  @font-face {
+    font-family: 'Fakt Mono';
+    src: url('/fonts/FaktMono-Blond.eot');
+    src: url('/fonts/FaktMono-Blond.eot?#iefix') format('embedded-opentype'), url('/fonts/FaktMono-Blond.woff2') format('woff2'), url('/fonts/FaktMono-Blond.woff') format('woff'), url('/fonts/FaktMono-Blond.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    unicode-range: U+000-5FF;
+  }
+
+  @font-face {
+    font-family: 'Druk';
+    src: url('/fonts/Druk-Bold.eot');
+    src: url('/fonts/Druk-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Druk-Bold.woff2') format('woff2'),
+        url('/fonts/Druk-Bold.woff') format('woff'),
+        url('/fonts/Druk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

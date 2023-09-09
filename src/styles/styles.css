@@ -1,0 +1,421 @@
+@import url("fonts.css");
+
+:root {
+    /* BREAKPOINTS */
+    --screen-xs: 480px;
+    --screen-sm: 768px;
+    --screen-md: 992px;
+    --screen-lg: 1240px;
+    --screen-xl: 1920px;
+
+    /* COLORS */
+    --background: #0e1019;
+    --background-secondary: #191d2c;
+    --background-light: #efefec;
+
+    --text-primary: #efefec;
+    --text-secondary: #888a9a;
+
+    --accent: #cddc39;
+
+    /* BORDER RADIUS */
+    --border-radius-max: 1000px;
+    --border-radius-default: 16px;
+
+    /* FONT SIZES */
+    --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+
+    /* FONT FAMILIES */
+    --header-family: 'Druk';
+    --body-family: 'Fakt';
+    --mono: 'Fakt Mono';
+
+    /* VARIOUS VALUES */
+    --max-width:1100px;
+
+}
+ 
+main {
+    /* margin: auto; */
+    /* color: var(--text-primary);
+    border-radius: 2px;
+    max-width:100%;
+    margin: 48px 96px 96px 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; */
+    /* overflow: visible; */
+    /* margin: 48px 24px 24px 24px; */
+
+    /* width:100%; */
+    max-width:var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+
+    @media (max-width: 800px) {
+      padding: 0 12px;
+    }
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  font-family: var(--body-family);
+  color: var(--text-primary); 
+  width:100%;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+
+    /* background-color: var(--background);
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    min-width:fit-content;
+    font-family: var(--body-family);
+    color: var(--text-primary);  
+    overflow-x: hidden; */
+    /* width:100%;
+    max-width:100%; */
+
+}
+
+body{
+  margin: 0;
+  font-weight:400;
+}
+
+
+h1, h2 {
+    font-family: var(--header-family);
+    font-weight:700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+h1 {
+    /* user-select: none; */
+    font-size: 3rem;
+    line-height:3.3rem;
+    /* letter-spacing: -.02em;
+    line-height:.9em; */
+}
+
+h2 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin-bottom:8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin-bottom:1.2rem;
+}
+
+a{
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--background);
+    transition: 0.1s all;
+    opacity:1;
+    
+}
+
+a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+p {
+    margin-block-start: 0;
+    /* margin-block-end: 0; */
+}
+
+.subhead{
+    color: var(--text-secondary);
+    margin:0;
+    font-size:.85rem;
+    font-weight: 600;
+}
+
+.mono{
+  font-family: var(--mono);
+}
+
+.subdued{
+    color: var(--text-secondary);
+}
+
+.mono{
+    font-family: "Fakt Mono";
+}
+
+.fadeIn{
+    animation: 1200ms ease-out 0s 1 fadeInAnimation;
+}
+
+button{
+    background-color: var(--accent);
+    color: #2e310c;
+    font-size: .9em;
+    /* border: 2px solid var(--background); */
+    height: 32px;
+    padding: 6px 12px 4px 12px;
+    border-radius: 8px;
+    font-family: var(--body-family);
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.2s all;
+    border: none;
+}
+
+button:after{
+    /* content: " ↗"; */
+}
+
+button:hover{
+    /* border: 2px solid var(--accent); */
+    background: #adba26;
+    cursor: pointer;
+}
+
+.flex-row{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.card-list{
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top:24px;
+    @media (max-width: 1000px) {
+        grid-template-columns: 1fr;
+      }
+      
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal {
+    display: none;
+    color:black;
+    z-index:1000;
+  }
+  
+  .modal.is-open {
+    display: block;
+    position:absolute;
+  }
+
+.modal {
+    /* font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif; */
+  }
+  
+  .modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal__container {
+    background-color: #fff;
+    padding: 48px;
+    max-width: 500px;
+    max-height: 100vh;
+    border-radius: var(--border-radius-default);
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .modal__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-bottom:12px;
+  }
+
+  .modal__header h4{
+    color:var(--background);
+  }
+  
+  .modal__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: #00449e;
+    box-sizing: border-box;
+  }
+  
+  .modal__close {
+    background: #0000000f;
+    border: 0;
+  }
+
+  .modal__close:hover{
+    background: #00000024;
+  }
+  
+  .modal__header .modal__close:before { content: "\2715"; }
+  
+  .modal__content {
+    /* margin-top: 2rem;
+    margin-bottom: 2rem; */
+    line-height: 1.5;
+    color: rgba(0,0,0,.8);
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    text-align: center;
+  }
+
+
+  
+  .modal__btn {
+    font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #e6e6e6;
+    color: rgba(0,0,0,.8);
+    border-radius: .25rem;
+    border-style: none;
+    border-width: 0;
+    cursor: pointer;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    line-height: 1.15;
+    margin: 0;
+    will-change: transform;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: -webkit-transform .25s ease-out;
+    transition: transform .25s ease-out;
+    transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+  }
+  
+  .modal__btn:focus, .modal__btn:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  
+
+  
+  
+  
+  /**************************\
+    Demo Animation Style
+  \**************************/
+  @keyframes mmfadeIn {
+      from { opacity: 0; }
+        to { opacity: 1; }
+  }
+  
+  @keyframes mmfadeOut {
+      from { opacity: 1; }
+        to { opacity: 0; }
+  }
+  
+  @keyframes mmslideIn {
+    from { transform: translateY(15%); }
+      to { transform: translateY(0); }
+  }
+  
+  @keyframes mmslideOut {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10%); }
+  }
+  
+  .micromodal-slide {
+    display: none;
+  }
+  
+  .micromodal-slide.is-open {
+    display: block;
+  }
+  
+  .micromodal-slide[aria-hidden="false"] .modal__overlay {
+    animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+  
+  .micromodal-slide[aria-hidden="false"] .modal__container {
+    animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+  }
+  
+  .micromodal-slide[aria-hidden="true"] .modal__overlay {
+    animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+  
+  .micromodal-slide[aria-hidden="true"] .modal__container {
+    animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+  }
+  
+  .micromodal-slide .modal__container,
+  .micromodal-slide .modal__overlay {
+    will-change: transform;
+  }
+
+
+  hr{
+    height: 1.5px;
+    background-color: #ffffff1f;
+    border: none;
+    margin:48px 0;
+  }

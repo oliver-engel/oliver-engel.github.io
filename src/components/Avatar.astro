@@ -1,0 +1,85 @@
+
+<img id="animated-image" src="src/assets/logo-01.svg" >
+
+
+<style>
+    img{
+
+        margin-top:-6px;
+        width: 32px;
+        height: 32px;
+    }
+
+
+    #animated-image:hover{
+      animation: tilt-n-move-shaking 0.25s infinite;
+    }
+
+    @keyframes tilt-n-move-shaking {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(2px, 2px) rotate(5deg); }
+      50% { transform: translate(0, 0) rotate(0eg); }
+      75% { transform: translate(-2px, 2px) rotate(-5deg); }
+      100% { transform: translate(0, 0) rotate(0deg); }
+    }
+</style>
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+const defaultImage = '../src/assets/logo-01.svg';
+const blinkingImage = '../src/assets/logo-02.svg';
+
+
+let isBlinking = false;
+
+function toggleBlink() {
+  const animatedImage = document.getElementById('animated-image');
+
+  if (isBlinking) {
+    animatedImage.src = defaultImage;
+    isBlinking = false;
+  } else {
+    animatedImage.src = blinkingImage;
+    isBlinking = true;
+
+    setTimeout(() => {
+      animatedImage.src = defaultImage;
+      isBlinking = false;
+    }, 200); // Quickly switch back to default image after 0.1 seconds
+  }
+}
+
+function getRandomInterval(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function startBlinking() {
+  toggleBlink(); // Start with an immediate blink
+  const nextBlinkInterval = getRandomInterval(2000, 6000); // Random interval between 2 to 6 seconds
+  setTimeout(() => {
+    toggleBlink();
+    setInterval(toggleBlink, nextBlinkInterval);
+  }, nextBlinkInterval);
+}
+
+// Start the blinking simulation
+startBlinking();
+
+
+
+
+
+
+
+
+</script>
