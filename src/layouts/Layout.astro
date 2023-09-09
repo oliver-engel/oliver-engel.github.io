@@ -1,0 +1,97 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props as Props;
+
+import '../styles/styles.css';
+
+import Navigation from '../components/Navigation.astro';
+
+---
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="Software Designer in Seattle, WA.">
+		<meta name="keywords" content="oliver engel portfolio, portfolio design, portfolio oliverengel, minimal portfolio, photography, graphic design, ux, hci, uw, washington, seattle, design, interaction, interface, graduate, product design, digital product design, student ux, ux portfolio, visual designer, photography, pacific northwest" />
+		<meta name="author" content="Oliver Engel">
+		<meta name="robots" content="NOODP">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+
+
+		<!-- Primary Meta Tags -->
+		<title>Oliver Engel — Software Designer</title>
+		<meta name="title" content="Oliver Engel — Software Designer" />
+		<meta name="description" content="Senior designer focused on design systems and high-quality software design." />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://oliverengel.com/" />
+		<meta property="og:title" content="Oliver Engel — Software Designer" />
+		<meta property="og:description" content="Senior designer focused on design systems and high-quality software design." />
+		<meta property="og:image" content="https://oliverengel.com/share.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://oliverengel.com/" />
+		<meta property="twitter:title" content="Oliver Engel — Software Designer" />
+		<meta property="twitter:description" content="Senior designer focused on design systems and high-quality software design." />
+		<meta property="twitter:image" content="https://oliverengel.com/share.png" />
+
+		<!-- Meta Tags Generated with https://metatags.io -->
+
+
+
+
+
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+
+		<script>
+			import { webVitals } from "../lib/vitals";
+
+			let analyticsId = import.meta.env.PUBLIC_VERCEL_ANALYTICS_ID;
+
+			if (analyticsId) {
+				webVitals({
+					path: location.pathname,
+					params: location.search,
+					analyticsId,
+				});
+			}
+		</script>
+
+
+
+
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+
+
+<style>
+	/* body{
+		max-width: 1300px;
+		margin: 0 auto;
+	} */
+</style>

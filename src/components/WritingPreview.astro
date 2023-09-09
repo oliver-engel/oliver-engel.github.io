@@ -1,0 +1,81 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+	date: string;
+
+}
+
+const { href, title, body, date } = Astro.props as Props;
+---
+
+<li class="writing-card">
+	<a href={href}>
+		<div>
+			<div class="flex-space-between">
+				<p>
+					{title}
+				</p>
+
+				<p class="mono">
+					{date}
+				</p>
+			</div>
+			<p class="subdued">
+				{body}
+			</p>
+		</div>
+
+		<p></p>
+
+		<!-- <img src="/src/assets/interviewkit.png"> -->
+
+	</a>
+</li>
+<style>
+
+	.writing-card {
+		transition: 0.2s all;
+		width: fill;
+		list-style: none;
+		display: flex;
+		background-color: var(--background-secondary);
+		border-radius: 16px;
+		border: 2px solid var(--background);
+
+		/* aspect-ratio: 2 / 1; */
+		overflow: hidden;
+
+		@media (max-width: 800px) {
+
+      	}
+
+	}
+
+	p{
+        margin: 0;
+    }
+
+
+	.writing-card > a {
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		line-height: 1.4;
+		padding: 1em 1.3em;
+		/* opacity: 0.8; */
+		border:none;
+		padding: 48px;
+
+	}
+
+	.writing-card:hover{
+		border: 2px solid var(--accent);
+	}
+
+	.writing-card > a:hover{
+		border: none;
+	}
+
+</style>
