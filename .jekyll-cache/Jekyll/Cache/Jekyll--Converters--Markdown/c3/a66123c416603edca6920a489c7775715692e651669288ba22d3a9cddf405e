@@ -1,18 +1,14 @@
-I"j4<h3>A brief guide to crafting the presentation</h3>
+I"�4<h3>A brief guide to crafting the presentation</h3>
 
 <p>Over the last few months, I’ve sat in a number of portfolio presentations for product design applicants with a range of experience levels. I’ve been surprised at the mistakes I saw repeatedly in candidates, even at the senior level – mistakes that often prevented them from moving on to a final interview round. I wanted to share my thoughts on how product designers can avoid these common mistakes and craft something that impresses interviewers and makes their work easy to understand and talk about.</p>
 
 <p>As a side note, I’ve recently been able to put this advice to the test, and was fortunate enough to land a Senior Product Design role at <a href="https://joinhandshake.com/">Handshake</a>. I feel like this advice can apply to any designer between entry and senior levels, since that’s reflective of my own experience so far.</p>
 
-<p>Linked is an accompanying Figma Community file to get started on your own portfolio presentation. [Link]</p>
+<p>I’ve also put together a free Figma Community resource with a version of this guide and a simple starter template for your own presentation:</p>
 
-<div class="box-link">
-  <img src="/assets/img/blog/portfolio/community.jpg" />
-  <div>
-    <h4>Portfolio Presentations for Product Designers</h4>
-    <p>Testing</p>
-  </div>
-</div>
+<blockquote>
+  <p><a href="https://www.figma.com/community/file/1134973529360132718">Download on Figma Community</a></p>
+</blockquote>
 
 <hr />
 
@@ -65,7 +61,7 @@
 <hr />
 
 <ol>
-  <li>What problem were you solving, and why is it interesting?</li>
+  <li>What problem were you solving, and why is it interesting or important?</li>
 </ol>
 
 <p>Communicating the design challenge is integral to helping your audience understand what you ultimately designed. It should begin with talking about the context of problem in the first place – what does the company do? What team were you on? Was this a school project?</p>
@@ -75,9 +71,11 @@
 <p><img src="/assets/img/blog/portfolio/context.jpg" alt="Context slide" />
 <em>Give just enough context to set up your work</em></p>
 
-<p>Your goal here should be to give just enough information that interviewers can follow along and understand the state of the world the project took place in. <strong>Nearly every presentation I’ve seen has spent too much time on setting up this initial project context</strong>. Be succinct, and get into the work as fast as possible. Mock presentations with people unfamiliar with your work can be useful here.</p>
+<p><strong>Nearly every presentation I’ve seen has spent too much time on setting up this initial project context</strong>.</p>
 
-<p>Explaining how the problem is interesting or important depends on the project. You might have analytics data to share, business needs that needed to be met, or customer frustrations that make this problem a particular priority to solve. Interviewers should understand the pain you’re addressing or opportunity you’re going after</p>
+<p>Your goal here should be to give just enough information that interviewers can follow along and understand the state of the world the project took place in. Be succinct, and get into the work as fast as possible. Mock presentations with people unfamiliar with your work can be useful here.</p>
+
+<p>Explaining how the problem is interesting or important depends on the project. You might have analytics data to share, business needs that needed to be met, or customer frustrations that make this problem a particular priority to solve. Interviewers should understand the pain you’re addressing or opportunity you’re going after, and why it was the right problem to be tackling.</p>
 
 <p>Context also means giving a brief statement of what the project is about, a timeline, your role, and who else worked on it. Here’s an example from one of my projects:</p>
 
@@ -97,7 +95,7 @@
   <li>What did you do about it?</li>
 </ol>
 
-<p>Now, you show the work. I’ve found the most success with embedding my Figma prototype of the designs directly into the presentation so I can click through and give voiceover on the outcome. <strong>For product design interviews, I don’t think still snapshots of designs will cut it</strong>. The more you can interactively demonstrate your designs, the better interviewers can evaluate your interaction and experience design skills. Even better is pulling up a live site to click through, if you have access to it.</p>
+<p>Now, you show the work. I’ve found the most success with embedding my Figma prototype of the designs directly into the presentation so I can click through and give voiceover on the outcome. <strong>For product design interviews, I don’t think still snapshots of designs will cut it</strong>. The more you can interactively demonstrate your designs, the better interviewers can evaluate your interaction and experience design skills. Even better is pulling up a live product to click through, if you have access to it.</p>
 
 <p>Focus on walking through a few major flows and explaining what’s happening as you go. I use a navigational element on the side of the prototype to quickly access other flows that I’ve put together, which can be useful for jumping between flows and showing as much of the project as possible.</p>
 
@@ -125,13 +123,16 @@
 
 <h4>Sharing your process</h4>
 
-<p>The most common issue I saw in interviews was designers presenting their process before ever going into the actual design work. In my own experience, an applicant’s design process is useful to understand but never terribly interesting. If you lead with the design process, I’m left wondering: <em>okay, so what? What did you actually make?</em></p>
+<p><strong>The most common issue I saw in interviews was designers presenting their process before ever showing the final product.</strong></p>
 
-<p>Instead, I like to treat the process more like an appendix. I have a good amount of slides summarizing the pivotal moments of the process and the artifacts from along the way, and I’ll brush through them after walking through the product prototype. But they’re not incredible in-depth and are meant more as slides that I can pull up while answering questions about the project. Here’s an example: when asked more about what sort of discovery research occurred, I can pull up this slide and give more context:</p>
+<p>In my own experience, an applicant’s design process is useful to understand but never terribly interesting. If you lead with the design process, I’m left wondering: <em>okay, so what? What did you actually make?</em></p>
 
-<p><img src="/assets/img/blog/portfolio/process.jpg" alt="Project process" /></p>
+<p>Instead, I like to treat the process more like an appendix. I have a good amount of slides summarizing the pivotal moments of the process and the artifacts from along the way, and I’ll brush through them after walking through the product prototype. But they’re not incredibly in-depth and are meant more as slides that I can pull up while answering questions about the project. Here’s an example: when asked more about what sort of discovery research occurred, I can pull up this slide and give more context:</p>
 
-<p>I find that spending less time up front on context will give you more time on context and the actual design work, and if your interviewers are interested they’ll ask follow-up questions about the process that you have ready to answer with visuals already in hand.</p>
+<p><img src="/assets/img/blog/portfolio/process.jpg" alt="Project process" />
+<em>Example of a slide summarizing a design activity</em></p>
+
+<p>I find that spending less time up front on context will give you more time on the final product, and if your interviewers are interested they’ll ask follow-up questions about the process that you can answer with visuals already in hand.</p>
 
 <h4>The portfolio scorecard</h4>
 
@@ -147,7 +148,7 @@
   <li>Your interviewers are context switching or coming from back-to-back meetings</li>
 </ol>
 
-<p>This assumption can help you think about the most succinct ways of presenting your work in a way that can be quickly understood by people with no context. Don’t assume your interviewers know or care as much about the problem space as you do.</p>
+<p>This assumption can help you think about how to present your work in a way that can be quickly understood by people with no prior context. Don’t assume your interviewers know or care as much about the problem space as you do.</p>
 
 <ol>
   <li>Your interviewers aren’t immediately filling out your scorecard after the interview</li>
@@ -157,7 +158,7 @@
 
 <p>I like to drop a link to the Figma prototype in the Zoom chat at the top of the presentation so that folks can click through it on their own and reference it while writing their scorecards. This is also an argument for hitting a sweet spot of information density on your slides – giving just enough explanations in text that it can stand on its own as a readable document.</p>
 
-<p>As an interviewer, I can click through and refresh my memory while writing my scorecard, which is helpful especially when I don’t have time to write the review directly after the interview.</p>
+<p>As an interviewer, I can click through and refresh my memory while writing my scorecard, which is especially helpful when I don’t have time to write the review directly after the interview.</p>
 
 <h4>Get started with a Figma Community template</h4>
 
@@ -166,6 +167,6 @@
 <p>To help you get started, I’ve put together a free Figma Community workbook + kit! The template includes some starters for your background section, your projects, and your process, as well as a workbook style exercise to decide on what you’ll be presenting on.</p>
 
 <blockquote>
-  <p><a href="https://www.notion.so/oliverengel/The-Graphic-Design-Primer-40753e8952c14902b85d998bba745411">Download on Figma Community</a></p>
+  <p><a href="https://www.figma.com/community/file/1134973529360132718">Download on Figma Community</a></p>
 </blockquote>
 :ET

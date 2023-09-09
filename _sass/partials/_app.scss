@@ -467,3 +467,34 @@ body{
   80% { transform:translate(3%, 35%) }
   90% { transform:translate(-10%, 10%) }
 }
+
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+ 
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: auto;
+    z-index: 1;
+  }
+}
