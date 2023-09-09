@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<body class="blog-post">
+
+  <div class="post-intro">
+    <img class="post-hero-image" src="{{page.hero}}">
+    <div class="post-header slideUp">
+      <h2>{{page.title}}</h2>
+      <p>{{page.description}}</p>
+    </div>
+  </div>
+
+  <section class="content remove-top-radius">
+    <div class="blog-markdown standard-width">
+      {{content}}
+    </div>
+    <div class="spacer-8x"></div>
+    {% include navigation/post-internal-navigation.html %}
+  </section>
+
+</body>

@@ -1,0 +1,21 @@
+<section class="nav-wrapper">
+  <nav class="justify-full-width">
+    <a href="/"><i class="fas fa-arrow-left"></i> &nbsp; Back</a>
+    <a data-micromodal-trigger="project-list-modal"> <i class="fas fa-stream"></i> &nbsp; All Projects</a>
+  </nav>
+</section>
+
+<div class="modal micromodal-slide" id="project-list-modal" aria-hidden="true">
+  <div class="modal__overlay"  data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <h3>Projects</h3>
+        <button autofocus class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-1-content" >
+          {% include project-list/project-list.html %}
+      </main>
+
+    </div>
+  </div>
+</div>
