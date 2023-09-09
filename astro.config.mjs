@@ -1,0 +1,11 @@
+import { defineConfig } from 'astro/config';
+import vercel from '@astrojs/vercel/edge';
+
+export default defineConfig({
+  output: 'server',
+  adapter: vercel({
+    analytics: true,
+  }),
+
+  experimental: { assets: true },
+});
