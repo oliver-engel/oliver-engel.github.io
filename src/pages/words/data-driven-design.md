@@ -3,7 +3,7 @@ layout: '../../layouts/Post.astro'
 title: 'Data-driven design: Using data to help inform design decisions'
 blurb: 'Learning how to use data to help inform design decision-making'
 date: '2022'
-img: '/src/assets/img/words/datadrivendesign/hero.jpg'
+img: '/assets/img/words/datadrivendesign/hero.jpg'
 ---
 
 #### Some thoughts on data & design
