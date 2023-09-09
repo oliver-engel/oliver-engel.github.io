@@ -7,7 +7,6 @@ import Footer from '../components/Footer.astro';
 
 import Portrait from '../components/Portrait.astro';
 import WritingPreview from '../components/WritingPreview.astro';
-import { Image } from 'astro:assets';
 
 
 export const prerender = true;
@@ -18,8 +17,6 @@ export const prerender = true;
 		<!-- <Introduction link={"/words"} page={"Writing"} /> -->
 
 		<Navigation />
-		
-
 
 		<div class="fadeIn" style="display:flex; gap:24px; padding: 48px 0; align-items:center">
 			<div>
@@ -31,12 +28,12 @@ export const prerender = true;
 					<div class="link-row">
 					
 						<a href="https://www.figma.com/@oe">
-							<Image src="/src/assets/figma.svg" alt="Figma logo" height="32" width="32"/>
+							<img src="/src/assets/figma.svg" alt="Figma logo" height="32" width="32"/>
 							<p>Figma Community</p>
 						</a>
 
 						<a href="https://www.linkedin.com/in/oengel/">
-							<Image src="/src/assets/linkedin.svg" alt="LinkedIn logo" height="32" width="32"/>
+							<img src="/src/assets/linkedin.svg" alt="LinkedIn logo" height="32" width="32"/>
 							<p>LinkedIn</p>
 						</a>
 						<!-- <img class="portrait" style="width: 248px; " src="/src/assets/portrait.jpg"> -->
