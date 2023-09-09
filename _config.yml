@@ -1,0 +1,54 @@
+---
+title: Oliver Engel – Software Designer
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    section: post
+email: oliverengel6@gmail.com
+description: Software Designer based in Seattle, WA.
+baseurl: ''
+name: Oliver Engel – Software Designer
+short_name: oe
+language: en
+lang_direction: ltr
+color: "#161618"
+url: https://oliverengel.com
+permalink: "/blog/:title"
+section: true
+analytics: false
+sass:
+  style: compressed
+  sass_dir: _sass
+compress_html:
+  clippings: all
+markdown: kramdown
+kramdown:
+  auto_ids: false
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: highlight
+exclude:
+- README.md
+- LICENSE.txt
+- netlify.toml
+- feed.xml
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+highlighter: rouge
