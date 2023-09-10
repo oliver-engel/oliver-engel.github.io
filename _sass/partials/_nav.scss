@@ -1,0 +1,75 @@
+.nav-wrapper {
+    padding: 48px 0;
+}
+
+nav {
+    z-index: 1006;
+    user-select: none;
+    justify-content: space-between;
+    font-size: .875rem;
+    line-height: .875rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    a {
+        border-radius: $border-radius-max;
+        padding: 10px 12px 8px 12px;
+        text-decoration: none;
+        color: $text-primary;
+        border-bottom: none !important;
+
+        &:hover {
+            border-bottom: none !important;
+        }
+    }
+
+    .fixed {
+        width: 75px;
+        display: flex;
+    }
+}
+
+.main-nav-links {
+    border-radius: $border-radius-max;
+    display: flex;
+    gap: 8px;
+}
+
+a.active {
+    background-color: $background-secondary;
+}
+
+// Avatar
+#animated-image {
+    margin-top: -6px;
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+        animation: tilt-n-move-shaking 0.25s infinite;
+    }
+}
+
+// Avatar hover animation
+@keyframes tilt-n-move-shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(2px, 2px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-2px, 2px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}

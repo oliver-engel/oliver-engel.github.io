@@ -1,319 +1,97 @@
-// document.onload = function(){
-//   console.log("started up");
-//   document.querySelectorAll('[data-audio="tap"]').addEventListener("click", function(){ new Audio('/assets/sounds/tap-smallest.mp3').play();
-// });
-// }
-//
-// function tap() {
-//   new Audio('/assets/sounds/tap-smallest.mp3').play();
-// }
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   document.querySelectorAll('[data-audio="tap"]').addEventListener("click", function(){ new Audio('/assets/sounds/tap-smallest.mp3').play();
-// });
-// }, false);
-
-// window.onload = function() {
-//   var arr = document.querySelectorAll('[data-audio="tap"]');
-//   var f = function() {
-//     new Audio('/assets/sounds/tap-smallest.mp3').play();
-//   };
-//   for (var i = 0; i < arr.length; i++) {
-//   arr[i].onclick = f;
-//   }
-//   console.log("sound played");
-// };
-
-function tapSound() {
-    new Audio('/assets/sounds/tap-smallest.mp3').play();
-}
-
-function imgHover(obj){
-  console.log("testing");
-  var imgs = document.getElementsByClassName("hoverScale");
 
 
 
-  for(var i=0; i<imgs.length; i++){
-    if(obj != imgs[i]){
-      imgs[i].style.opacity = "0.5";
-    }
+// Set active nav link
+
+const nav = document.querySelector(".main-nav-links");
+const navLinks = nav.querySelectorAll("a");
+const currentURL = window.location.href;
+
+navLinks.forEach((link) => {
+  if (link.href === currentURL) {
+    link.classList.add("active");
+    console.log("added active");
   }
-}
 
-function imgHoverOut(){
-  console.log("testing");
-  var imgsOut = document.getElementsByClassName("hoverScale");
+  else {
+    link.classList.remove("active");
+    console.log("removed active");
 
-  for(var i=0; i<imgsOut.length; i++){
-    imgsOut[i].style.opacity = "1";
-    console.log("in here");
   }
-}
+});
 
 
-$('.email-collect').on("keyup", action);
-function action() {
-   if($('.email-input').val().length > 0) {
-      $('#submit-button').prop("disabled", false);
-   }else {
-      $('#submit-button').prop("disabled", true);
-   }
-}
+// Tooltip audio ////////////////////
+let success = new Audio('/assets/sounds/success.mp3');
+
+const tooltipTrigger = document.querySelector(".tooltip");
+const tooltipText = document.querySelector(".tooltiptext");
+
+tooltipTrigger.addEventListener('click', function () {
+  success.play();
+  navigator.clipboard.writeText("oliverengel6@gmail.com");
+  tooltipText.innerHTML = "Email copied!";
+
+  setTimeout(function () {
+    tooltipText.innerHTML = "Click to copy";
+  }, 3000);
+
+}, false);
 
 
+// Micromodal init
+document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded", function() {
-
+  AOS.init();
   try {
-
     MicroModal.init({
-      awaitCloseAnimation: true,// set to false, to remove close animation
-      onShow: function(modal) {
+      awaitCloseAnimation: true,
+      onShow: function (modal) {
         console.log("micromodal open");
       },
-      onClose: function(modal) {
+      onClose: function (modal) {
         console.log("micromodal close");
       }
     });
-
   } catch (e) {
     console.log("micromodal error: ", e);
   }
-
-});
-
-// var imgCounter = 0;
-//
-// function nextImage(){
-//
-//   var photoArray = document.getElementsByClassName('photo-grid-image');
-//
-//   if(imgCounter === photoArray.length - 1){
-//     $(photoArray[imgCounter]).hide();
-//     imgCounter = 0;
-//     $(photoArray[imgCounter]).css("display", "flex");
-//   }
-//
-//   else{
-//     $(photoArray[imgCounter]).hide();
-//     $(photoArray[imgCounter + 1]).css("display", "flex");
-//     imgCounter++;
-//   }
-//   console.log(imgCounter);
-// };
-//
-//
-// function prevImage(){
-//
-//   var photoArray = document.getElementsByClassName('photo-grid-image');
-//
-//   if(imgCounter === 0){
-//     $(photoArray[imgCounter]).hide();
-//     imgCounter = photoArray.length - 1;
-//     $(photoArray[imgCounter]).css("display", "flex");
-//   }
-//
-//   else{
-//     $(photoArray[imgCounter]).hide();
-//     $(photoArray[imgCounter - 1]).css("display", "flex");
-//     imgCounter--;
-//   }
-// };
-
-//ARROW KEY FUNCTIONS
-
-document.onkeydown = checkKey;
-
-function checkKey(e) {
-    e = e || window.event;
-    if (e.keyCode == '37') {
-       prevImage();
-    }
-    else if (e.keyCode == '39') {
-       nextImage();
-    }
-}
-
-
-
-//ANIMATED HEADER
-if (document.querySelector('.animated-header') !== null ) {
-
-  // Wrap every letter in a span
-  var textWrapper = document.querySelector('.animated-header');
-  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-  anime.timeline({loop: false})
-    .add({
-      targets: '.animated-header .letter',
-      translateY: [120,0],
-      easing: "easeOutExpo",
-      duration: 900,
-      delay: (el, i) => 10 * i,
-      opacity: 1
-    });
-
-    $(window).scroll(function(){
-        $(".fade-scroll").css("opacity", 1 - $(window).scrollTop() / 500);
-      });
-
-      $(window).scroll(function(){
-          $(".fadein-scroll").css("opacity", 0 + $(window).scrollTop() / 100);
-        });
-}
-
-//----INTERNAL NAV----//
-
-//Changing internal nav based on hash links
-var anchors = document.querySelectorAll('[id^="page-anchor"]');
-
-//Get anchors into a usable state
-var anchor_elements = $.map(anchors, function(el){
-  return $(el).get();
 });
 
 
-var sectionTitle = document.querySelector('#section-title');
+// Blinking avatar
+const defaultImage = '../assets/img/avatar/logo-01.svg';
+const blinkingImage = '../assets/img/avatar/logo-02.svg';
 
-//Fired by the IntersectionObserver
-function handler(entries, observer) {
-  for (entry of entries) {
-    if (entry.isIntersecting){
-      //Get the text content of the hash link
-      var hashContent =  entry.target.innerHTML;
-      sectionTitle.innerHTML = hashContent;
-    }
+let isBlinking = false;
+
+function toggleBlink() {
+  const animatedImage = document.getElementById('animated-image');
+
+  if (isBlinking) {
+    animatedImage.src = defaultImage;
+    isBlinking = false;
+  } else {
+    animatedImage.src = blinkingImage;
+    isBlinking = true;
+
+    setTimeout(() => {
+      animatedImage.src = defaultImage;
+      isBlinking = false;
+    }, 200); // Quickly switch back to default image after 0.1 seconds
   }
 }
 
-/* By default, invokes the handler whenever:
-   1. Any part of the target enters the viewport
-   2. The last part of the target leaves the viewport */
-
-
-var navList = document.getElementById("internal-nav-select");
-
-
-for(i=0; i < anchor_elements.length; i++){
-  let observer = new IntersectionObserver(handler);
-  observer.observe(anchor_elements[i]);
-
-  //Creating li for all nav sections and appending
-  var section = document.createElement("li");
-  var link = document.createElement("a");
-  var sectionText = section.text = anchor_elements[i].innerHTML;
-  var hashLink = anchor_elements[i].id;
-
-  link.setAttribute('href', '#' + hashLink);
-
-  section.appendChild(document.createTextNode(sectionText));
-  link.appendChild(section);
-  navList.appendChild(link);
-
+function getRandomInterval(min, max) {
+  return Math.random() * (max - min) + min;
 }
 
-//Handling toggles
-$(document).ready(function(){
-    $('.internal-nav-toggle').click(function(event){
-        event.stopPropagation();
-         $(".custom-select").slideToggle("fast");
-    });
-    $(".custom-select").on("click", function (event) {
-        event.stopPropagation();
-    });
-});
-
-$(document).on("click", function () {
-    $(".custom-select").slideUp("fast");
-});
-
-//----END INTERNAL NAV----//
-
-
-//Fadescroll
-$(window).scroll(function(){
-    $(".fade-scroll").css("opacity", 1 - $(window).scrollTop() / 550);
-  });
-
-
-
-//----ANIMATE ON SCROLL----//
-
-//Get all elements with AOS class
-var animateOnScroll = document.querySelectorAll('.animate-on-scroll');
-
-//Get into a usable state
-var aosElements = $.map(animateOnScroll, function(el){
-  return $(el).get();
-});
-console.log(aosElements.length);
-
-//Iterate over and add data elements
-for(var i=0; i<aosElements.length; i++){
-  aosElements[i].setAttribute('data-aos', 'fade-up');
-  aosElements[i].setAttribute('data-aos-delay', '250');
+function startBlinking() {
+  toggleBlink(); // Start with an immediate blink
+  const nextBlinkInterval = getRandomInterval(2000, 6000); // Random interval between 2 to 6 seconds
+  setTimeout(() => {
+    toggleBlink();
+    setInterval(toggleBlink, nextBlinkInterval);
+  }, nextBlinkInterval);
 }
-
-//----END ANIMATE ON SCROLL----//
-
-
-//----FILTERING----------------//
-
-filterSelection("all")
-function filterSelection(c) {
-  console.log("filtered");
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-let toggleButton = Array.from(document.querySelectorAll('.btn'));
-
-const handleClick = (e) => {
-  e.preventDefault();
-  toggleButton.forEach(node => {
-    node.classList.remove('active');
-  });
-  e.currentTarget.classList.add('active');
-
-}
-
-toggleButton.forEach(node => {
-  node.addEventListener('click', handleClick)
-});
-
-
-function hover(element) {
-  document.getElementById("memoji-hover").setAttribute('src', '/assets/img/icons/thumbsup.png');
-}
-
-function unhover(element) {
-  document.getElementById("memoji-hover").setAttribute('src', '/assets/img/icons/ponder.png');
-}
+startBlinking();
