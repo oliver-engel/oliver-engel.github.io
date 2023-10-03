@@ -16,6 +16,7 @@ navLinks.forEach((link) => {
   else {
     link.classList.remove("active");
     console.log("removed active");
+    console.log(currentURL);
 
   }
 });

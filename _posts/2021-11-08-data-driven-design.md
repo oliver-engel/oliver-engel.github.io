@@ -1,6 +1,7 @@
 ---
 title: Data-driven design
 date: 2021-11-08 12:00:00 Z
+prettydate: November 2021
 permalink: "/words/data-driven-design"
 layout: post
 description: Learning how data can validate, misguide, and clarify parts of the design
@@ -9,7 +10,7 @@ thumb: "/assets/img/blog/datadrivendesign/hero2.jpg"
 hero: "/assets/img/blog/datadrivendesign/hero2.jpg"
 ---
 
-### Some thoughts on data & design
+#### Some thoughts on data & design
 
 Over the last year at [Samsara](https://samsara.com/), I've come to appreciate the value of data-driven design as an effective method of making decisions, telling stories, and ultimately shaping product and design decisions. I've still got plenty to learn here, but I wanted to share some tactical ways that data has influenced some of my design work.
 
