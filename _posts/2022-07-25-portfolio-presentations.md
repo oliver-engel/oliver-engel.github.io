@@ -2,10 +2,10 @@
 title: Acing the PD portfolio presentation
 date: 2022-07-25 12:00:00 Z
 permalink: "/words/portfolio-presentations"
-layout: post
 published: false
-description: My process for product design portfolio presentations, plus a Figma
-  starter template
+layout: post
+description: My process for product design portfolio presentations, plus a Figma starter
+  template
 thumb: "/assets/img/blog/portfolio/hero.jpg"
 hero: "/assets/img/blog/portfolio/hero.jpg"
 ---
