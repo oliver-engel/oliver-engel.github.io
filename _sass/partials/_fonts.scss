@@ -1,49 +1,35 @@
 @font-face {
-  font-family: 'Fakt';
-  src: url('/assets/fonts/Fakt-Normal.eot');
-  src: url('/assets/fonts/Fakt-Normal.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Fakt-Normal.woff2') format('woff2'),
-    url('/assets/fonts/Fakt-Normal.woff') format('woff'),
-    url('/assets/fonts/Fakt-Normal.ttf') format('truetype');
+  font-family: 'VC Henrietta';
+  src: url('/assets/fonts/VCHenriettaCondensed-Medium.eot');
+  src: url('/assets/fonts/VCHenriettaCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/VCHenriettaCondensed-Medium.woff2') format('woff2'),
+      url('/assets/fonts/VCHenriettaCondensed-Medium.woff') format('woff'),
+      url('/assets/fonts/VCHenriettaCondensed-Medium.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
-  /* font-display: swap; */
-}
-
-
-@font-face {
-  font-family: 'Fakt';
-  src: url('/assets/fonts/Fakt-Medium.eot');
-  src: url('/assets/fonts/Fakt-Medium.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Fakt-Medium.woff2') format('woff2'),
-    url('/assets/fonts/Fakt-Medium.woff') format('woff'),
-    url('/assets/fonts/Fakt-Medium.ttf') format('truetype');
-  font-weight: 500;
   font-style: normal;
   // font-display: swap;
 }
 
 @font-face {
-  font-family: 'Fakt';
-  src: url('/assets/fonts/Fakt-SemiBold.eot');
-  src: url('/assets/fonts/Fakt-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Fakt-SemiBold.woff2') format('woff2'),
-    url('/assets/fonts/Fakt-SemiBold.woff') format('woff'),
-    url('/assets/fonts/Fakt-SemiBold.ttf') format('truetype');
-  font-weight: 600;
+  font-family: 'Graphik';
+  src: url('/assets/fonts/Graphik-Medium.eot');
+  src: url('/assets/fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Graphik-Medium.woff2') format('woff2'),
+      url('/assets/fonts/Graphik-Medium.woff') format('woff'),
+      url('/assets/fonts/Graphik-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
-  /* font-display: swap; */
+  font-display: swap;
 }
 
-
-
 @font-face {
-  font-family: 'Druk';
-  src: url('/assets/fonts/Druk-Bold.eot');
-  src: url('/assets/fonts/Druk-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Druk-Bold.woff2') format('woff2'),
-    url('/assets/fonts/Druk-Bold.woff') format('woff'),
-    url('/assets/fonts/Druk-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'Graphik';
+  src: url('/assets/fonts/Graphik-Regular.eot');
+  src: url('/assets/fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Graphik-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Graphik-Regular.woff') format('woff'),
+      url('/assets/fonts/Graphik-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

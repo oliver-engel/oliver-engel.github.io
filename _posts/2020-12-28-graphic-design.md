@@ -1,6 +1,7 @@
 ---
 title: The Graphic Design Primer
 date: 2020-12-28 12:00:00 Z
+prettydate: December 2020
 permalink: "/words/graphic-design"
 categories:
 - misc

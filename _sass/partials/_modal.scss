@@ -5,7 +5,7 @@
 .modal {
     display: none;
     color:black;
-    z-index:1000;
+    z-index:2000;
   }
   
   .modal.is-open {
@@ -65,6 +65,7 @@
   .modal__close {
     background: #0000000f;
     border: 0;
+    color:$text-primary;
   }
   
   .modal__close:hover{
@@ -183,8 +184,8 @@
     opacity:0;
     /* visibility: hidden; */
     /* width: 120px; */
-    background-color: $background;
-    color: #fff;
+    background-color: $background-darker;
+    color: $text-primary;
     text-align: center;
     padding: 6px 8px 5px 8px;
     border-radius: 6px;

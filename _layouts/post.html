@@ -2,28 +2,18 @@
 layout: default
 ---
 
-<div class="page-header-wrapper fadeIn">
-    <div>
+    <div class="full-width-wrapper fadeIn">
         <div class="page-header">
-            <div class="tag-cloud">
-                <div class="tag">{{page.prettydate}}</div>
+            <!-- <button class="secondary-button">Back to writing</button> -->
+            <div>
+                <!-- <p class="subhead">{{page.prettydate}}</p> -->
+                <h1 style="padding-bottom:12px">{{page.title}}</h1>
             </div>
-            <h1 style="padding-bottom:12px">{{page.title}}</h1>
             <p style="max-width:40ch; margin: 0 auto">{{page.description}}</p>
-            
-            <br>
-            
-            <img class="post-hero-image" src="{{page.hero}}">
-
         </div>
     </div>
-</div>
 
-
-
-
-
-    <div class="blog-markdown" >
-      {{content}}
+    <div class="blog-markdown">
+        {{content}}
     </div>
-    
+
