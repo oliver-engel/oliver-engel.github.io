@@ -1,10 +1,11 @@
 ---
 title: How to change your design system
 date: 2023-10-17 12:00:00 Z
-prettydate: October 2023
 permalink: "/words/design-systems-decisions"
+prettydate: October 2023
 layout: post
-description: Implementing changes at the system level is scary. Here’s the techniques I use to approach it with rigor and keep the team aligned along the way.
+description: Implementing changes at the system level is scary. Here’s the techniques
+  I use to approach it with rigor and keep the team aligned along the way.
 thumb: "/assets/img/blog/decisions/thumb.jpg"
 hero: "/assets/img/blog/datadrivendesign/hero2.jpg"
 ---
