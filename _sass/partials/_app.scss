@@ -60,7 +60,7 @@ h2 {
   font-weight: 600;
   color: $text-primary;
   margin: 0;
-  letter-spacing: 0.1rem;
+  // letter-spacing: 0.05rem;
 }
 
 h1 {
@@ -113,7 +113,7 @@ a {
 
 p {
   font-size:1rem;
-  line-height:1.75rem;
+  line-height:1.7rem;
   margin-top: 0;
 
   a{
@@ -518,6 +518,11 @@ button {
     border-top: 2px solid $background;
     box-sizing: border-box;
   }
+
+  @media (max-width: 480px) {
+    // justify-content:left;
+    margin-top:0;
+  }
 }
 
 hr {
@@ -822,7 +827,7 @@ hr {
 
 ul{
   li{
-    line-height: 1.75rem;
+    line-height: 1.7rem;
     padding-bottom:6px;
   }
 }
