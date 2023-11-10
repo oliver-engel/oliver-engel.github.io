@@ -1,10 +1,10 @@
 ---
 title: The Graphic Design Primer
 date: 2020-12-28 12:00:00 Z
-prettydate: December 2020
 permalink: "/words/graphic-design"
 categories:
 - misc
+prettydate: December 2020
 layout: post
 description: A brief intro to graphic design, originally written for my cousin.
 thumb: "/assets/img/blog/graphicdesign/thumb.jpg"
