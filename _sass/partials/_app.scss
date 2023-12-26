@@ -142,7 +142,7 @@ p + p{
 
 body {
   // max-width: $max-width;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   padding: 0 24px;
 
   @media (max-width: 800px) {
@@ -676,14 +676,34 @@ hr {
   border-bottom:none !important;
   border-radius:24px;
 
+  h3{
+    color: $text-primary;
+  }
+
+  p{
+    color: $text-primary;
+    font-weight: 400;
+  }
+
+  #read-more{
+    font-weight: 400;
+
+  }
+
   
 
   &:hover{
-    background: #191d2c1a;
+    transform: scale(1.03);
+    background: white;
+    transition: 0.3s all;
     border-bottom:none !important;
     #read-more {
       color: $accent;
       border-bottom: 1px solid $accent;
+    }
+
+    img{
+      // mix-blend-mode: multiply;
     }
   }
   @media(max-width: 640px) {

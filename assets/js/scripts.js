@@ -3,23 +3,23 @@
 
 // Set active nav link
 
-const nav = document.querySelector(".main-nav-links");
-const navLinks = nav.querySelectorAll("a");
-const currentURL = window.location.href;
+// const nav = document.querySelector(".main-nav-links");
+// const navLinks = nav.querySelectorAll("a");
+// const currentURL = window.location.href;
 
-navLinks.forEach((link) => {
+// navLinks.forEach((link) => {
   
-  if (link.href === currentURL) {
-    link.classList.add("active");
-    console.log("added active");
-  }
+//   if (link.href === currentURL) {
+//     link.classList.add("active");
+//     console.log("added active");
+//   }
   
-  else {
-    link.classList.remove("active");
-    console.log("removed active");
-    console.log(currentURL);
-  }
-});
+//   else {
+//     link.classList.remove("active");
+//     console.log("removed active");
+//     console.log(currentURL);
+//   }
+// });
 
 
 // Tooltip audio ////////////////////
