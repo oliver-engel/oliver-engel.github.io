@@ -655,6 +655,8 @@ hr {
   display: flex;
   flex-direction: column;
   gap:24px;
+
+  
   
 }
 
@@ -688,6 +690,17 @@ hr {
   border-radius:24px;
   text-decoration:none;
 
+  @media(max-width: 640px) {
+    // grid-template-columns: 1fr;
+    // margin-bottom: 48px;
+    // grid-gap: 16px;
+    flex-direction: column;
+
+    img{
+      width:100% !important;
+    }
+  }
+
   h3{
     color: $text-primary;
   }
@@ -720,11 +733,7 @@ hr {
       // mix-blend-mode: multiply;
     }
   }
-  @media(max-width: 640px) {
-    grid-template-columns: 1fr;
-    margin-bottom: 48px;
-    grid-gap: 16px;
-  }
+  
 
   img {
     border-radius: $border-radius-default;
