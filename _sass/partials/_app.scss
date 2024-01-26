@@ -102,7 +102,7 @@ h3 {
 a {
   color: $accent;
   font-weight:500;
-  text-decoration: none;
+  // text-decoration: none;
   // border-bottom: 1px solid #888a9aa6;
   // padding-bottom: 1px;
   transition: 0.2s all;
@@ -550,7 +550,7 @@ hr {
   // opacity:0;
   animation: 1200ms ease-out 0s 1 fadeInAnimation;
   // animation-delay: 2s;
-  background-color: #fff3e0;
+  background-color: #76777f3b;
   padding:56.25% 0 0 0;
   position:relative;
   border-radius: $border-radius-default;
@@ -661,7 +661,18 @@ hr {
 #read-more{
   color: $accent;
   font-weight: 500;
+  border-bottom: 1px solid $background;
+
 }
+
+.blog-entry-content{
+  color: $text-primary;
+  p{
+    text-decoration: none;
+
+  }
+}
+
 
 .blog-entry {
   padding: 16px 16px 8px 16px;
@@ -675,6 +686,7 @@ hr {
   gap: 32px;
   border-bottom:none !important;
   border-radius:24px;
+  text-decoration:none;
 
   h3{
     color: $text-primary;
@@ -687,6 +699,7 @@ hr {
 
   #read-more{
     font-weight: 400;
+    border-bottom: 1px solid $background;
 
   }
 
@@ -699,6 +712,7 @@ hr {
     border-bottom:none !important;
     #read-more {
       color: $accent;
+      
       border-bottom: 1px solid $accent;
     }
 

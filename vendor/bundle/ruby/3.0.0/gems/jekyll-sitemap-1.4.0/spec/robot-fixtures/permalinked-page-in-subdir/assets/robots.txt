@@ -2,4 +2,7 @@
 permalink: '/robots.txt'
 ---
 
+User-agent: *
+Disallow: /portfolio/
+
 Allow: {{ site.url }}
