@@ -38,7 +38,7 @@
 
 .main-content{
     max-width:650px;
-    margin: 72px auto;
+    margin: 72px auto 0px auto;
 
     h3{
         padding-bottom:12px;
@@ -65,4 +65,15 @@ figcaption{
     font-size:.85rem;
     font-weight: 500;
     margin-bottom:0;
+}
+
+.expanded-content{
+    max-width:988px;
+    margin: 0 auto;
+
+    img{
+        width: 100%;
+        border-radius: 16px;
+        padding-bottom:8px;
+    }
 }
