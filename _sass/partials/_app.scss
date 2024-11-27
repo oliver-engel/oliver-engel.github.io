@@ -342,37 +342,6 @@ button {
 
   }
 
-  &:hover {
-    img, .video-embed {
-      // outline: solid 2px $accent;
-      // outline-offset: 0.4em;
-    }
-
-    // .title {
-    //   transition: 0.2s all;
-
-    //   &::after {
-    //     content: " •";
-    //     margin-left: 4px;
-    //     color: $accent;
-    //     -webkit-animation-name: blinker;
-    //     -webkit-animation-duration: 1.2s;
-    //     -webkit-animation-iteration-count: infinite;
-    //     -webkit-animation-timing-function: cubic-bezier(.99, 0, .52, .96);
-    //     -webkit-animation-direction: alternate;
-
-    //     @-webkit-keyframes blinker {
-    //       from {
-    //         opacity: 1.0;
-    //       }
-
-    //       to {
-    //         opacity: 0.0;
-    //       }
-    //     }
-    //   }
-    // }
-  }
 
 
 
