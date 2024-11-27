@@ -2,14 +2,13 @@
 title: My Favorite Music Videos
 date: 2020-12-27 12:00:00 Z
 permalink: "/words/music-videos"
+published: false
 categories:
 - misc
 layout: post
 description: A running list of great video art.
 thumb: "/assets/img/blog/videos/thumb.jpg"
 hero: "/assets/img/blog/videos/hero.jpg"
-published: false
-
 ---
 
 ![Weval – Someday](/assets/img/blog/videos/weval.jpg)
