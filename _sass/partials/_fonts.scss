@@ -45,3 +45,53 @@
   font-style: normal;
   font-display: swap;
 }
+
+
+@font-face {
+  font-family: 'Futwora Pro';
+  src: url('/assets/fonts/FutworaPro-Regular.eot');
+  src: url('/assets/fonts/FutworaPro-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/FutworaPro-Regular.woff2') format('woff2'),
+      url('/assets/fonts/FutworaPro-Regular.woff') format('woff'),
+      url('/assets/fonts/FutworaPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oliver';
+  src: url('/assets/fonts/Oliver-Regular.eot');
+  src: url('/assets/fonts/Oliver-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Oliver-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Oliver-Regular.woff') format('woff'),
+      url('/assets/fonts/Oliver-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Marcel';
+  src: url('/assets/fonts/Marcel-Regular.eot');
+  src: url('/assets/fonts/Marcel-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Marcel-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Marcel-Regular.woff') format('woff'),
+      url('/assets/fonts/Marcel-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futwora Pro';
+  src: url('/assets/fonts/FutworaPro-Bold.eot');
+  src: url('/assets/fonts/FutworaPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/FutworaPro-Bold.woff2') format('woff2'),
+      url('/assets/fonts/FutworaPro-Bold.woff') format('woff'),
+      url('/assets/fonts/FutworaPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+

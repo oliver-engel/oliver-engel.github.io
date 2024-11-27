@@ -5,7 +5,7 @@ layout: default
 
 <!-- <p class="remove-on-mobile fadeIn" style="text-align:center; font-weight:500;font-size:.875rem">Oliver Engel – Design systems & product design</p> -->
 
-
+<!-- <p class="name">Oliver E.</p> -->
 
 <!-- <div class="page-header-wrapper fadeIn">
     <div>
@@ -23,85 +23,46 @@ layout: default
 </div> -->
 
 
-<!-- <section class="card-list">
-    <ul>
-        <li class="project-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
 
-            <div class="video-embed" style="background-color: #898F70;">
-                <iframe 
-                    src="https://player.vimeo.com/video/877352979?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1&background=1"
-                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="applyflow"></iframe>
-            </div>
-
-            <div class="project-description">
-                <h2 class="title">I’ve designed successful consumer and enterprise products for web and mobile.</h2>
-                <p class="">Since 2018 – I've designed for multiple venture-backed startups and a public company.
-                    I've designed countless features and a number of 0 → 1 products, learning how to collaborate with
-                    product, engineering & other folks to ship real stuff.</p>
-            </div>
-        </li>
-
-        <hr data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
-
-        <li class="project-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
-
-            <div class="video-embed" style="background: #FFC224;">
-                <iframe loading="lazy"
-                    src="https://player.vimeo.com/video/870083091?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1&background=1"
-                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="applyflow"></iframe>
-            </div>
-
-            <div class="project-description">
-                <h2 class="title">I care deeply about mentorship and making design a more accessible field.</h2>
-                <p>For the last year, I've been releasing free resources for designers on <a href="https://www.figma.com/@oe">Figma
-                    Community</a>. I recently released <a href="https://www.theinterviewkit.com/">The Interview Kit</a>, a
-                    comprehensive guide to getting a job in product design. I wrote, designed, and coded all parts from
-                    scratch.</p>
-            </div>
-        </li>
-
-        <hr data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
-
-        <li class="project-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
-
-            <div class="video-embed" style="background: #c0b498;">
-                <iframe loading="lazy"
-                    src="https://player.vimeo.com/video/878823336?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1&background=1"
-                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="applyflow"></iframe>
-            </div>
-
-            <div class="project-description">
-                <h2 class="title">I got my start through practicing graphic design, illustration, animation,
-                    and creative coding.</h2>
-                <p>While studying art and computer science at UC San Diego, I worked as a student
-                    graphic designer for four years, and interned as a designer at NBCUniversal. I honed skills in brand
-                    design, print design, illustration, animation, and video production.</p>
-            </div>
-        </li>
-        <hr data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
-    </ul>
-</section> -->
 
 <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
 
 <div class="about-page fadeIn" >
 
-    <div class="image-pile fadeIn" >
+
+    <img class="main-image" src="/assets/img/about/about01.jpg" alt="Photo of Oliver" height="500" width="300" id="cyclingImage">
+    <script>
+        const images = [
+            '/assets/img/about/about01.jpg',
+            '/assets/img/about/about02.jpg', 
+            '/assets/img/about/about03.jpg',
+            '/assets/img/about/about04.jpg'
+        ];
+        let currentIndex = 0;
+        const imgElement = document.getElementById('cyclingImage');
+        
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            imgElement.src = images[currentIndex];
+        }, 1500);
+    </script>
+
+    <!-- <div class="image-pile fadeIn" >
         <img class="about-img1 skew-left" src="/assets/img/about/about02.jpg" alt="Photo of Oliver" height="370" width="250">
         <img class="about-img2 skew-right" src="/assets/img/about/about01.jpg" alt="Photo of Oliver" height="370" width="250">
         <img class="about-img3 skew-left" src="/assets/img/about/about03.jpg" alt="Photo of Oliver" height="370" width="250">
         <img class="about-img4 skew-right" src="/assets/img/about/about04.jpg" alt="Photo of Oliver" height="370" width="250">
-    </div>
+    </div> -->
 
     <!-- <div class="page-header-wrapper"> -->
-        <h1 style="padding-bottom: 48px; max-width:624px; margin: 0 auto">Designing software in Seattle.<br><span class="subdued">Lover of 80’s music, thrift stores, good typography, and BBQ.</span></h1>
+        <h1 style="padding-bottom: 48px; max-width:624px; margin: 0 auto">Designer of software at DoorDash.<br><span class="subdued">Lover of 80’s music, thrifting, good typography, and BBQ.</span></h1>
         <!-- </div> -->
         
 
     </div>
 
     <div class="about-content">
-        <p>Hello, Internet user. I’m Oliver – a Senior Product Designer at <a href="https://www.doordash.com/">DoorDash</a>.</p>
+        <p>Hello, Internet user. I’m Oliver – a Senior Product Designer currently working on tablet experiences for merchants at DoorDash.</p>
 
         <p>I grew up in the Bay Area, studied art and computer science at <a href="https://visarts.ucsd.edu/undergrad/major-req/icam.html">UC San Diego</a>, and received a Master’s degree in human-computer interaction and design from the <a href="https://mhcid.washington.edu/">University of Washington</a>.
         In my free time, I publish free resources for designers on <a href="https://www.figma.com/@oe">Figma Community</a>. I recently released <a href="https://www.theinterviewkit.com/">The Interview Kit</a>, a comprehensive guide to getting a job in product design.
@@ -114,24 +75,120 @@ layout: default
     <hr data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
 
     
-<!-- 
-        <h2>Currently listening to...</h2>
+    <!-- <section class="card-list">
+        <ul>
+            <li class="project-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
+    
+                <div class="video-embed" style="background-color: #898F70;">
+                    <iframe 
+                        src="https://player.vimeo.com/video/877352979?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1&background=1"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="applyflow"></iframe>
+                </div>
+    
+                <div class="project-description">
+                    <h2 class="title">I’ve designed successful consumer and enterprise products for web and mobile.</h2>
+                    <p class="">Since 2018 – I've designed for multiple venture-backed startups and a public company.
+                        I've designed countless features and a number of 0 → 1 products, learning how to collaborate with
+                        product, engineering & other folks to ship real stuff.</p>
+                </div>
+            </li>
+    
+            <hr data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
+    
+            <li class="project-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
+    
+                <div class="video-embed" style="background: #FFC224;">
+                    <iframe loading="lazy"
+                        src="https://player.vimeo.com/video/870083091?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1&background=1"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="applyflow"></iframe>
+                </div>
+    
+                <div class="project-description">
+                    <h2 class="title">I care deeply about mentorship and making design a more accessible field.</h2>
+                    <p>For the last year, I've been releasing free resources for designers on <a href="https://www.figma.com/@oe">Figma
+                        Community</a>. I recently released <a href="https://www.theinterviewkit.com/">The Interview Kit</a>, a
+                        comprehensive guide to getting a job in product design. I wrote, designed, and coded all parts from
+                        scratch.</p>
+                </div>
+            </li>
+    
+            <hr data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
+    
+            <li class="project-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
+    
+                <div class="video-embed" style="background: #c0b498;">
+                    <iframe loading="lazy"
+                        src="https://player.vimeo.com/video/878823336?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1&background=1"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="applyflow"></iframe>
+                </div>
+    
+                <div class="project-description">
+                    <h2 class="title">I got my start through practicing graphic design, illustration, animation,
+                        and creative coding.</h2>
+                    <p>While studying art and computer science at UC San Diego, I worked as a student
+                        graphic designer for four years, and interned as a designer at NBCUniversal. I honed skills in brand
+                        design, print design, illustration, animation, and video production.</p>
+                </div>
+            </li>
+            <hr data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
+        </ul>
+    </section> -->
 
-        <div class="album-list" >
-            <a class="album" href="https://open.spotify.com/album/1ZTd9cM6FPWW4ZP0qUwhpF?si=5bHfIlW0QMGlo9FZYgKwTw">
-                <img class="" src="/assets/img/about/sandhills.jpg" alt="Sandhills album cover, Toro y Moi" height="700" width="700">
-                <h2>Sandhills <span class="subdued">Toro y Moi</span></h2>
-            </a>
 
-            <a class="album" href="https://open.spotify.com/album/2kvz9frUn3LUK83imD2BQS?si=Pe8QU3S5Sm6dksAyWMBHhw">
-                <img class="" src="/assets/img/about/clanton.jpg" alt="Ooh Rap I Ya album cover, George Clanton" height="700" width="700">
-                <h2>Ooh Rap I Ya <span class="subdued">George Clanton</span></h2>
-            </a>
+    <section class="resources-section" >
+        <h2 style="margin: 48px 0; text-align: center;">Resources</h2>
 
-            <a class="album" href="https://open.spotify.com/album/5cyu3tkdmGoB0BC0EJfz2V?si=91b1f4e80672407f">
-                <img class="" src="/assets/img/about/bunny.jpg" alt="Bunny album cover, Beach Fossils" height="700" width="700">
-                <h2>Bunny <span class="subdued">Beach Fossils</span></h2>
+        <div class="resources-grid">
+            <div class="resources-item">
+                <div>
+                    <img src="/assets/img/interviewkit-thumb.jpg" alt="{{ post.title }} thumbnail" class="resource-image">
+                </div>
+                <div>
+                    <h3>The Interview Kit</h3>
+                    <p>Everything you need to know to land a design job, from writing the resume to acing the on-site interview. All packaged into a delightful little guide.</p>
+                    <a href="https://www.theinterviewkit.com/"><button>View resource</button></a>
+                </div>
+            </div>   
+        </div>
+
+        <div class="resources-grid"></div>
+            <div class="resources-item">
+                <div>
+                    <img src="/assets/img/template-thumb.jpg" alt="{{ post.title }} thumbnail" class="resource-image">
+                </div>
+                <div>
+                    <h3>Portfolio Presentation Template</h3>
+                    <p>An official Figma Slides template to help product designers present their work.</p>
+                    <a href="https://www.figma.com/community/file/1383198669858275212/product-design-portfolio-presentation"><button>View resource</button></a>
+                </div>
+            </div>   
+        </div>
+
+    </section>
+
+    <p style="margin: 48px 0; text-align: center;">Looking for more? See my additional resources on <a href="https://www.figma.com/@oe">Figma Community</a>.</p>
+
+
+    <!-- <section class="posts-section">
+        <h2 style="margin: 48px 0; text-align: center;">Posts</h2>
+        <div class="posts-grid">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" class="post-item">
+                {% if post.thumb %}
+                <img src="{{ post.thumb }}" alt="{{ post.title }} thumbnail" class="post-image">
+                {% endif %}
+                <h3>{{ post.title }}</h3>
+                {% if post.description %}
+                <p class="subtitle">{{ post.description }}</p>
+                {% endif %}
             </a>
-        </div> -->
+            {% endfor %}
+        </div>
+    </section> -->
+
+
+
+
+
     </div>
 </div>

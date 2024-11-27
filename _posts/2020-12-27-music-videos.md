@@ -8,6 +8,8 @@ layout: post
 description: A running list of great video art.
 thumb: "/assets/img/blog/videos/thumb.jpg"
 hero: "/assets/img/blog/videos/hero.jpg"
+published: false
+
 ---
 
 ![Weval – Someday](/assets/img/blog/videos/weval.jpg)

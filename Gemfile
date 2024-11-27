@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.2.2"
+gem "jekyll", "~> 4.3.3"
 gem "liquid-c"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -28,4 +28,9 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Added at 2022-02-19 12:17:02 -0800 by oliverengel:
 gem "webrick", "~> 1.7"
+
+# Add these to silence the warnings (optional)
+gem "csv"
+gem "base64"
+gem "bigdecimal"
 
