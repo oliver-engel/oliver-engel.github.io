@@ -5,7 +5,7 @@
 .modal {
     display: none;
     color:black;
-    z-index:2000;
+    z-index:10000;
   }
   
   .modal.is-open {
@@ -63,13 +63,14 @@
   }
   
   .modal__close {
-    background: #0000000f;
+    background: #0000001f;
     border: 0;
     color:$text-primary;
+    height:72px;
   }
   
   .modal__close:hover{
-    background: #00000024;
+    background: #00000036;
   }
   
   .modal__header .modal__close:before { content: "\2715"; }
