@@ -1,0 +1,27 @@
+---
+permalink: "/photo"
+layout: default
+title: Photography
+---
+
+<div class="photo-page">
+  <div class="photo-grid">
+    {% assign photo_files = site.static_files | where_exp: "item", "item.path contains '/assets/img/photo/' or item.path contains '/assets/img/photo_archive/'" %}
+    {% assign sorted_photos = photo_files | sort: 'path' %}
+    {% for photo in sorted_photos %}
+      {% if photo.extname == '.jpg' or photo.extname == '.jpeg' or photo.extname == '.png' or photo.extname == '.JPG' %}
+        <div class="photo-item">
+          <img src="{{ photo.path }}" alt="Photography" loading="lazy" data-photo-src="{{ photo.path }}">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="photo-lightbox">
+  <div class="photo-lightbox-backdrop"></div>
+  <div class="photo-lightbox-content">
+    <img class="photo-lightbox-image" src="" alt="Photography">
+  </div>
+</div>
+

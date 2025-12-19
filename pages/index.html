@@ -27,55 +27,66 @@ layout: default
 
 <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
 
-<div class="about-page fadeIn" >
+    <div class="about-page fadeIn">
 
 
-    <img class="main-image" src="/assets/img/about/about01.jpg" alt="Photo of Oliver" height="500" width="300" id="cyclingImage">
-    <script>
-        const images = [
-            '/assets/img/about/about01.jpg',
-            '/assets/img/about/about02.jpg', 
-            '/assets/img/about/about03.jpg',
-            '/assets/img/about/about04.jpg',
-            '/assets/img/about/about05.jpg'
-        ];
-        let currentIndex = 0;
-        const imgElement = document.getElementById('cyclingImage');
-        
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            imgElement.src = images[currentIndex];
-        }, 1500);
-    </script>
+        <img class="main-image" src="/assets/img/about/about01.jpg" alt="Photo of Oliver" height="500" width="300"
+            id="cyclingImage">
+        <script>
+            const images = [
+                '/assets/img/about/about01.jpg',
+                '/assets/img/about/about02.jpg',
+                '/assets/img/about/about03.jpg',
+                '/assets/img/about/about04.jpg',
+                '/assets/img/about/about05.jpg'
+            ];
+            let currentIndex = 0;
+            const imgElement = document.getElementById('cyclingImage');
 
-    <!-- <div class="image-pile fadeIn" >
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                imgElement.src = images[currentIndex];
+            }, 1500);
+        </script>
+
+        <!-- <div class="image-pile fadeIn" >
         <img class="about-img1 skew-left" src="/assets/img/about/about02.jpg" alt="Photo of Oliver" height="370" width="250">
         <img class="about-img2 skew-right" src="/assets/img/about/about01.jpg" alt="Photo of Oliver" height="370" width="250">
         <img class="about-img3 skew-left" src="/assets/img/about/about03.jpg" alt="Photo of Oliver" height="370" width="250">
         <img class="about-img4 skew-right" src="/assets/img/about/about04.jpg" alt="Photo of Oliver" height="370" width="250">
     </div> -->
 
-    <!-- <div class="page-header-wrapper"> -->
-        <h1 style="padding-bottom: 48px; max-width:624px; margin: 0 auto">Designer of software at DoorDash.<br><span class="subdued">Lover of 80’s music, thrifting, good typography, and BBQ.</span></h1>
+        <!-- <div class="page-header-wrapper"> -->
+        <h1 style="padding-bottom: 48px; max-width:624px; margin: 0 auto">Designer of software at DoorDash.<br><span
+                class="subdued">Lover of 80’s music, thrifting, good typography, and BBQ.</span></h1>
         <!-- </div> -->
-        
+
 
     </div>
 
     <div class="about-content">
-        <p>Hello, Internet user. I’m Oliver – a Senior Product Designer currently working on tablet experiences for merchants at DoorDash.</p>
+        <p>Hello, Internet user. I’m Oliver – a Senior Product Designer currently designing for Merchants at DoorDash.
+        </p>
 
-        <p>I grew up in the Bay Area, studied art and computer science at <a href="https://visarts.ucsd.edu/undergrad/major-req/icam.html">UC San Diego</a>, and received a Master’s degree in human-computer interaction and design from the <a href="https://mhcid.washington.edu/">University of Washington</a>.
-        In my free time, I publish free resources for designers on <a href="https://www.figma.com/@oe">Figma Community</a>. I recently released <a href="https://www.theinterviewkit.com/">The Interview Kit</a>, a comprehensive guide to getting a job in product design.
+        <p>I grew up in the Bay Area, studied art and computer science at <a
+                href="https://visarts.ucsd.edu/undergrad/major-req/icam.html">UC San Diego</a>, and received a Master’s
+            degree in human-computer interaction and design from the <a href="https://mhcid.washington.edu/">University
+                of Washington</a>.
+            In my free time, I publish free resources for designers on <a href="https://www.figma.com/@oe">Figma
+                Community</a>. I recently released <a href="https://www.theinterviewkit.com/">The Interview Kit</a>, a
+            comprehensive guide to getting a job in product design.
 
-        <p>As of May 2024, I also offer a few weekly slots for <a href="https://adplist.org/mentors/oliver-engel">mentorship via ADPList</a>. Feel free to book some time or reach out via my email below.</p>
+        <p>As of May 2024, I also offer a few weekly slots for <a
+                href="https://adplist.org/mentors/oliver-engel">mentorship via ADPList</a>. Feel free to book some time
+            or reach out via my email below.</p>
 
-        <button style="width:100%; height:64px; margin-top:32px;" data-micromodal-trigger="contact-modal">Say hey</button>  
+        <button style="width:100%; height:64px; margin-top:32px;" data-micromodal-trigger="contact-modal">Say
+            hey</button>
     </div>
 
     <hr data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
 
-    
+
     <!-- <section class="card-list">
         <ul>
             <li class="project-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
@@ -136,41 +147,46 @@ layout: default
     </section> -->
 
 
-    <section class="resources-section" >
+    <section class="resources-section">
         <h2 style="margin: 48px 0; text-align: center;">Resources</h2>
 
         <div class="resources-grid">
             <div class="resources-item">
                 <div>
-                    <img src="/assets/img/interviewkit-thumb.jpg" alt="{{ post.title }} thumbnail" class="resource-image">
+                    <img src="/assets/img/interviewkit-thumb.jpg" alt="{{ post.title }} thumbnail"
+                        class="resource-image">
                 </div>
                 <div>
                     <h3>The Interview Kit</h3>
-                    <p>Everything you need to know to land a design job, from writing the resume to acing the on-site interview. All packaged into a delightful little guide.</p>
+                    <p>Everything you need to know to land a design job, from writing the resume to acing the on-site
+                        interview. All packaged into a delightful little guide.</p>
                     <a href="https://www.theinterviewkit.com/"><button>View resource</button></a>
                 </div>
-            </div>   
+            </div>
         </div>
 
         <div class="resources-grid"></div>
-            <div class="resources-item">
-                <div>
-                    <img src="/assets/img/template-thumb.jpg" alt="{{ post.title }} thumbnail" class="resource-image">
-                </div>
-                <div>
-                    <h3>Portfolio Presentation Template</h3>
-                    <p>An official Figma Slides template to help product designers present their work.</p>
-                    <a href="https://www.figma.com/community/file/1383198669858275212/product-design-portfolio-presentation"><button>View resource</button></a>
-                </div>
-            </div>   
+        <div class="resources-item">
+            <div>
+                <img src="/assets/img/template-thumb.jpg" alt="{{ post.title }} thumbnail" class="resource-image">
+            </div>
+            <div>
+                <h3>Portfolio Presentation Template</h3>
+                <p>An official Figma Slides template to help product designers present their work.</p>
+                <a
+                    href="https://www.figma.com/community/file/1383198669858275212/product-design-portfolio-presentation"><button>View
+                        resource</button></a>
+            </div>
         </div>
+</div>
 
-    </section>
+</section>
 
-    <p style="margin: 48px 0; text-align: center;">Looking for more? See my additional resources on <a href="https://www.figma.com/@oe">Figma Community</a>.</p>
+<p style="margin: 48px 0; text-align: center;">Looking for more? See my additional resources on <a
+        href="https://www.figma.com/@oe">Figma Community</a>.</p>
 
 
-    <!-- <section class="posts-section">
+<!-- <section class="posts-section">
         <h2 style="margin: 48px 0; text-align: center;">Posts</h2>
         <div class="posts-grid">
             {% for post in site.posts %}
@@ -191,5 +207,5 @@ layout: default
 
 
 
-    </div>
+</div>
 </div>

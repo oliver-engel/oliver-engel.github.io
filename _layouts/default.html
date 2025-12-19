@@ -14,7 +14,8 @@ layout: compress
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="Digital Product Designer in Seattle, WA." />
-  <meta name="keywords" content="oliver engel portfolio, portfolio design, portfolio oliverengel, minimal portfolio, photography, graphic design, ux, hci, uw, washington, seattle, design, interaction, interface, graduate, product design, digital product design, student ux, ux portfolio, visual designer, photography, pacific northwest" />
+  <meta name="keywords"
+    content="oliver engel portfolio, portfolio design, portfolio oliverengel, minimal portfolio, photography, graphic design, ux, hci, uw, washington, seattle, design, interaction, interface, graduate, product design, digital product design, student ux, ux portfolio, visual designer, photography, pacific northwest" />
   <meta name="author" content="Oliver Engel">
   <meta name="robots" content="NOODP">
 
@@ -27,14 +28,16 @@ layout: compress
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://oliverengel.com/" />
   <meta property="og:title" content="Oliver Engel — Software Designer" />
-  <meta property="og:description" content="Senior designer focused on design systems and high-quality software design." />
+  <meta property="og:description"
+    content="Senior designer focused on design systems and high-quality software design." />
   <meta property="og:image" content="/assets/favicons/share.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://oliverengel.com/" />
   <meta property="twitter:title" content="Oliver Engel — Software Designer" />
-  <meta property="twitter:description" content="Senior designer focused on design systems and high-quality software design." />
+  <meta property="twitter:description"
+    content="Senior designer focused on design systems and high-quality software design." />
   <meta property="twitter:image" content="/assets/favicons/share.png" />
 
   <!-- Meta Tags Generated with https://metatags.io -->
@@ -47,16 +50,16 @@ layout: compress
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="manifest" href="{{ " /manifest.json" | prepend: site.baseurl | prepend: site.url }}" />
   <title>
-     {%if page.title %}
-         {{ page.title }} | {{ site.title }}
-     {% else %}
-         {{ site.title }}
-     {% endif %}
+    {%if page.title %}
+    {{ page.title }} | {{ site.title }}
+    {% else %}
+    {{ site.title }}
+    {% endif %}
   </title>
 
-  <link rel="stylesheet" href="{{ "/assets/main-styles.css" | relative_url }}">
+  <link rel="stylesheet" href="/assets/main-styles.css?v=hardcoded">
 
 
   <!-- FAVICONS -->
@@ -74,11 +77,20 @@ layout: compress
 
 </head>
 
-  <body>
-    {% include navigation.html %}
-    {{content}}
+<body>
+  {% include floating_nav.html %}
+  {% include theme_toggle.html %}
 
-    <script src="/assets/js/scripts.js"></script>
-  </body>
+  <main class="content-area">
+    {{content}}
+  </main>
+
+  <div class="bottom-gradient"></div>
+
+  {% include navigation.html %}
+  <script src="https://cdn.jsdelivr.net/npm/@paper-design/shaders@0.0.26/dist/index.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+
+</body>
 
 </html>

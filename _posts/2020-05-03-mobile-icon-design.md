@@ -2,7 +2,7 @@
 title: Nailing the Details in Mobile Icon Design
 date: 2020-05-03 12:00:00 Z
 permalink: "/words/mobile-icon-design"
-published: false
+published: true
 categories:
 - misc
 layout: post

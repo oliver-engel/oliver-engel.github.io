@@ -5,31 +5,19 @@ layout: default
 
 <div class="page-header-wrapper fadeIn">
   <div>
-      <div class="page-header">
-          <h1>Occasional thoughts on design systems, software design, and music.</span></h1>
-      </div>
+    <div class="page-header">
+      <h1>Occasional thoughts on design systems, software design, and music.</span></h1>
+    </div>
   </div>
 </div>
 
-<div class="blog-wrapper" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
-{% for post in site.posts %}
-    
-      <a class="blog-entry" href="{{post.url}}">
-        <div class="img-wrapper">
-          <img src="{{post.thumb}}">
-        </div>
-
-        <div class="blog-entry-content">
-          <!-- <p class="blog-date">8 MAY 19</p> -->
-          <!-- <div class="tag">{{post.prettydate}}</div> -->
-          <h3>{{post.title}}</h3>
-          <p>{{post.description}}</p>
-          <div class="spacer-2x"></div>
-          <p><span id="read-more">Read post</span></p>
-        </div>
-
-      </a>
-   
+<div class="writing-wrapper fadeIn" data-aos="fade-up" data-aos-duration="600">
+  <ul class="writing-list">
+    {% for post in site.posts %}
+    <li>
+      <span class="writing-index">({{ forloop.index }})</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
     {% endfor %}
-
+  </ul>
 </div>
