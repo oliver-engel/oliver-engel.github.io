@@ -1482,28 +1482,46 @@ body.lightbox-active .photo-grid {
 }
 
 /* View Transitions Ripple Effect */
+:root {
+  --ripple-x: 0px;
+  --ripple-y: 0px;
+  --ripple-radius: 0px;
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
   mix-blend-mode: normal;
+  display: block;
 }
 
-/* The element being revealed sits on top */
-::view-transition-old(root) {
-  z-index: 1;
-}
-
+/* The element being revealed sits on top and animates its clip-path */
 ::view-transition-new(root) {
   z-index: 2147483647;
+  animation: ripple-reveal 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-/* Reverse layering when switching away from dark mode */
+/* When going from dark to light, we animate the OLD state out or NEW state in? 
+   Actually, it's easier to always animate the NEW state in over the OLD one. */
+
+@keyframes ripple-reveal {
+  from {
+    clip-path: circle(0px at var(--ripple-x) var(--ripple-y));
+  }
+
+  to {
+    clip-path: circle(var(--ripple-radius) at var(--ripple-x) var(--ripple-y));
+  }
+}
+
+/* Special case: when switching AWAY from dark mode, 
+   we want the LIGHT theme (the new snapshot) to reveal over the DARK theme. */
 [data-theme="dark"]::view-transition-old(root) {
-  z-index: 2147483647;
+  z-index: 1;
 }
 
 [data-theme="dark"]::view-transition-new(root) {
-  z-index: 1;
+  z-index: 2147483647;
 }
 
 [data-theme="dark"] .dynamic-island-nav {

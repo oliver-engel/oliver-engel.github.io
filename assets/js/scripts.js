@@ -41,8 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
         Math.max(y, innerHeight - y)
       );
 
+      // Set CSS variables for the ripple animation
+      document.documentElement.style.setProperty('--ripple-x', `${x}px`);
+      document.documentElement.style.setProperty('--ripple-y', `${y}px`);
+      document.documentElement.style.setProperty('--ripple-radius', `${endRadius}px`);
+
       // Start the transition
-      const transition = document.startViewTransition(async () => {
+      document.startViewTransition(() => {
         if (newTheme === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
           localStorage.setItem('theme', 'dark');
@@ -50,27 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
           document.documentElement.removeAttribute('data-theme');
           localStorage.setItem('theme', 'light');
         }
-      });
-
-      // Wait for the transition snapshots to be ready
-      transition.ready.then(() => {
-        const clipPath = [
-          `circle(0px at ${x}px ${y}px)`,
-          `circle(${endRadius}px at ${x}px ${y}px)`,
-        ];
-
-        document.documentElement.animate(
-          {
-            clipPath: isDark ? [...clipPath].reverse() : clipPath,
-          },
-          {
-            duration: 500,
-            easing: 'ease-in-out',
-            pseudoElement: isDark
-              ? '::view-transition-old(root)'
-              : '::view-transition-new(root)',
-          }
-        );
       });
     });
   }
