@@ -38,12 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Start the transition
       document.startViewTransition(() => {
+        const meta = document.querySelector('meta[name="theme-color"]');
         if (newTheme === 'dark') {
           document.documentElement.setAttribute('data-theme', 'dark');
           localStorage.setItem('theme', 'dark');
+          if (meta) meta.setAttribute('content', '#1a1510');
         } else {
           document.documentElement.removeAttribute('data-theme');
           localStorage.setItem('theme', 'light');
+          if (meta) meta.setAttribute('content', '#f4f1e6');
         }
       });
     });

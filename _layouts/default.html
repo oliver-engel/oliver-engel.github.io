@@ -9,6 +9,7 @@ layout: compress
   <script>
     (function () {
       const savedTheme = localStorage.getItem('theme');
+      const meta = document.querySelector('meta[name="theme-color"]');
       if (savedTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
       }
@@ -66,7 +67,17 @@ layout: compress
   <link rel="manifest" href="/assets/favicons/site.webmanifest">
   <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#000000">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f4f1e6">
+
+  <script>
+    // Immediate theme-color sync to prevent browser bar color lag
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1a1510');
+      }
+    })();
+  </script>
 
   <link rel="manifest" href="{{ " /manifest.json" | prepend: site.baseurl | prepend: site.url }}" />
   <title>
