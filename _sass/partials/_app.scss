@@ -223,7 +223,7 @@ body {
   box-sizing: border-box;
 
   @media (max-width: 800px) {
-    padding: 0 32px;
+    padding: 0;
   }
 }
 
@@ -1458,9 +1458,12 @@ body.lightbox-active .photo-grid {
         #eb5b29); // Loop back to Orange
     background-size: 400%;
     filter: blur(15px); // Slightly more blur for diffusion
-    border-radius: inherit;
+    border-radius: 1000px; // Explicit value instead of inherit for better mobile support
     opacity: 0.6; // Increased visibility as requested
     animation: navGlow 15s linear infinite; // Slower, calmer animation
+    -webkit-backface-visibility: hidden; // Mobile rendering fix
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0); // GPU acceleration for smoother rendering on mobile
   }
 }
 
@@ -1495,7 +1498,7 @@ body.lightbox-active .photo-grid {
 
 .theme-toggle {
   position: fixed;
-  bottom: 24px;
+  bottom: 30px;
   right: 24px;
   z-index: 1000;
   background: rgba(20, 15, 5, 0.95);
@@ -1536,6 +1539,13 @@ body.lightbox-active .photo-grid {
 }
 
 [data-theme="dark"] .theme-toggle {
+  background: rgba(244, 241, 230, 0.95);
+  border-color: rgba(255, 255, 255, 0.1);
+
+  .theme-icon {
+    color: rgba(20, 15, 5, 0.9);
+  }
+
   .sun-icon {
     opacity: 0;
     transform: rotate(-90deg) scale(0.5);

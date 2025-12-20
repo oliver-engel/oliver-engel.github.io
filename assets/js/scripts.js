@@ -1,12 +1,11 @@
-
 // Theme Management - Initialize before DOM loads to prevent flash
 (function () {
   const savedTheme = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-
-  if (theme === 'dark') {
+  // Set light mode as default, only use dark if explicitly saved
+  if (savedTheme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
   }
 })();
 
@@ -15,17 +14,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
 
   if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    console.log('Theme toggle found and listener attached');
+    themeToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      console.log('Theme toggle clicked');
+
+      const isDark = document.documentElement.hasAttribute('data-theme');
+      const newTheme = isDark ? 'light' : 'dark';
+      console.log('Switching from', isDark ? 'dark' : 'light', 'to', newTheme);
 
       if (newTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
       } else {
         document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
       }
-
-      localStorage.setItem('theme', newTheme);
     });
   }
 
