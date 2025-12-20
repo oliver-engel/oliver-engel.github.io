@@ -16,20 +16,62 @@ document.addEventListener('DOMContentLoaded', () => {
   if (themeToggle) {
     console.log('Theme toggle found and listener attached');
     themeToggle.addEventListener('click', (e) => {
-      e.preventDefault();
-      console.log('Theme toggle clicked');
-
       const isDark = document.documentElement.hasAttribute('data-theme');
       const newTheme = isDark ? 'light' : 'dark';
-      console.log('Switching from', isDark ? 'dark' : 'light', 'to', newTheme);
 
-      if (newTheme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.documentElement.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
+      // Fallback for browsers that don't support View Transitions
+      if (!document.startViewTransition) {
+        if (newTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        }
+        return;
       }
+
+      // Get the click position
+      const x = e.clientX;
+      const y = e.clientY;
+
+      // Calculate the radius to cover the entire screen
+      const endRadius = Math.hypot(
+        Math.max(x, innerWidth - x),
+        Math.max(y, innerHeight - y)
+      );
+
+      // Start the transition
+      const transition = document.startViewTransition(async () => {
+        if (newTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        }
+      });
+
+      // Wait for the transition snapshots to be ready
+      transition.ready.then(() => {
+        const clipPath = [
+          `circle(0px at ${x}px ${y}px)`,
+          `circle(${endRadius}px at ${x}px ${y}px)`,
+        ];
+
+        document.documentElement.animate(
+          {
+            clipPath: isDark ? [...clipPath].reverse() : clipPath,
+          },
+          {
+            duration: 500,
+            easing: 'ease-in-out',
+            pseudoElement: isDark
+              ? '::view-transition-old(root)'
+              : '::view-transition-new(root)',
+          }
+        );
+      });
     });
   }
 

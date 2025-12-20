@@ -1481,6 +1481,31 @@ body.lightbox-active .photo-grid {
   }
 }
 
+/* View Transitions Ripple Effect */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* The element being revealed sits on top */
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2147483647;
+}
+
+/* Reverse layering when switching away from dark mode */
+[data-theme="dark"]::view-transition-old(root) {
+  z-index: 2147483647;
+}
+
+[data-theme="dark"]::view-transition-new(root) {
+  z-index: 1;
+}
+
 [data-theme="dark"] .dynamic-island-nav {
   ul.nav-links-island {
     a {
