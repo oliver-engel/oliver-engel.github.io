@@ -1,13 +1,3 @@
-// Theme Management - Initialize before DOM loads to prevent flash
-(function () {
-  const savedTheme = localStorage.getItem('theme');
-  // Set light mode as default, only use dark if explicitly saved
-  if (savedTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  } else {
-    document.documentElement.removeAttribute('data-theme');
-  }
-})();
 
 document.addEventListener('DOMContentLoaded', () => {
   // Theme Toggle
