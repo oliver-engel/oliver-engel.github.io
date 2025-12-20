@@ -6,14 +6,13 @@ layout: default
 
 <div class="photo-page">
   <div class="photo-grid">
-    {% assign photo_files = site.static_files | where_exp: "item", "item.path contains '/assets/img/photo/' or item.path
-    contains '/assets/img/photo_archive/'" %}
-    {% assign sorted_photos = photo_files | sort: 'path' %}
-    {% for photo in sorted_photos %}
-    {% if photo.extname == '.jpg' or photo.extname == '.jpeg' or photo.extname == '.png' or photo.extname == '.JPG' %}
+    {% for file in site.static_files %}
+    {% if file.path contains '/assets/img/photo/' %}
+    {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.png' or file.extname == '.JPG' %}
     <div class="photo-item">
-      <img src="{{ photo.path }}" alt="Photography" loading="lazy" data-photo-src="{{ photo.path }}">
+      <img src="{{ file.path }}" alt="Photography" loading="lazy" data-photo-src="{{ file.path }}">
     </div>
+    {% endif %}
     {% endif %}
     {% endfor %}
   </div>
